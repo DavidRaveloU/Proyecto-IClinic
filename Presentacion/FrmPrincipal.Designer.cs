@@ -38,7 +38,7 @@ namespace Presentacion
             this.pnlMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnlMenu.Location = new System.Drawing.Point(0, 0);
             this.pnlMenu.Name = "pnlMenu";
-            this.pnlMenu.Size = new System.Drawing.Size(140, 450);
+            this.pnlMenu.Size = new System.Drawing.Size(158, 450);
             this.pnlMenu.TabIndex = 0;
             // 
             // FrmPrincipal
