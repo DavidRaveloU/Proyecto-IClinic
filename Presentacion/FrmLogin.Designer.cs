@@ -130,14 +130,15 @@ namespace Presentacion
             this.btnIngresar.Size = new System.Drawing.Size(171, 45);
             this.btnIngresar.TabIndex = 3;
             this.btnIngresar.Text = "Ingresar";
+            this.btnIngresar.Click += new System.EventHandler(this.btnIngresar_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Montserrat", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(527, 93);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(75, 26);
+            this.label1.Size = new System.Drawing.Size(72, 24);
             this.label1.TabIndex = 4;
             this.label1.Text = "LOGIN";
             // 
@@ -235,7 +236,7 @@ namespace Presentacion
             this.Controls.Add(this.txtUser);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmLogin";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = " Login";
             ((System.ComponentModel.ISupportInitialize)(this.Pic)).EndInit();
             this.ResumeLayout(false);

@@ -30,6 +30,35 @@ namespace Presentacion
             Application.Exit();
         }
 
+        private void btnIngresar_Click(object sender, EventArgs e)
+        {
+            string validar = ValidarCredenciales();
+            if (string.IsNullOrEmpty(validar))
+            {
+                FrmPrincipal frmPrincipal = new FrmPrincipal();
+                frmPrincipal.Show();
+            }
+            else
+            {
+                MessageBox.Show(validar);
+            }
+        }
+
+        private string ValidarCredenciales()
+        {
+            if (string.IsNullOrEmpty(txtUser.Text))
+            {
+                return "Por favor ingrese un usuario";
+            }
+            else if (string.IsNullOrEmpty(txtPassword.Text))
+            {
+                return "Por favor ingrese una contraseña";
+            }
+
+            return ""; 
+        }
+    
+
         private void panel1_MouseMove(object sender, MouseEventArgs e)
         {
             if (m == 1)
