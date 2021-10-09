@@ -101,7 +101,7 @@ namespace Presentacion
             this.txtPassword.Location = new System.Drawing.Point(532, 200);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '*';
-            this.txtPassword.PlaceholderText = "Paswword";
+            this.txtPassword.PlaceholderText = "Password";
             this.txtPassword.SelectedText = "";
             this.txtPassword.ShadowDecoration.Parent = this.txtPassword;
             this.txtPassword.Size = new System.Drawing.Size(225, 36);
