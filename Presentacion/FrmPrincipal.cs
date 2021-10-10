@@ -16,5 +16,46 @@ namespace Presentacion
         {
             InitializeComponent();
         }
+
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnMinimizar_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private int posX = 0;
+        private int posY = 0;
+
+        private void pnlSuperior_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (e.Button != MouseButtons.Left)
+            {
+                posX = e.X;
+                posY = e.Y;
+            }
+            else
+            {
+                Left += (e.X - posX);
+                Top += (e.Y - posY);
+            }
+        }
+        private Form frmPadre = null;
+        private void abrirFormulario(Form frmHijo)
+        {
+            if (frmPadre != null)
+                frmPadre.Close();
+            frmPadre = frmHijo;
+            frmHijo.TopLevel = false;
+            pnlGrapper.Dock = DockStyle.Fill;
+            pnlGrapper.Controls.Add(frmHijo);
+            pnlGrapper.Tag = frmHijo;
+            frmHijo.BringToFront();
+            frmHijo.Show();
+        }
     }
 }
