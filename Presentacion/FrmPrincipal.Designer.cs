@@ -29,13 +29,15 @@ namespace Presentacion
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmPrincipal));
             this.btnClose = new Guna.UI2.WinForms.Guna2Button();
             this.btnMinimizar = new Guna.UI2.WinForms.Guna2Button();
             this.pnlMenu = new System.Windows.Forms.Panel();
+            this.pnlLineaMenu = new System.Windows.Forms.Panel();
             this.pnlSuperior = new System.Windows.Forms.Panel();
             this.pnlGrapper = new System.Windows.Forms.Panel();
-            this.pnlLineaMenu = new System.Windows.Forms.Panel();
+            this.guna2ShadowForm1 = new Guna.UI2.WinForms.Guna2ShadowForm(this.components);
             this.pnlMenu.SuspendLayout();
             this.pnlSuperior.SuspendLayout();
             this.SuspendLayout();
@@ -102,6 +104,17 @@ namespace Presentacion
             this.pnlMenu.Size = new System.Drawing.Size(157, 489);
             this.pnlMenu.TabIndex = 10;
             // 
+            // pnlLineaMenu
+            // 
+            this.pnlLineaMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(247)))), ((int)(((byte)(253)))));
+            this.pnlLineaMenu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pnlLineaMenu.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pnlLineaMenu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(247)))), ((int)(((byte)(253)))));
+            this.pnlLineaMenu.Location = new System.Drawing.Point(2, 1);
+            this.pnlLineaMenu.Name = "pnlLineaMenu";
+            this.pnlLineaMenu.Size = new System.Drawing.Size(157, 3);
+            this.pnlLineaMenu.TabIndex = 1;
+            // 
             // pnlSuperior
             // 
             this.pnlSuperior.BackColor = System.Drawing.Color.White;
@@ -122,16 +135,10 @@ namespace Presentacion
             this.pnlGrapper.Size = new System.Drawing.Size(767, 489);
             this.pnlGrapper.TabIndex = 12;
             // 
-            // pnlLineaMenu
+            // guna2ShadowForm1
             // 
-            this.pnlLineaMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(247)))), ((int)(((byte)(253)))));
-            this.pnlLineaMenu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.pnlLineaMenu.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pnlLineaMenu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(247)))), ((int)(((byte)(253)))));
-            this.pnlLineaMenu.Location = new System.Drawing.Point(2, 1);
-            this.pnlLineaMenu.Name = "pnlLineaMenu";
-            this.pnlLineaMenu.Size = new System.Drawing.Size(157, 3);
-            this.pnlLineaMenu.TabIndex = 1;
+            this.guna2ShadowForm1.BorderRadius = 20;
+            this.guna2ShadowForm1.TargetForm = this;
             // 
             // FrmPrincipal
             // 
@@ -159,5 +166,6 @@ namespace Presentacion
         private System.Windows.Forms.Panel pnlSuperior;
         private System.Windows.Forms.Panel pnlGrapper;
         private System.Windows.Forms.Panel pnlLineaMenu;
+        private Guna.UI2.WinForms.Guna2ShadowForm guna2ShadowForm1;
     }
 }

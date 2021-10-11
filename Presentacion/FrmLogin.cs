@@ -37,6 +37,7 @@ namespace Presentacion
             {
                 FrmPrincipal frmPrincipal = new FrmPrincipal();
                 frmPrincipal.Show();
+                this.Hide();
             }
             else
             {

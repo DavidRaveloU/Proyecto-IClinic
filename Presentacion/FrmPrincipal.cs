@@ -20,7 +20,7 @@ namespace Presentacion
 
         private void btnClose_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Application.Exit();
         }
 
         private void btnMinimizar_Click(object sender, EventArgs e)
@@ -45,7 +45,7 @@ namespace Presentacion
             }
         }
         private Form frmPadre = null;
-        private void abrirFormulario(Form frmHijo)
+        private void AbrirFormulario(Form frmHijo)
         {
             if (frmPadre != null)
                 frmPadre.Close();
