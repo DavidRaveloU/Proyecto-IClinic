@@ -15,6 +15,7 @@ namespace Presentacion
         public FrmPrincipal()
         {
             InitializeComponent();
+            customizedDesing();
         }
 
 
@@ -56,6 +57,79 @@ namespace Presentacion
             pnlGrapper.Tag = frmHijo;
             frmHijo.BringToFront();
             frmHijo.Show();
+        }
+
+        private void customizedDesing()
+        {
+            pnlMedico.Visible = false;
+            pnlPaciente.Visible = false;
+            pnlConsulta.Visible = false;
+        }
+        private void hideSubmenu()
+        {
+            if (pnlMedico.Visible == true)
+                pnlMedico.Visible = false;
+            if (pnlPaciente.Visible == true)
+                pnlPaciente.Visible = false;
+            if (pnlConsulta.Visible == true)
+                pnlConsulta.Visible = false;
+        }
+        private void showSubmenu(Panel subMenu)
+        {
+            if (subMenu.Visible == false)
+            {
+                hideSubmenu();
+                subMenu.Visible = true;
+            }
+            else
+                subMenu.Visible = false;
+        }
+
+      
+
+        private void btnMedico_Click(object sender, EventArgs e)
+        {
+            showSubmenu(pnlMedico);
+        }
+
+        private void guna2Button2_Click(object sender, EventArgs e)
+        {
+            hideSubmenu();
+        }
+
+        private void guna2Button3_Click(object sender, EventArgs e)
+        {
+            hideSubmenu();
+        }
+
+        private void btnPaciente_Click(object sender, EventArgs e)
+        {
+            showSubmenu(pnlPaciente);
+        }
+
+        private void guna2Button5_Click(object sender, EventArgs e)
+        {
+            hideSubmenu();
+        }
+
+        private void guna2Button4_Click(object sender, EventArgs e)
+        {
+            hideSubmenu();
+        }
+
+        private void btnConsulta_Click(object sender, EventArgs e)
+        {
+            showSubmenu(pnlConsulta);
+        }
+
+        private void guna2Button7_Click(object sender, EventArgs e)
+        {
+            hideSubmenu();
+        }
+
+        private void guna2Button8_Click(object sender, EventArgs e)
+        {
+            hideSubmenu();
         }
     }
 }
