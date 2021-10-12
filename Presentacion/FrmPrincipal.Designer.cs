@@ -34,17 +34,18 @@ namespace Presentacion
             this.btnClose = new Guna.UI2.WinForms.Guna2Button();
             this.btnMinimizar = new Guna.UI2.WinForms.Guna2Button();
             this.pnlMenu = new System.Windows.Forms.Panel();
+            this.btnCerrarSecion = new Guna.UI2.WinForms.Guna2Button();
             this.pnlConsulta = new System.Windows.Forms.Panel();
-            this.guna2Button8 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button7 = new Guna.UI2.WinForms.Guna2Button();
+            this.btnConsultarHistorial = new Guna.UI2.WinForms.Guna2Button();
+            this.btnConsultaMedica = new Guna.UI2.WinForms.Guna2Button();
             this.btnConsulta = new Guna.UI2.WinForms.Guna2Button();
             this.pnlPaciente = new System.Windows.Forms.Panel();
-            this.guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button5 = new Guna.UI2.WinForms.Guna2Button();
+            this.btnConsultarPaciente = new Guna.UI2.WinForms.Guna2Button();
+            this.btnRegistrarPaciente = new Guna.UI2.WinForms.Guna2Button();
             this.btnPaciente = new Guna.UI2.WinForms.Guna2Button();
             this.pnlMedico = new System.Windows.Forms.Panel();
-            this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
+            this.btnConsultarMedico = new Guna.UI2.WinForms.Guna2Button();
+            this.btnRegistrarMedico = new Guna.UI2.WinForms.Guna2Button();
             this.btnMedico = new Guna.UI2.WinForms.Guna2Button();
             this.btnAgenda = new Guna.UI2.WinForms.Guna2Button();
             this.pnlFondoDeLogo = new System.Windows.Forms.Panel();
@@ -53,7 +54,6 @@ namespace Presentacion
             this.pnlGrapper = new System.Windows.Forms.Panel();
             this.guna2ShadowForm1 = new Guna.UI2.WinForms.Guna2ShadowForm(this.components);
             this.tmrFundir = new System.Windows.Forms.Timer(this.components);
-            this.btnCerrarSecion = new Guna.UI2.WinForms.Guna2Button();
             this.pnlMenu.SuspendLayout();
             this.pnlConsulta.SuspendLayout();
             this.pnlPaciente.SuspendLayout();
@@ -132,57 +132,78 @@ namespace Presentacion
             this.pnlMenu.Size = new System.Drawing.Size(157, 745);
             this.pnlMenu.TabIndex = 10;
             // 
+            // btnCerrarSecion
+            // 
+            this.btnCerrarSecion.CheckedState.Parent = this.btnCerrarSecion;
+            this.btnCerrarSecion.CustomImages.Parent = this.btnCerrarSecion;
+            this.btnCerrarSecion.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnCerrarSecion.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnCerrarSecion.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnCerrarSecion.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnCerrarSecion.DisabledState.Parent = this.btnCerrarSecion;
+            this.btnCerrarSecion.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnCerrarSecion.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnCerrarSecion.ForeColor = System.Drawing.Color.White;
+            this.btnCerrarSecion.HoverState.Parent = this.btnCerrarSecion;
+            this.btnCerrarSecion.Location = new System.Drawing.Point(0, 626);
+            this.btnCerrarSecion.Name = "btnCerrarSecion";
+            this.btnCerrarSecion.ShadowDecoration.Parent = this.btnCerrarSecion;
+            this.btnCerrarSecion.Size = new System.Drawing.Size(157, 45);
+            this.btnCerrarSecion.TabIndex = 13;
+            this.btnCerrarSecion.Text = "Cerrar Sesión";
+            this.btnCerrarSecion.Click += new System.EventHandler(this.btnCerrarSecion_Click);
+            // 
             // pnlConsulta
             // 
-            this.pnlConsulta.Controls.Add(this.guna2Button8);
-            this.pnlConsulta.Controls.Add(this.guna2Button7);
+            this.pnlConsulta.Controls.Add(this.btnConsultarHistorial);
+            this.pnlConsulta.Controls.Add(this.btnConsultaMedica);
             this.pnlConsulta.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlConsulta.Location = new System.Drawing.Point(0, 535);
             this.pnlConsulta.Name = "pnlConsulta";
             this.pnlConsulta.Size = new System.Drawing.Size(157, 91);
             this.pnlConsulta.TabIndex = 12;
             // 
-            // guna2Button8
+            // btnConsultarHistorial
             // 
-            this.guna2Button8.CheckedState.Parent = this.guna2Button8;
-            this.guna2Button8.CustomImages.Parent = this.guna2Button8;
-            this.guna2Button8.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button8.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button8.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button8.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button8.DisabledState.Parent = this.guna2Button8;
-            this.guna2Button8.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2Button8.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button8.ForeColor = System.Drawing.Color.White;
-            this.guna2Button8.HoverState.Parent = this.guna2Button8;
-            this.guna2Button8.Location = new System.Drawing.Point(0, 45);
-            this.guna2Button8.Name = "guna2Button8";
-            this.guna2Button8.ShadowDecoration.Parent = this.guna2Button8;
-            this.guna2Button8.Size = new System.Drawing.Size(157, 46);
-            this.guna2Button8.TabIndex = 1;
-            this.guna2Button8.Text = "guna2Button8";
-            this.guna2Button8.Click += new System.EventHandler(this.guna2Button8_Click);
+            this.btnConsultarHistorial.CheckedState.Parent = this.btnConsultarHistorial;
+            this.btnConsultarHistorial.CustomImages.Parent = this.btnConsultarHistorial;
+            this.btnConsultarHistorial.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnConsultarHistorial.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnConsultarHistorial.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnConsultarHistorial.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnConsultarHistorial.DisabledState.Parent = this.btnConsultarHistorial;
+            this.btnConsultarHistorial.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnConsultarHistorial.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnConsultarHistorial.ForeColor = System.Drawing.Color.White;
+            this.btnConsultarHistorial.HoverState.Parent = this.btnConsultarHistorial;
+            this.btnConsultarHistorial.Location = new System.Drawing.Point(0, 45);
+            this.btnConsultarHistorial.Name = "btnConsultarHistorial";
+            this.btnConsultarHistorial.ShadowDecoration.Parent = this.btnConsultarHistorial;
+            this.btnConsultarHistorial.Size = new System.Drawing.Size(157, 46);
+            this.btnConsultarHistorial.TabIndex = 1;
+            this.btnConsultarHistorial.Text = "Consultar Historial";
+            this.btnConsultarHistorial.Click += new System.EventHandler(this.guna2Button8_Click);
             // 
-            // guna2Button7
+            // btnConsultaMedica
             // 
-            this.guna2Button7.CheckedState.Parent = this.guna2Button7;
-            this.guna2Button7.CustomImages.Parent = this.guna2Button7;
-            this.guna2Button7.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button7.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button7.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button7.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button7.DisabledState.Parent = this.guna2Button7;
-            this.guna2Button7.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2Button7.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button7.ForeColor = System.Drawing.Color.White;
-            this.guna2Button7.HoverState.Parent = this.guna2Button7;
-            this.guna2Button7.Location = new System.Drawing.Point(0, 0);
-            this.guna2Button7.Name = "guna2Button7";
-            this.guna2Button7.ShadowDecoration.Parent = this.guna2Button7;
-            this.guna2Button7.Size = new System.Drawing.Size(157, 45);
-            this.guna2Button7.TabIndex = 0;
-            this.guna2Button7.Text = "guna2Button7";
-            this.guna2Button7.Click += new System.EventHandler(this.guna2Button7_Click);
+            this.btnConsultaMedica.CheckedState.Parent = this.btnConsultaMedica;
+            this.btnConsultaMedica.CustomImages.Parent = this.btnConsultaMedica;
+            this.btnConsultaMedica.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnConsultaMedica.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnConsultaMedica.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnConsultaMedica.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnConsultaMedica.DisabledState.Parent = this.btnConsultaMedica;
+            this.btnConsultaMedica.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnConsultaMedica.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnConsultaMedica.ForeColor = System.Drawing.Color.White;
+            this.btnConsultaMedica.HoverState.Parent = this.btnConsultaMedica;
+            this.btnConsultaMedica.Location = new System.Drawing.Point(0, 0);
+            this.btnConsultaMedica.Name = "btnConsultaMedica";
+            this.btnConsultaMedica.ShadowDecoration.Parent = this.btnConsultaMedica;
+            this.btnConsultaMedica.Size = new System.Drawing.Size(157, 45);
+            this.btnConsultaMedica.TabIndex = 0;
+            this.btnConsultaMedica.Text = "Consulta Médica";
+            this.btnConsultaMedica.Click += new System.EventHandler(this.guna2Button7_Click);
             // 
             // btnConsulta
             // 
@@ -207,55 +228,55 @@ namespace Presentacion
             // 
             // pnlPaciente
             // 
-            this.pnlPaciente.Controls.Add(this.guna2Button4);
-            this.pnlPaciente.Controls.Add(this.guna2Button5);
+            this.pnlPaciente.Controls.Add(this.btnConsultarPaciente);
+            this.pnlPaciente.Controls.Add(this.btnRegistrarPaciente);
             this.pnlPaciente.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlPaciente.Location = new System.Drawing.Point(0, 401);
             this.pnlPaciente.Name = "pnlPaciente";
             this.pnlPaciente.Size = new System.Drawing.Size(157, 89);
             this.pnlPaciente.TabIndex = 10;
             // 
-            // guna2Button4
+            // btnConsultarPaciente
             // 
-            this.guna2Button4.CheckedState.Parent = this.guna2Button4;
-            this.guna2Button4.CustomImages.Parent = this.guna2Button4;
-            this.guna2Button4.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button4.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button4.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button4.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button4.DisabledState.Parent = this.guna2Button4;
-            this.guna2Button4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2Button4.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button4.ForeColor = System.Drawing.Color.White;
-            this.guna2Button4.HoverState.Parent = this.guna2Button4;
-            this.guna2Button4.Location = new System.Drawing.Point(0, 45);
-            this.guna2Button4.Name = "guna2Button4";
-            this.guna2Button4.ShadowDecoration.Parent = this.guna2Button4;
-            this.guna2Button4.Size = new System.Drawing.Size(157, 44);
-            this.guna2Button4.TabIndex = 1;
-            this.guna2Button4.Text = "guna2Button4";
-            this.guna2Button4.Click += new System.EventHandler(this.guna2Button4_Click);
+            this.btnConsultarPaciente.CheckedState.Parent = this.btnConsultarPaciente;
+            this.btnConsultarPaciente.CustomImages.Parent = this.btnConsultarPaciente;
+            this.btnConsultarPaciente.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnConsultarPaciente.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnConsultarPaciente.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnConsultarPaciente.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnConsultarPaciente.DisabledState.Parent = this.btnConsultarPaciente;
+            this.btnConsultarPaciente.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnConsultarPaciente.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnConsultarPaciente.ForeColor = System.Drawing.Color.White;
+            this.btnConsultarPaciente.HoverState.Parent = this.btnConsultarPaciente;
+            this.btnConsultarPaciente.Location = new System.Drawing.Point(0, 45);
+            this.btnConsultarPaciente.Name = "btnConsultarPaciente";
+            this.btnConsultarPaciente.ShadowDecoration.Parent = this.btnConsultarPaciente;
+            this.btnConsultarPaciente.Size = new System.Drawing.Size(157, 44);
+            this.btnConsultarPaciente.TabIndex = 1;
+            this.btnConsultarPaciente.Text = "Consultar Paciente";
+            this.btnConsultarPaciente.Click += new System.EventHandler(this.guna2Button4_Click);
             // 
-            // guna2Button5
+            // btnRegistrarPaciente
             // 
-            this.guna2Button5.CheckedState.Parent = this.guna2Button5;
-            this.guna2Button5.CustomImages.Parent = this.guna2Button5;
-            this.guna2Button5.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button5.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button5.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button5.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button5.DisabledState.Parent = this.guna2Button5;
-            this.guna2Button5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2Button5.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button5.ForeColor = System.Drawing.Color.White;
-            this.guna2Button5.HoverState.Parent = this.guna2Button5;
-            this.guna2Button5.Location = new System.Drawing.Point(0, 0);
-            this.guna2Button5.Name = "guna2Button5";
-            this.guna2Button5.ShadowDecoration.Parent = this.guna2Button5;
-            this.guna2Button5.Size = new System.Drawing.Size(157, 45);
-            this.guna2Button5.TabIndex = 0;
-            this.guna2Button5.Text = "guna2Button5";
-            this.guna2Button5.Click += new System.EventHandler(this.guna2Button5_Click);
+            this.btnRegistrarPaciente.CheckedState.Parent = this.btnRegistrarPaciente;
+            this.btnRegistrarPaciente.CustomImages.Parent = this.btnRegistrarPaciente;
+            this.btnRegistrarPaciente.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnRegistrarPaciente.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnRegistrarPaciente.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnRegistrarPaciente.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnRegistrarPaciente.DisabledState.Parent = this.btnRegistrarPaciente;
+            this.btnRegistrarPaciente.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnRegistrarPaciente.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnRegistrarPaciente.ForeColor = System.Drawing.Color.White;
+            this.btnRegistrarPaciente.HoverState.Parent = this.btnRegistrarPaciente;
+            this.btnRegistrarPaciente.Location = new System.Drawing.Point(0, 0);
+            this.btnRegistrarPaciente.Name = "btnRegistrarPaciente";
+            this.btnRegistrarPaciente.ShadowDecoration.Parent = this.btnRegistrarPaciente;
+            this.btnRegistrarPaciente.Size = new System.Drawing.Size(157, 45);
+            this.btnRegistrarPaciente.TabIndex = 0;
+            this.btnRegistrarPaciente.Text = "Registrar Paciente";
+            this.btnRegistrarPaciente.Click += new System.EventHandler(this.guna2Button5_Click);
             // 
             // btnPaciente
             // 
@@ -280,55 +301,55 @@ namespace Presentacion
             // 
             // pnlMedico
             // 
-            this.pnlMedico.Controls.Add(this.guna2Button3);
-            this.pnlMedico.Controls.Add(this.guna2Button2);
+            this.pnlMedico.Controls.Add(this.btnConsultarMedico);
+            this.pnlMedico.Controls.Add(this.btnRegistrarMedico);
             this.pnlMedico.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlMedico.Location = new System.Drawing.Point(0, 262);
             this.pnlMedico.Name = "pnlMedico";
             this.pnlMedico.Size = new System.Drawing.Size(157, 89);
             this.pnlMedico.TabIndex = 8;
             // 
-            // guna2Button3
+            // btnConsultarMedico
             // 
-            this.guna2Button3.CheckedState.Parent = this.guna2Button3;
-            this.guna2Button3.CustomImages.Parent = this.guna2Button3;
-            this.guna2Button3.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button3.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button3.DisabledState.Parent = this.guna2Button3;
-            this.guna2Button3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2Button3.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button3.ForeColor = System.Drawing.Color.White;
-            this.guna2Button3.HoverState.Parent = this.guna2Button3;
-            this.guna2Button3.Location = new System.Drawing.Point(0, 45);
-            this.guna2Button3.Name = "guna2Button3";
-            this.guna2Button3.ShadowDecoration.Parent = this.guna2Button3;
-            this.guna2Button3.Size = new System.Drawing.Size(157, 44);
-            this.guna2Button3.TabIndex = 1;
-            this.guna2Button3.Text = "guna2Button3";
-            this.guna2Button3.Click += new System.EventHandler(this.guna2Button3_Click);
+            this.btnConsultarMedico.CheckedState.Parent = this.btnConsultarMedico;
+            this.btnConsultarMedico.CustomImages.Parent = this.btnConsultarMedico;
+            this.btnConsultarMedico.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnConsultarMedico.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnConsultarMedico.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnConsultarMedico.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnConsultarMedico.DisabledState.Parent = this.btnConsultarMedico;
+            this.btnConsultarMedico.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnConsultarMedico.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnConsultarMedico.ForeColor = System.Drawing.Color.White;
+            this.btnConsultarMedico.HoverState.Parent = this.btnConsultarMedico;
+            this.btnConsultarMedico.Location = new System.Drawing.Point(0, 45);
+            this.btnConsultarMedico.Name = "btnConsultarMedico";
+            this.btnConsultarMedico.ShadowDecoration.Parent = this.btnConsultarMedico;
+            this.btnConsultarMedico.Size = new System.Drawing.Size(157, 44);
+            this.btnConsultarMedico.TabIndex = 1;
+            this.btnConsultarMedico.Text = "Consultar Médico";
+            this.btnConsultarMedico.Click += new System.EventHandler(this.guna2Button3_Click);
             // 
-            // guna2Button2
+            // btnRegistrarMedico
             // 
-            this.guna2Button2.CheckedState.Parent = this.guna2Button2;
-            this.guna2Button2.CustomImages.Parent = this.guna2Button2;
-            this.guna2Button2.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button2.DisabledState.Parent = this.guna2Button2;
-            this.guna2Button2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2Button2.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button2.ForeColor = System.Drawing.Color.White;
-            this.guna2Button2.HoverState.Parent = this.guna2Button2;
-            this.guna2Button2.Location = new System.Drawing.Point(0, 0);
-            this.guna2Button2.Name = "guna2Button2";
-            this.guna2Button2.ShadowDecoration.Parent = this.guna2Button2;
-            this.guna2Button2.Size = new System.Drawing.Size(157, 45);
-            this.guna2Button2.TabIndex = 0;
-            this.guna2Button2.Text = "guna2Button2";
-            this.guna2Button2.Click += new System.EventHandler(this.guna2Button2_Click);
+            this.btnRegistrarMedico.CheckedState.Parent = this.btnRegistrarMedico;
+            this.btnRegistrarMedico.CustomImages.Parent = this.btnRegistrarMedico;
+            this.btnRegistrarMedico.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnRegistrarMedico.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnRegistrarMedico.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnRegistrarMedico.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnRegistrarMedico.DisabledState.Parent = this.btnRegistrarMedico;
+            this.btnRegistrarMedico.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnRegistrarMedico.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnRegistrarMedico.ForeColor = System.Drawing.Color.White;
+            this.btnRegistrarMedico.HoverState.Parent = this.btnRegistrarMedico;
+            this.btnRegistrarMedico.Location = new System.Drawing.Point(0, 0);
+            this.btnRegistrarMedico.Name = "btnRegistrarMedico";
+            this.btnRegistrarMedico.ShadowDecoration.Parent = this.btnRegistrarMedico;
+            this.btnRegistrarMedico.Size = new System.Drawing.Size(157, 45);
+            this.btnRegistrarMedico.TabIndex = 0;
+            this.btnRegistrarMedico.Text = "Registrar Médico";
+            this.btnRegistrarMedico.Click += new System.EventHandler(this.guna2Button2_Click);
             // 
             // btnMedico
             // 
@@ -416,27 +437,6 @@ namespace Presentacion
             this.guna2ShadowForm1.BorderRadius = 20;
             this.guna2ShadowForm1.TargetForm = this;
             // 
-            // btnCerrarSecion
-            // 
-            this.btnCerrarSecion.CheckedState.Parent = this.btnCerrarSecion;
-            this.btnCerrarSecion.CustomImages.Parent = this.btnCerrarSecion;
-            this.btnCerrarSecion.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnCerrarSecion.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnCerrarSecion.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnCerrarSecion.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnCerrarSecion.DisabledState.Parent = this.btnCerrarSecion;
-            this.btnCerrarSecion.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnCerrarSecion.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnCerrarSecion.ForeColor = System.Drawing.Color.White;
-            this.btnCerrarSecion.HoverState.Parent = this.btnCerrarSecion;
-            this.btnCerrarSecion.Location = new System.Drawing.Point(0, 626);
-            this.btnCerrarSecion.Name = "btnCerrarSecion";
-            this.btnCerrarSecion.ShadowDecoration.Parent = this.btnCerrarSecion;
-            this.btnCerrarSecion.Size = new System.Drawing.Size(157, 45);
-            this.btnCerrarSecion.TabIndex = 13;
-            this.btnCerrarSecion.Text = "Cerrar seción";
-            this.btnCerrarSecion.Click += new System.EventHandler(this.btnCerrarSecion_Click);
-            // 
             // FrmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -471,15 +471,15 @@ namespace Presentacion
         private Guna.UI2.WinForms.Guna2Button btnMedico;
         private Guna.UI2.WinForms.Guna2Button btnAgenda;
         private System.Windows.Forms.Panel pnlMedico;
-        private Guna.UI2.WinForms.Guna2Button guna2Button3;
-        private Guna.UI2.WinForms.Guna2Button guna2Button2;
+        private Guna.UI2.WinForms.Guna2Button btnConsultarMedico;
+        private Guna.UI2.WinForms.Guna2Button btnRegistrarMedico;
         private System.Windows.Forms.Panel pnlPaciente;
-        private Guna.UI2.WinForms.Guna2Button guna2Button4;
-        private Guna.UI2.WinForms.Guna2Button guna2Button5;
+        private Guna.UI2.WinForms.Guna2Button btnConsultarPaciente;
+        private Guna.UI2.WinForms.Guna2Button btnRegistrarPaciente;
         private Guna.UI2.WinForms.Guna2Button btnPaciente;
         private System.Windows.Forms.Panel pnlConsulta;
-        private Guna.UI2.WinForms.Guna2Button guna2Button8;
-        private Guna.UI2.WinForms.Guna2Button guna2Button7;
+        private Guna.UI2.WinForms.Guna2Button btnConsultarHistorial;
+        private Guna.UI2.WinForms.Guna2Button btnConsultaMedica;
         private Guna.UI2.WinForms.Guna2Button btnConsulta;
         private System.Windows.Forms.Timer tmrFundir;
         private Guna.UI2.WinForms.Guna2Button btnCerrarSecion;
