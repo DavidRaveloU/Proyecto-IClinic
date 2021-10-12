@@ -15,6 +15,8 @@ namespace Presentacion
         public FrmLogin()
         {
             InitializeComponent();
+            this.Opacity = 0.0;
+            tmrFundir.Start();
         }
 
         int m, mx, my;
@@ -35,9 +37,9 @@ namespace Presentacion
             string validar = ValidarCredenciales();
             if (string.IsNullOrEmpty(validar))
             {
-                FrmPrincipal frmPrincipal = new FrmPrincipal();
-                frmPrincipal.Show();
                 this.Hide();
+                FrmPrincipal frmPrincipal = new FrmPrincipal();
+                frmPrincipal.ShowDialog();
             }
             else
             {
@@ -58,7 +60,19 @@ namespace Presentacion
 
             return ""; 
         }
-    
+
+        private int contador = 0;
+        private void tmrFundir_Tick(object sender, EventArgs e)
+        {
+            if (this.Opacity < 1) this.Opacity += 0.27;
+            contador += 1;
+            if (contador == 100)
+            {
+                tmrFundir.Stop();
+
+            }
+
+        }
 
         private void panel1_MouseMove(object sender, MouseEventArgs e)
         {

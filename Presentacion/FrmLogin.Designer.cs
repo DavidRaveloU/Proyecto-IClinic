@@ -42,6 +42,7 @@ namespace Presentacion
             this.btnClose = new Guna.UI2.WinForms.Guna2Button();
             this.Pic = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.tmrFundir = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.Pic)).BeginInit();
             this.SuspendLayout();
             // 
@@ -220,6 +221,10 @@ namespace Presentacion
             this.panel1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseMove);
             this.panel1.MouseUp += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseUp);
             // 
+            // tmrFundir
+            // 
+            this.tmrFundir.Tick += new System.EventHandler(this.tmrFundir_Tick);
+            // 
             // FrmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -258,6 +263,7 @@ namespace Presentacion
         private Guna.UI2.WinForms.Guna2Button btnClose;
         private System.Windows.Forms.PictureBox Pic;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Timer tmrFundir;
     }
 }
 
