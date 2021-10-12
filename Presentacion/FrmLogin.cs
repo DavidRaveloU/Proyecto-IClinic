@@ -69,7 +69,6 @@ namespace Presentacion
             if (contador == 100)
             {
                 tmrFundir.Stop();
-
             }
 
         }
