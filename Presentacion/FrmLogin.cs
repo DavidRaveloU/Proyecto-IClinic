@@ -64,7 +64,7 @@ namespace Presentacion
         private int contador = 0;
         private void tmrFundir_Tick(object sender, EventArgs e)
         {
-            if (this.Opacity < 1) this.Opacity += 0.27;
+            if (this.Opacity < 1) this.Opacity += 0.28;
             contador += 1;
             if (contador == 100)
             {
