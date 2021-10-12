@@ -39,10 +39,10 @@ namespace Presentacion
             this.label1 = new System.Windows.Forms.Label();
             this.swchRecuerdame = new Guna.UI2.WinForms.Guna2ToggleSwitch();
             this.label2 = new System.Windows.Forms.Label();
-            this.btnClose = new Guna.UI2.WinForms.Guna2Button();
-            this.Pic = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.tmrFundir = new System.Windows.Forms.Timer(this.components);
+            this.btnClose = new Guna.UI2.WinForms.Guna2Button();
+            this.Pic = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.Pic)).BeginInit();
             this.SuspendLayout();
             // 
@@ -67,11 +67,11 @@ namespace Presentacion
             this.txtUser.DisabledState.Parent = this.txtUser;
             this.txtUser.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtUser.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(229)))), ((int)(((byte)(229)))));
-            this.txtUser.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtUser.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(138)))), ((int)(((byte)(120)))));
             this.txtUser.FocusedState.Parent = this.txtUser;
             this.txtUser.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtUser.ForeColor = System.Drawing.Color.Black;
-            this.txtUser.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtUser.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(138)))), ((int)(((byte)(120)))));
             this.txtUser.HoverState.Parent = this.txtUser;
             this.txtUser.Location = new System.Drawing.Point(532, 136);
             this.txtUser.Name = "txtUser";
@@ -94,11 +94,11 @@ namespace Presentacion
             this.txtPassword.DisabledState.Parent = this.txtPassword;
             this.txtPassword.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtPassword.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(229)))), ((int)(((byte)(229)))));
-            this.txtPassword.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtPassword.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(138)))), ((int)(((byte)(120)))));
             this.txtPassword.FocusedState.Parent = this.txtPassword;
             this.txtPassword.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtPassword.ForeColor = System.Drawing.Color.Black;
-            this.txtPassword.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtPassword.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(138)))), ((int)(((byte)(120)))));
             this.txtPassword.HoverState.Parent = this.txtPassword;
             this.txtPassword.Location = new System.Drawing.Point(532, 200);
             this.txtPassword.Name = "txtPassword";
@@ -121,9 +121,9 @@ namespace Presentacion
             this.btnIngresar.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnIngresar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnIngresar.DisabledState.Parent = this.btnIngresar;
-            this.btnIngresar.FillColor = System.Drawing.Color.DarkSlateBlue;
-            this.btnIngresar.FillColor2 = System.Drawing.Color.Aqua;
-            this.btnIngresar.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnIngresar.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(143)))), ((int)(((byte)(124)))));
+            this.btnIngresar.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(143)))), ((int)(((byte)(124)))));
+            this.btnIngresar.Font = new System.Drawing.Font("Arial Black", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnIngresar.ForeColor = System.Drawing.Color.White;
             this.btnIngresar.HoverState.Parent = this.btnIngresar;
             this.btnIngresar.Location = new System.Drawing.Point(561, 291);
@@ -138,17 +138,18 @@ namespace Presentacion
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(143)))), ((int)(((byte)(124)))));
             this.label1.Location = new System.Drawing.Point(527, 93);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(72, 24);
+            this.label1.Size = new System.Drawing.Size(164, 24);
             this.label1.TabIndex = 4;
-            this.label1.Text = "LOGIN";
+            this.label1.Text = "INICIAR SESIÓN";
             // 
             // swchRecuerdame
             // 
             this.swchRecuerdame.Animated = true;
-            this.swchRecuerdame.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.swchRecuerdame.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.swchRecuerdame.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(138)))), ((int)(((byte)(120)))));
+            this.swchRecuerdame.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(138)))), ((int)(((byte)(120)))));
             this.swchRecuerdame.CheckedState.InnerBorderColor = System.Drawing.Color.White;
             this.swchRecuerdame.CheckedState.InnerColor = System.Drawing.Color.White;
             this.swchRecuerdame.CheckedState.Parent = this.swchRecuerdame;
@@ -173,6 +174,22 @@ namespace Presentacion
             this.label2.Size = new System.Drawing.Size(90, 17);
             this.label2.TabIndex = 6;
             this.label2.Text = "Recordarme";
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.Transparent;
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(836, 33);
+            this.panel1.TabIndex = 10;
+            this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseDown);
+            this.panel1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseMove);
+            this.panel1.MouseUp += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseUp);
+            // 
+            // tmrFundir
+            // 
+            this.tmrFundir.Tick += new System.EventHandler(this.tmrFundir_Tick);
             // 
             // btnClose
             // 
@@ -201,29 +218,13 @@ namespace Presentacion
             // 
             // Pic
             // 
-            this.Pic.Image = global::Presentacion.Properties.Resources.Folleto_proyecto1;
-            this.Pic.Location = new System.Drawing.Point(0, 28);
+            this.Pic.Image = global::Presentacion.Properties.Resources._10593;
+            this.Pic.Location = new System.Drawing.Point(12, 80);
             this.Pic.Name = "Pic";
-            this.Pic.Size = new System.Drawing.Size(459, 432);
+            this.Pic.Size = new System.Drawing.Size(477, 316);
             this.Pic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Pic.TabIndex = 9;
             this.Pic.TabStop = false;
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.Transparent;
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(836, 33);
-            this.panel1.TabIndex = 10;
-            this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseDown);
-            this.panel1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseMove);
-            this.panel1.MouseUp += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseUp);
-            // 
-            // tmrFundir
-            // 
-            this.tmrFundir.Tick += new System.EventHandler(this.tmrFundir_Tick);
             // 
             // FrmLogin
             // 
