@@ -15,7 +15,7 @@ namespace Presentacion
         public FrmPrincipal()
         {
             InitializeComponent();
-            customizedDesing();
+            CustomizedDesing();
         }
 
 
@@ -59,13 +59,13 @@ namespace Presentacion
             frmHijo.Show();
         }
 
-        private void customizedDesing()
+        private void CustomizedDesing()
         {
             pnlMedico.Visible = false;
             pnlPaciente.Visible = false;
             pnlConsulta.Visible = false;
         }
-        private void hideSubmenu()
+        private void HideSubmenu()
         {
             if (pnlMedico.Visible == true)
                 pnlMedico.Visible = false;
@@ -78,7 +78,7 @@ namespace Presentacion
         {
             if (subMenu.Visible == false)
             {
-                hideSubmenu();
+                HideSubmenu();
                 subMenu.Visible = true;
             }
             else
@@ -94,12 +94,12 @@ namespace Presentacion
 
         private void guna2Button2_Click(object sender, EventArgs e)
         {
-            hideSubmenu();
+            HideSubmenu();
         }
 
         private void guna2Button3_Click(object sender, EventArgs e)
         {
-            hideSubmenu();
+            HideSubmenu();
         }
 
         private void btnPaciente_Click(object sender, EventArgs e)
@@ -109,12 +109,12 @@ namespace Presentacion
 
         private void guna2Button5_Click(object sender, EventArgs e)
         {
-            hideSubmenu();
+            HideSubmenu();
         }
 
         private void guna2Button4_Click(object sender, EventArgs e)
         {
-            hideSubmenu();
+            HideSubmenu();
         }
 
         private void btnConsulta_Click(object sender, EventArgs e)
@@ -124,14 +124,25 @@ namespace Presentacion
 
         private void guna2Button7_Click(object sender, EventArgs e)
         {
-            hideSubmenu();
+            HideSubmenu();
         }
 
         private void guna2Button8_Click(object sender, EventArgs e)
         {
-            hideSubmenu();
+            HideSubmenu();
         }
 
+        private void btnAgenda_Click(object sender, EventArgs e)
+        {
+            HideSubmenu();
+        }
 
-     }
+        private void btnCerrarSecion_Click(object sender, EventArgs e)
+        {
+            HideSubmenu();
+            this.Hide();
+            FrmLogin frmLogin = new FrmLogin();
+            frmLogin.Show();
+        }
+    }
 }

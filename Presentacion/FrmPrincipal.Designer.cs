@@ -53,6 +53,7 @@ namespace Presentacion
             this.pnlGrapper = new System.Windows.Forms.Panel();
             this.guna2ShadowForm1 = new Guna.UI2.WinForms.Guna2ShadowForm(this.components);
             this.tmrFundir = new System.Windows.Forms.Timer(this.components);
+            this.btnCerrarSecion = new Guna.UI2.WinForms.Guna2Button();
             this.pnlMenu.SuspendLayout();
             this.pnlConsulta.SuspendLayout();
             this.pnlPaciente.SuspendLayout();
@@ -115,6 +116,7 @@ namespace Presentacion
             // pnlMenu
             // 
             this.pnlMenu.BackColor = System.Drawing.Color.White;
+            this.pnlMenu.Controls.Add(this.btnCerrarSecion);
             this.pnlMenu.Controls.Add(this.pnlConsulta);
             this.pnlMenu.Controls.Add(this.btnConsulta);
             this.pnlMenu.Controls.Add(this.pnlPaciente);
@@ -135,7 +137,7 @@ namespace Presentacion
             this.pnlConsulta.Controls.Add(this.guna2Button8);
             this.pnlConsulta.Controls.Add(this.guna2Button7);
             this.pnlConsulta.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlConsulta.Location = new System.Drawing.Point(0, 472);
+            this.pnlConsulta.Location = new System.Drawing.Point(0, 535);
             this.pnlConsulta.Name = "pnlConsulta";
             this.pnlConsulta.Size = new System.Drawing.Size(157, 91);
             this.pnlConsulta.TabIndex = 12;
@@ -156,7 +158,7 @@ namespace Presentacion
             this.guna2Button8.Location = new System.Drawing.Point(0, 45);
             this.guna2Button8.Name = "guna2Button8";
             this.guna2Button8.ShadowDecoration.Parent = this.guna2Button8;
-            this.guna2Button8.Size = new System.Drawing.Size(157, 45);
+            this.guna2Button8.Size = new System.Drawing.Size(157, 46);
             this.guna2Button8.TabIndex = 1;
             this.guna2Button8.Text = "guna2Button8";
             this.guna2Button8.Click += new System.EventHandler(this.guna2Button8_Click);
@@ -195,7 +197,7 @@ namespace Presentacion
             this.btnConsulta.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnConsulta.ForeColor = System.Drawing.Color.White;
             this.btnConsulta.HoverState.Parent = this.btnConsulta;
-            this.btnConsulta.Location = new System.Drawing.Point(0, 427);
+            this.btnConsulta.Location = new System.Drawing.Point(0, 490);
             this.btnConsulta.Name = "btnConsulta";
             this.btnConsulta.ShadowDecoration.Parent = this.btnConsulta;
             this.btnConsulta.Size = new System.Drawing.Size(157, 45);
@@ -208,7 +210,7 @@ namespace Presentacion
             this.pnlPaciente.Controls.Add(this.guna2Button4);
             this.pnlPaciente.Controls.Add(this.guna2Button5);
             this.pnlPaciente.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlPaciente.Location = new System.Drawing.Point(0, 338);
+            this.pnlPaciente.Location = new System.Drawing.Point(0, 401);
             this.pnlPaciente.Name = "pnlPaciente";
             this.pnlPaciente.Size = new System.Drawing.Size(157, 89);
             this.pnlPaciente.TabIndex = 10;
@@ -268,7 +270,7 @@ namespace Presentacion
             this.btnPaciente.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnPaciente.ForeColor = System.Drawing.Color.White;
             this.btnPaciente.HoverState.Parent = this.btnPaciente;
-            this.btnPaciente.Location = new System.Drawing.Point(0, 288);
+            this.btnPaciente.Location = new System.Drawing.Point(0, 351);
             this.btnPaciente.Name = "btnPaciente";
             this.btnPaciente.ShadowDecoration.Parent = this.btnPaciente;
             this.btnPaciente.Size = new System.Drawing.Size(157, 50);
@@ -281,7 +283,7 @@ namespace Presentacion
             this.pnlMedico.Controls.Add(this.guna2Button3);
             this.pnlMedico.Controls.Add(this.guna2Button2);
             this.pnlMedico.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlMedico.Location = new System.Drawing.Point(0, 199);
+            this.pnlMedico.Location = new System.Drawing.Point(0, 262);
             this.pnlMedico.Name = "pnlMedico";
             this.pnlMedico.Size = new System.Drawing.Size(157, 89);
             this.pnlMedico.TabIndex = 8;
@@ -341,7 +343,7 @@ namespace Presentacion
             this.btnMedico.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnMedico.ForeColor = System.Drawing.Color.White;
             this.btnMedico.HoverState.Parent = this.btnMedico;
-            this.btnMedico.Location = new System.Drawing.Point(0, 149);
+            this.btnMedico.Location = new System.Drawing.Point(0, 212);
             this.btnMedico.Name = "btnMedico";
             this.btnMedico.ShadowDecoration.Parent = this.btnMedico;
             this.btnMedico.Size = new System.Drawing.Size(157, 50);
@@ -362,19 +364,20 @@ namespace Presentacion
             this.btnAgenda.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnAgenda.ForeColor = System.Drawing.Color.White;
             this.btnAgenda.HoverState.Parent = this.btnAgenda;
-            this.btnAgenda.Location = new System.Drawing.Point(0, 104);
+            this.btnAgenda.Location = new System.Drawing.Point(0, 167);
             this.btnAgenda.Name = "btnAgenda";
             this.btnAgenda.ShadowDecoration.Parent = this.btnAgenda;
             this.btnAgenda.Size = new System.Drawing.Size(157, 45);
             this.btnAgenda.TabIndex = 3;
             this.btnAgenda.Text = "Agenda";
+            this.btnAgenda.Click += new System.EventHandler(this.btnAgenda_Click);
             // 
             // pnlFondoDeLogo
             // 
             this.pnlFondoDeLogo.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlFondoDeLogo.Location = new System.Drawing.Point(0, 0);
             this.pnlFondoDeLogo.Name = "pnlFondoDeLogo";
-            this.pnlFondoDeLogo.Size = new System.Drawing.Size(157, 104);
+            this.pnlFondoDeLogo.Size = new System.Drawing.Size(157, 167);
             this.pnlFondoDeLogo.TabIndex = 2;
             // 
             // pnlLineaMenu
@@ -413,8 +416,26 @@ namespace Presentacion
             this.guna2ShadowForm1.BorderRadius = 20;
             this.guna2ShadowForm1.TargetForm = this;
             // 
-            // tmrFundir
+            // btnCerrarSecion
             // 
+            this.btnCerrarSecion.CheckedState.Parent = this.btnCerrarSecion;
+            this.btnCerrarSecion.CustomImages.Parent = this.btnCerrarSecion;
+            this.btnCerrarSecion.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnCerrarSecion.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnCerrarSecion.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnCerrarSecion.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnCerrarSecion.DisabledState.Parent = this.btnCerrarSecion;
+            this.btnCerrarSecion.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnCerrarSecion.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnCerrarSecion.ForeColor = System.Drawing.Color.White;
+            this.btnCerrarSecion.HoverState.Parent = this.btnCerrarSecion;
+            this.btnCerrarSecion.Location = new System.Drawing.Point(0, 626);
+            this.btnCerrarSecion.Name = "btnCerrarSecion";
+            this.btnCerrarSecion.ShadowDecoration.Parent = this.btnCerrarSecion;
+            this.btnCerrarSecion.Size = new System.Drawing.Size(157, 45);
+            this.btnCerrarSecion.TabIndex = 13;
+            this.btnCerrarSecion.Text = "Cerrar seción";
+            this.btnCerrarSecion.Click += new System.EventHandler(this.btnCerrarSecion_Click);
             // 
             // FrmPrincipal
             // 
@@ -461,5 +482,6 @@ namespace Presentacion
         private Guna.UI2.WinForms.Guna2Button guna2Button7;
         private Guna.UI2.WinForms.Guna2Button btnConsulta;
         private System.Windows.Forms.Timer tmrFundir;
+        private Guna.UI2.WinForms.Guna2Button btnCerrarSecion;
     }
 }
