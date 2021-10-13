@@ -63,12 +63,10 @@ namespace Presentacion
             return ""; 
         }
 
-        private int contador = 0;
         private void tmrFundir_Tick(object sender, EventArgs e)
         {
-            if (this.Opacity < 1) this.Opacity += 0.30;
-            contador += 1;
-            if (contador == 100)
+            this.Opacity += 0.32;
+            if (this.Opacity == 100)
             {
                 tmrFundir.Stop();
             }

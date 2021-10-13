@@ -48,8 +48,8 @@ namespace Presentacion
             this.btnRegistrarMedico = new Guna.UI2.WinForms.Guna2Button();
             this.btnMedico = new Guna.UI2.WinForms.Guna2Button();
             this.btnAgenda = new Guna.UI2.WinForms.Guna2Button();
-            this.pnlFondoDeLogo = new System.Windows.Forms.Panel();
             this.pnlLineaMenu = new System.Windows.Forms.Panel();
+            this.pnlFondoDeLogo = new System.Windows.Forms.Panel();
             this.pnlSuperior = new System.Windows.Forms.Panel();
             this.pnlGrapper = new System.Windows.Forms.Panel();
             this.guna2ShadowForm1 = new Guna.UI2.WinForms.Guna2ShadowForm(this.components);
@@ -129,7 +129,7 @@ namespace Presentacion
             this.pnlMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnlMenu.Location = new System.Drawing.Point(0, 40);
             this.pnlMenu.Name = "pnlMenu";
-            this.pnlMenu.Size = new System.Drawing.Size(198, 671);
+            this.pnlMenu.Size = new System.Drawing.Size(198, 698);
             this.pnlMenu.TabIndex = 10;
             // 
             // btnCerrarSecion
@@ -147,15 +147,15 @@ namespace Presentacion
             this.btnCerrarSecion.ForeColor = System.Drawing.Color.Black;
             this.btnCerrarSecion.HoverState.Parent = this.btnCerrarSecion;
             this.btnCerrarSecion.Image = ((System.Drawing.Image)(resources.GetObject("btnCerrarSecion.Image")));
-            this.btnCerrarSecion.ImageOffset = new System.Drawing.Point(-14, 0);
-            this.btnCerrarSecion.ImageSize = new System.Drawing.Size(28, 30);
+            this.btnCerrarSecion.ImageOffset = new System.Drawing.Point(-13, 0);
+            this.btnCerrarSecion.ImageSize = new System.Drawing.Size(25, 25);
             this.btnCerrarSecion.Location = new System.Drawing.Point(0, 637);
             this.btnCerrarSecion.Name = "btnCerrarSecion";
             this.btnCerrarSecion.ShadowDecoration.Parent = this.btnCerrarSecion;
             this.btnCerrarSecion.Size = new System.Drawing.Size(198, 45);
             this.btnCerrarSecion.TabIndex = 13;
-            this.btnCerrarSecion.Text = "Cerrar Sesión";
-            this.btnCerrarSecion.TextOffset = new System.Drawing.Point(-2, 0);
+            this.btnCerrarSecion.Text = "Cerrar sesión";
+            this.btnCerrarSecion.TextOffset = new System.Drawing.Point(-3, 0);
             this.btnCerrarSecion.Click += new System.EventHandler(this.btnCerrarSecion_Click);
             // 
             // pnlConsulta
@@ -179,7 +179,7 @@ namespace Presentacion
             this.btnConsultarHistorial.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnConsultarHistorial.DisabledState.Parent = this.btnConsultarHistorial;
             this.btnConsultarHistorial.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnConsultarHistorial.FillColor = System.Drawing.Color.Gainsboro;
+            this.btnConsultarHistorial.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(247)))), ((int)(((byte)(253)))));
             this.btnConsultarHistorial.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnConsultarHistorial.ForeColor = System.Drawing.Color.Black;
             this.btnConsultarHistorial.HoverState.Parent = this.btnConsultarHistorial;
@@ -204,7 +204,7 @@ namespace Presentacion
             this.btnConsultaMedica.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnConsultaMedica.DisabledState.Parent = this.btnConsultaMedica;
             this.btnConsultaMedica.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnConsultaMedica.FillColor = System.Drawing.Color.Gainsboro;
+            this.btnConsultaMedica.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(247)))), ((int)(((byte)(253)))));
             this.btnConsultaMedica.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnConsultaMedica.ForeColor = System.Drawing.Color.Black;
             this.btnConsultaMedica.HoverState.Parent = this.btnConsultaMedica;
@@ -232,8 +232,8 @@ namespace Presentacion
             this.btnConsulta.ForeColor = System.Drawing.Color.Black;
             this.btnConsulta.HoverState.Parent = this.btnConsulta;
             this.btnConsulta.Image = ((System.Drawing.Image)(resources.GetObject("btnConsulta.Image")));
-            this.btnConsulta.ImageOffset = new System.Drawing.Point(-22, 0);
-            this.btnConsulta.ImageSize = new System.Drawing.Size(28, 27);
+            this.btnConsulta.ImageOffset = new System.Drawing.Point(-21, 0);
+            this.btnConsulta.ImageSize = new System.Drawing.Size(23, 23);
             this.btnConsulta.Location = new System.Drawing.Point(0, 501);
             this.btnConsulta.Name = "btnConsulta";
             this.btnConsulta.ShadowDecoration.Parent = this.btnConsulta;
@@ -264,7 +264,7 @@ namespace Presentacion
             this.btnConsultarPaciente.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnConsultarPaciente.DisabledState.Parent = this.btnConsultarPaciente;
             this.btnConsultarPaciente.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnConsultarPaciente.FillColor = System.Drawing.Color.Gainsboro;
+            this.btnConsultarPaciente.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(247)))), ((int)(((byte)(253)))));
             this.btnConsultarPaciente.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnConsultarPaciente.ForeColor = System.Drawing.Color.Black;
             this.btnConsultarPaciente.HoverState.Parent = this.btnConsultarPaciente;
@@ -287,7 +287,7 @@ namespace Presentacion
             this.btnRegistrarPaciente.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnRegistrarPaciente.DisabledState.Parent = this.btnRegistrarPaciente;
             this.btnRegistrarPaciente.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnRegistrarPaciente.FillColor = System.Drawing.Color.Gainsboro;
+            this.btnRegistrarPaciente.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(247)))), ((int)(((byte)(253)))));
             this.btnRegistrarPaciente.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnRegistrarPaciente.ForeColor = System.Drawing.Color.Black;
             this.btnRegistrarPaciente.HoverState.Parent = this.btnRegistrarPaciente;
@@ -315,15 +315,15 @@ namespace Presentacion
             this.btnPaciente.ForeColor = System.Drawing.Color.Black;
             this.btnPaciente.HoverState.Parent = this.btnPaciente;
             this.btnPaciente.Image = ((System.Drawing.Image)(resources.GetObject("btnPaciente.Image")));
-            this.btnPaciente.ImageOffset = new System.Drawing.Point(-20, 1);
-            this.btnPaciente.ImageSize = new System.Drawing.Size(58, 34);
+            this.btnPaciente.ImageOffset = new System.Drawing.Point(-21, 1);
+            this.btnPaciente.ImageSize = new System.Drawing.Size(34, 34);
             this.btnPaciente.Location = new System.Drawing.Point(0, 362);
             this.btnPaciente.Name = "btnPaciente";
             this.btnPaciente.ShadowDecoration.Parent = this.btnPaciente;
             this.btnPaciente.Size = new System.Drawing.Size(198, 50);
             this.btnPaciente.TabIndex = 9;
             this.btnPaciente.Text = "Paciente";
-            this.btnPaciente.TextOffset = new System.Drawing.Point(-19, 0);
+            this.btnPaciente.TextOffset = new System.Drawing.Point(-14, 0);
             this.btnPaciente.Click += new System.EventHandler(this.btnPaciente_Click);
             // 
             // pnlMedico
@@ -347,7 +347,7 @@ namespace Presentacion
             this.btnConsultarMedico.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnConsultarMedico.DisabledState.Parent = this.btnConsultarMedico;
             this.btnConsultarMedico.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnConsultarMedico.FillColor = System.Drawing.Color.Gainsboro;
+            this.btnConsultarMedico.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(247)))), ((int)(((byte)(253)))));
             this.btnConsultarMedico.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnConsultarMedico.ForeColor = System.Drawing.Color.Black;
             this.btnConsultarMedico.HoverState.Parent = this.btnConsultarMedico;
@@ -370,7 +370,7 @@ namespace Presentacion
             this.btnRegistrarMedico.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnRegistrarMedico.DisabledState.Parent = this.btnRegistrarMedico;
             this.btnRegistrarMedico.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnRegistrarMedico.FillColor = System.Drawing.Color.Gainsboro;
+            this.btnRegistrarMedico.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(247)))), ((int)(((byte)(253)))));
             this.btnRegistrarMedico.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnRegistrarMedico.ForeColor = System.Drawing.Color.Black;
             this.btnRegistrarMedico.HoverState.Parent = this.btnRegistrarMedico;
@@ -408,7 +408,7 @@ namespace Presentacion
             this.btnMedico.Size = new System.Drawing.Size(198, 50);
             this.btnMedico.TabIndex = 7;
             this.btnMedico.Text = "Medico";
-            this.btnMedico.TextOffset = new System.Drawing.Point(-9, 0);
+            this.btnMedico.TextOffset = new System.Drawing.Point(-10, 0);
             this.btnMedico.Click += new System.EventHandler(this.btnMedico_Click);
             // 
             // btnAgenda
@@ -440,15 +440,6 @@ namespace Presentacion
             this.btnAgenda.TextOffset = new System.Drawing.Point(14, 0);
             this.btnAgenda.Click += new System.EventHandler(this.btnAgenda_Click);
             // 
-            // pnlFondoDeLogo
-            // 
-            this.pnlFondoDeLogo.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlFondoDeLogo.ForeColor = System.Drawing.Color.Black;
-            this.pnlFondoDeLogo.Location = new System.Drawing.Point(0, 0);
-            this.pnlFondoDeLogo.Name = "pnlFondoDeLogo";
-            this.pnlFondoDeLogo.Size = new System.Drawing.Size(198, 178);
-            this.pnlFondoDeLogo.TabIndex = 2;
-            // 
             // pnlLineaMenu
             // 
             this.pnlLineaMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(247)))), ((int)(((byte)(253)))));
@@ -459,6 +450,15 @@ namespace Presentacion
             this.pnlLineaMenu.Name = "pnlLineaMenu";
             this.pnlLineaMenu.Size = new System.Drawing.Size(197, 3);
             this.pnlLineaMenu.TabIndex = 1;
+            // 
+            // pnlFondoDeLogo
+            // 
+            this.pnlFondoDeLogo.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlFondoDeLogo.ForeColor = System.Drawing.Color.Black;
+            this.pnlFondoDeLogo.Location = new System.Drawing.Point(0, 0);
+            this.pnlFondoDeLogo.Name = "pnlFondoDeLogo";
+            this.pnlFondoDeLogo.Size = new System.Drawing.Size(198, 178);
+            this.pnlFondoDeLogo.TabIndex = 2;
             // 
             // pnlSuperior
             // 
@@ -478,7 +478,7 @@ namespace Presentacion
             this.pnlGrapper.ForeColor = System.Drawing.Color.Black;
             this.pnlGrapper.Location = new System.Drawing.Point(198, 40);
             this.pnlGrapper.Name = "pnlGrapper";
-            this.pnlGrapper.Size = new System.Drawing.Size(799, 671);
+            this.pnlGrapper.Size = new System.Drawing.Size(799, 698);
             this.pnlGrapper.TabIndex = 12;
             // 
             // guna2ShadowForm1

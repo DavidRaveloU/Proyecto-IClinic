@@ -58,7 +58,6 @@ namespace Presentacion
             frmHijo.BringToFront();
             frmHijo.Show();
         }
-
         private void CustomizedDesing()
         {
             pnlMedico.Visible = false;

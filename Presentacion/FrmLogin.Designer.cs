@@ -42,7 +42,6 @@ namespace Presentacion
             this.tmrFundir = new System.Windows.Forms.Timer(this.components);
             this.btnClose = new Guna.UI2.WinForms.Guna2Button();
             this.Pic = new System.Windows.Forms.PictureBox();
-            this.guna2ShadowForm1 = new Guna.UI2.WinForms.Guna2ShadowForm(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.Pic)).BeginInit();
             this.SuspendLayout();
             // 
@@ -222,14 +221,11 @@ namespace Presentacion
             this.Pic.TabIndex = 9;
             this.Pic.TabStop = false;
             // 
-            // guna2ShadowForm1
-            // 
-            this.guna2ShadowForm1.BorderRadius = 20;
-            // 
             // FrmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoValidate = System.Windows.Forms.AutoValidate.Disable;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(836, 461);
             this.Controls.Add(this.btnClose);
@@ -243,6 +239,7 @@ namespace Presentacion
             this.Controls.Add(this.txtUser);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmLogin";
+            this.Opacity = 0D;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = " Login";
             ((System.ComponentModel.ISupportInitialize)(this.Pic)).EndInit();
@@ -264,7 +261,6 @@ namespace Presentacion
         private System.Windows.Forms.PictureBox Pic;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Timer tmrFundir;
-        private Guna.UI2.WinForms.Guna2ShadowForm guna2ShadowForm1;
     }
 }
 
