@@ -43,7 +43,9 @@ namespace Presentacion
             }
             else
             {
-                MessageBox.Show(validar);
+                FrmVentanaError frmVentanaError = new FrmVentanaError();
+                frmVentanaError.lblMensajeError.Text = validar;
+                frmVentanaError.ShowDialog();
             }
         }
 
