@@ -32,7 +32,6 @@ namespace Presentacion
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmLogin));
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
-            this.guna2ShadowForm1 = new Guna.UI2.WinForms.Guna2ShadowForm(this.components);
             this.txtUser = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtPassword = new Guna.UI2.WinForms.Guna2TextBox();
             this.btnIngresar = new Guna.UI2.WinForms.Guna2GradientButton();
@@ -43,6 +42,7 @@ namespace Presentacion
             this.tmrFundir = new System.Windows.Forms.Timer(this.components);
             this.btnClose = new Guna.UI2.WinForms.Guna2Button();
             this.Pic = new System.Windows.Forms.PictureBox();
+            this.guna2ShadowForm1 = new Guna.UI2.WinForms.Guna2ShadowForm(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.Pic)).BeginInit();
             this.SuspendLayout();
             // 
@@ -50,10 +50,6 @@ namespace Presentacion
             // 
             this.guna2Elipse1.BorderRadius = 10;
             this.guna2Elipse1.TargetControl = this;
-            // 
-            // guna2ShadowForm1
-            // 
-            this.guna2ShadowForm1.TargetForm = this;
             // 
             // txtUser
             // 
@@ -226,6 +222,10 @@ namespace Presentacion
             this.Pic.TabIndex = 9;
             this.Pic.TabStop = false;
             // 
+            // guna2ShadowForm1
+            // 
+            this.guna2ShadowForm1.BorderRadius = 20;
+            // 
             // FrmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -254,7 +254,6 @@ namespace Presentacion
         #endregion
 
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
-        private Guna.UI2.WinForms.Guna2ShadowForm guna2ShadowForm1;
         private Guna.UI2.WinForms.Guna2GradientButton btnIngresar;
         private Guna.UI2.WinForms.Guna2TextBox txtPassword;
         private Guna.UI2.WinForms.Guna2TextBox txtUser;
@@ -265,6 +264,7 @@ namespace Presentacion
         private System.Windows.Forms.PictureBox Pic;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Timer tmrFundir;
+        private Guna.UI2.WinForms.Guna2ShadowForm guna2ShadowForm1;
     }
 }
 
