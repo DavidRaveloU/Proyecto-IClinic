@@ -186,6 +186,12 @@
     <Compile Include="FrmVentaCorrecto.Designer.cs">
       <DependentUpon>FrmVentaCorrecto.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmVentanaAlvertencia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmVentanaAlvertencia.Designer.cs">
+      <DependentUpon>FrmVentanaAlvertencia.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmVentanaError.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -208,6 +214,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmVentaCorrecto.resx">
       <DependentUpon>FrmVentaCorrecto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmVentanaAlvertencia.resx">
+      <DependentUpon>FrmVentanaAlvertencia.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmVentanaError.resx">
       <DependentUpon>FrmVentanaError.cs</DependentUpon>

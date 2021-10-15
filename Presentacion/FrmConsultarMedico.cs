@@ -15,6 +15,19 @@ namespace Presentacion
         public FrmConsultarMedico()
         {
             InitializeComponent();
+            
+        }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+            FrmVentanaAlvertencia ventanaAlvertencia = new FrmVentanaAlvertencia();
+            ventanaAlvertencia.lblMensajeError.Text = "Al aceptar, no se podran recuperar los datos eliminados!";
+            ventanaAlvertencia.ShowDialog();
+            if (ventanaAlvertencia.DialogResult == DialogResult.OK)
+            {
+            
+            }
+
         }
     }
 }
