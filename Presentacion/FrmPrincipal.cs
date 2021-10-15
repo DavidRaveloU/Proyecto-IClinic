@@ -93,11 +93,13 @@ namespace Presentacion
 
         private void guna2Button2_Click(object sender, EventArgs e)
         {
+            AbrirFormulario(new FrmRegistrarMedico());
             HideSubmenu();
         }
 
         private void guna2Button3_Click(object sender, EventArgs e)
         {
+            AbrirFormulario(new FrmConsultarMedico());
             HideSubmenu();
         }
 

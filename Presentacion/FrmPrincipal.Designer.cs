@@ -31,87 +31,36 @@ namespace Presentacion
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmPrincipal));
-            this.btnClose = new Guna.UI2.WinForms.Guna2Button();
-            this.btnMinimizar = new Guna.UI2.WinForms.Guna2Button();
             this.pnlMenu = new System.Windows.Forms.Panel();
-            this.btnCerrarSecion = new Guna.UI2.WinForms.Guna2Button();
             this.pnlConsulta = new System.Windows.Forms.Panel();
-            this.btnConsultarHistorial = new Guna.UI2.WinForms.Guna2Button();
-            this.btnConsultaMedica = new Guna.UI2.WinForms.Guna2Button();
-            this.btnConsulta = new Guna.UI2.WinForms.Guna2Button();
             this.pnlPaciente = new System.Windows.Forms.Panel();
-            this.btnConsultarPaciente = new Guna.UI2.WinForms.Guna2Button();
-            this.btnRegistrarPaciente = new Guna.UI2.WinForms.Guna2Button();
-            this.btnPaciente = new Guna.UI2.WinForms.Guna2Button();
             this.pnlMedico = new System.Windows.Forms.Panel();
-            this.btnConsultarMedico = new Guna.UI2.WinForms.Guna2Button();
-            this.btnRegistrarMedico = new Guna.UI2.WinForms.Guna2Button();
-            this.btnMedico = new Guna.UI2.WinForms.Guna2Button();
-            this.btnAgenda = new Guna.UI2.WinForms.Guna2Button();
             this.pnlLineaMenu = new System.Windows.Forms.Panel();
             this.pnlFondoDeLogo = new System.Windows.Forms.Panel();
             this.pnlSuperior = new System.Windows.Forms.Panel();
             this.pnlGrapper = new System.Windows.Forms.Panel();
             this.guna2ShadowForm1 = new Guna.UI2.WinForms.Guna2ShadowForm(this.components);
             this.tmrFundir = new System.Windows.Forms.Timer(this.components);
+            this.btnCerrarSecion = new Guna.UI2.WinForms.Guna2Button();
+            this.btnConsultarHistorial = new Guna.UI2.WinForms.Guna2Button();
+            this.btnConsultaMedica = new Guna.UI2.WinForms.Guna2Button();
+            this.btnConsulta = new Guna.UI2.WinForms.Guna2Button();
+            this.btnConsultarPaciente = new Guna.UI2.WinForms.Guna2Button();
+            this.btnRegistrarPaciente = new Guna.UI2.WinForms.Guna2Button();
+            this.btnPaciente = new Guna.UI2.WinForms.Guna2Button();
+            this.btnConsultarMedico = new Guna.UI2.WinForms.Guna2Button();
+            this.btnRegistrarMedico = new Guna.UI2.WinForms.Guna2Button();
+            this.btnMedico = new Guna.UI2.WinForms.Guna2Button();
+            this.btnAgenda = new Guna.UI2.WinForms.Guna2Button();
+            this.btnMinimizar = new Guna.UI2.WinForms.Guna2Button();
+            this.btnClose = new Guna.UI2.WinForms.Guna2Button();
             this.pnlMenu.SuspendLayout();
             this.pnlConsulta.SuspendLayout();
             this.pnlPaciente.SuspendLayout();
             this.pnlMedico.SuspendLayout();
+            this.pnlFondoDeLogo.SuspendLayout();
             this.pnlSuperior.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // btnClose
-            // 
-            this.btnClose.Animated = true;
-            this.btnClose.BackColor = System.Drawing.Color.White;
-            this.btnClose.BorderRadius = 7;
-            this.btnClose.CheckedState.Parent = this.btnClose;
-            this.btnClose.CustomImages.Parent = this.btnClose;
-            this.btnClose.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnClose.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnClose.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnClose.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnClose.DisabledState.Parent = this.btnClose;
-            this.btnClose.FillColor = System.Drawing.Color.Gainsboro;
-            this.btnClose.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnClose.ForeColor = System.Drawing.Color.Black;
-            this.btnClose.HoverState.FillColor = System.Drawing.Color.Red;
-            this.btnClose.HoverState.Parent = this.btnClose;
-            this.btnClose.Image = ((System.Drawing.Image)(resources.GetObject("btnClose.Image")));
-            this.btnClose.Location = new System.Drawing.Point(964, 6);
-            this.btnClose.Margin = new System.Windows.Forms.Padding(1);
-            this.btnClose.Name = "btnClose";
-            this.btnClose.ShadowDecoration.Parent = this.btnClose;
-            this.btnClose.Size = new System.Drawing.Size(28, 27);
-            this.btnClose.TabIndex = 8;
-            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
-            // 
-            // btnMinimizar
-            // 
-            this.btnMinimizar.Animated = true;
-            this.btnMinimizar.BackColor = System.Drawing.Color.White;
-            this.btnMinimizar.BorderRadius = 7;
-            this.btnMinimizar.CheckedState.Parent = this.btnMinimizar;
-            this.btnMinimizar.CustomImages.Parent = this.btnMinimizar;
-            this.btnMinimizar.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnMinimizar.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnMinimizar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnMinimizar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnMinimizar.DisabledState.Parent = this.btnMinimizar;
-            this.btnMinimizar.FillColor = System.Drawing.Color.Gainsboro;
-            this.btnMinimizar.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnMinimizar.ForeColor = System.Drawing.Color.Black;
-            this.btnMinimizar.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(209)))), ((int)(((byte)(36)))));
-            this.btnMinimizar.HoverState.Parent = this.btnMinimizar;
-            this.btnMinimizar.Image = ((System.Drawing.Image)(resources.GetObject("btnMinimizar.Image")));
-            this.btnMinimizar.Location = new System.Drawing.Point(934, 6);
-            this.btnMinimizar.Margin = new System.Windows.Forms.Padding(1);
-            this.btnMinimizar.Name = "btnMinimizar";
-            this.btnMinimizar.ShadowDecoration.Parent = this.btnMinimizar;
-            this.btnMinimizar.Size = new System.Drawing.Size(28, 27);
-            this.btnMinimizar.TabIndex = 9;
-            this.btnMinimizar.Click += new System.EventHandler(this.btnMinimizar_Click);
             // 
             // pnlMenu
             // 
@@ -124,13 +73,92 @@ namespace Presentacion
             this.pnlMenu.Controls.Add(this.pnlMedico);
             this.pnlMenu.Controls.Add(this.btnMedico);
             this.pnlMenu.Controls.Add(this.btnAgenda);
-            this.pnlMenu.Controls.Add(this.pnlLineaMenu);
             this.pnlMenu.Controls.Add(this.pnlFondoDeLogo);
             this.pnlMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnlMenu.Location = new System.Drawing.Point(0, 40);
             this.pnlMenu.Name = "pnlMenu";
-            this.pnlMenu.Size = new System.Drawing.Size(198, 698);
+            this.pnlMenu.Size = new System.Drawing.Size(198, 677);
             this.pnlMenu.TabIndex = 10;
+            // 
+            // pnlConsulta
+            // 
+            this.pnlConsulta.Controls.Add(this.btnConsultarHistorial);
+            this.pnlConsulta.Controls.Add(this.btnConsultaMedica);
+            this.pnlConsulta.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlConsulta.ForeColor = System.Drawing.Color.Black;
+            this.pnlConsulta.Location = new System.Drawing.Point(0, 546);
+            this.pnlConsulta.Name = "pnlConsulta";
+            this.pnlConsulta.Size = new System.Drawing.Size(198, 91);
+            this.pnlConsulta.TabIndex = 12;
+            // 
+            // pnlPaciente
+            // 
+            this.pnlPaciente.Controls.Add(this.btnConsultarPaciente);
+            this.pnlPaciente.Controls.Add(this.btnRegistrarPaciente);
+            this.pnlPaciente.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlPaciente.ForeColor = System.Drawing.Color.Black;
+            this.pnlPaciente.Location = new System.Drawing.Point(0, 412);
+            this.pnlPaciente.Name = "pnlPaciente";
+            this.pnlPaciente.Size = new System.Drawing.Size(198, 89);
+            this.pnlPaciente.TabIndex = 10;
+            // 
+            // pnlMedico
+            // 
+            this.pnlMedico.Controls.Add(this.btnConsultarMedico);
+            this.pnlMedico.Controls.Add(this.btnRegistrarMedico);
+            this.pnlMedico.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlMedico.ForeColor = System.Drawing.Color.Black;
+            this.pnlMedico.Location = new System.Drawing.Point(0, 273);
+            this.pnlMedico.Name = "pnlMedico";
+            this.pnlMedico.Size = new System.Drawing.Size(198, 89);
+            this.pnlMedico.TabIndex = 8;
+            // 
+            // pnlLineaMenu
+            // 
+            this.pnlLineaMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(247)))), ((int)(((byte)(253)))));
+            this.pnlLineaMenu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pnlLineaMenu.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pnlLineaMenu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(247)))), ((int)(((byte)(253)))));
+            this.pnlLineaMenu.Location = new System.Drawing.Point(3, -1);
+            this.pnlLineaMenu.Name = "pnlLineaMenu";
+            this.pnlLineaMenu.Size = new System.Drawing.Size(197, 3);
+            this.pnlLineaMenu.TabIndex = 1;
+            // 
+            // pnlFondoDeLogo
+            // 
+            this.pnlFondoDeLogo.Controls.Add(this.pnlLineaMenu);
+            this.pnlFondoDeLogo.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlFondoDeLogo.ForeColor = System.Drawing.Color.Black;
+            this.pnlFondoDeLogo.Location = new System.Drawing.Point(0, 0);
+            this.pnlFondoDeLogo.Name = "pnlFondoDeLogo";
+            this.pnlFondoDeLogo.Size = new System.Drawing.Size(198, 178);
+            this.pnlFondoDeLogo.TabIndex = 2;
+            // 
+            // pnlSuperior
+            // 
+            this.pnlSuperior.BackColor = System.Drawing.Color.White;
+            this.pnlSuperior.Controls.Add(this.btnMinimizar);
+            this.pnlSuperior.Controls.Add(this.btnClose);
+            this.pnlSuperior.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlSuperior.Location = new System.Drawing.Point(0, 0);
+            this.pnlSuperior.Name = "pnlSuperior";
+            this.pnlSuperior.Size = new System.Drawing.Size(997, 40);
+            this.pnlSuperior.TabIndex = 11;
+            this.pnlSuperior.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pnlSuperior_MouseMove);
+            // 
+            // pnlGrapper
+            // 
+            this.pnlGrapper.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlGrapper.ForeColor = System.Drawing.Color.Black;
+            this.pnlGrapper.Location = new System.Drawing.Point(198, 40);
+            this.pnlGrapper.Name = "pnlGrapper";
+            this.pnlGrapper.Size = new System.Drawing.Size(799, 677);
+            this.pnlGrapper.TabIndex = 12;
+            // 
+            // guna2ShadowForm1
+            // 
+            this.guna2ShadowForm1.BorderRadius = 20;
+            this.guna2ShadowForm1.TargetForm = this;
             // 
             // btnCerrarSecion
             // 
@@ -155,19 +183,8 @@ namespace Presentacion
             this.btnCerrarSecion.Size = new System.Drawing.Size(198, 45);
             this.btnCerrarSecion.TabIndex = 13;
             this.btnCerrarSecion.Text = "Cerrar sesión";
-            this.btnCerrarSecion.TextOffset = new System.Drawing.Point(-3, 0);
+            this.btnCerrarSecion.TextOffset = new System.Drawing.Point(-8, 0);
             this.btnCerrarSecion.Click += new System.EventHandler(this.btnCerrarSecion_Click);
-            // 
-            // pnlConsulta
-            // 
-            this.pnlConsulta.Controls.Add(this.btnConsultarHistorial);
-            this.pnlConsulta.Controls.Add(this.btnConsultaMedica);
-            this.pnlConsulta.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlConsulta.ForeColor = System.Drawing.Color.Black;
-            this.pnlConsulta.Location = new System.Drawing.Point(0, 546);
-            this.pnlConsulta.Name = "pnlConsulta";
-            this.pnlConsulta.Size = new System.Drawing.Size(198, 91);
-            this.pnlConsulta.TabIndex = 12;
             // 
             // btnConsultarHistorial
             // 
@@ -240,19 +257,8 @@ namespace Presentacion
             this.btnConsulta.Size = new System.Drawing.Size(198, 45);
             this.btnConsulta.TabIndex = 11;
             this.btnConsulta.Text = "Consulta";
-            this.btnConsulta.TextOffset = new System.Drawing.Point(-10, 0);
+            this.btnConsulta.TextOffset = new System.Drawing.Point(-15, 0);
             this.btnConsulta.Click += new System.EventHandler(this.btnConsulta_Click);
-            // 
-            // pnlPaciente
-            // 
-            this.pnlPaciente.Controls.Add(this.btnConsultarPaciente);
-            this.pnlPaciente.Controls.Add(this.btnRegistrarPaciente);
-            this.pnlPaciente.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlPaciente.ForeColor = System.Drawing.Color.Black;
-            this.pnlPaciente.Location = new System.Drawing.Point(0, 412);
-            this.pnlPaciente.Name = "pnlPaciente";
-            this.pnlPaciente.Size = new System.Drawing.Size(198, 89);
-            this.pnlPaciente.TabIndex = 10;
             // 
             // btnConsultarPaciente
             // 
@@ -323,19 +329,8 @@ namespace Presentacion
             this.btnPaciente.Size = new System.Drawing.Size(198, 50);
             this.btnPaciente.TabIndex = 9;
             this.btnPaciente.Text = "Paciente";
-            this.btnPaciente.TextOffset = new System.Drawing.Point(-14, 0);
+            this.btnPaciente.TextOffset = new System.Drawing.Point(-18, 0);
             this.btnPaciente.Click += new System.EventHandler(this.btnPaciente_Click);
-            // 
-            // pnlMedico
-            // 
-            this.pnlMedico.Controls.Add(this.btnConsultarMedico);
-            this.pnlMedico.Controls.Add(this.btnRegistrarMedico);
-            this.pnlMedico.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlMedico.ForeColor = System.Drawing.Color.Black;
-            this.pnlMedico.Location = new System.Drawing.Point(0, 273);
-            this.pnlMedico.Name = "pnlMedico";
-            this.pnlMedico.Size = new System.Drawing.Size(198, 89);
-            this.pnlMedico.TabIndex = 8;
             // 
             // btnConsultarMedico
             // 
@@ -408,7 +403,8 @@ namespace Presentacion
             this.btnMedico.Size = new System.Drawing.Size(198, 50);
             this.btnMedico.TabIndex = 7;
             this.btnMedico.Text = "Medico";
-            this.btnMedico.TextOffset = new System.Drawing.Point(-10, 0);
+            this.btnMedico.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnMedico.TextOffset = new System.Drawing.Point(-16, 0);
             this.btnMedico.Click += new System.EventHandler(this.btnMedico_Click);
             // 
             // btnAgenda
@@ -437,61 +433,67 @@ namespace Presentacion
             this.btnAgenda.TabIndex = 3;
             this.btnAgenda.Text = "Agenda";
             this.btnAgenda.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnAgenda.TextOffset = new System.Drawing.Point(14, 0);
+            this.btnAgenda.TextOffset = new System.Drawing.Point(5, 0);
             this.btnAgenda.Click += new System.EventHandler(this.btnAgenda_Click);
             // 
-            // pnlLineaMenu
+            // btnMinimizar
             // 
-            this.pnlLineaMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(247)))), ((int)(((byte)(253)))));
-            this.pnlLineaMenu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.pnlLineaMenu.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pnlLineaMenu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(247)))), ((int)(((byte)(253)))));
-            this.pnlLineaMenu.Location = new System.Drawing.Point(2, 1);
-            this.pnlLineaMenu.Name = "pnlLineaMenu";
-            this.pnlLineaMenu.Size = new System.Drawing.Size(197, 3);
-            this.pnlLineaMenu.TabIndex = 1;
+            this.btnMinimizar.Animated = true;
+            this.btnMinimizar.BackColor = System.Drawing.Color.White;
+            this.btnMinimizar.BorderRadius = 7;
+            this.btnMinimizar.CheckedState.Parent = this.btnMinimizar;
+            this.btnMinimizar.CustomImages.Parent = this.btnMinimizar;
+            this.btnMinimizar.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnMinimizar.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnMinimizar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnMinimizar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnMinimizar.DisabledState.Parent = this.btnMinimizar;
+            this.btnMinimizar.FillColor = System.Drawing.Color.Gainsboro;
+            this.btnMinimizar.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnMinimizar.ForeColor = System.Drawing.Color.Black;
+            this.btnMinimizar.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(191)))), ((int)(((byte)(165)))));
+            this.btnMinimizar.HoverState.Parent = this.btnMinimizar;
+            this.btnMinimizar.Image = ((System.Drawing.Image)(resources.GetObject("btnMinimizar.Image")));
+            this.btnMinimizar.Location = new System.Drawing.Point(934, 6);
+            this.btnMinimizar.Margin = new System.Windows.Forms.Padding(1);
+            this.btnMinimizar.Name = "btnMinimizar";
+            this.btnMinimizar.ShadowDecoration.Parent = this.btnMinimizar;
+            this.btnMinimizar.Size = new System.Drawing.Size(28, 27);
+            this.btnMinimizar.TabIndex = 9;
+            this.btnMinimizar.Click += new System.EventHandler(this.btnMinimizar_Click);
             // 
-            // pnlFondoDeLogo
+            // btnClose
             // 
-            this.pnlFondoDeLogo.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlFondoDeLogo.ForeColor = System.Drawing.Color.Black;
-            this.pnlFondoDeLogo.Location = new System.Drawing.Point(0, 0);
-            this.pnlFondoDeLogo.Name = "pnlFondoDeLogo";
-            this.pnlFondoDeLogo.Size = new System.Drawing.Size(198, 178);
-            this.pnlFondoDeLogo.TabIndex = 2;
-            // 
-            // pnlSuperior
-            // 
-            this.pnlSuperior.BackColor = System.Drawing.Color.White;
-            this.pnlSuperior.Controls.Add(this.btnMinimizar);
-            this.pnlSuperior.Controls.Add(this.btnClose);
-            this.pnlSuperior.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlSuperior.Location = new System.Drawing.Point(0, 0);
-            this.pnlSuperior.Name = "pnlSuperior";
-            this.pnlSuperior.Size = new System.Drawing.Size(997, 40);
-            this.pnlSuperior.TabIndex = 11;
-            this.pnlSuperior.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pnlSuperior_MouseMove);
-            // 
-            // pnlGrapper
-            // 
-            this.pnlGrapper.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlGrapper.ForeColor = System.Drawing.Color.Black;
-            this.pnlGrapper.Location = new System.Drawing.Point(198, 40);
-            this.pnlGrapper.Name = "pnlGrapper";
-            this.pnlGrapper.Size = new System.Drawing.Size(799, 698);
-            this.pnlGrapper.TabIndex = 12;
-            // 
-            // guna2ShadowForm1
-            // 
-            this.guna2ShadowForm1.BorderRadius = 20;
-            this.guna2ShadowForm1.TargetForm = this;
+            this.btnClose.Animated = true;
+            this.btnClose.BackColor = System.Drawing.Color.White;
+            this.btnClose.BorderRadius = 7;
+            this.btnClose.CheckedState.Parent = this.btnClose;
+            this.btnClose.CustomImages.Parent = this.btnClose;
+            this.btnClose.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnClose.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnClose.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnClose.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnClose.DisabledState.Parent = this.btnClose;
+            this.btnClose.FillColor = System.Drawing.Color.Gainsboro;
+            this.btnClose.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnClose.ForeColor = System.Drawing.Color.Black;
+            this.btnClose.HoverState.FillColor = System.Drawing.Color.Red;
+            this.btnClose.HoverState.Parent = this.btnClose;
+            this.btnClose.Image = ((System.Drawing.Image)(resources.GetObject("btnClose.Image")));
+            this.btnClose.Location = new System.Drawing.Point(964, 6);
+            this.btnClose.Margin = new System.Windows.Forms.Padding(1);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.ShadowDecoration.Parent = this.btnClose;
+            this.btnClose.Size = new System.Drawing.Size(28, 27);
+            this.btnClose.TabIndex = 8;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // FrmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(247)))), ((int)(((byte)(253)))));
-            this.ClientSize = new System.Drawing.Size(997, 738);
+            this.ClientSize = new System.Drawing.Size(997, 717);
             this.Controls.Add(this.pnlGrapper);
             this.Controls.Add(this.pnlMenu);
             this.Controls.Add(this.pnlSuperior);
@@ -503,6 +505,7 @@ namespace Presentacion
             this.pnlConsulta.ResumeLayout(false);
             this.pnlPaciente.ResumeLayout(false);
             this.pnlMedico.ResumeLayout(false);
+            this.pnlFondoDeLogo.ResumeLayout(false);
             this.pnlSuperior.ResumeLayout(false);
             this.ResumeLayout(false);
 
