@@ -82,8 +82,8 @@ namespace Presentacion
             this.pnlFondoRegistrarMedico.ForeColor = System.Drawing.SystemColors.AppWorkspace;
             this.pnlFondoRegistrarMedico.Location = new System.Drawing.Point(28, 30);
             this.pnlFondoRegistrarMedico.Name = "pnlFondoRegistrarMedico";
-            this.pnlFondoRegistrarMedico.ShadowColor = System.Drawing.Color.Gray;
-            this.pnlFondoRegistrarMedico.ShadowShift = 6;
+            this.pnlFondoRegistrarMedico.ShadowColor = System.Drawing.Color.Black;
+            this.pnlFondoRegistrarMedico.ShadowShift = 10;
             this.pnlFondoRegistrarMedico.Size = new System.Drawing.Size(743, 616);
             this.pnlFondoRegistrarMedico.TabIndex = 0;
             // 

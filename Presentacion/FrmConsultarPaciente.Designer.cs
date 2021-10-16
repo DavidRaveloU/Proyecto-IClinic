@@ -66,8 +66,8 @@ namespace Presentacion
             this.pnlFondoConsultarMedico.ForeColor = System.Drawing.SystemColors.AppWorkspace;
             this.pnlFondoConsultarMedico.Location = new System.Drawing.Point(22, 30);
             this.pnlFondoConsultarMedico.Name = "pnlFondoConsultarMedico";
-            this.pnlFondoConsultarMedico.ShadowColor = System.Drawing.Color.DimGray;
-            this.pnlFondoConsultarMedico.ShadowShift = 6;
+            this.pnlFondoConsultarMedico.ShadowColor = System.Drawing.Color.Black;
+            this.pnlFondoConsultarMedico.ShadowShift = 10;
             this.pnlFondoConsultarMedico.Size = new System.Drawing.Size(754, 616);
             this.pnlFondoConsultarMedico.TabIndex = 2;
             // 
@@ -140,7 +140,7 @@ namespace Presentacion
             this.btnModificar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnModificar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnModificar.DisabledState.Parent = this.btnModificar;
-            this.btnModificar.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(190)))), ((int)(((byte)(126)))));
+            this.btnModificar.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(191)))), ((int)(((byte)(250)))));
             this.btnModificar.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnModificar.ForeColor = System.Drawing.Color.White;
             this.btnModificar.HoverState.Parent = this.btnModificar;
@@ -262,10 +262,10 @@ namespace Presentacion
             // ptrCantidadDeMedicos
             // 
             this.ptrCantidadDeMedicos.Image = ((System.Drawing.Image)(resources.GetObject("ptrCantidadDeMedicos.Image")));
-            this.ptrCantidadDeMedicos.Location = new System.Drawing.Point(8, 4);
+            this.ptrCantidadDeMedicos.Location = new System.Drawing.Point(8, 3);
             this.ptrCantidadDeMedicos.Name = "ptrCantidadDeMedicos";
-            this.ptrCantidadDeMedicos.Size = new System.Drawing.Size(50, 50);
-            this.ptrCantidadDeMedicos.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ptrCantidadDeMedicos.Size = new System.Drawing.Size(47, 52);
+            this.ptrCantidadDeMedicos.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.ptrCantidadDeMedicos.TabIndex = 0;
             this.ptrCantidadDeMedicos.TabStop = false;
             // 

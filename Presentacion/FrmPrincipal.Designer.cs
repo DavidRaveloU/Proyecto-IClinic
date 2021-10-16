@@ -485,7 +485,7 @@ namespace Presentacion
             // 
             // guna2ShadowForm1
             // 
-            this.guna2ShadowForm1.BorderRadius = 20;
+            this.guna2ShadowForm1.BorderRadius = 27;
             this.guna2ShadowForm1.TargetForm = this;
             // 
             // FrmPrincipal
