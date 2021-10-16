@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Presentacion
 {
-    public partial class FrmVentaCorrecto : Form
+    public partial class FrmVentanaCorrecto : Form
     {
-        public FrmVentaCorrecto()
+        public FrmVentanaCorrecto()
         {
             InitializeComponent();
         }

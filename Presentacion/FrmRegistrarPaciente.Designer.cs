@@ -1,7 +1,7 @@
 ﻿
 namespace Presentacion
 {
-    partial class FrmRegistrarMedico
+    partial class FrmRegistrarPaciente
     {
         /// <summary>
         /// Required designer variable.
@@ -29,8 +29,8 @@ namespace Presentacion
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmRegistrarMedico));
-            this.pnlFondoRegistrarMedico = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmRegistrarPaciente));
+            this.pnlFondoRegistrarPaciente = new Guna.UI2.WinForms.Guna2ShadowPanel();
             this.lblRegistroMedico = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.ptrMedico = new Guna.UI2.WinForms.Guna2PictureBox();
             this.btnCancelar = new Guna.UI2.WinForms.Guna2Button();
@@ -51,41 +51,41 @@ namespace Presentacion
             this.lblSegundoNombre = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lblPrimerNombre = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lblNumeroCédula = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.pnlFondoRegistrarMedico.SuspendLayout();
+            this.pnlFondoRegistrarPaciente.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptrMedico)).BeginInit();
             this.SuspendLayout();
             // 
-            // pnlFondoRegistrarMedico
+            // pnlFondoRegistrarPaciente
             // 
-            this.pnlFondoRegistrarMedico.BackColor = System.Drawing.Color.Transparent;
-            this.pnlFondoRegistrarMedico.Controls.Add(this.lblRegistroMedico);
-            this.pnlFondoRegistrarMedico.Controls.Add(this.ptrMedico);
-            this.pnlFondoRegistrarMedico.Controls.Add(this.btnCancelar);
-            this.pnlFondoRegistrarMedico.Controls.Add(this.btnGuardar);
-            this.pnlFondoRegistrarMedico.Controls.Add(this.guna2TextBox4);
-            this.pnlFondoRegistrarMedico.Controls.Add(this.guna2TextBox3);
-            this.pnlFondoRegistrarMedico.Controls.Add(this.guna2TextBox2);
-            this.pnlFondoRegistrarMedico.Controls.Add(this.guna2TextBox1);
-            this.pnlFondoRegistrarMedico.Controls.Add(this.txtCorreo);
-            this.pnlFondoRegistrarMedico.Controls.Add(this.txtSgundoApellido);
-            this.pnlFondoRegistrarMedico.Controls.Add(this.txtSegundoNombre);
-            this.pnlFondoRegistrarMedico.Controls.Add(this.txtNumeroDeCedula);
-            this.pnlFondoRegistrarMedico.Controls.Add(this.lblDireccion);
-            this.pnlFondoRegistrarMedico.Controls.Add(this.lblCorreoElectronico);
-            this.pnlFondoRegistrarMedico.Controls.Add(this.lblTelefono);
-            this.pnlFondoRegistrarMedico.Controls.Add(this.lblSegundoApellido);
-            this.pnlFondoRegistrarMedico.Controls.Add(this.lblPrimerApellido);
-            this.pnlFondoRegistrarMedico.Controls.Add(this.lblSegundoNombre);
-            this.pnlFondoRegistrarMedico.Controls.Add(this.lblPrimerNombre);
-            this.pnlFondoRegistrarMedico.Controls.Add(this.lblNumeroCédula);
-            this.pnlFondoRegistrarMedico.FillColor = System.Drawing.Color.White;
-            this.pnlFondoRegistrarMedico.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.pnlFondoRegistrarMedico.Location = new System.Drawing.Point(28, 30);
-            this.pnlFondoRegistrarMedico.Name = "pnlFondoRegistrarMedico";
-            this.pnlFondoRegistrarMedico.ShadowColor = System.Drawing.Color.Gray;
-            this.pnlFondoRegistrarMedico.ShadowShift = 6;
-            this.pnlFondoRegistrarMedico.Size = new System.Drawing.Size(743, 616);
-            this.pnlFondoRegistrarMedico.TabIndex = 0;
+            this.pnlFondoRegistrarPaciente.BackColor = System.Drawing.Color.Transparent;
+            this.pnlFondoRegistrarPaciente.Controls.Add(this.lblRegistroMedico);
+            this.pnlFondoRegistrarPaciente.Controls.Add(this.ptrMedico);
+            this.pnlFondoRegistrarPaciente.Controls.Add(this.btnCancelar);
+            this.pnlFondoRegistrarPaciente.Controls.Add(this.btnGuardar);
+            this.pnlFondoRegistrarPaciente.Controls.Add(this.guna2TextBox4);
+            this.pnlFondoRegistrarPaciente.Controls.Add(this.guna2TextBox3);
+            this.pnlFondoRegistrarPaciente.Controls.Add(this.guna2TextBox2);
+            this.pnlFondoRegistrarPaciente.Controls.Add(this.guna2TextBox1);
+            this.pnlFondoRegistrarPaciente.Controls.Add(this.txtCorreo);
+            this.pnlFondoRegistrarPaciente.Controls.Add(this.txtSgundoApellido);
+            this.pnlFondoRegistrarPaciente.Controls.Add(this.txtSegundoNombre);
+            this.pnlFondoRegistrarPaciente.Controls.Add(this.txtNumeroDeCedula);
+            this.pnlFondoRegistrarPaciente.Controls.Add(this.lblDireccion);
+            this.pnlFondoRegistrarPaciente.Controls.Add(this.lblCorreoElectronico);
+            this.pnlFondoRegistrarPaciente.Controls.Add(this.lblTelefono);
+            this.pnlFondoRegistrarPaciente.Controls.Add(this.lblSegundoApellido);
+            this.pnlFondoRegistrarPaciente.Controls.Add(this.lblPrimerApellido);
+            this.pnlFondoRegistrarPaciente.Controls.Add(this.lblSegundoNombre);
+            this.pnlFondoRegistrarPaciente.Controls.Add(this.lblPrimerNombre);
+            this.pnlFondoRegistrarPaciente.Controls.Add(this.lblNumeroCédula);
+            this.pnlFondoRegistrarPaciente.FillColor = System.Drawing.Color.White;
+            this.pnlFondoRegistrarPaciente.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.pnlFondoRegistrarPaciente.Location = new System.Drawing.Point(28, 30);
+            this.pnlFondoRegistrarPaciente.Name = "pnlFondoRegistrarPaciente";
+            this.pnlFondoRegistrarPaciente.ShadowColor = System.Drawing.Color.Gray;
+            this.pnlFondoRegistrarPaciente.ShadowShift = 6;
+            this.pnlFondoRegistrarPaciente.Size = new System.Drawing.Size(743, 616);
+            this.pnlFondoRegistrarPaciente.TabIndex = 1;
             // 
             // lblRegistroMedico
             // 
@@ -94,9 +94,9 @@ namespace Presentacion
             this.lblRegistroMedico.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(191)))), ((int)(((byte)(165)))));
             this.lblRegistroMedico.Location = new System.Drawing.Point(309, 56);
             this.lblRegistroMedico.Name = "lblRegistroMedico";
-            this.lblRegistroMedico.Size = new System.Drawing.Size(178, 26);
+            this.lblRegistroMedico.Size = new System.Drawing.Size(198, 26);
             this.lblRegistroMedico.TabIndex = 19;
-            this.lblRegistroMedico.Text = "REGISTRO MÉDICO";
+            this.lblRegistroMedico.Text = "REGISTRO PACIENTE";
             // 
             // ptrMedico
             // 
@@ -448,18 +448,18 @@ namespace Presentacion
             this.lblNumeroCédula.TabIndex = 0;
             this.lblNumeroCédula.Text = "Número de cédula";
             // 
-            // FrmRegistrarMedico
+            // FrmRegistrarPaciente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(247)))), ((int)(((byte)(253)))));
             this.ClientSize = new System.Drawing.Size(799, 677);
-            this.Controls.Add(this.pnlFondoRegistrarMedico);
+            this.Controls.Add(this.pnlFondoRegistrarPaciente);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "FrmRegistrarMedico";
-            this.Text = "FrmRegistrarMedico";
-            this.pnlFondoRegistrarMedico.ResumeLayout(false);
-            this.pnlFondoRegistrarMedico.PerformLayout();
+            this.Name = "FrmRegistrarPaciente";
+            this.Text = "FrmResgistrarPaciente";
+            this.pnlFondoRegistrarPaciente.ResumeLayout(false);
+            this.pnlFondoRegistrarPaciente.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptrMedico)).EndInit();
             this.ResumeLayout(false);
 
@@ -467,7 +467,11 @@ namespace Presentacion
 
         #endregion
 
-        private Guna.UI2.WinForms.Guna2ShadowPanel pnlFondoRegistrarMedico;
+        private Guna.UI2.WinForms.Guna2ShadowPanel pnlFondoRegistrarPaciente;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lblRegistroMedico;
+        private Guna.UI2.WinForms.Guna2PictureBox ptrMedico;
+        private Guna.UI2.WinForms.Guna2Button btnCancelar;
+        private Guna.UI2.WinForms.Guna2Button btnGuardar;
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox4;
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox3;
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox2;
@@ -484,9 +488,5 @@ namespace Presentacion
         private Guna.UI2.WinForms.Guna2HtmlLabel lblSegundoNombre;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblPrimerNombre;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblNumeroCédula;
-        private Guna.UI2.WinForms.Guna2PictureBox ptrMedico;
-        private Guna.UI2.WinForms.Guna2Button btnCancelar;
-        private Guna.UI2.WinForms.Guna2Button btnGuardar;
-        private Guna.UI2.WinForms.Guna2HtmlLabel lblRegistroMedico;
     }
 }

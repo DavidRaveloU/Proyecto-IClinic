@@ -110,11 +110,13 @@ namespace Presentacion
 
         private void guna2Button5_Click(object sender, EventArgs e)
         {
+            AbrirFormulario(new FrmRegistrarPaciente());
             HideSubmenu();
         }
 
         private void guna2Button4_Click(object sender, EventArgs e)
         {
+            AbrirFormulario(new FrmConsultarPaciente());
             HideSubmenu();
         }
 

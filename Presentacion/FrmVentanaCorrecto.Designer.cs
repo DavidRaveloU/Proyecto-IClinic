@@ -1,7 +1,7 @@
 ﻿
 namespace Presentacion
 {
-    partial class FrmVentaCorrecto
+    partial class FrmVentanaCorrecto
     {
         /// <summary>
         /// Required designer variable.

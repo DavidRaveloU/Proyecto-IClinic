@@ -162,6 +162,12 @@
     <Compile Include="FrmConsultarMedico.Designer.cs">
       <DependentUpon>FrmConsultarMedico.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmConsultarPaciente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmConsultarPaciente.Designer.cs">
+      <DependentUpon>FrmConsultarPaciente.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -180,11 +186,17 @@
     <Compile Include="FrmRegistrarMedico.Designer.cs">
       <DependentUpon>FrmRegistrarMedico.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmVentaCorrecto.cs">
+    <Compile Include="FrmRegistrarPaciente.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmVentaCorrecto.Designer.cs">
-      <DependentUpon>FrmVentaCorrecto.cs</DependentUpon>
+    <Compile Include="FrmRegistrarPaciente.Designer.cs">
+      <DependentUpon>FrmRegistrarPaciente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmVentanaCorrecto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmVentanaCorrecto.Designer.cs">
+      <DependentUpon>FrmVentanaCorrecto.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmVentanaAlvertencia.cs">
       <SubType>Form</SubType>
@@ -203,6 +215,9 @@
     <EmbeddedResource Include="FrmConsultarMedico.resx">
       <DependentUpon>FrmConsultarMedico.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmConsultarPaciente.resx">
+      <DependentUpon>FrmConsultarPaciente.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>
     </EmbeddedResource>
@@ -212,8 +227,11 @@
     <EmbeddedResource Include="FrmRegistrarMedico.resx">
       <DependentUpon>FrmRegistrarMedico.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmVentaCorrecto.resx">
-      <DependentUpon>FrmVentaCorrecto.cs</DependentUpon>
+    <EmbeddedResource Include="FrmRegistrarPaciente.resx">
+      <DependentUpon>FrmRegistrarPaciente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmVentanaCorrecto.resx">
+      <DependentUpon>FrmVentanaCorrecto.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmVentanaAlvertencia.resx">
       <DependentUpon>FrmVentanaAlvertencia.cs</DependentUpon>

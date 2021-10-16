@@ -1,7 +1,7 @@
 ﻿
 namespace Presentacion
 {
-    partial class FrmConsultarMedico
+    partial class FrmConsultarPaciente
     {
         /// <summary>
         /// Required designer variable.
@@ -29,10 +29,10 @@ namespace Presentacion
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmConsultarMedico));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmConsultarPaciente));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pnlFondoConsultarMedico = new Guna.UI2.WinForms.Guna2ShadowPanel();
             this.txtConsulta = new Guna.UI2.WinForms.Guna2TextBox();
             this.btnEliminar = new Guna.UI2.WinForms.Guna2Button();
@@ -64,12 +64,12 @@ namespace Presentacion
             this.pnlFondoConsultarMedico.Controls.Add(this.pnlCantidadDeMedicos);
             this.pnlFondoConsultarMedico.FillColor = System.Drawing.Color.White;
             this.pnlFondoConsultarMedico.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.pnlFondoConsultarMedico.Location = new System.Drawing.Point(25, 30);
+            this.pnlFondoConsultarMedico.Location = new System.Drawing.Point(22, 30);
             this.pnlFondoConsultarMedico.Name = "pnlFondoConsultarMedico";
             this.pnlFondoConsultarMedico.ShadowColor = System.Drawing.Color.DimGray;
             this.pnlFondoConsultarMedico.ShadowShift = 6;
             this.pnlFondoConsultarMedico.Size = new System.Drawing.Size(754, 616);
-            this.pnlFondoConsultarMedico.TabIndex = 1;
+            this.pnlFondoConsultarMedico.TabIndex = 2;
             // 
             // txtConsulta
             // 
@@ -118,7 +118,6 @@ namespace Presentacion
             this.btnEliminar.Size = new System.Drawing.Size(171, 31);
             this.btnEliminar.TabIndex = 5;
             this.btnEliminar.Text = "Eliminar";
-            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // ptrConsulta
             // 
@@ -154,30 +153,30 @@ namespace Presentacion
             // 
             // dtgConsulta
             // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.dtgConsulta.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
+            this.dtgConsulta.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
             this.dtgConsulta.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dtgConsulta.BackgroundColor = System.Drawing.Color.White;
             this.dtgConsulta.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dtgConsulta.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dtgConsulta.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgConsulta.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgConsulta.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
             this.dtgConsulta.ColumnHeadersHeight = 4;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dtgConsulta.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dtgConsulta.DefaultCellStyle = dataGridViewCellStyle9;
             this.dtgConsulta.EnableHeadersVisualStyles = false;
             this.dtgConsulta.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dtgConsulta.Location = new System.Drawing.Point(40, 229);
@@ -248,9 +247,9 @@ namespace Presentacion
             this.lblMedico.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMedico.Location = new System.Drawing.Point(15, 59);
             this.lblMedico.Name = "lblMedico";
-            this.lblMedico.Size = new System.Drawing.Size(158, 20);
+            this.lblMedico.Size = new System.Drawing.Size(168, 20);
             this.lblMedico.TabIndex = 2;
-            this.lblMedico.Text = "Cantidad de médicos";
+            this.lblMedico.Text = "Cantidad de pacientes";
             // 
             // pnlLineaSeparadora
             // 
@@ -263,13 +262,14 @@ namespace Presentacion
             // ptrCantidadDeMedicos
             // 
             this.ptrCantidadDeMedicos.Image = ((System.Drawing.Image)(resources.GetObject("ptrCantidadDeMedicos.Image")));
-            this.ptrCantidadDeMedicos.Location = new System.Drawing.Point(12, 5);
+            this.ptrCantidadDeMedicos.Location = new System.Drawing.Point(8, 4);
             this.ptrCantidadDeMedicos.Name = "ptrCantidadDeMedicos";
-            this.ptrCantidadDeMedicos.Size = new System.Drawing.Size(46, 50);
+            this.ptrCantidadDeMedicos.Size = new System.Drawing.Size(50, 50);
+            this.ptrCantidadDeMedicos.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.ptrCantidadDeMedicos.TabIndex = 0;
             this.ptrCantidadDeMedicos.TabStop = false;
             // 
-            // FrmConsultarMedico
+            // FrmConsultarPaciente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -277,8 +277,8 @@ namespace Presentacion
             this.ClientSize = new System.Drawing.Size(799, 677);
             this.Controls.Add(this.pnlFondoConsultarMedico);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "FrmConsultarMedico";
-            this.Text = "FrmConsultarMedico";
+            this.Name = "FrmConsultarPaciente";
+            this.Text = "FrmConsultarPaciente";
             this.pnlFondoConsultarMedico.ResumeLayout(false);
             this.pnlFondoConsultarMedico.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptrConsulta)).EndInit();
@@ -293,16 +293,16 @@ namespace Presentacion
         #endregion
 
         private Guna.UI2.WinForms.Guna2ShadowPanel pnlFondoConsultarMedico;
+        private Guna.UI2.WinForms.Guna2TextBox txtConsulta;
+        private Guna.UI2.WinForms.Guna2Button btnEliminar;
+        private System.Windows.Forms.PictureBox ptrConsulta;
+        private Guna.UI2.WinForms.Guna2Button btnModificar;
+        private Guna.UI2.WinForms.Guna2DataGridView dtgConsulta;
+        private System.Windows.Forms.Label lblConsulta;
         private System.Windows.Forms.Panel pnlCantidadDeMedicos;
         private System.Windows.Forms.Label lblCantidadDeMedicos;
         private System.Windows.Forms.Label lblMedico;
         private System.Windows.Forms.Panel pnlLineaSeparadora;
         private System.Windows.Forms.PictureBox ptrCantidadDeMedicos;
-        private System.Windows.Forms.Label lblConsulta;
-        private System.Windows.Forms.PictureBox ptrConsulta;
-        private Guna.UI2.WinForms.Guna2DataGridView dtgConsulta;
-        private Guna.UI2.WinForms.Guna2Button btnEliminar;
-        private Guna.UI2.WinForms.Guna2Button btnModificar;
-        private Guna.UI2.WinForms.Guna2TextBox txtConsulta;
     }
 }

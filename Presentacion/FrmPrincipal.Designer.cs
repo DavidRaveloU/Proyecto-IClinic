@@ -32,28 +32,28 @@ namespace Presentacion
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmPrincipal));
             this.pnlMenu = new System.Windows.Forms.Panel();
-            this.pnlConsulta = new System.Windows.Forms.Panel();
-            this.pnlPaciente = new System.Windows.Forms.Panel();
-            this.pnlMedico = new System.Windows.Forms.Panel();
-            this.pnlLineaMenu = new System.Windows.Forms.Panel();
-            this.pnlFondoDeLogo = new System.Windows.Forms.Panel();
-            this.pnlSuperior = new System.Windows.Forms.Panel();
-            this.pnlGrapper = new System.Windows.Forms.Panel();
-            this.guna2ShadowForm1 = new Guna.UI2.WinForms.Guna2ShadowForm(this.components);
-            this.tmrFundir = new System.Windows.Forms.Timer(this.components);
             this.btnCerrarSecion = new Guna.UI2.WinForms.Guna2Button();
+            this.pnlConsulta = new System.Windows.Forms.Panel();
             this.btnConsultarHistorial = new Guna.UI2.WinForms.Guna2Button();
             this.btnConsultaMedica = new Guna.UI2.WinForms.Guna2Button();
             this.btnConsulta = new Guna.UI2.WinForms.Guna2Button();
+            this.pnlPaciente = new System.Windows.Forms.Panel();
             this.btnConsultarPaciente = new Guna.UI2.WinForms.Guna2Button();
             this.btnRegistrarPaciente = new Guna.UI2.WinForms.Guna2Button();
             this.btnPaciente = new Guna.UI2.WinForms.Guna2Button();
+            this.pnlMedico = new System.Windows.Forms.Panel();
             this.btnConsultarMedico = new Guna.UI2.WinForms.Guna2Button();
             this.btnRegistrarMedico = new Guna.UI2.WinForms.Guna2Button();
             this.btnMedico = new Guna.UI2.WinForms.Guna2Button();
             this.btnAgenda = new Guna.UI2.WinForms.Guna2Button();
+            this.pnlFondoDeLogo = new System.Windows.Forms.Panel();
+            this.pnlLineaMenu = new System.Windows.Forms.Panel();
+            this.pnlSuperior = new System.Windows.Forms.Panel();
             this.btnMinimizar = new Guna.UI2.WinForms.Guna2Button();
             this.btnClose = new Guna.UI2.WinForms.Guna2Button();
+            this.pnlGrapper = new System.Windows.Forms.Panel();
+            this.guna2ShadowForm1 = new Guna.UI2.WinForms.Guna2ShadowForm(this.components);
+            this.tmrFundir = new System.Windows.Forms.Timer(this.components);
             this.pnlMenu.SuspendLayout();
             this.pnlConsulta.SuspendLayout();
             this.pnlPaciente.SuspendLayout();
@@ -80,86 +80,6 @@ namespace Presentacion
             this.pnlMenu.Size = new System.Drawing.Size(198, 677);
             this.pnlMenu.TabIndex = 10;
             // 
-            // pnlConsulta
-            // 
-            this.pnlConsulta.Controls.Add(this.btnConsultarHistorial);
-            this.pnlConsulta.Controls.Add(this.btnConsultaMedica);
-            this.pnlConsulta.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlConsulta.ForeColor = System.Drawing.Color.Black;
-            this.pnlConsulta.Location = new System.Drawing.Point(0, 546);
-            this.pnlConsulta.Name = "pnlConsulta";
-            this.pnlConsulta.Size = new System.Drawing.Size(198, 91);
-            this.pnlConsulta.TabIndex = 12;
-            // 
-            // pnlPaciente
-            // 
-            this.pnlPaciente.Controls.Add(this.btnConsultarPaciente);
-            this.pnlPaciente.Controls.Add(this.btnRegistrarPaciente);
-            this.pnlPaciente.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlPaciente.ForeColor = System.Drawing.Color.Black;
-            this.pnlPaciente.Location = new System.Drawing.Point(0, 412);
-            this.pnlPaciente.Name = "pnlPaciente";
-            this.pnlPaciente.Size = new System.Drawing.Size(198, 89);
-            this.pnlPaciente.TabIndex = 10;
-            // 
-            // pnlMedico
-            // 
-            this.pnlMedico.Controls.Add(this.btnConsultarMedico);
-            this.pnlMedico.Controls.Add(this.btnRegistrarMedico);
-            this.pnlMedico.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlMedico.ForeColor = System.Drawing.Color.Black;
-            this.pnlMedico.Location = new System.Drawing.Point(0, 273);
-            this.pnlMedico.Name = "pnlMedico";
-            this.pnlMedico.Size = new System.Drawing.Size(198, 89);
-            this.pnlMedico.TabIndex = 8;
-            // 
-            // pnlLineaMenu
-            // 
-            this.pnlLineaMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(247)))), ((int)(((byte)(253)))));
-            this.pnlLineaMenu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.pnlLineaMenu.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pnlLineaMenu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(247)))), ((int)(((byte)(253)))));
-            this.pnlLineaMenu.Location = new System.Drawing.Point(3, -1);
-            this.pnlLineaMenu.Name = "pnlLineaMenu";
-            this.pnlLineaMenu.Size = new System.Drawing.Size(197, 3);
-            this.pnlLineaMenu.TabIndex = 1;
-            // 
-            // pnlFondoDeLogo
-            // 
-            this.pnlFondoDeLogo.Controls.Add(this.pnlLineaMenu);
-            this.pnlFondoDeLogo.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlFondoDeLogo.ForeColor = System.Drawing.Color.Black;
-            this.pnlFondoDeLogo.Location = new System.Drawing.Point(0, 0);
-            this.pnlFondoDeLogo.Name = "pnlFondoDeLogo";
-            this.pnlFondoDeLogo.Size = new System.Drawing.Size(198, 178);
-            this.pnlFondoDeLogo.TabIndex = 2;
-            // 
-            // pnlSuperior
-            // 
-            this.pnlSuperior.BackColor = System.Drawing.Color.White;
-            this.pnlSuperior.Controls.Add(this.btnMinimizar);
-            this.pnlSuperior.Controls.Add(this.btnClose);
-            this.pnlSuperior.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlSuperior.Location = new System.Drawing.Point(0, 0);
-            this.pnlSuperior.Name = "pnlSuperior";
-            this.pnlSuperior.Size = new System.Drawing.Size(997, 40);
-            this.pnlSuperior.TabIndex = 11;
-            this.pnlSuperior.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pnlSuperior_MouseMove);
-            // 
-            // pnlGrapper
-            // 
-            this.pnlGrapper.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlGrapper.ForeColor = System.Drawing.Color.Black;
-            this.pnlGrapper.Location = new System.Drawing.Point(198, 40);
-            this.pnlGrapper.Name = "pnlGrapper";
-            this.pnlGrapper.Size = new System.Drawing.Size(799, 677);
-            this.pnlGrapper.TabIndex = 12;
-            // 
-            // guna2ShadowForm1
-            // 
-            this.guna2ShadowForm1.BorderRadius = 20;
-            this.guna2ShadowForm1.TargetForm = this;
-            // 
             // btnCerrarSecion
             // 
             this.btnCerrarSecion.CheckedState.Parent = this.btnCerrarSecion;
@@ -185,6 +105,17 @@ namespace Presentacion
             this.btnCerrarSecion.Text = "Cerrar sesión";
             this.btnCerrarSecion.TextOffset = new System.Drawing.Point(-8, 0);
             this.btnCerrarSecion.Click += new System.EventHandler(this.btnCerrarSecion_Click);
+            // 
+            // pnlConsulta
+            // 
+            this.pnlConsulta.Controls.Add(this.btnConsultarHistorial);
+            this.pnlConsulta.Controls.Add(this.btnConsultaMedica);
+            this.pnlConsulta.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlConsulta.ForeColor = System.Drawing.Color.Black;
+            this.pnlConsulta.Location = new System.Drawing.Point(0, 546);
+            this.pnlConsulta.Name = "pnlConsulta";
+            this.pnlConsulta.Size = new System.Drawing.Size(198, 91);
+            this.pnlConsulta.TabIndex = 12;
             // 
             // btnConsultarHistorial
             // 
@@ -260,6 +191,17 @@ namespace Presentacion
             this.btnConsulta.TextOffset = new System.Drawing.Point(-15, 0);
             this.btnConsulta.Click += new System.EventHandler(this.btnConsulta_Click);
             // 
+            // pnlPaciente
+            // 
+            this.pnlPaciente.Controls.Add(this.btnConsultarPaciente);
+            this.pnlPaciente.Controls.Add(this.btnRegistrarPaciente);
+            this.pnlPaciente.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlPaciente.ForeColor = System.Drawing.Color.Black;
+            this.pnlPaciente.Location = new System.Drawing.Point(0, 412);
+            this.pnlPaciente.Name = "pnlPaciente";
+            this.pnlPaciente.Size = new System.Drawing.Size(198, 89);
+            this.pnlPaciente.TabIndex = 10;
+            // 
             // btnConsultarPaciente
             // 
             this.btnConsultarPaciente.CheckedState.Parent = this.btnConsultarPaciente;
@@ -331,6 +273,17 @@ namespace Presentacion
             this.btnPaciente.Text = "Paciente";
             this.btnPaciente.TextOffset = new System.Drawing.Point(-18, 0);
             this.btnPaciente.Click += new System.EventHandler(this.btnPaciente_Click);
+            // 
+            // pnlMedico
+            // 
+            this.pnlMedico.Controls.Add(this.btnConsultarMedico);
+            this.pnlMedico.Controls.Add(this.btnRegistrarMedico);
+            this.pnlMedico.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlMedico.ForeColor = System.Drawing.Color.Black;
+            this.pnlMedico.Location = new System.Drawing.Point(0, 273);
+            this.pnlMedico.Name = "pnlMedico";
+            this.pnlMedico.Size = new System.Drawing.Size(198, 89);
+            this.pnlMedico.TabIndex = 8;
             // 
             // btnConsultarMedico
             // 
@@ -436,6 +389,39 @@ namespace Presentacion
             this.btnAgenda.TextOffset = new System.Drawing.Point(5, 0);
             this.btnAgenda.Click += new System.EventHandler(this.btnAgenda_Click);
             // 
+            // pnlFondoDeLogo
+            // 
+            this.pnlFondoDeLogo.Controls.Add(this.pnlLineaMenu);
+            this.pnlFondoDeLogo.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlFondoDeLogo.ForeColor = System.Drawing.Color.Black;
+            this.pnlFondoDeLogo.Location = new System.Drawing.Point(0, 0);
+            this.pnlFondoDeLogo.Name = "pnlFondoDeLogo";
+            this.pnlFondoDeLogo.Size = new System.Drawing.Size(198, 178);
+            this.pnlFondoDeLogo.TabIndex = 2;
+            // 
+            // pnlLineaMenu
+            // 
+            this.pnlLineaMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(247)))), ((int)(((byte)(253)))));
+            this.pnlLineaMenu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pnlLineaMenu.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pnlLineaMenu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(247)))), ((int)(((byte)(253)))));
+            this.pnlLineaMenu.Location = new System.Drawing.Point(3, -1);
+            this.pnlLineaMenu.Name = "pnlLineaMenu";
+            this.pnlLineaMenu.Size = new System.Drawing.Size(197, 3);
+            this.pnlLineaMenu.TabIndex = 1;
+            // 
+            // pnlSuperior
+            // 
+            this.pnlSuperior.BackColor = System.Drawing.Color.White;
+            this.pnlSuperior.Controls.Add(this.btnMinimizar);
+            this.pnlSuperior.Controls.Add(this.btnClose);
+            this.pnlSuperior.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlSuperior.Location = new System.Drawing.Point(0, 0);
+            this.pnlSuperior.Name = "pnlSuperior";
+            this.pnlSuperior.Size = new System.Drawing.Size(997, 40);
+            this.pnlSuperior.TabIndex = 11;
+            this.pnlSuperior.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pnlSuperior_MouseMove);
+            // 
             // btnMinimizar
             // 
             this.btnMinimizar.Animated = true;
@@ -487,6 +473,20 @@ namespace Presentacion
             this.btnClose.Size = new System.Drawing.Size(28, 27);
             this.btnClose.TabIndex = 8;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            // 
+            // pnlGrapper
+            // 
+            this.pnlGrapper.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlGrapper.ForeColor = System.Drawing.Color.Black;
+            this.pnlGrapper.Location = new System.Drawing.Point(198, 40);
+            this.pnlGrapper.Name = "pnlGrapper";
+            this.pnlGrapper.Size = new System.Drawing.Size(799, 677);
+            this.pnlGrapper.TabIndex = 12;
+            // 
+            // guna2ShadowForm1
+            // 
+            this.guna2ShadowForm1.BorderRadius = 20;
+            this.guna2ShadowForm1.TargetForm = this;
             // 
             // FrmPrincipal
             // 
