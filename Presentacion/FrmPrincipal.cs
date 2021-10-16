@@ -16,6 +16,7 @@ namespace Presentacion
         {
             InitializeComponent();
             CustomizedDesing();
+            AbrirFormulario(new FrmRegistrarMedico());
         }
 
 

@@ -135,6 +135,7 @@ namespace Presentacion
             // 
             this.btnGuardar.BorderRadius = 13;
             this.btnGuardar.CheckedState.Parent = this.btnGuardar;
+            this.btnGuardar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnGuardar.CustomImages.Parent = this.btnGuardar;
             this.btnGuardar.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnGuardar.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;

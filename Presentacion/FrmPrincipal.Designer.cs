@@ -54,12 +54,14 @@ namespace Presentacion
             this.pnlGrapper = new System.Windows.Forms.Panel();
             this.guna2ShadowForm1 = new Guna.UI2.WinForms.Guna2ShadowForm(this.components);
             this.tmrFundir = new System.Windows.Forms.Timer(this.components);
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pnlMenu.SuspendLayout();
             this.pnlConsulta.SuspendLayout();
             this.pnlPaciente.SuspendLayout();
             this.pnlMedico.SuspendLayout();
             this.pnlFondoDeLogo.SuspendLayout();
             this.pnlSuperior.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlMenu
@@ -97,7 +99,7 @@ namespace Presentacion
             this.btnCerrarSecion.Image = ((System.Drawing.Image)(resources.GetObject("btnCerrarSecion.Image")));
             this.btnCerrarSecion.ImageOffset = new System.Drawing.Point(-13, 0);
             this.btnCerrarSecion.ImageSize = new System.Drawing.Size(25, 25);
-            this.btnCerrarSecion.Location = new System.Drawing.Point(0, 637);
+            this.btnCerrarSecion.Location = new System.Drawing.Point(0, 680);
             this.btnCerrarSecion.Name = "btnCerrarSecion";
             this.btnCerrarSecion.ShadowDecoration.Parent = this.btnCerrarSecion;
             this.btnCerrarSecion.Size = new System.Drawing.Size(198, 45);
@@ -112,7 +114,7 @@ namespace Presentacion
             this.pnlConsulta.Controls.Add(this.btnConsultaMedica);
             this.pnlConsulta.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlConsulta.ForeColor = System.Drawing.Color.Black;
-            this.pnlConsulta.Location = new System.Drawing.Point(0, 546);
+            this.pnlConsulta.Location = new System.Drawing.Point(0, 589);
             this.pnlConsulta.Name = "pnlConsulta";
             this.pnlConsulta.Size = new System.Drawing.Size(198, 91);
             this.pnlConsulta.TabIndex = 12;
@@ -180,15 +182,15 @@ namespace Presentacion
             this.btnConsulta.ForeColor = System.Drawing.Color.Black;
             this.btnConsulta.HoverState.Parent = this.btnConsulta;
             this.btnConsulta.Image = ((System.Drawing.Image)(resources.GetObject("btnConsulta.Image")));
-            this.btnConsulta.ImageOffset = new System.Drawing.Point(-21, 0);
-            this.btnConsulta.ImageSize = new System.Drawing.Size(23, 23);
-            this.btnConsulta.Location = new System.Drawing.Point(0, 501);
+            this.btnConsulta.ImageOffset = new System.Drawing.Point(-20, 0);
+            this.btnConsulta.ImageSize = new System.Drawing.Size(32, 32);
+            this.btnConsulta.Location = new System.Drawing.Point(0, 544);
             this.btnConsulta.Name = "btnConsulta";
             this.btnConsulta.ShadowDecoration.Parent = this.btnConsulta;
             this.btnConsulta.Size = new System.Drawing.Size(198, 45);
             this.btnConsulta.TabIndex = 11;
             this.btnConsulta.Text = "Consulta";
-            this.btnConsulta.TextOffset = new System.Drawing.Point(-15, 0);
+            this.btnConsulta.TextOffset = new System.Drawing.Point(-17, 0);
             this.btnConsulta.Click += new System.EventHandler(this.btnConsulta_Click);
             // 
             // pnlPaciente
@@ -197,7 +199,7 @@ namespace Presentacion
             this.pnlPaciente.Controls.Add(this.btnRegistrarPaciente);
             this.pnlPaciente.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlPaciente.ForeColor = System.Drawing.Color.Black;
-            this.pnlPaciente.Location = new System.Drawing.Point(0, 412);
+            this.pnlPaciente.Location = new System.Drawing.Point(0, 455);
             this.pnlPaciente.Name = "pnlPaciente";
             this.pnlPaciente.Size = new System.Drawing.Size(198, 89);
             this.pnlPaciente.TabIndex = 10;
@@ -265,7 +267,7 @@ namespace Presentacion
             this.btnPaciente.Image = ((System.Drawing.Image)(resources.GetObject("btnPaciente.Image")));
             this.btnPaciente.ImageOffset = new System.Drawing.Point(-21, 1);
             this.btnPaciente.ImageSize = new System.Drawing.Size(34, 34);
-            this.btnPaciente.Location = new System.Drawing.Point(0, 362);
+            this.btnPaciente.Location = new System.Drawing.Point(0, 405);
             this.btnPaciente.Name = "btnPaciente";
             this.btnPaciente.ShadowDecoration.Parent = this.btnPaciente;
             this.btnPaciente.Size = new System.Drawing.Size(198, 50);
@@ -280,7 +282,7 @@ namespace Presentacion
             this.pnlMedico.Controls.Add(this.btnRegistrarMedico);
             this.pnlMedico.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlMedico.ForeColor = System.Drawing.Color.Black;
-            this.pnlMedico.Location = new System.Drawing.Point(0, 273);
+            this.pnlMedico.Location = new System.Drawing.Point(0, 316);
             this.pnlMedico.Name = "pnlMedico";
             this.pnlMedico.Size = new System.Drawing.Size(198, 89);
             this.pnlMedico.TabIndex = 8;
@@ -350,7 +352,7 @@ namespace Presentacion
             this.btnMedico.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnMedico.ImageOffset = new System.Drawing.Point(-12, 0);
             this.btnMedico.ImageSize = new System.Drawing.Size(50, 39);
-            this.btnMedico.Location = new System.Drawing.Point(0, 223);
+            this.btnMedico.Location = new System.Drawing.Point(0, 266);
             this.btnMedico.Name = "btnMedico";
             this.btnMedico.ShadowDecoration.Parent = this.btnMedico;
             this.btnMedico.Size = new System.Drawing.Size(198, 50);
@@ -379,7 +381,7 @@ namespace Presentacion
             this.btnAgenda.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnAgenda.ImageOffset = new System.Drawing.Point(0, 1);
             this.btnAgenda.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnAgenda.Location = new System.Drawing.Point(0, 178);
+            this.btnAgenda.Location = new System.Drawing.Point(0, 221);
             this.btnAgenda.Name = "btnAgenda";
             this.btnAgenda.ShadowDecoration.Parent = this.btnAgenda;
             this.btnAgenda.Size = new System.Drawing.Size(198, 45);
@@ -391,12 +393,13 @@ namespace Presentacion
             // 
             // pnlFondoDeLogo
             // 
+            this.pnlFondoDeLogo.Controls.Add(this.pictureBox1);
             this.pnlFondoDeLogo.Controls.Add(this.pnlLineaMenu);
             this.pnlFondoDeLogo.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlFondoDeLogo.ForeColor = System.Drawing.Color.Black;
             this.pnlFondoDeLogo.Location = new System.Drawing.Point(0, 0);
             this.pnlFondoDeLogo.Name = "pnlFondoDeLogo";
-            this.pnlFondoDeLogo.Size = new System.Drawing.Size(198, 178);
+            this.pnlFondoDeLogo.Size = new System.Drawing.Size(198, 221);
             this.pnlFondoDeLogo.TabIndex = 2;
             // 
             // pnlLineaMenu
@@ -488,6 +491,16 @@ namespace Presentacion
             this.guna2ShadowForm1.BorderRadius = 27;
             this.guna2ShadowForm1.TargetForm = this;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(-2, -1);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(200, 176);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabStop = false;
+            // 
             // FrmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -499,7 +512,7 @@ namespace Presentacion
             this.Controls.Add(this.pnlSuperior);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmPrincipal";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmPrincipal";
             this.pnlMenu.ResumeLayout(false);
             this.pnlConsulta.ResumeLayout(false);
@@ -507,6 +520,7 @@ namespace Presentacion
             this.pnlMedico.ResumeLayout(false);
             this.pnlFondoDeLogo.ResumeLayout(false);
             this.pnlSuperior.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -535,5 +549,6 @@ namespace Presentacion
         private Guna.UI2.WinForms.Guna2Button btnConsulta;
         private System.Windows.Forms.Timer tmrFundir;
         private Guna.UI2.WinForms.Guna2Button btnCerrarSecion;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
