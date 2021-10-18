@@ -70,12 +70,12 @@ namespace Presentacion
             // 
             // lblMensajeError
             // 
-            this.lblMensajeError.AutoSize = true;
-            this.lblMensajeError.Location = new System.Drawing.Point(67, 166);
+            this.lblMensajeError.Location = new System.Drawing.Point(46, 170);
             this.lblMensajeError.Name = "lblMensajeError";
             this.lblMensajeError.Size = new System.Drawing.Size(185, 13);
             this.lblMensajeError.TabIndex = 2;
             this.lblMensajeError.Text = "Este es un mensaje de como se vería";
+            this.lblMensajeError.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btnCerrar
             // 

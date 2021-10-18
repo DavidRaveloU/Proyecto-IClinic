@@ -106,11 +106,12 @@ namespace Presentacion
             // lblMensajeError
             // 
             this.lblMensajeError.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMensajeError.Location = new System.Drawing.Point(8, 136);
+            this.lblMensajeError.Location = new System.Drawing.Point(21, 176);
             this.lblMensajeError.Name = "lblMensajeError";
-            this.lblMensajeError.Size = new System.Drawing.Size(300, 48);
+            this.lblMensajeError.Size = new System.Drawing.Size(278, 24);
             this.lblMensajeError.TabIndex = 3;
             this.lblMensajeError.Text = "Este es un mensaje de como se vería";
+            this.lblMensajeError.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // FrmVentanaAlvertencia
             // 
