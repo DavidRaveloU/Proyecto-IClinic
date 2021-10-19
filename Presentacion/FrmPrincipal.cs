@@ -134,6 +134,7 @@ namespace Presentacion
         private void guna2Button8_Click(object sender, EventArgs e)
         {
             HideSubmenu();
+            AbrirFormulario(new FrmConsultaHistorial());
         }
 
         private void btnAgenda_Click(object sender, EventArgs e)

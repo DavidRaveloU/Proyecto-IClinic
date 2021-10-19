@@ -146,7 +146,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="CitaMedica.cs" />
+    <Compile Include="ConsultaMedica.cs" />
+    <Compile Include="Diagnostico.cs" />
+    <Compile Include="Medico.cs" />
+    <Compile Include="Paciente.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

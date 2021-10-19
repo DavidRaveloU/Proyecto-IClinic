@@ -50,10 +50,7 @@ namespace Presentacion
             {
                 return "Ingrese un primer apellido válido";
             }
-            else if (string.IsNullOrEmpty(txtSegundoApellido.Text) || txtSegundoApellido.Text.Length < 3)
-            {
-                return "Ingrese un segundo apellido válido";
-            }
+            
             else if (string.IsNullOrEmpty(txtSegundoApellido.Text) || txtSegundoApellido.Text.Length < 3)
             {
                 return "Ingrese un segundo apellido válido";

@@ -47,6 +47,7 @@ namespace Presentacion
             this.btnMedico = new Guna.UI2.WinForms.Guna2Button();
             this.btnAgenda = new Guna.UI2.WinForms.Guna2Button();
             this.pnlFondoDeLogo = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pnlLineaMenu = new System.Windows.Forms.Panel();
             this.pnlSuperior = new System.Windows.Forms.Panel();
             this.btnMinimizar = new Guna.UI2.WinForms.Guna2Button();
@@ -54,14 +55,13 @@ namespace Presentacion
             this.pnlGrapper = new System.Windows.Forms.Panel();
             this.guna2ShadowForm1 = new Guna.UI2.WinForms.Guna2ShadowForm(this.components);
             this.tmrFundir = new System.Windows.Forms.Timer(this.components);
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pnlMenu.SuspendLayout();
             this.pnlConsulta.SuspendLayout();
             this.pnlPaciente.SuspendLayout();
             this.pnlMedico.SuspendLayout();
             this.pnlFondoDeLogo.SuspendLayout();
-            this.pnlSuperior.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.pnlSuperior.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnlMenu
@@ -402,6 +402,16 @@ namespace Presentacion
             this.pnlFondoDeLogo.Size = new System.Drawing.Size(198, 221);
             this.pnlFondoDeLogo.TabIndex = 2;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(-2, -1);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(200, 176);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabStop = false;
+            // 
             // pnlLineaMenu
             // 
             this.pnlLineaMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(247)))), ((int)(((byte)(253)))));
@@ -491,16 +501,6 @@ namespace Presentacion
             this.guna2ShadowForm1.BorderRadius = 27;
             this.guna2ShadowForm1.TargetForm = this;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(-2, -1);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(200, 176);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
-            // 
             // FrmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -519,8 +519,8 @@ namespace Presentacion
             this.pnlPaciente.ResumeLayout(false);
             this.pnlMedico.ResumeLayout(false);
             this.pnlFondoDeLogo.ResumeLayout(false);
-            this.pnlSuperior.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.pnlSuperior.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

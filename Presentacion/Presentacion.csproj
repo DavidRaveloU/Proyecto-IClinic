@@ -156,6 +156,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FrmConsultaHistorial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmConsultaHistorial.Designer.cs">
+      <DependentUpon>FrmConsultaHistorial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmConsultaMedica.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmConsultaMedica.Designer.cs">
+      <DependentUpon>FrmConsultaMedica.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmConsultarMedico.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -212,6 +224,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmConsultaHistorial.resx">
+      <DependentUpon>FrmConsultaHistorial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmConsultaMedica.resx">
+      <DependentUpon>FrmConsultaMedica.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmConsultarMedico.resx">
       <DependentUpon>FrmConsultarMedico.cs</DependentUpon>
     </EmbeddedResource>

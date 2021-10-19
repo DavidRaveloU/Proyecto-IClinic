@@ -31,6 +31,10 @@ namespace Presentacion
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmRegistrarMedico));
             this.pnlFondoRegistrarMedico = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.cmbSexo = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.txtCiudad = new Guna.UI2.WinForms.Guna2TextBox();
+            this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lblRegistroMedico = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.ptrMedico = new Guna.UI2.WinForms.Guna2PictureBox();
             this.btnCancelar = new Guna.UI2.WinForms.Guna2Button();
@@ -58,6 +62,10 @@ namespace Presentacion
             // pnlFondoRegistrarMedico
             // 
             this.pnlFondoRegistrarMedico.BackColor = System.Drawing.Color.Transparent;
+            this.pnlFondoRegistrarMedico.Controls.Add(this.cmbSexo);
+            this.pnlFondoRegistrarMedico.Controls.Add(this.txtCiudad);
+            this.pnlFondoRegistrarMedico.Controls.Add(this.guna2HtmlLabel1);
+            this.pnlFondoRegistrarMedico.Controls.Add(this.guna2HtmlLabel2);
             this.pnlFondoRegistrarMedico.Controls.Add(this.lblRegistroMedico);
             this.pnlFondoRegistrarMedico.Controls.Add(this.ptrMedico);
             this.pnlFondoRegistrarMedico.Controls.Add(this.btnCancelar);
@@ -87,6 +95,77 @@ namespace Presentacion
             this.pnlFondoRegistrarMedico.Size = new System.Drawing.Size(743, 616);
             this.pnlFondoRegistrarMedico.TabIndex = 0;
             // 
+            // cmbSexo
+            // 
+            this.cmbSexo.BackColor = System.Drawing.Color.Transparent;
+            this.cmbSexo.BorderRadius = 15;
+            this.cmbSexo.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cmbSexo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbSexo.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cmbSexo.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cmbSexo.FocusedState.Parent = this.cmbSexo;
+            this.cmbSexo.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cmbSexo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.cmbSexo.HoverState.Parent = this.cmbSexo;
+            this.cmbSexo.ItemHeight = 30;
+            this.cmbSexo.Items.AddRange(new object[] {
+            "Femenino",
+            "Masculino"});
+            this.cmbSexo.ItemsAppearance.Parent = this.cmbSexo;
+            this.cmbSexo.Location = new System.Drawing.Point(165, 444);
+            this.cmbSexo.Name = "cmbSexo";
+            this.cmbSexo.ShadowDecoration.Parent = this.cmbSexo;
+            this.cmbSexo.Size = new System.Drawing.Size(196, 36);
+            this.cmbSexo.TabIndex = 28;
+            // 
+            // txtCiudad
+            // 
+            this.txtCiudad.Animated = true;
+            this.txtCiudad.BorderRadius = 12;
+            this.txtCiudad.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtCiudad.DefaultText = "";
+            this.txtCiudad.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtCiudad.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtCiudad.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtCiudad.DisabledState.Parent = this.txtCiudad;
+            this.txtCiudad.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtCiudad.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtCiudad.FocusedState.Parent = this.txtCiudad;
+            this.txtCiudad.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCiudad.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtCiudad.HoverState.Parent = this.txtCiudad;
+            this.txtCiudad.Location = new System.Drawing.Point(522, 451);
+            this.txtCiudad.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtCiudad.Name = "txtCiudad";
+            this.txtCiudad.PasswordChar = '\0';
+            this.txtCiudad.PlaceholderText = "Ej: Valledupar";
+            this.txtCiudad.SelectedText = "";
+            this.txtCiudad.ShadowDecoration.Parent = this.txtCiudad;
+            this.txtCiudad.Size = new System.Drawing.Size(196, 29);
+            this.txtCiudad.TabIndex = 27;
+            // 
+            // guna2HtmlLabel1
+            // 
+            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(387, 452);
+            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(53, 22);
+            this.guna2HtmlLabel1.TabIndex = 26;
+            this.guna2HtmlLabel1.Text = "Ciudad";
+            // 
+            // guna2HtmlLabel2
+            // 
+            this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.guna2HtmlLabel2.Location = new System.Drawing.Point(24, 452);
+            this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
+            this.guna2HtmlLabel2.Size = new System.Drawing.Size(39, 22);
+            this.guna2HtmlLabel2.TabIndex = 25;
+            this.guna2HtmlLabel2.Text = "Sexo";
+            // 
             // lblRegistroMedico
             // 
             this.lblRegistroMedico.BackColor = System.Drawing.Color.Transparent;
@@ -102,7 +181,7 @@ namespace Presentacion
             // 
             this.ptrMedico.Image = ((System.Drawing.Image)(resources.GetObject("ptrMedico.Image")));
             this.ptrMedico.ImageRotate = 0F;
-            this.ptrMedico.Location = new System.Drawing.Point(258, 17);
+            this.ptrMedico.Location = new System.Drawing.Point(262, 17);
             this.ptrMedico.Name = "ptrMedico";
             this.ptrMedico.ShadowDecoration.Parent = this.ptrMedico;
             this.ptrMedico.Size = new System.Drawing.Size(61, 65);
@@ -124,7 +203,7 @@ namespace Presentacion
             this.btnCancelar.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancelar.ForeColor = System.Drawing.Color.White;
             this.btnCancelar.HoverState.Parent = this.btnCancelar;
-            this.btnCancelar.Location = new System.Drawing.Point(339, 541);
+            this.btnCancelar.Location = new System.Drawing.Point(338, 539);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.ShadowDecoration.Parent = this.btnCancelar;
             this.btnCancelar.Size = new System.Drawing.Size(171, 31);
@@ -146,7 +225,7 @@ namespace Presentacion
             this.btnGuardar.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGuardar.ForeColor = System.Drawing.Color.White;
             this.btnGuardar.HoverState.Parent = this.btnGuardar;
-            this.btnGuardar.Location = new System.Drawing.Point(547, 541);
+            this.btnGuardar.Location = new System.Drawing.Point(543, 539);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.ShadowDecoration.Parent = this.btnGuardar;
             this.btnGuardar.Size = new System.Drawing.Size(171, 31);
@@ -169,7 +248,7 @@ namespace Presentacion
             this.guna2TextBox4.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2TextBox4.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox4.HoverState.Parent = this.guna2TextBox4;
-            this.guna2TextBox4.Location = new System.Drawing.Point(522, 410);
+            this.guna2TextBox4.Location = new System.Drawing.Point(522, 375);
             this.guna2TextBox4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.guna2TextBox4.Name = "guna2TextBox4";
             this.guna2TextBox4.PasswordChar = '\0';
@@ -195,7 +274,7 @@ namespace Presentacion
             this.guna2TextBox3.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2TextBox3.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox3.HoverState.Parent = this.guna2TextBox3;
-            this.guna2TextBox3.Location = new System.Drawing.Point(522, 316);
+            this.guna2TextBox3.Location = new System.Drawing.Point(522, 289);
             this.guna2TextBox3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.guna2TextBox3.Name = "guna2TextBox3";
             this.guna2TextBox3.PasswordChar = '\0';
@@ -221,7 +300,7 @@ namespace Presentacion
             this.guna2TextBox2.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2TextBox2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox2.HoverState.Parent = this.guna2TextBox2;
-            this.guna2TextBox2.Location = new System.Drawing.Point(522, 222);
+            this.guna2TextBox2.Location = new System.Drawing.Point(522, 203);
             this.guna2TextBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.guna2TextBox2.Name = "guna2TextBox2";
             this.guna2TextBox2.PasswordChar = '\0';
@@ -247,7 +326,7 @@ namespace Presentacion
             this.guna2TextBox1.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox1.HoverState.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.Location = new System.Drawing.Point(522, 128);
+            this.guna2TextBox1.Location = new System.Drawing.Point(522, 117);
             this.guna2TextBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.guna2TextBox1.Name = "guna2TextBox1";
             this.guna2TextBox1.PasswordChar = '\0';
@@ -273,7 +352,7 @@ namespace Presentacion
             this.txtCorreo.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCorreo.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtCorreo.HoverState.Parent = this.txtCorreo;
-            this.txtCorreo.Location = new System.Drawing.Point(162, 407);
+            this.txtCorreo.Location = new System.Drawing.Point(165, 372);
             this.txtCorreo.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtCorreo.Name = "txtCorreo";
             this.txtCorreo.PasswordChar = '\0';
@@ -299,7 +378,7 @@ namespace Presentacion
             this.txtSgundoApellido.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSgundoApellido.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtSgundoApellido.HoverState.Parent = this.txtSgundoApellido;
-            this.txtSgundoApellido.Location = new System.Drawing.Point(162, 313);
+            this.txtSgundoApellido.Location = new System.Drawing.Point(165, 286);
             this.txtSgundoApellido.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtSgundoApellido.Name = "txtSgundoApellido";
             this.txtSgundoApellido.PasswordChar = '\0';
@@ -325,7 +404,7 @@ namespace Presentacion
             this.txtSegundoNombre.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSegundoNombre.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtSegundoNombre.HoverState.Parent = this.txtSegundoNombre;
-            this.txtSegundoNombre.Location = new System.Drawing.Point(162, 219);
+            this.txtSegundoNombre.Location = new System.Drawing.Point(165, 200);
             this.txtSegundoNombre.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtSegundoNombre.Name = "txtSegundoNombre";
             this.txtSegundoNombre.PasswordChar = '\0';
@@ -351,7 +430,7 @@ namespace Presentacion
             this.txtNumeroDeCedula.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNumeroDeCedula.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtNumeroDeCedula.HoverState.Parent = this.txtNumeroDeCedula;
-            this.txtNumeroDeCedula.Location = new System.Drawing.Point(162, 125);
+            this.txtNumeroDeCedula.Location = new System.Drawing.Point(165, 114);
             this.txtNumeroDeCedula.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtNumeroDeCedula.Name = "txtNumeroDeCedula";
             this.txtNumeroDeCedula.PasswordChar = '\0';
@@ -366,7 +445,7 @@ namespace Presentacion
             this.lblDireccion.BackColor = System.Drawing.Color.Transparent;
             this.lblDireccion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDireccion.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblDireccion.Location = new System.Drawing.Point(387, 411);
+            this.lblDireccion.Location = new System.Drawing.Point(387, 376);
             this.lblDireccion.Name = "lblDireccion";
             this.lblDireccion.Size = new System.Drawing.Size(69, 22);
             this.lblDireccion.TabIndex = 7;
@@ -377,7 +456,7 @@ namespace Presentacion
             this.lblCorreoElectronico.BackColor = System.Drawing.Color.Transparent;
             this.lblCorreoElectronico.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCorreoElectronico.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblCorreoElectronico.Location = new System.Drawing.Point(24, 408);
+            this.lblCorreoElectronico.Location = new System.Drawing.Point(27, 373);
             this.lblCorreoElectronico.Name = "lblCorreoElectronico";
             this.lblCorreoElectronico.Size = new System.Drawing.Size(132, 22);
             this.lblCorreoElectronico.TabIndex = 6;
@@ -388,7 +467,7 @@ namespace Presentacion
             this.lblTelefono.BackColor = System.Drawing.Color.Transparent;
             this.lblTelefono.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTelefono.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblTelefono.Location = new System.Drawing.Point(387, 317);
+            this.lblTelefono.Location = new System.Drawing.Point(387, 290);
             this.lblTelefono.Name = "lblTelefono";
             this.lblTelefono.Size = new System.Drawing.Size(126, 22);
             this.lblTelefono.TabIndex = 5;
@@ -399,7 +478,7 @@ namespace Presentacion
             this.lblSegundoApellido.BackColor = System.Drawing.Color.Transparent;
             this.lblSegundoApellido.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSegundoApellido.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblSegundoApellido.Location = new System.Drawing.Point(24, 314);
+            this.lblSegundoApellido.Location = new System.Drawing.Point(27, 287);
             this.lblSegundoApellido.Name = "lblSegundoApellido";
             this.lblSegundoApellido.Size = new System.Drawing.Size(126, 22);
             this.lblSegundoApellido.TabIndex = 4;
@@ -410,7 +489,7 @@ namespace Presentacion
             this.lblPrimerApellido.BackColor = System.Drawing.Color.Transparent;
             this.lblPrimerApellido.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPrimerApellido.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblPrimerApellido.Location = new System.Drawing.Point(387, 223);
+            this.lblPrimerApellido.Location = new System.Drawing.Point(387, 204);
             this.lblPrimerApellido.Name = "lblPrimerApellido";
             this.lblPrimerApellido.Size = new System.Drawing.Size(108, 22);
             this.lblPrimerApellido.TabIndex = 3;
@@ -421,7 +500,7 @@ namespace Presentacion
             this.lblSegundoNombre.BackColor = System.Drawing.Color.Transparent;
             this.lblSegundoNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSegundoNombre.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblSegundoNombre.Location = new System.Drawing.Point(24, 220);
+            this.lblSegundoNombre.Location = new System.Drawing.Point(27, 201);
             this.lblSegundoNombre.Name = "lblSegundoNombre";
             this.lblSegundoNombre.Size = new System.Drawing.Size(128, 22);
             this.lblSegundoNombre.TabIndex = 2;
@@ -432,7 +511,7 @@ namespace Presentacion
             this.lblPrimerNombre.BackColor = System.Drawing.Color.Transparent;
             this.lblPrimerNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPrimerNombre.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblPrimerNombre.Location = new System.Drawing.Point(387, 129);
+            this.lblPrimerNombre.Location = new System.Drawing.Point(387, 118);
             this.lblPrimerNombre.Name = "lblPrimerNombre";
             this.lblPrimerNombre.Size = new System.Drawing.Size(106, 22);
             this.lblPrimerNombre.TabIndex = 1;
@@ -443,7 +522,7 @@ namespace Presentacion
             this.lblNumeroCédula.BackColor = System.Drawing.Color.Transparent;
             this.lblNumeroCédula.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNumeroCédula.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblNumeroCédula.Location = new System.Drawing.Point(24, 126);
+            this.lblNumeroCédula.Location = new System.Drawing.Point(27, 115);
             this.lblNumeroCédula.Name = "lblNumeroCédula";
             this.lblNumeroCédula.Size = new System.Drawing.Size(132, 22);
             this.lblNumeroCédula.TabIndex = 0;
@@ -489,5 +568,9 @@ namespace Presentacion
         private Guna.UI2.WinForms.Guna2Button btnCancelar;
         private Guna.UI2.WinForms.Guna2Button btnGuardar;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblRegistroMedico;
+        private Guna.UI2.WinForms.Guna2ComboBox cmbSexo;
+        private Guna.UI2.WinForms.Guna2TextBox txtCiudad;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
     }
 }
