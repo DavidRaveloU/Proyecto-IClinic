@@ -16,5 +16,15 @@ namespace Presentacion
         {
             InitializeComponent();
         }
+
+        private void btnSiguiente1_Click(object sender, EventArgs e)
+        {
+            tabConsultaMedica.SetPage("tratamiento");
+        }
+
+        private void btnRegresar_Click(object sender, EventArgs e)
+        {
+            tabConsultaMedica.SetPage("consulta medica");
+        }
     }
 }
