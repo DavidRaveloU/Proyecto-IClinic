@@ -48,8 +48,21 @@ namespace Presentacion
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.lblIdTratamiento = new System.Windows.Forms.Label();
+            this.lblCódigoTratamiento = new System.Windows.Forms.Label();
+            this.lblDescrpcion = new System.Windows.Forms.Label();
+            this.lblNombreTratamiento = new System.Windows.Forms.Label();
+            this.txtNombreTratamiento = new Guna.UI2.WinForms.Guna2TextBox();
+            this.lblCodigoRecetaMedica = new System.Windows.Forms.Label();
+            this.lblIdRecetaMedica = new System.Windows.Forms.Label();
+            this.txtDescripcion = new Guna.UI2.WinForms.Guna2TextBox();
+            this.lblNombreMedicamento = new System.Windows.Forms.Label();
+            this.txtNombreMedicamento = new Guna.UI2.WinForms.Guna2TextBox();
+            this.lblIndicaciones = new System.Windows.Forms.Label();
+            this.txtIndicaciones = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2ShadowPanel1.SuspendLayout();
             this.tabConsultaMedica.SuspendLayout();
+            this.tabPage2.SuspendLayout();
             this.SuspendLayout();
             // 
             // guna2ShadowPanel1
@@ -410,10 +423,10 @@ namespace Presentacion
             this.tabConsultaMedica.Location = new System.Drawing.Point(27, 59);
             this.tabConsultaMedica.Multiline = true;
             this.tabConsultaMedica.Name = "tabConsultaMedica";
-            this.tabConsultaMedica.Page = this.tabPage1;
-            this.tabConsultaMedica.PageIndex = 0;
-            this.tabConsultaMedica.PageName = "tabPage1";
-            this.tabConsultaMedica.PageTitle = "tabPage1";
+            this.tabConsultaMedica.Page = this.tabPage2;
+            this.tabConsultaMedica.PageIndex = 1;
+            this.tabConsultaMedica.PageName = "tabPage2";
+            this.tabConsultaMedica.PageTitle = "tabPage2";
             this.tabConsultaMedica.SelectedIndex = 0;
             this.tabConsultaMedica.Size = new System.Drawing.Size(691, 538);
             this.tabConsultaMedica.TabIndex = 15;
@@ -447,6 +460,18 @@ namespace Presentacion
             // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.txtIndicaciones);
+            this.tabPage2.Controls.Add(this.lblIndicaciones);
+            this.tabPage2.Controls.Add(this.txtNombreMedicamento);
+            this.tabPage2.Controls.Add(this.lblNombreMedicamento);
+            this.tabPage2.Controls.Add(this.txtDescripcion);
+            this.tabPage2.Controls.Add(this.lblIdRecetaMedica);
+            this.tabPage2.Controls.Add(this.lblCodigoRecetaMedica);
+            this.tabPage2.Controls.Add(this.txtNombreTratamiento);
+            this.tabPage2.Controls.Add(this.lblNombreTratamiento);
+            this.tabPage2.Controls.Add(this.lblDescrpcion);
+            this.tabPage2.Controls.Add(this.lblIdTratamiento);
+            this.tabPage2.Controls.Add(this.lblCódigoTratamiento);
             this.tabPage2.Location = new System.Drawing.Point(4, 4);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
@@ -475,6 +500,188 @@ namespace Presentacion
             this.tabPage4.Text = "tabPage4";
             this.tabPage4.UseVisualStyleBackColor = true;
             // 
+            // lblIdTratamiento
+            // 
+            this.lblIdTratamiento.AutoSize = true;
+            this.lblIdTratamiento.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblIdTratamiento.Location = new System.Drawing.Point(163, 29);
+            this.lblIdTratamiento.Name = "lblIdTratamiento";
+            this.lblIdTratamiento.Size = new System.Drawing.Size(37, 21);
+            this.lblIdTratamiento.TabIndex = 7;
+            this.lblIdTratamiento.Text = "123";
+            // 
+            // lblCódigoTratamiento
+            // 
+            this.lblCódigoTratamiento.AutoSize = true;
+            this.lblCódigoTratamiento.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCódigoTratamiento.Location = new System.Drawing.Point(20, 28);
+            this.lblCódigoTratamiento.Name = "lblCódigoTratamiento";
+            this.lblCódigoTratamiento.Size = new System.Drawing.Size(148, 21);
+            this.lblCódigoTratamiento.TabIndex = 6;
+            this.lblCódigoTratamiento.Text = "Código tratamiento:";
+            // 
+            // lblDescrpcion
+            // 
+            this.lblDescrpcion.AutoSize = true;
+            this.lblDescrpcion.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDescrpcion.Location = new System.Drawing.Point(20, 97);
+            this.lblDescrpcion.Name = "lblDescrpcion";
+            this.lblDescrpcion.Size = new System.Drawing.Size(98, 21);
+            this.lblDescrpcion.TabIndex = 8;
+            this.lblDescrpcion.Text = "Descripción: ";
+            // 
+            // lblNombreTratamiento
+            // 
+            this.lblNombreTratamiento.AutoSize = true;
+            this.lblNombreTratamiento.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNombreTratamiento.Location = new System.Drawing.Point(20, 64);
+            this.lblNombreTratamiento.Name = "lblNombreTratamiento";
+            this.lblNombreTratamiento.Size = new System.Drawing.Size(185, 21);
+            this.lblNombreTratamiento.TabIndex = 10;
+            this.lblNombreTratamiento.Text = "Nombre del tratamiento: ";
+            // 
+            // txtNombreTratamiento
+            // 
+            this.txtNombreTratamiento.BorderRadius = 15;
+            this.txtNombreTratamiento.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtNombreTratamiento.DefaultText = "Nombre del tratamiento";
+            this.txtNombreTratamiento.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtNombreTratamiento.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtNombreTratamiento.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtNombreTratamiento.DisabledState.Parent = this.txtNombreTratamiento;
+            this.txtNombreTratamiento.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtNombreTratamiento.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtNombreTratamiento.FocusedState.Parent = this.txtNombreTratamiento;
+            this.txtNombreTratamiento.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtNombreTratamiento.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtNombreTratamiento.HoverState.Parent = this.txtNombreTratamiento;
+            this.txtNombreTratamiento.Location = new System.Drawing.Point(212, 58);
+            this.txtNombreTratamiento.Name = "txtNombreTratamiento";
+            this.txtNombreTratamiento.PasswordChar = '\0';
+            this.txtNombreTratamiento.PlaceholderText = "";
+            this.txtNombreTratamiento.SelectedText = "";
+            this.txtNombreTratamiento.SelectionStart = 22;
+            this.txtNombreTratamiento.ShadowDecoration.Parent = this.txtNombreTratamiento;
+            this.txtNombreTratamiento.Size = new System.Drawing.Size(234, 36);
+            this.txtNombreTratamiento.TabIndex = 11;
+            // 
+            // lblCodigoRecetaMedica
+            // 
+            this.lblCodigoRecetaMedica.AutoSize = true;
+            this.lblCodigoRecetaMedica.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCodigoRecetaMedica.Location = new System.Drawing.Point(26, 256);
+            this.lblCodigoRecetaMedica.Name = "lblCodigoRecetaMedica";
+            this.lblCodigoRecetaMedica.Size = new System.Drawing.Size(167, 21);
+            this.lblCodigoRecetaMedica.TabIndex = 13;
+            this.lblCodigoRecetaMedica.Text = "Código Receta Medica:";
+            // 
+            // lblIdRecetaMedica
+            // 
+            this.lblIdRecetaMedica.AutoSize = true;
+            this.lblIdRecetaMedica.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblIdRecetaMedica.Location = new System.Drawing.Point(186, 258);
+            this.lblIdRecetaMedica.Name = "lblIdRecetaMedica";
+            this.lblIdRecetaMedica.Size = new System.Drawing.Size(37, 21);
+            this.lblIdRecetaMedica.TabIndex = 14;
+            this.lblIdRecetaMedica.Text = "123";
+            // 
+            // txtDescripcion
+            // 
+            this.txtDescripcion.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtDescripcion.DefaultText = "";
+            this.txtDescripcion.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtDescripcion.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtDescripcion.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtDescripcion.DisabledState.Parent = this.txtDescripcion;
+            this.txtDescripcion.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtDescripcion.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtDescripcion.FocusedState.Parent = this.txtDescripcion;
+            this.txtDescripcion.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDescripcion.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtDescripcion.HoverState.Parent = this.txtDescripcion;
+            this.txtDescripcion.Location = new System.Drawing.Point(24, 122);
+            this.txtDescripcion.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtDescripcion.Multiline = true;
+            this.txtDescripcion.Name = "txtDescripcion";
+            this.txtDescripcion.PasswordChar = '\0';
+            this.txtDescripcion.PlaceholderText = "";
+            this.txtDescripcion.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.txtDescripcion.SelectedText = "";
+            this.txtDescripcion.ShadowDecoration.Parent = this.txtDescripcion;
+            this.txtDescripcion.Size = new System.Drawing.Size(637, 102);
+            this.txtDescripcion.TabIndex = 15;
+            // 
+            // lblNombreMedicamento
+            // 
+            this.lblNombreMedicamento.AutoSize = true;
+            this.lblNombreMedicamento.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNombreMedicamento.Location = new System.Drawing.Point(26, 295);
+            this.lblNombreMedicamento.Name = "lblNombreMedicamento";
+            this.lblNombreMedicamento.Size = new System.Drawing.Size(199, 21);
+            this.lblNombreMedicamento.TabIndex = 16;
+            this.lblNombreMedicamento.Text = "Nombre del médicamento: ";
+            // 
+            // txtNombreMedicamento
+            // 
+            this.txtNombreMedicamento.BorderRadius = 15;
+            this.txtNombreMedicamento.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtNombreMedicamento.DefaultText = "Nombre del tratamiento";
+            this.txtNombreMedicamento.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtNombreMedicamento.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtNombreMedicamento.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtNombreMedicamento.DisabledState.Parent = this.txtNombreMedicamento;
+            this.txtNombreMedicamento.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtNombreMedicamento.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtNombreMedicamento.FocusedState.Parent = this.txtNombreMedicamento;
+            this.txtNombreMedicamento.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtNombreMedicamento.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtNombreMedicamento.HoverState.Parent = this.txtNombreMedicamento;
+            this.txtNombreMedicamento.Location = new System.Drawing.Point(224, 288);
+            this.txtNombreMedicamento.Name = "txtNombreMedicamento";
+            this.txtNombreMedicamento.PasswordChar = '\0';
+            this.txtNombreMedicamento.PlaceholderText = "";
+            this.txtNombreMedicamento.SelectedText = "";
+            this.txtNombreMedicamento.SelectionStart = 22;
+            this.txtNombreMedicamento.ShadowDecoration.Parent = this.txtNombreMedicamento;
+            this.txtNombreMedicamento.Size = new System.Drawing.Size(234, 36);
+            this.txtNombreMedicamento.TabIndex = 17;
+            // 
+            // lblIndicaciones
+            // 
+            this.lblIndicaciones.AutoSize = true;
+            this.lblIndicaciones.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblIndicaciones.Location = new System.Drawing.Point(26, 334);
+            this.lblIndicaciones.Name = "lblIndicaciones";
+            this.lblIndicaciones.Size = new System.Drawing.Size(106, 21);
+            this.lblIndicaciones.TabIndex = 18;
+            this.lblIndicaciones.Text = "Indicaciones:  ";
+            // 
+            // txtIndicaciones
+            // 
+            this.txtIndicaciones.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtIndicaciones.DefaultText = "";
+            this.txtIndicaciones.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtIndicaciones.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtIndicaciones.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtIndicaciones.DisabledState.Parent = this.txtIndicaciones;
+            this.txtIndicaciones.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtIndicaciones.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtIndicaciones.FocusedState.Parent = this.txtIndicaciones;
+            this.txtIndicaciones.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtIndicaciones.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtIndicaciones.HoverState.Parent = this.txtIndicaciones;
+            this.txtIndicaciones.Location = new System.Drawing.Point(24, 374);
+            this.txtIndicaciones.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtIndicaciones.Multiline = true;
+            this.txtIndicaciones.Name = "txtIndicaciones";
+            this.txtIndicaciones.PasswordChar = '\0';
+            this.txtIndicaciones.PlaceholderText = "";
+            this.txtIndicaciones.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.txtIndicaciones.SelectedText = "";
+            this.txtIndicaciones.ShadowDecoration.Parent = this.txtIndicaciones;
+            this.txtIndicaciones.Size = new System.Drawing.Size(637, 102);
+            this.txtIndicaciones.TabIndex = 19;
+            // 
             // FrmConsultaMedica
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -488,6 +695,8 @@ namespace Presentacion
             this.guna2ShadowPanel1.ResumeLayout(false);
             this.guna2ShadowPanel1.PerformLayout();
             this.tabConsultaMedica.ResumeLayout(false);
+            this.tabPage2.ResumeLayout(false);
+            this.tabPage2.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -511,5 +720,17 @@ namespace Presentacion
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.TabPage tabPage4;
+        private Guna.UI2.WinForms.Guna2TextBox txtNombreTratamiento;
+        private System.Windows.Forms.Label lblNombreTratamiento;
+        private System.Windows.Forms.Label lblDescrpcion;
+        private System.Windows.Forms.Label lblIdTratamiento;
+        private System.Windows.Forms.Label lblCódigoTratamiento;
+        private System.Windows.Forms.Label lblCodigoRecetaMedica;
+        private Guna.UI2.WinForms.Guna2TextBox txtDescripcion;
+        private System.Windows.Forms.Label lblIdRecetaMedica;
+        private System.Windows.Forms.Label lblNombreMedicamento;
+        private Guna.UI2.WinForms.Guna2TextBox txtIndicaciones;
+        private System.Windows.Forms.Label lblIndicaciones;
+        private Guna.UI2.WinForms.Guna2TextBox txtNombreMedicamento;
     }
 }
