@@ -129,6 +129,7 @@ namespace Presentacion
         private void guna2Button7_Click(object sender, EventArgs e)
         {
             HideSubmenu();
+            AbrirFormulario(new FrmConsultaMedica());
         }
 
         private void guna2Button8_Click(object sender, EventArgs e)
