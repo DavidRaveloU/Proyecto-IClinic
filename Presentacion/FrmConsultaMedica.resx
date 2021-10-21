@@ -117,6 +117,18 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="chkConsultaMedica.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAYAAACpF6WWAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAE3SURBVDhPxZWxTsMwEIYzMjIypDEjIyMjIyMjIyOPwMjG
+        GAchMWbkMRh5hD5Cx47d7rjfvrhOc0GNqcQv/Yqbu/t0tk9p9S9yLZ+Lb1ctv8B1R3fy+1LDx8v1fNZ0
+        9LrytGk8s2WJbSXn073zhZbNy3V0IwXrHOCGdadreQ4xwNG9lk8F4JCcF846h7f8qJi9sOXDDpdYaneT
+        s5bz+QgJx3R4aK0R8LfionA2k+QlVnC6OPfGV3mgyFpbt3wfoFjkgSKnI+DnAMVQ54G/GKwx9ATeQz09
+        WQklTlCZr+vw8gTbrz09RGgc/J2VtNRoMEChxtOXlbTE0tgGDSoyzmp5t0R4phnNVXZhESjPXjFTYXhT
+        AS5u7vJG76kfbduS9U21LDlbc8u/KcDlO4nZG1mOCX8xdndV9QNcclN8AzlNGwAAAABJRU5ErkJggg==
+</value>
+  </data>
   <data name="animation1.BlindCoeff" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>
         AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0
@@ -152,7 +164,6 @@
         d2luZy5Qb2ludEYCAAAAAXgBeQAACwsCAAAAAAAAAAAAgD8L
 </value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="chkTratamiento.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAYAAACpF6WWAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
@@ -164,24 +175,13 @@
         AS5u7vJG76kfbduS9U21LDlbc8u/KcDlO4nZG1mOCX8xdndV9QNcclN8AzlNGwAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="chkConsultaMedica.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAYAAACpF6WWAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAE3SURBVDhPxZWxTsMwEIYzMjIypDEjIyMjIyMjIyOPwMjG
-        GAchMWbkMRh5hD5Cx47d7rjfvrhOc0GNqcQv/Yqbu/t0tk9p9S9yLZ+Lb1ctv8B1R3fy+1LDx8v1fNZ0
-        9LrytGk8s2WJbSXn073zhZbNy3V0IwXrHOCGdadreQ4xwNG9lk8F4JCcF846h7f8qJi9sOXDDpdYaneT
-        s5bz+QgJx3R4aK0R8LfionA2k+QlVnC6OPfGV3mgyFpbt3wfoFjkgSKnI+DnAMVQ54G/GKwx9ATeQz09
-        WQklTlCZr+vw8gTbrz09RGgc/J2VtNRoMEChxtOXlbTE0tgGDSoyzmp5t0R4phnNVXZhESjPXjFTYXhT
-        AS5u7vJG76kfbduS9U21LDlbc8u/KcDlO4nZG1mOCX8xdndV9QNcclN8AzlNGwAAAABJRU5ErkJggg==
-</value>
-  </data>
   <data name="lblTratamiento.BaseStylesheet" xml:space="preserve">
-    <value>#bunifu-label { padding: 0px; font-family: 'Segoe UI'; font-size: 12pt; width: 100%; height: 100%; font-style: normal; font-weight: normal; text-decoration: none; color: rgb(160, 160, 160); text-align: left; }</value>
+    <value>#bunifu-label { padding: 0px; font-family: 'Segoe UI'; font-size: 12pt; width: 100%; height: 100%; font-style: normal; font-weight: normal; text-decoration: none; color: rgb(152, 152, 152); text-align: left; }</value>
   </data>
   <data name="lblConslutaMedica.BaseStylesheet" xml:space="preserve">
-    <value>#bunifu-label { padding: 0px; font-family: 'Segoe UI'; font-size: 12pt; width: 100%; height: 100%; font-style: normal; font-weight: normal; text-decoration: none; color: rgb(160, 160, 160); text-align: left; }</value>
+    <value>#bunifu-label { padding: 0px; font-family: 'Segoe UI'; font-size: 12pt; width: 100%; height: 100%; font-style: normal; font-weight: normal; text-decoration: none; color: rgb(152, 152, 152); text-align: left; }</value>
   </data>
-  <data name="bunifuSeparator1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="lblSeparadora.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAADEAAAAVCAYAAADvoQY8AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
         YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAoSURBVFhH7c9BDQAwDAOx8EcVZt1nIFrJlg7ABQC4oO1c

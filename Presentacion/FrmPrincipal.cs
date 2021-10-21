@@ -126,18 +126,17 @@ namespace Presentacion
             showSubmenu(pnlConsulta);
         }
 
-        private void guna2Button7_Click(object sender, EventArgs e)
+        private void btnConsultaMedica_Click(object sender, EventArgs e)
         {
-            HideSubmenu();
             AbrirFormulario(new FrmConsultaMedica());
-        }
-
-        private void guna2Button8_Click(object sender, EventArgs e)
-        {
             HideSubmenu();
-            AbrirFormulario(new FrmConsultaHistorial());
         }
 
+        private void btnConsultarHistorial_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario(new FrmConsultaHistorial());
+            HideSubmenu();
+        }
         private void btnAgenda_Click(object sender, EventArgs e)
         {
             HideSubmenu();
@@ -150,5 +149,7 @@ namespace Presentacion
             FrmLogin frmLogin = new FrmLogin();
             frmLogin.Show();
         }
+
+        
     }
 }

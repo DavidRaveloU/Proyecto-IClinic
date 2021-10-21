@@ -43,7 +43,7 @@ namespace Presentacion
             this.guna2ShadowPanel1.Size = new System.Drawing.Size(743, 616);
             this.guna2ShadowPanel1.TabIndex = 0;
             // 
-            // ConsultaHistorial
+            // FrmConsultaHistorial
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -51,7 +51,7 @@ namespace Presentacion
             this.ClientSize = new System.Drawing.Size(799, 677);
             this.Controls.Add(this.guna2ShadowPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "ConsultaHistorial";
+            this.Name = "FrmConsultaHistorial";
             this.Text = "ConsultaHistorialcs";
             this.ResumeLayout(false);
 

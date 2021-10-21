@@ -142,7 +142,7 @@ namespace Presentacion
             this.btnConsultarHistorial.TabIndex = 1;
             this.btnConsultarHistorial.Text = "Consultar historial";
             this.btnConsultarHistorial.TextOffset = new System.Drawing.Point(2, 0);
-            this.btnConsultarHistorial.Click += new System.EventHandler(this.guna2Button8_Click);
+            this.btnConsultarHistorial.Click += new System.EventHandler(this.btnConsultarHistorial_Click);
             // 
             // btnConsultaMedica
             // 
@@ -165,7 +165,7 @@ namespace Presentacion
             this.btnConsultaMedica.Size = new System.Drawing.Size(198, 45);
             this.btnConsultaMedica.TabIndex = 0;
             this.btnConsultaMedica.Text = "Consulta médica";
-            this.btnConsultaMedica.Click += new System.EventHandler(this.guna2Button7_Click);
+            this.btnConsultaMedica.Click += new System.EventHandler(this.btnConsultaMedica_Click);
             // 
             // btnConsulta
             // 

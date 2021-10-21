@@ -171,28 +171,6 @@
         XIqopCl+nG5RO6SvMeYNlLIsnMnlce0AAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="btnConsultarPaciente.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAQlJREFUWEft
-        lLGKwkAQhrWzUbDSQuxtLCzUgyu0Fd9LsNdXUXwGq+O4zvMQbcXKStDvD1kI6hoxrjlkP/gIMxsyk91k
-        Mh7Pf6SPv7jAnhKvZoXH0D8lIph8EmNZo7lZzUSJPuhRY9ERbFCNpHIEHk/q+EHkB9FbUMExahe34VWx
-        8s7poopeO3/lO+iMKu5Qxab4iaXwOkPlta77nKBtVpEJZpWIoNg0MVLCRpJBpLmhAs0guuQDtb4MIgvP
-        GER5vEYBtb4PIgvPGERxO/AVRBaSDKJ7v4GBEi44/wtamMM2muKyhs64NQeMcyyiM8wk1FEe8BuH2MAf
-        fEkTNspomtCxpILenG8kUz8BUhm5DW6NVHkAAAAASUVORK5CYII=
-</value>
-  </data>
-  <data name="btnRegistrarPaciente.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABGdBTUEAALGPC/xhBQAAAYFJREFUSEvt
-        1r0rxHEAx/Eb+AeUWDzHIlaDh9HDqPgXzP4Ci8FEMSiTyaYkg8RmsVgUJXlm8FgIk4f3h66+8fndHb4/
-        GbzrVe53d7/PdZe7X+a/v1o1xrGHa5xgDg1IrV484sU4wyDKEbV63MONho4QdXwCbsgZRrS24UacDUQr
-        6bN1bhCtc7gRJ+rwItyIs4xozcONOAuI1inciHOMaOnbyo04Y4iaPjs3FFpC9HrgxkKdSKVRuEEZQqq5
-        UUk9Nyr5qsU6LjGgA1+pD25U+pGrRujnU4/Vb3neitGFWTzj42DWE2bQjSJkq0Pz+5+ZJlxg7e1WQq2Y
-        xhXcUJJbtEDp7dVvtL7rNar0InT8U6VYgTtpPhrVC1Y6+SGy9+lt1tttK8EOwpMV6g5tUDUIR+UAOm4b
-        QfjgQmm0HUoXhBoJ79+Hjie2hfAJhdBFQgeUTq6R8H5dkVYhZw8In1QIXY8pnfxboz9tCuHoLiqReqvI
-        jm6iDL+S/hs0PokKHUguk3kFMD0p3ACSMn0AAAAASUVORK5CYII=
-</value>
-  </data>
   <data name="btnPaciente.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eNT6AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
@@ -448,28 +426,6 @@
         AAAAJMw++/w/19bpJbpWDP8AAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="btnConsultarMedico.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAQlJREFUWEft
-        lLGKwkAQhrWzUbDSQuxtLCzUgyu0Fd9LsNdXUXwGq+O4zvMQbcXKStDvD1kI6hoxrjlkP/gIMxsyk91k
-        Mh7Pf6SPv7jAnhKvZoXH0D8lIph8EmNZo7lZzUSJPuhRY9ERbFCNpHIEHk/q+EHkB9FbUMExahe34VWx
-        8s7poopeO3/lO+iMKu5Qxab4iaXwOkPlta77nKBtVpEJZpWIoNg0MVLCRpJBpLmhAs0guuQDtb4MIgvP
-        GER5vEYBtb4PIgvPGERxO/AVRBaSDKJ7v4GBEi44/wtamMM2muKyhs64NQeMcyyiM8wk1FEe8BuH2MAf
-        fEkTNspomtCxpILenG8kUz8BUhm5DW6NVHkAAAAASUVORK5CYII=
-</value>
-  </data>
-  <data name="btnRegistrarMedico.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABGdBTUEAALGPC/xhBQAAAYFJREFUSEvt
-        1r0rxHEAx/Eb+AeUWDzHIlaDh9HDqPgXzP4Ci8FEMSiTyaYkg8RmsVgUJXlm8FgIk4f3h66+8fndHb4/
-        GbzrVe53d7/PdZe7X+a/v1o1xrGHa5xgDg1IrV484sU4wyDKEbV63MONho4QdXwCbsgZRrS24UacDUQr
-        6bN1bhCtc7gRJ+rwItyIs4xozcONOAuI1inciHOMaOnbyo04Y4iaPjs3FFpC9HrgxkKdSKVRuEEZQqq5
-        UUk9Nyr5qsU6LjGgA1+pD25U+pGrRujnU4/Vb3neitGFWTzj42DWE2bQjSJkq0Pz+5+ZJlxg7e1WQq2Y
-        xhXcUJJbtEDp7dVvtL7rNar0InT8U6VYgTtpPhrVC1Y6+SGy9+lt1tttK8EOwpMV6g5tUDUIR+UAOm4b
-        QfjgQmm0HUoXhBoJ79+Hjie2hfAJhdBFQgeUTq6R8H5dkVYhZw8In1QIXY8pnfxboz9tCuHoLiqReqvI
-        jm6iDL+S/hs0PokKHUguk3kFMD0p3ACSMn0AAAAASUVORK5CYII=
-</value>
-  </data>
   <data name="btnMedico.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAABGdBTUEAALGPC/xhBQAAEFhJREFUeF7t
@@ -567,6 +523,50 @@
         On4kpt8e8Xbny4/E/MSgAUEDXDYAX02p5hfi+4frBpy+vQ4TTUPQVp40TPzCtvKEvvdBiN18Z9RkPDVI
         kDmShPWquK+JGRw3gDP0I4MGOGjAKxQ8rjjHGvqJqYrz1ICMjKeG1S9L+4s2viyd9XX5t/lGvuNb21+X
         DxAgQIAA/w1KSn4Ba7apUWzLxEEAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="btnConsultarPaciente.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAQlJREFUWEft
+        lLGKwkAQhrWzUbDSQuxtLCzUgyu0Fd9LsNdXUXwGq+O4zvMQbcXKStDvD1kI6hoxrjlkP/gIMxsyk91k
+        Mh7Pf6SPv7jAnhKvZoXH0D8lIph8EmNZo7lZzUSJPuhRY9ERbFCNpHIEHk/q+EHkB9FbUMExahe34VWx
+        8s7poopeO3/lO+iMKu5Qxab4iaXwOkPlta77nKBtVpEJZpWIoNg0MVLCRpJBpLmhAs0guuQDtb4MIgvP
+        GER5vEYBtb4PIgvPGERxO/AVRBaSDKJ7v4GBEi44/wtamMM2muKyhs64NQeMcyyiM8wk1FEe8BuH2MAf
+        fEkTNspomtCxpILenG8kUz8BUhm5DW6NVHkAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="btnRegistrarPaciente.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABGdBTUEAALGPC/xhBQAAAYFJREFUSEvt
+        1r0rxHEAx/Eb+AeUWDzHIlaDh9HDqPgXzP4Ci8FEMSiTyaYkg8RmsVgUJXlm8FgIk4f3h66+8fndHb4/
+        GbzrVe53d7/PdZe7X+a/v1o1xrGHa5xgDg1IrV484sU4wyDKEbV63MONho4QdXwCbsgZRrS24UacDUQr
+        6bN1bhCtc7gRJ+rwItyIs4xozcONOAuI1inciHOMaOnbyo04Y4iaPjs3FFpC9HrgxkKdSKVRuEEZQqq5
+        UUk9Nyr5qsU6LjGgA1+pD25U+pGrRujnU4/Vb3neitGFWTzj42DWE2bQjSJkq0Pz+5+ZJlxg7e1WQq2Y
+        xhXcUJJbtEDp7dVvtL7rNar0InT8U6VYgTtpPhrVC1Y6+SGy9+lt1tttK8EOwpMV6g5tUDUIR+UAOm4b
+        QfjgQmm0HUoXhBoJ79+Hjie2hfAJhdBFQgeUTq6R8H5dkVYhZw8In1QIXY8pnfxboz9tCuHoLiqReqvI
+        jm6iDL+S/hs0PokKHUguk3kFMD0p3ACSMn0AAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="btnConsultarMedico.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAQlJREFUWEft
+        lLGKwkAQhrWzUbDSQuxtLCzUgyu0Fd9LsNdXUXwGq+O4zvMQbcXKStDvD1kI6hoxrjlkP/gIMxsyk91k
+        Mh7Pf6SPv7jAnhKvZoXH0D8lIph8EmNZo7lZzUSJPuhRY9ERbFCNpHIEHk/q+EHkB9FbUMExahe34VWx
+        8s7poopeO3/lO+iMKu5Qxab4iaXwOkPlta77nKBtVpEJZpWIoNg0MVLCRpJBpLmhAs0guuQDtb4MIgvP
+        GER5vEYBtb4PIgvPGERxO/AVRBaSDKJ7v4GBEi44/wtamMM2muKyhs64NQeMcyyiM8wk1FEe8BuH2MAf
+        fEkTNspomtCxpILenG8kUz8BUhm5DW6NVHkAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="btnRegistrarMedico.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABGdBTUEAALGPC/xhBQAAAYFJREFUSEvt
+        1r0rxHEAx/Eb+AeUWDzHIlaDh9HDqPgXzP4Ci8FEMSiTyaYkg8RmsVgUJXlm8FgIk4f3h66+8fndHb4/
+        GbzrVe53d7/PdZe7X+a/v1o1xrGHa5xgDg1IrV484sU4wyDKEbV63MONho4QdXwCbsgZRrS24UacDUQr
+        6bN1bhCtc7gRJ+rwItyIs4xozcONOAuI1inciHOMaOnbyo04Y4iaPjs3FFpC9HrgxkKdSKVRuEEZQqq5
+        UUk9Nyr5qsU6LjGgA1+pD25U+pGrRujnU4/Vb3neitGFWTzj42DWE2bQjSJkq0Pz+5+ZJlxg7e1WQq2Y
+        xhXcUJJbtEDp7dVvtL7rNar0InT8U6VYgTtpPhrVC1Y6+SGy9+lt1tttK8EOwpMV6g5tUDUIR+UAOm4b
+        QfjgQmm0HUoXhBoJ79+Hjie2hfAJhdBFQgeUTq6R8H5dkVYhZw8In1QIXY8pnfxboz9tCuHoLiqReqvI
+        jm6iDL+S/hs0PokKHUguk3kFMD0p3ACSMn0AAAAASUVORK5CYII=
 </value>
   </data>
   <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
