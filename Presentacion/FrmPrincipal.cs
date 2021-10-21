@@ -84,7 +84,7 @@ namespace Presentacion
             else
                 subMenu.Visible = false;
         }
-
+           
       
 
         private void btnMedico_Click(object sender, EventArgs e)
