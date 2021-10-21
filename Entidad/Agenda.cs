@@ -8,9 +8,8 @@ namespace Entidad
 {
    public class Agenda
     {
-        public int Id { get; set; }
-        public bool Disponibilidad { get; set; }
+        public int IdAgenda { get; set; }
         public Medico Medico { get; set; }
-        
+
     }
 }

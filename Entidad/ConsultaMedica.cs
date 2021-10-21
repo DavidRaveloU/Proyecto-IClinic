@@ -8,8 +8,6 @@ namespace Entidad
 {
     public class ConsultaMedica
     {
-
-        public Paciente Paciente { get; set; }
         public CitaMedica CitaMedica { get; set; }
         public string Peso { get; set; }
         public string Temperatura { get; set; }
@@ -19,6 +17,8 @@ namespace Entidad
         public string Alergia { get; set; }
         public string  AntecedentesQuirurjicos { get; set; }
         public Diagnostico Diagnostico { get; set; }
-
+        public Tratamiento Tratamiento { get; set; }
+        public RecetaMedica RecetaMedica { get; set; }
+        public Medico Medico { get; set; }
     }
 }
