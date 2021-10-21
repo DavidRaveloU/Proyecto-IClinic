@@ -9,7 +9,8 @@ namespace Entidad
    public class Agenda
     {
         public int Id { get; set; }
-        public CitaMedica CitaMedica { get; set; }
-
+        public bool Disponibilidad { get; set; }
+        public Medico Medico { get; set; }
+        
     }
 }
