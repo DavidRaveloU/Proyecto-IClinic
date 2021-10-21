@@ -495,6 +495,7 @@ namespace Presentacion
             this.pnlGrapper.Name = "pnlGrapper";
             this.pnlGrapper.Size = new System.Drawing.Size(799, 677);
             this.pnlGrapper.TabIndex = 12;
+            this.pnlGrapper.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlGrapper_Paint);
             // 
             // guna2ShadowForm1
             // 

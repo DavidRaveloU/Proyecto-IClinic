@@ -150,6 +150,9 @@ namespace Presentacion
             frmLogin.Show();
         }
 
-        
+        private void pnlGrapper_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
