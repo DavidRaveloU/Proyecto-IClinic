@@ -30,9 +30,9 @@ namespace Presentacion
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmAgenda));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.guna2ShadowPanel1 = new Guna.UI2.WinForms.Guna2ShadowPanel();
             this.ptrAgenda = new Guna.UI2.WinForms.Guna2PictureBox();
             this.lblAgenda = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -44,11 +44,15 @@ namespace Presentacion
             this.lblTSexo = new System.Windows.Forms.Label();
             this.lblTelefono = new System.Windows.Forms.Label();
             this.lblTTelefono = new System.Windows.Forms.Label();
-            this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
             this.dtgAgenda = new Guna.UI2.WinForms.Guna2DataGridView();
             this.btnAgendar = new Guna.UI2.WinForms.Guna2Button();
             this.btnEliminar = new Guna.UI2.WinForms.Guna2Button();
             this.btnModificar = new Guna.UI2.WinForms.Guna2Button();
+            this.lblCodigo = new System.Windows.Forms.Label();
+            this.lblTCodigo = new System.Windows.Forms.Label();
+            this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
+            this.txtHora = new Guna.UI2.WinForms.Guna2TextBox();
+            this.lblTHora = new System.Windows.Forms.Label();
             this.guna2ShadowPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptrAgenda)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtgAgenda)).BeginInit();
@@ -57,6 +61,10 @@ namespace Presentacion
             // guna2ShadowPanel1
             // 
             this.guna2ShadowPanel1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ShadowPanel1.Controls.Add(this.lblTHora);
+            this.guna2ShadowPanel1.Controls.Add(this.txtHora);
+            this.guna2ShadowPanel1.Controls.Add(this.lblCodigo);
+            this.guna2ShadowPanel1.Controls.Add(this.lblTCodigo);
             this.guna2ShadowPanel1.Controls.Add(this.btnModificar);
             this.guna2ShadowPanel1.Controls.Add(this.btnEliminar);
             this.guna2ShadowPanel1.Controls.Add(this.btnAgendar);
@@ -73,7 +81,7 @@ namespace Presentacion
             this.guna2ShadowPanel1.Controls.Add(this.lblAgenda);
             this.guna2ShadowPanel1.Controls.Add(this.ptrAgenda);
             this.guna2ShadowPanel1.FillColor = System.Drawing.Color.White;
-            this.guna2ShadowPanel1.Location = new System.Drawing.Point(27, 28);
+            this.guna2ShadowPanel1.Location = new System.Drawing.Point(27, 29);
             this.guna2ShadowPanel1.Name = "guna2ShadowPanel1";
             this.guna2ShadowPanel1.ShadowColor = System.Drawing.Color.Black;
             this.guna2ShadowPanel1.ShadowShift = 10;
@@ -119,7 +127,7 @@ namespace Presentacion
             this.txtNumeroDeCedula.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNumeroDeCedula.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtNumeroDeCedula.HoverState.Parent = this.txtNumeroDeCedula;
-            this.txtNumeroDeCedula.Location = new System.Drawing.Point(180, 133);
+            this.txtNumeroDeCedula.Location = new System.Drawing.Point(180, 136);
             this.txtNumeroDeCedula.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtNumeroDeCedula.Name = "txtNumeroDeCedula";
             this.txtNumeroDeCedula.PasswordChar = '\0';
@@ -134,7 +142,7 @@ namespace Presentacion
             this.lblNumeroCédula.BackColor = System.Drawing.Color.Transparent;
             this.lblNumeroCédula.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNumeroCédula.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblNumeroCédula.Location = new System.Drawing.Point(27, 140);
+            this.lblNumeroCédula.Location = new System.Drawing.Point(27, 143);
             this.lblNumeroCédula.Name = "lblNumeroCédula";
             this.lblNumeroCédula.Size = new System.Drawing.Size(132, 22);
             this.lblNumeroCédula.TabIndex = 21;
@@ -144,7 +152,7 @@ namespace Presentacion
             // 
             this.lblNombre.AutoSize = true;
             this.lblNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.lblNombre.Location = new System.Drawing.Point(176, 178);
+            this.lblNombre.Location = new System.Drawing.Point(176, 219);
             this.lblNombre.Name = "lblNombre";
             this.lblNombre.Size = new System.Drawing.Size(65, 20);
             this.lblNombre.TabIndex = 50;
@@ -154,7 +162,7 @@ namespace Presentacion
             // 
             this.lblTNombre.AutoSize = true;
             this.lblTNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.lblTNombre.Location = new System.Drawing.Point(23, 178);
+            this.lblTNombre.Location = new System.Drawing.Point(23, 219);
             this.lblTNombre.Name = "lblTNombre";
             this.lblTNombre.Size = new System.Drawing.Size(69, 20);
             this.lblTNombre.TabIndex = 49;
@@ -164,7 +172,7 @@ namespace Presentacion
             // 
             this.lblSexo.AutoSize = true;
             this.lblSexo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.lblSexo.Location = new System.Drawing.Point(176, 216);
+            this.lblSexo.Location = new System.Drawing.Point(176, 253);
             this.lblSexo.Name = "lblSexo";
             this.lblSexo.Size = new System.Drawing.Size(45, 20);
             this.lblSexo.TabIndex = 52;
@@ -174,7 +182,7 @@ namespace Presentacion
             // 
             this.lblTSexo.AutoSize = true;
             this.lblTSexo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.lblTSexo.Location = new System.Drawing.Point(23, 216);
+            this.lblTSexo.Location = new System.Drawing.Point(23, 253);
             this.lblTSexo.Name = "lblTSexo";
             this.lblTSexo.Size = new System.Drawing.Size(49, 20);
             this.lblTSexo.TabIndex = 51;
@@ -184,7 +192,7 @@ namespace Presentacion
             // 
             this.lblTelefono.AutoSize = true;
             this.lblTelefono.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.lblTelefono.Location = new System.Drawing.Point(176, 255);
+            this.lblTelefono.Location = new System.Drawing.Point(176, 290);
             this.lblTelefono.Name = "lblTelefono";
             this.lblTelefono.Size = new System.Drawing.Size(71, 20);
             this.lblTelefono.TabIndex = 54;
@@ -194,45 +202,39 @@ namespace Presentacion
             // 
             this.lblTTelefono.AutoSize = true;
             this.lblTTelefono.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.lblTTelefono.Location = new System.Drawing.Point(23, 255);
+            this.lblTTelefono.Location = new System.Drawing.Point(23, 290);
             this.lblTTelefono.Name = "lblTTelefono";
             this.lblTTelefono.Size = new System.Drawing.Size(75, 20);
             this.lblTTelefono.TabIndex = 53;
             this.lblTTelefono.Text = "Telefono:";
             // 
-            // monthCalendar1
-            // 
-            this.monthCalendar1.Location = new System.Drawing.Point(507, 133);
-            this.monthCalendar1.Name = "monthCalendar1";
-            this.monthCalendar1.TabIndex = 55;
-            // 
             // dtgAgenda
             // 
             this.dtgAgenda.AllowUserToAddRows = false;
             this.dtgAgenda.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.dtgAgenda.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            this.dtgAgenda.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
             this.dtgAgenda.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dtgAgenda.BackgroundColor = System.Drawing.Color.White;
             this.dtgAgenda.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dtgAgenda.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgAgenda.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgAgenda.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.dtgAgenda.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dtgAgenda.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dtgAgenda.DefaultCellStyle = dataGridViewCellStyle6;
             this.dtgAgenda.EnableHeadersVisualStyles = false;
             this.dtgAgenda.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dtgAgenda.Location = new System.Drawing.Point(27, 330);
@@ -330,6 +332,68 @@ namespace Presentacion
             this.btnModificar.TabIndex = 59;
             this.btnModificar.Text = "Modificar";
             // 
+            // lblCodigo
+            // 
+            this.lblCodigo.AutoSize = true;
+            this.lblCodigo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.lblCodigo.Location = new System.Drawing.Point(176, 184);
+            this.lblCodigo.Name = "lblCodigo";
+            this.lblCodigo.Size = new System.Drawing.Size(59, 20);
+            this.lblCodigo.TabIndex = 61;
+            this.lblCodigo.Text = "Codigo";
+            // 
+            // lblTCodigo
+            // 
+            this.lblTCodigo.AutoSize = true;
+            this.lblTCodigo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.lblTCodigo.Location = new System.Drawing.Point(23, 184);
+            this.lblTCodigo.Name = "lblTCodigo";
+            this.lblTCodigo.Size = new System.Drawing.Size(63, 20);
+            this.lblTCodigo.TabIndex = 60;
+            this.lblTCodigo.Text = "Codigo:";
+            // 
+            // monthCalendar1
+            // 
+            this.monthCalendar1.Location = new System.Drawing.Point(507, 111);
+            this.monthCalendar1.Name = "monthCalendar1";
+            this.monthCalendar1.TabIndex = 55;
+            // 
+            // txtHora
+            // 
+            this.txtHora.Animated = true;
+            this.txtHora.BorderRadius = 12;
+            this.txtHora.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtHora.DefaultText = "";
+            this.txtHora.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtHora.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtHora.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtHora.DisabledState.Parent = this.txtHora;
+            this.txtHora.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtHora.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtHora.FocusedState.Parent = this.txtHora;
+            this.txtHora.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtHora.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtHora.HoverState.Parent = this.txtHora;
+            this.txtHora.Location = new System.Drawing.Point(571, 286);
+            this.txtHora.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtHora.Name = "txtHora";
+            this.txtHora.PasswordChar = '\0';
+            this.txtHora.PlaceholderText = "Digite la hora";
+            this.txtHora.SelectedText = "";
+            this.txtHora.ShadowDecoration.Parent = this.txtHora;
+            this.txtHora.Size = new System.Drawing.Size(111, 24);
+            this.txtHora.TabIndex = 62;
+            // 
+            // lblTHora
+            // 
+            this.lblTHora.AutoSize = true;
+            this.lblTHora.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.lblTHora.Location = new System.Drawing.Point(520, 290);
+            this.lblTHora.Name = "lblTHora";
+            this.lblTHora.Size = new System.Drawing.Size(48, 20);
+            this.lblTHora.TabIndex = 63;
+            this.lblTHora.Text = "Hora:";
+            // 
             // FrmAgenda
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -362,9 +426,13 @@ namespace Presentacion
         private System.Windows.Forms.Label lblSexo;
         private System.Windows.Forms.Label lblTSexo;
         private Guna.UI2.WinForms.Guna2DataGridView dtgAgenda;
-        private System.Windows.Forms.MonthCalendar monthCalendar1;
         private Guna.UI2.WinForms.Guna2Button btnModificar;
         private Guna.UI2.WinForms.Guna2Button btnEliminar;
         private Guna.UI2.WinForms.Guna2Button btnAgendar;
+        private System.Windows.Forms.Label lblCodigo;
+        private System.Windows.Forms.Label lblTCodigo;
+        private System.Windows.Forms.Label lblTHora;
+        private Guna.UI2.WinForms.Guna2TextBox txtHora;
+        private System.Windows.Forms.MonthCalendar monthCalendar1;
     }
 }
