@@ -139,6 +139,7 @@ namespace Presentacion
         }
         private void btnAgenda_Click(object sender, EventArgs e)
         {
+            AbrirFormulario(new FrmAgenda());
             HideSubmenu();
         }
 
