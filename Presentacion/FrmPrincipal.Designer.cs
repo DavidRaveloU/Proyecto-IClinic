@@ -345,7 +345,7 @@ namespace Presentacion
             this.btnMedico.DisabledState.Parent = this.btnMedico;
             this.btnMedico.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnMedico.FillColor = System.Drawing.Color.Transparent;
-            this.btnMedico.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMedico.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.btnMedico.ForeColor = System.Drawing.Color.Black;
             this.btnMedico.HoverState.Parent = this.btnMedico;
             this.btnMedico.Image = ((System.Drawing.Image)(resources.GetObject("btnMedico.Image")));
