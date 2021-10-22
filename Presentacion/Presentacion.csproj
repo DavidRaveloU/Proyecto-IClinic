@@ -189,6 +189,12 @@
     <Compile Include="FrmConsultarPaciente.Designer.cs">
       <DependentUpon>FrmConsultarPaciente.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmDisponibilidadMedico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDisponibilidadMedico.Designer.cs">
+      <DependentUpon>FrmDisponibilidadMedico.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -247,6 +253,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmConsultarPaciente.resx">
       <DependentUpon>FrmConsultarPaciente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDisponibilidadMedico.resx">
+      <DependentUpon>FrmDisponibilidadMedico.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>

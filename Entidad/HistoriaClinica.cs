@@ -17,10 +17,5 @@ namespace Entidad
             if (!ListaDeHistoriaClinica.Contains(consultaMedica))
                 ListaDeHistoriaClinica.Add(consultaMedica);
         }
-        public void RemoverConsultaMedica(ConsultaMedica consultaMedica)
-        {
-            if (ListaDeHistoriaClinica.Contains(consultaMedica))
-                ListaDeHistoriaClinica.Remove(consultaMedica);
-        }
     }
 }

@@ -29,5 +29,11 @@ namespace Presentacion
             }
 
         }
+
+        private void btnEstado_Click(object sender, EventArgs e)
+        {
+            FrmDisponibilidadMedico frmDisponibilidadMedico = new FrmDisponibilidadMedico();
+            frmDisponibilidadMedico.ShowDialog();
+        }
     }
 }
