@@ -29,9 +29,10 @@ namespace Presentacion
         /// </summary>
         private void InitializeComponent()
         {
-            Utilities.BunifuPages.BunifuAnimatorNS.Animation animation1 = new Utilities.BunifuPages.BunifuAnimatorNS.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmConsultaMedica));
+            Utilities.BunifuPages.BunifuAnimatorNS.Animation animation1 = new Utilities.BunifuPages.BunifuAnimatorNS.Animation();
             this.guna2ShadowPanel1 = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.chkConsultaMedica = new Bunifu.UI.WinForms.BunifuCheckBox();
             this.tabConsultaMedica = new Bunifu.UI.WinForms.BunifuPages();
             this.pageConsultaMedica = new System.Windows.Forms.TabPage();
             this.btnSiguiente1 = new Guna.UI2.WinForms.Guna2Button();
@@ -70,13 +71,10 @@ namespace Presentacion
             this.lblDescrpcion = new System.Windows.Forms.Label();
             this.lblIdTratamiento = new System.Windows.Forms.Label();
             this.lblCódigoTratamiento = new System.Windows.Forms.Label();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.tabPage4 = new System.Windows.Forms.TabPage();
             this.chkTratamiento = new Bunifu.UI.WinForms.BunifuCheckBox();
             this.lblTratamiento = new Bunifu.UI.WinForms.BunifuLabel();
             this.lblConslutaMedica = new Bunifu.UI.WinForms.BunifuLabel();
             this.lblSeparadora = new Bunifu.UI.WinForms.BunifuSeparator();
-            this.chkConsultaMedica = new Bunifu.UI.WinForms.BunifuCheckBox();
             this.guna2ShadowPanel1.SuspendLayout();
             this.tabConsultaMedica.SuspendLayout();
             this.pageConsultaMedica.SuspendLayout();
@@ -100,14 +98,66 @@ namespace Presentacion
             this.guna2ShadowPanel1.Size = new System.Drawing.Size(743, 616);
             this.guna2ShadowPanel1.TabIndex = 1;
             // 
+            // chkConsultaMedica
+            // 
+            this.chkConsultaMedica.AllowBindingControlAnimation = true;
+            this.chkConsultaMedica.AllowBindingControlColorChanges = false;
+            this.chkConsultaMedica.AllowBindingControlLocation = true;
+            this.chkConsultaMedica.AllowCheckBoxAnimation = false;
+            this.chkConsultaMedica.AllowCheckmarkAnimation = true;
+            this.chkConsultaMedica.AllowOnHoverStates = true;
+            this.chkConsultaMedica.AutoCheck = false;
+            this.chkConsultaMedica.BackColor = System.Drawing.Color.Transparent;
+            this.chkConsultaMedica.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("chkConsultaMedica.BackgroundImage")));
+            this.chkConsultaMedica.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.chkConsultaMedica.BindingControlPosition = Bunifu.UI.WinForms.BunifuCheckBox.BindingControlPositions.Right;
+            this.chkConsultaMedica.BorderRadius = 12;
+            this.chkConsultaMedica.Checked = true;
+            this.chkConsultaMedica.CheckState = Bunifu.UI.WinForms.BunifuCheckBox.CheckStates.Checked;
+            this.chkConsultaMedica.Cursor = System.Windows.Forms.Cursors.Default;
+            this.chkConsultaMedica.CustomCheckmarkImage = null;
+            this.chkConsultaMedica.Enabled = false;
+            this.chkConsultaMedica.Location = new System.Drawing.Point(216, 31);
+            this.chkConsultaMedica.MinimumSize = new System.Drawing.Size(17, 17);
+            this.chkConsultaMedica.Name = "chkConsultaMedica";
+            this.chkConsultaMedica.OnCheck.BorderColor = System.Drawing.Color.DodgerBlue;
+            this.chkConsultaMedica.OnCheck.BorderRadius = 15;
+            this.chkConsultaMedica.OnCheck.BorderThickness = 2;
+            this.chkConsultaMedica.OnCheck.CheckBoxColor = System.Drawing.Color.DodgerBlue;
+            this.chkConsultaMedica.OnCheck.CheckmarkColor = System.Drawing.Color.White;
+            this.chkConsultaMedica.OnCheck.CheckmarkThickness = 2;
+            this.chkConsultaMedica.OnDisable.BorderColor = System.Drawing.Color.LightGray;
+            this.chkConsultaMedica.OnDisable.BorderRadius = 15;
+            this.chkConsultaMedica.OnDisable.BorderThickness = 2;
+            this.chkConsultaMedica.OnDisable.CheckBoxColor = System.Drawing.Color.Transparent;
+            this.chkConsultaMedica.OnDisable.CheckmarkColor = System.Drawing.Color.LightGray;
+            this.chkConsultaMedica.OnDisable.CheckmarkThickness = 2;
+            this.chkConsultaMedica.OnHoverChecked.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.chkConsultaMedica.OnHoverChecked.BorderRadius = 15;
+            this.chkConsultaMedica.OnHoverChecked.BorderThickness = 2;
+            this.chkConsultaMedica.OnHoverChecked.CheckBoxColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.chkConsultaMedica.OnHoverChecked.CheckmarkColor = System.Drawing.Color.White;
+            this.chkConsultaMedica.OnHoverChecked.CheckmarkThickness = 2;
+            this.chkConsultaMedica.OnHoverUnchecked.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.chkConsultaMedica.OnHoverUnchecked.BorderRadius = 15;
+            this.chkConsultaMedica.OnHoverUnchecked.BorderThickness = 1;
+            this.chkConsultaMedica.OnHoverUnchecked.CheckBoxColor = System.Drawing.Color.Transparent;
+            this.chkConsultaMedica.OnUncheck.BorderColor = System.Drawing.Color.DarkGray;
+            this.chkConsultaMedica.OnUncheck.BorderRadius = 15;
+            this.chkConsultaMedica.OnUncheck.BorderThickness = 1;
+            this.chkConsultaMedica.OnUncheck.CheckBoxColor = System.Drawing.Color.Transparent;
+            this.chkConsultaMedica.Size = new System.Drawing.Size(21, 21);
+            this.chkConsultaMedica.Style = Bunifu.UI.WinForms.BunifuCheckBox.CheckBoxStyles.Bunifu;
+            this.chkConsultaMedica.TabIndex = 16;
+            this.chkConsultaMedica.ThreeState = false;
+            this.chkConsultaMedica.ToolTipText = null;
+            // 
             // tabConsultaMedica
             // 
             this.tabConsultaMedica.Alignment = System.Windows.Forms.TabAlignment.Bottom;
             this.tabConsultaMedica.AllowTransitions = false;
             this.tabConsultaMedica.Controls.Add(this.pageConsultaMedica);
             this.tabConsultaMedica.Controls.Add(this.pageTratamiento);
-            this.tabConsultaMedica.Controls.Add(this.tabPage3);
-            this.tabConsultaMedica.Controls.Add(this.tabPage4);
             this.tabConsultaMedica.Location = new System.Drawing.Point(27, 59);
             this.tabConsultaMedica.Multiline = true;
             this.tabConsultaMedica.Name = "tabConsultaMedica";
@@ -586,10 +636,10 @@ namespace Presentacion
             // lblIndicaciones
             // 
             this.lblIndicaciones.AutoSize = true;
-            this.lblIndicaciones.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblIndicaciones.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblIndicaciones.Location = new System.Drawing.Point(26, 309);
             this.lblIndicaciones.Name = "lblIndicaciones";
-            this.lblIndicaciones.Size = new System.Drawing.Size(106, 21);
+            this.lblIndicaciones.Size = new System.Drawing.Size(118, 21);
             this.lblIndicaciones.TabIndex = 18;
             this.lblIndicaciones.Text = "Indicaciones:  ";
             // 
@@ -608,7 +658,7 @@ namespace Presentacion
             this.txtNombreMedicamento.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtNombreMedicamento.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtNombreMedicamento.HoverState.Parent = this.txtNombreMedicamento;
-            this.txtNombreMedicamento.Location = new System.Drawing.Point(224, 263);
+            this.txtNombreMedicamento.Location = new System.Drawing.Point(242, 264);
             this.txtNombreMedicamento.Name = "txtNombreMedicamento";
             this.txtNombreMedicamento.PasswordChar = '\0';
             this.txtNombreMedicamento.PlaceholderText = "";
@@ -620,10 +670,10 @@ namespace Presentacion
             // lblNombreMedicamento
             // 
             this.lblNombreMedicamento.AutoSize = true;
-            this.lblNombreMedicamento.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNombreMedicamento.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNombreMedicamento.Location = new System.Drawing.Point(26, 270);
             this.lblNombreMedicamento.Name = "lblNombreMedicamento";
-            this.lblNombreMedicamento.Size = new System.Drawing.Size(199, 21);
+            this.lblNombreMedicamento.Size = new System.Drawing.Size(219, 21);
             this.lblNombreMedicamento.TabIndex = 16;
             this.lblNombreMedicamento.Text = "Nombre del médicamento: ";
             // 
@@ -657,7 +707,7 @@ namespace Presentacion
             // 
             this.lblIdRecetaMedica.AutoSize = true;
             this.lblIdRecetaMedica.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblIdRecetaMedica.Location = new System.Drawing.Point(186, 233);
+            this.lblIdRecetaMedica.Location = new System.Drawing.Point(208, 233);
             this.lblIdRecetaMedica.Name = "lblIdRecetaMedica";
             this.lblIdRecetaMedica.Size = new System.Drawing.Size(37, 21);
             this.lblIdRecetaMedica.TabIndex = 14;
@@ -666,10 +716,10 @@ namespace Presentacion
             // lblCodigoRecetaMedica
             // 
             this.lblCodigoRecetaMedica.AutoSize = true;
-            this.lblCodigoRecetaMedica.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCodigoRecetaMedica.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCodigoRecetaMedica.Location = new System.Drawing.Point(26, 231);
             this.lblCodigoRecetaMedica.Name = "lblCodigoRecetaMedica";
-            this.lblCodigoRecetaMedica.Size = new System.Drawing.Size(167, 21);
+            this.lblCodigoRecetaMedica.Size = new System.Drawing.Size(184, 21);
             this.lblCodigoRecetaMedica.TabIndex = 13;
             this.lblCodigoRecetaMedica.Text = "Código Receta Medica:";
             // 
@@ -688,7 +738,7 @@ namespace Presentacion
             this.txtNombreTratamiento.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtNombreTratamiento.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtNombreTratamiento.HoverState.Parent = this.txtNombreTratamiento;
-            this.txtNombreTratamiento.Location = new System.Drawing.Point(212, 58);
+            this.txtNombreTratamiento.Location = new System.Drawing.Point(218, 57);
             this.txtNombreTratamiento.Name = "txtNombreTratamiento";
             this.txtNombreTratamiento.PasswordChar = '\0';
             this.txtNombreTratamiento.PlaceholderText = "";
@@ -700,20 +750,20 @@ namespace Presentacion
             // lblNombreTratamiento
             // 
             this.lblNombreTratamiento.AutoSize = true;
-            this.lblNombreTratamiento.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNombreTratamiento.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNombreTratamiento.Location = new System.Drawing.Point(20, 64);
             this.lblNombreTratamiento.Name = "lblNombreTratamiento";
-            this.lblNombreTratamiento.Size = new System.Drawing.Size(185, 21);
+            this.lblNombreTratamiento.Size = new System.Drawing.Size(204, 21);
             this.lblNombreTratamiento.TabIndex = 10;
             this.lblNombreTratamiento.Text = "Nombre del tratamiento: ";
             // 
             // lblDescrpcion
             // 
             this.lblDescrpcion.AutoSize = true;
-            this.lblDescrpcion.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDescrpcion.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDescrpcion.Location = new System.Drawing.Point(20, 97);
             this.lblDescrpcion.Name = "lblDescrpcion";
-            this.lblDescrpcion.Size = new System.Drawing.Size(98, 21);
+            this.lblDescrpcion.Size = new System.Drawing.Size(108, 21);
             this.lblDescrpcion.TabIndex = 8;
             this.lblDescrpcion.Text = "Descripción: ";
             // 
@@ -721,7 +771,7 @@ namespace Presentacion
             // 
             this.lblIdTratamiento.AutoSize = true;
             this.lblIdTratamiento.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblIdTratamiento.Location = new System.Drawing.Point(163, 29);
+            this.lblIdTratamiento.Location = new System.Drawing.Point(181, 29);
             this.lblIdTratamiento.Name = "lblIdTratamiento";
             this.lblIdTratamiento.Size = new System.Drawing.Size(37, 21);
             this.lblIdTratamiento.TabIndex = 7;
@@ -730,32 +780,12 @@ namespace Presentacion
             // lblCódigoTratamiento
             // 
             this.lblCódigoTratamiento.AutoSize = true;
-            this.lblCódigoTratamiento.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCódigoTratamiento.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCódigoTratamiento.Location = new System.Drawing.Point(20, 28);
             this.lblCódigoTratamiento.Name = "lblCódigoTratamiento";
-            this.lblCódigoTratamiento.Size = new System.Drawing.Size(148, 21);
+            this.lblCódigoTratamiento.Size = new System.Drawing.Size(164, 21);
             this.lblCódigoTratamiento.TabIndex = 6;
             this.lblCódigoTratamiento.Text = "Código tratamiento:";
-            // 
-            // tabPage3
-            // 
-            this.tabPage3.Location = new System.Drawing.Point(4, 4);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(683, 512);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "tabPage3";
-            this.tabPage3.UseVisualStyleBackColor = true;
-            // 
-            // tabPage4
-            // 
-            this.tabPage4.Location = new System.Drawing.Point(4, 4);
-            this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(683, 512);
-            this.tabPage4.TabIndex = 3;
-            this.tabPage4.Text = "tabPage4";
-            this.tabPage4.UseVisualStyleBackColor = true;
             // 
             // chkTratamiento
             // 
@@ -859,60 +889,6 @@ namespace Presentacion
             this.lblSeparadora.Size = new System.Drawing.Size(49, 21);
             this.lblSeparadora.TabIndex = 2;
             // 
-            // chkConsultaMedica
-            // 
-            this.chkConsultaMedica.AllowBindingControlAnimation = true;
-            this.chkConsultaMedica.AllowBindingControlColorChanges = false;
-            this.chkConsultaMedica.AllowBindingControlLocation = true;
-            this.chkConsultaMedica.AllowCheckBoxAnimation = false;
-            this.chkConsultaMedica.AllowCheckmarkAnimation = true;
-            this.chkConsultaMedica.AllowOnHoverStates = true;
-            this.chkConsultaMedica.AutoCheck = false;
-            this.chkConsultaMedica.BackColor = System.Drawing.Color.Transparent;
-            this.chkConsultaMedica.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("chkConsultaMedica.BackgroundImage")));
-            this.chkConsultaMedica.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.chkConsultaMedica.BindingControlPosition = Bunifu.UI.WinForms.BunifuCheckBox.BindingControlPositions.Right;
-            this.chkConsultaMedica.BorderRadius = 12;
-            this.chkConsultaMedica.Checked = true;
-            this.chkConsultaMedica.CheckState = Bunifu.UI.WinForms.BunifuCheckBox.CheckStates.Checked;
-            this.chkConsultaMedica.Cursor = System.Windows.Forms.Cursors.Default;
-            this.chkConsultaMedica.CustomCheckmarkImage = null;
-            this.chkConsultaMedica.Enabled = false;
-            this.chkConsultaMedica.Location = new System.Drawing.Point(216, 31);
-            this.chkConsultaMedica.MinimumSize = new System.Drawing.Size(17, 17);
-            this.chkConsultaMedica.Name = "chkConsultaMedica";
-            this.chkConsultaMedica.OnCheck.BorderColor = System.Drawing.Color.DodgerBlue;
-            this.chkConsultaMedica.OnCheck.BorderRadius = 15;
-            this.chkConsultaMedica.OnCheck.BorderThickness = 2;
-            this.chkConsultaMedica.OnCheck.CheckBoxColor = System.Drawing.Color.DodgerBlue;
-            this.chkConsultaMedica.OnCheck.CheckmarkColor = System.Drawing.Color.White;
-            this.chkConsultaMedica.OnCheck.CheckmarkThickness = 2;
-            this.chkConsultaMedica.OnDisable.BorderColor = System.Drawing.Color.LightGray;
-            this.chkConsultaMedica.OnDisable.BorderRadius = 15;
-            this.chkConsultaMedica.OnDisable.BorderThickness = 2;
-            this.chkConsultaMedica.OnDisable.CheckBoxColor = System.Drawing.Color.Transparent;
-            this.chkConsultaMedica.OnDisable.CheckmarkColor = System.Drawing.Color.LightGray;
-            this.chkConsultaMedica.OnDisable.CheckmarkThickness = 2;
-            this.chkConsultaMedica.OnHoverChecked.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            this.chkConsultaMedica.OnHoverChecked.BorderRadius = 15;
-            this.chkConsultaMedica.OnHoverChecked.BorderThickness = 2;
-            this.chkConsultaMedica.OnHoverChecked.CheckBoxColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            this.chkConsultaMedica.OnHoverChecked.CheckmarkColor = System.Drawing.Color.White;
-            this.chkConsultaMedica.OnHoverChecked.CheckmarkThickness = 2;
-            this.chkConsultaMedica.OnHoverUnchecked.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            this.chkConsultaMedica.OnHoverUnchecked.BorderRadius = 15;
-            this.chkConsultaMedica.OnHoverUnchecked.BorderThickness = 1;
-            this.chkConsultaMedica.OnHoverUnchecked.CheckBoxColor = System.Drawing.Color.Transparent;
-            this.chkConsultaMedica.OnUncheck.BorderColor = System.Drawing.Color.DarkGray;
-            this.chkConsultaMedica.OnUncheck.BorderRadius = 15;
-            this.chkConsultaMedica.OnUncheck.BorderThickness = 1;
-            this.chkConsultaMedica.OnUncheck.CheckBoxColor = System.Drawing.Color.Transparent;
-            this.chkConsultaMedica.Size = new System.Drawing.Size(21, 21);
-            this.chkConsultaMedica.Style = Bunifu.UI.WinForms.BunifuCheckBox.CheckBoxStyles.Bunifu;
-            this.chkConsultaMedica.TabIndex = 16;
-            this.chkConsultaMedica.ThreeState = false;
-            this.chkConsultaMedica.ToolTipText = null;
-            // 
             // FrmConsultaMedica
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -944,8 +920,6 @@ namespace Presentacion
         private Bunifu.UI.WinForms.BunifuPages tabConsultaMedica;
         private System.Windows.Forms.TabPage pageConsultaMedica;
         private System.Windows.Forms.TabPage pageTratamiento;
-        private System.Windows.Forms.TabPage tabPage3;
-        private System.Windows.Forms.TabPage tabPage4;
         private Guna.UI2.WinForms.Guna2TextBox txtNombreTratamiento;
         private System.Windows.Forms.Label lblNombreTratamiento;
         private System.Windows.Forms.Label lblDescrpcion;

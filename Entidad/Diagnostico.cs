@@ -8,6 +8,12 @@ namespace Entidad
 {
     public class Diagnostico
     {
+        public Diagnostico(string idDiagnostico, string descripcion)
+        {
+            IdDiagnostico = idDiagnostico;
+            Descripcion = descripcion;
+        }
+
         public string IdDiagnostico { get; set; }
         public string Descripcion { get; set; }
 
