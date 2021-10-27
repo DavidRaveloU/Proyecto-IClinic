@@ -9,7 +9,8 @@ namespace Entidad
    public class Agenda
     {
         public int IdAgenda { get; set; }
-        public Medico Medico { get; set; }
+        public List<DetalleAgenda> DetalleAgenda { get; set; }
+
 
     }
 }

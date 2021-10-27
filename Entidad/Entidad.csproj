@@ -149,8 +149,10 @@
     <Compile Include="Agenda.cs" />
     <Compile Include="CitaMedica.cs" />
     <Compile Include="ConsultaMedica.cs" />
+    <Compile Include="DetalleAgenda.cs" />
     <Compile Include="Diagnostico.cs" />
     <Compile Include="HistoriaClinica.cs" />
+    <Compile Include="Horario.cs" />
     <Compile Include="Medico.cs" />
     <Compile Include="Paciente.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
