@@ -8,7 +8,7 @@ namespace Entidad
 {
    public class Agenda
     {
-        public int IdAgenda { get; set; }
+        public string IdAgenda { get; set; }
         public List<DetalleAgenda> DetalleAgenda { get; set; }
 
 

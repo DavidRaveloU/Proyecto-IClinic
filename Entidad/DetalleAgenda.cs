@@ -10,7 +10,7 @@ namespace Entidad
     {
         public Medico Medico { get; set; }
         public DateTime FechaDisponible { get; set; }
-        public DateTime MyProperty { get; set; }
+        public DateTime FechaFinalAtencion { get; set; }
         public Horario Horario { get; set; }
         public bool Estado { get; set; }
     }

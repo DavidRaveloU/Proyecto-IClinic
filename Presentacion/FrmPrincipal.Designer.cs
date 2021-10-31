@@ -47,7 +47,7 @@ namespace Presentacion
             this.btnMedico = new Guna.UI2.WinForms.Guna2Button();
             this.btnAgenda = new Guna.UI2.WinForms.Guna2Button();
             this.pnlFondoDeLogo = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.ptrLogo = new System.Windows.Forms.PictureBox();
             this.pnlLineaMenu = new System.Windows.Forms.Panel();
             this.pnlSuperior = new System.Windows.Forms.Panel();
             this.btnMinimizar = new Guna.UI2.WinForms.Guna2Button();
@@ -60,7 +60,7 @@ namespace Presentacion
             this.pnlPaciente.SuspendLayout();
             this.pnlMedico.SuspendLayout();
             this.pnlFondoDeLogo.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptrLogo)).BeginInit();
             this.pnlSuperior.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -84,6 +84,8 @@ namespace Presentacion
             // 
             // btnCerrarSecion
             // 
+            this.btnCerrarSecion.Animated = true;
+            this.btnCerrarSecion.BorderRadius = 13;
             this.btnCerrarSecion.CheckedState.Parent = this.btnCerrarSecion;
             this.btnCerrarSecion.CustomImages.Parent = this.btnCerrarSecion;
             this.btnCerrarSecion.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
@@ -93,13 +95,13 @@ namespace Presentacion
             this.btnCerrarSecion.DisabledState.Parent = this.btnCerrarSecion;
             this.btnCerrarSecion.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnCerrarSecion.FillColor = System.Drawing.Color.Transparent;
-            this.btnCerrarSecion.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCerrarSecion.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.btnCerrarSecion.ForeColor = System.Drawing.Color.Black;
             this.btnCerrarSecion.HoverState.Parent = this.btnCerrarSecion;
             this.btnCerrarSecion.Image = ((System.Drawing.Image)(resources.GetObject("btnCerrarSecion.Image")));
             this.btnCerrarSecion.ImageOffset = new System.Drawing.Point(-13, 0);
             this.btnCerrarSecion.ImageSize = new System.Drawing.Size(25, 25);
-            this.btnCerrarSecion.Location = new System.Drawing.Point(0, 680);
+            this.btnCerrarSecion.Location = new System.Drawing.Point(0, 675);
             this.btnCerrarSecion.Name = "btnCerrarSecion";
             this.btnCerrarSecion.ShadowDecoration.Parent = this.btnCerrarSecion;
             this.btnCerrarSecion.Size = new System.Drawing.Size(198, 45);
@@ -114,7 +116,7 @@ namespace Presentacion
             this.pnlConsulta.Controls.Add(this.btnConsultaMedica);
             this.pnlConsulta.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlConsulta.ForeColor = System.Drawing.Color.Black;
-            this.pnlConsulta.Location = new System.Drawing.Point(0, 589);
+            this.pnlConsulta.Location = new System.Drawing.Point(0, 584);
             this.pnlConsulta.Name = "pnlConsulta";
             this.pnlConsulta.Size = new System.Drawing.Size(198, 91);
             this.pnlConsulta.TabIndex = 12;
@@ -169,6 +171,8 @@ namespace Presentacion
             // 
             // btnConsulta
             // 
+            this.btnConsulta.Animated = true;
+            this.btnConsulta.BorderRadius = 13;
             this.btnConsulta.CheckedState.Parent = this.btnConsulta;
             this.btnConsulta.CustomImages.Parent = this.btnConsulta;
             this.btnConsulta.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
@@ -178,13 +182,13 @@ namespace Presentacion
             this.btnConsulta.DisabledState.Parent = this.btnConsulta;
             this.btnConsulta.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnConsulta.FillColor = System.Drawing.Color.Transparent;
-            this.btnConsulta.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnConsulta.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.btnConsulta.ForeColor = System.Drawing.Color.Black;
             this.btnConsulta.HoverState.Parent = this.btnConsulta;
             this.btnConsulta.Image = ((System.Drawing.Image)(resources.GetObject("btnConsulta.Image")));
             this.btnConsulta.ImageOffset = new System.Drawing.Point(-20, 0);
             this.btnConsulta.ImageSize = new System.Drawing.Size(32, 32);
-            this.btnConsulta.Location = new System.Drawing.Point(0, 544);
+            this.btnConsulta.Location = new System.Drawing.Point(0, 539);
             this.btnConsulta.Name = "btnConsulta";
             this.btnConsulta.ShadowDecoration.Parent = this.btnConsulta;
             this.btnConsulta.Size = new System.Drawing.Size(198, 45);
@@ -199,7 +203,7 @@ namespace Presentacion
             this.pnlPaciente.Controls.Add(this.btnRegistrarPaciente);
             this.pnlPaciente.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlPaciente.ForeColor = System.Drawing.Color.Black;
-            this.pnlPaciente.Location = new System.Drawing.Point(0, 455);
+            this.pnlPaciente.Location = new System.Drawing.Point(0, 450);
             this.pnlPaciente.Name = "pnlPaciente";
             this.pnlPaciente.Size = new System.Drawing.Size(198, 89);
             this.pnlPaciente.TabIndex = 10;
@@ -252,6 +256,8 @@ namespace Presentacion
             // 
             // btnPaciente
             // 
+            this.btnPaciente.Animated = true;
+            this.btnPaciente.BorderRadius = 13;
             this.btnPaciente.CheckedState.Parent = this.btnPaciente;
             this.btnPaciente.CustomImages.Parent = this.btnPaciente;
             this.btnPaciente.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
@@ -261,13 +267,13 @@ namespace Presentacion
             this.btnPaciente.DisabledState.Parent = this.btnPaciente;
             this.btnPaciente.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnPaciente.FillColor = System.Drawing.Color.Transparent;
-            this.btnPaciente.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPaciente.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.btnPaciente.ForeColor = System.Drawing.Color.Black;
             this.btnPaciente.HoverState.Parent = this.btnPaciente;
             this.btnPaciente.Image = ((System.Drawing.Image)(resources.GetObject("btnPaciente.Image")));
             this.btnPaciente.ImageOffset = new System.Drawing.Point(-21, 1);
             this.btnPaciente.ImageSize = new System.Drawing.Size(34, 34);
-            this.btnPaciente.Location = new System.Drawing.Point(0, 405);
+            this.btnPaciente.Location = new System.Drawing.Point(0, 400);
             this.btnPaciente.Name = "btnPaciente";
             this.btnPaciente.ShadowDecoration.Parent = this.btnPaciente;
             this.btnPaciente.Size = new System.Drawing.Size(198, 50);
@@ -282,7 +288,7 @@ namespace Presentacion
             this.pnlMedico.Controls.Add(this.btnRegistrarMedico);
             this.pnlMedico.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlMedico.ForeColor = System.Drawing.Color.Black;
-            this.pnlMedico.Location = new System.Drawing.Point(0, 316);
+            this.pnlMedico.Location = new System.Drawing.Point(0, 311);
             this.pnlMedico.Name = "pnlMedico";
             this.pnlMedico.Size = new System.Drawing.Size(198, 89);
             this.pnlMedico.TabIndex = 8;
@@ -335,7 +341,9 @@ namespace Presentacion
             // 
             // btnMedico
             // 
+            this.btnMedico.Animated = true;
             this.btnMedico.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnMedico.BorderRadius = 13;
             this.btnMedico.CheckedState.Parent = this.btnMedico;
             this.btnMedico.CustomImages.Parent = this.btnMedico;
             this.btnMedico.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
@@ -355,7 +363,7 @@ namespace Presentacion
             this.btnMedico.Location = new System.Drawing.Point(0, 266);
             this.btnMedico.Name = "btnMedico";
             this.btnMedico.ShadowDecoration.Parent = this.btnMedico;
-            this.btnMedico.Size = new System.Drawing.Size(198, 50);
+            this.btnMedico.Size = new System.Drawing.Size(198, 45);
             this.btnMedico.TabIndex = 7;
             this.btnMedico.Text = "Medico";
             this.btnMedico.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -364,7 +372,9 @@ namespace Presentacion
             // 
             // btnAgenda
             // 
+            this.btnAgenda.Animated = true;
             this.btnAgenda.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnAgenda.BorderRadius = 13;
             this.btnAgenda.CheckedState.Parent = this.btnAgenda;
             this.btnAgenda.CustomImages.Parent = this.btnAgenda;
             this.btnAgenda.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
@@ -374,7 +384,7 @@ namespace Presentacion
             this.btnAgenda.DisabledState.Parent = this.btnAgenda;
             this.btnAgenda.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnAgenda.FillColor = System.Drawing.Color.Transparent;
-            this.btnAgenda.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgenda.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.btnAgenda.ForeColor = System.Drawing.Color.Black;
             this.btnAgenda.HoverState.Parent = this.btnAgenda;
             this.btnAgenda.Image = ((System.Drawing.Image)(resources.GetObject("btnAgenda.Image")));
@@ -393,7 +403,7 @@ namespace Presentacion
             // 
             // pnlFondoDeLogo
             // 
-            this.pnlFondoDeLogo.Controls.Add(this.pictureBox1);
+            this.pnlFondoDeLogo.Controls.Add(this.ptrLogo);
             this.pnlFondoDeLogo.Controls.Add(this.pnlLineaMenu);
             this.pnlFondoDeLogo.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlFondoDeLogo.ForeColor = System.Drawing.Color.Black;
@@ -402,15 +412,15 @@ namespace Presentacion
             this.pnlFondoDeLogo.Size = new System.Drawing.Size(198, 221);
             this.pnlFondoDeLogo.TabIndex = 2;
             // 
-            // pictureBox1
+            // ptrLogo
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(-2, -1);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(200, 176);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
+            this.ptrLogo.Image = ((System.Drawing.Image)(resources.GetObject("ptrLogo.Image")));
+            this.ptrLogo.Location = new System.Drawing.Point(-2, -1);
+            this.ptrLogo.Name = "ptrLogo";
+            this.ptrLogo.Size = new System.Drawing.Size(200, 176);
+            this.ptrLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ptrLogo.TabIndex = 2;
+            this.ptrLogo.TabStop = false;
             // 
             // pnlLineaMenu
             // 
@@ -520,7 +530,7 @@ namespace Presentacion
             this.pnlPaciente.ResumeLayout(false);
             this.pnlMedico.ResumeLayout(false);
             this.pnlFondoDeLogo.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptrLogo)).EndInit();
             this.pnlSuperior.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -550,6 +560,6 @@ namespace Presentacion
         private Guna.UI2.WinForms.Guna2Button btnConsulta;
         private System.Windows.Forms.Timer tmrFundir;
         private Guna.UI2.WinForms.Guna2Button btnCerrarSecion;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox ptrLogo;
     }
 }

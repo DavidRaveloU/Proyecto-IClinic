@@ -34,7 +34,6 @@ namespace Presentacion
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pnlFondoConsultarMedico = new Guna.UI2.WinForms.Guna2ShadowPanel();
-            this.btnEstado = new Guna.UI2.WinForms.Guna2Button();
             this.txtConsulta = new Guna.UI2.WinForms.Guna2TextBox();
             this.btnEliminar = new Guna.UI2.WinForms.Guna2Button();
             this.ptrConsulta = new System.Windows.Forms.PictureBox();
@@ -56,7 +55,6 @@ namespace Presentacion
             // pnlFondoConsultarMedico
             // 
             this.pnlFondoConsultarMedico.BackColor = System.Drawing.Color.Transparent;
-            this.pnlFondoConsultarMedico.Controls.Add(this.btnEstado);
             this.pnlFondoConsultarMedico.Controls.Add(this.txtConsulta);
             this.pnlFondoConsultarMedico.Controls.Add(this.btnEliminar);
             this.pnlFondoConsultarMedico.Controls.Add(this.ptrConsulta);
@@ -72,28 +70,6 @@ namespace Presentacion
             this.pnlFondoConsultarMedico.ShadowShift = 10;
             this.pnlFondoConsultarMedico.Size = new System.Drawing.Size(754, 616);
             this.pnlFondoConsultarMedico.TabIndex = 1;
-            // 
-            // btnEstado
-            // 
-            this.btnEstado.BorderRadius = 13;
-            this.btnEstado.CheckedState.Parent = this.btnEstado;
-            this.btnEstado.CustomImages.Parent = this.btnEstado;
-            this.btnEstado.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnEstado.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnEstado.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnEstado.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnEstado.DisabledState.Parent = this.btnEstado;
-            this.btnEstado.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(191)))), ((int)(((byte)(250)))));
-            this.btnEstado.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEstado.ForeColor = System.Drawing.Color.White;
-            this.btnEstado.HoverState.Parent = this.btnEstado;
-            this.btnEstado.Location = new System.Drawing.Point(290, 546);
-            this.btnEstado.Name = "btnEstado";
-            this.btnEstado.ShadowDecoration.Parent = this.btnEstado;
-            this.btnEstado.Size = new System.Drawing.Size(171, 31);
-            this.btnEstado.TabIndex = 69;
-            this.btnEstado.Text = "Disponibilidad";
-            this.btnEstado.Click += new System.EventHandler(this.btnEstado_Click);
             // 
             // txtConsulta
             // 
@@ -136,7 +112,7 @@ namespace Presentacion
             this.btnEliminar.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEliminar.ForeColor = System.Drawing.Color.White;
             this.btnEliminar.HoverState.Parent = this.btnEliminar;
-            this.btnEliminar.Location = new System.Drawing.Point(52, 546);
+            this.btnEliminar.Location = new System.Drawing.Point(323, 546);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.ShadowDecoration.Parent = this.btnEliminar;
             this.btnEliminar.Size = new System.Drawing.Size(171, 31);
@@ -328,6 +304,5 @@ namespace Presentacion
         private Guna.UI2.WinForms.Guna2Button btnEliminar;
         private Guna.UI2.WinForms.Guna2Button btnModificar;
         private Guna.UI2.WinForms.Guna2TextBox txtConsulta;
-        private Guna.UI2.WinForms.Guna2Button btnEstado;
     }
 }
