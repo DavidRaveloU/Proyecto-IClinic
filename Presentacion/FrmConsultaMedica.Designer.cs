@@ -599,7 +599,7 @@ namespace Presentacion
             this.btnFinalizar.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnFinalizar.ForeColor = System.Drawing.Color.White;
             this.btnFinalizar.HoverState.Parent = this.btnFinalizar;
-            this.btnFinalizar.Location = new System.Drawing.Point(461, 451);
+            this.btnFinalizar.Location = new System.Drawing.Point(461, 453);
             this.btnFinalizar.Name = "btnFinalizar";
             this.btnFinalizar.ShadowDecoration.Parent = this.btnFinalizar;
             this.btnFinalizar.Size = new System.Drawing.Size(180, 45);

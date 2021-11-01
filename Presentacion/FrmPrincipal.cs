@@ -19,6 +19,7 @@ namespace Presentacion
             AbrirFormulario(new FrmAgendaCita());
         }
 
+        private string formularioAbierto = "agendar cita";
 
         private void btnClose_Click(object sender, EventArgs e)
         {
@@ -114,14 +115,22 @@ namespace Presentacion
 
         private void btnRegistrarMedico_Click(object sender, EventArgs e)
         {
-            AbrirFormulario(new FrmRegistrarMedico());
-            HideSubmenu();
+            if (!formularioAbierto.ToLower().Equals("registrar medico"))
+            {
+                AbrirFormulario(new FrmRegistrarMedico());
+                HideSubmenu();
+                formularioAbierto = "registrar medico";
+            }
         }
 
         private void btnConsultarMedico_Click(object sender, EventArgs e)
         {
-            AbrirFormulario(new FrmConsultarMedico());
-            HideSubmenu();
+            if (!formularioAbierto.ToLower().Equals("consultar medico"))
+            {
+                AbrirFormulario(new FrmConsultarMedico());
+                HideSubmenu();
+                formularioAbierto = "consultar medico";
+            }
         }
 
         private void btnPaciente_Click_1(object sender, EventArgs e)
@@ -131,14 +140,22 @@ namespace Presentacion
 
         private void btnRegistrarPaciente_Click(object sender, EventArgs e)
         {
-            AbrirFormulario(new FrmRegistrarPaciente());
-            HideSubmenu();
+            if (!formularioAbierto.ToLower().Equals("registrar paciente"))
+            {
+                AbrirFormulario(new FrmRegistrarPaciente());
+                HideSubmenu();
+                formularioAbierto = "registrar paciente";
+            }
         }
 
         private void btnConsultarPaciente_Click(object sender, EventArgs e)
         {
-            AbrirFormulario(new FrmConsultarPaciente());
-            HideSubmenu();
+            if (!formularioAbierto.ToLower().Equals("consultar paciente"))
+            {
+                AbrirFormulario(new FrmConsultarPaciente());
+                HideSubmenu();
+                formularioAbierto = "consultar paciente";
+            }
         }
 
         private void btnConsulta_Click_1(object sender, EventArgs e)
@@ -148,26 +165,42 @@ namespace Presentacion
 
         private void btnConsultaMedica_Click_1(object sender, EventArgs e)
         {
-            AbrirFormulario(new FrmConsultaMedica());
-            HideSubmenu();
+            if (!formularioAbierto.ToLower().Equals("consulta medica"))
+            {
+                AbrirFormulario(new FrmConsultaMedica());
+                HideSubmenu();
+                formularioAbierto = "consula medica";
+            }
         }
 
         private void btnConsultarHistorial_Click_1(object sender, EventArgs e)
         {
-            AbrirFormulario(new FrmConsultaHistorial());
-            HideSubmenu();
+            if (!formularioAbierto.ToLower().Equals("consultar historial"))
+            {
+                AbrirFormulario(new FrmConsultaHistorial());
+                HideSubmenu();
+                formularioAbierto = "consultar historial";
+            }
         }
 
         private void btnAgendarMedico_Click(object sender, EventArgs e)
         {
+            if (!formularioAbierto.ToLower().Equals("agendar medico")) 
+            {
             AbrirFormulario(new FrmAgendaMedico());
             HideSubmenu();
+                formularioAbierto = "agendar medico";
+            }
         }
 
         private void btnAgendarCita_Click(object sender, EventArgs e)
         {
-            AbrirFormulario(new FrmAgendaCita ());
-            HideSubmenu();
+            if (!formularioAbierto.ToLower().Equals("agendar cita"))
+            {
+                AbrirFormulario(new FrmAgendaCita());
+                HideSubmenu();
+                formularioAbierto = "agendar cita";
+            }
         }
 
         private void btnCerrarSesion_Click(object sender, EventArgs e)
