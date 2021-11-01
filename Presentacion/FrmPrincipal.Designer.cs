@@ -542,12 +542,14 @@ namespace Presentacion
             this.btnAgendarCita.ForeColor = System.Drawing.Color.Black;
             this.btnAgendarCita.HoverState.Parent = this.btnAgendarCita;
             this.btnAgendarCita.Image = ((System.Drawing.Image)(resources.GetObject("btnAgendarCita.Image")));
+            this.btnAgendarCita.ImageOffset = new System.Drawing.Point(-5, 0);
             this.btnAgendarCita.Location = new System.Drawing.Point(0, 0);
             this.btnAgendarCita.Name = "btnAgendarCita";
             this.btnAgendarCita.ShadowDecoration.Parent = this.btnAgendarCita;
             this.btnAgendarCita.Size = new System.Drawing.Size(198, 45);
             this.btnAgendarCita.TabIndex = 1;
             this.btnAgendarCita.Text = "Agendar cita";
+            this.btnAgendarCita.TextOffset = new System.Drawing.Point(-4, 0);
             // 
             // btnAgendarMedico
             // 
@@ -570,6 +572,7 @@ namespace Presentacion
             this.btnAgendarMedico.Size = new System.Drawing.Size(198, 45);
             this.btnAgendarMedico.TabIndex = 2;
             this.btnAgendarMedico.Text = "Agendar médico";
+            this.btnAgendarMedico.TextOffset = new System.Drawing.Point(1, 0);
             this.btnAgendarMedico.Click += new System.EventHandler(this.btnAgendarMedico_Click);
             // 
             // FrmPrincipal
