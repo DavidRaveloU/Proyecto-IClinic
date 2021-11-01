@@ -1,7 +1,7 @@
 ﻿
 namespace Presentacion
 {
-    partial class FrmAgenda
+    partial class FrmAgendaMedico
     {
         /// <summary>
         /// Required designer variable.
@@ -29,8 +29,12 @@ namespace Presentacion
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmAgenda));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmAgendaMedico));
             this.pnlAgenda = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.lblNumeroAgenda = new Bunifu.UI.WinForms.BunifuLabel();
+            this.lblIdagenda = new Bunifu.UI.WinForms.BunifuLabel();
+            this.lblFechaInicial = new Bunifu.UI.WinForms.BunifuLabel();
+            this.guna2DateTimePicker1 = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.lblCodigo = new System.Windows.Forms.Label();
             this.lblTCodigo = new System.Windows.Forms.Label();
             this.btnEliminar = new Guna.UI2.WinForms.Guna2Button();
@@ -45,12 +49,8 @@ namespace Presentacion
             this.lblNumeroCédula = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lblAgenda = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.ptrAgenda = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2DateTimePicker1 = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.guna2DateTimePicker2 = new Guna.UI2.WinForms.Guna2DateTimePicker();
-            this.lblFechaInicial = new Bunifu.UI.WinForms.BunifuLabel();
             this.lblFechafinal = new Bunifu.UI.WinForms.BunifuLabel();
-            this.lblIdagenda = new Bunifu.UI.WinForms.BunifuLabel();
-            this.lblNumeroAgenda = new Bunifu.UI.WinForms.BunifuLabel();
             this.lblHorario = new Bunifu.UI.WinForms.BunifuLabel();
             this.lblNumeroHorario = new Bunifu.UI.WinForms.BunifuLabel();
             this.txtHoraInicialDeAtancion = new Guna.UI2.WinForms.Guna2TextBox();
@@ -99,6 +99,72 @@ namespace Presentacion
             this.pnlAgenda.ShadowShift = 10;
             this.pnlAgenda.Size = new System.Drawing.Size(743, 616);
             this.pnlAgenda.TabIndex = 1;
+            // 
+            // lblNumeroAgenda
+            // 
+            this.lblNumeroAgenda.AllowParentOverrides = false;
+            this.lblNumeroAgenda.AutoEllipsis = false;
+            this.lblNumeroAgenda.CursorType = null;
+            this.lblNumeroAgenda.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNumeroAgenda.Location = new System.Drawing.Point(177, 111);
+            this.lblNumeroAgenda.Name = "lblNumeroAgenda";
+            this.lblNumeroAgenda.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblNumeroAgenda.Size = new System.Drawing.Size(9, 20);
+            this.lblNumeroAgenda.TabIndex = 72;
+            this.lblNumeroAgenda.Text = "0";
+            this.lblNumeroAgenda.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.lblNumeroAgenda.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
+            // lblIdagenda
+            // 
+            this.lblIdagenda.AllowParentOverrides = false;
+            this.lblIdagenda.AutoEllipsis = false;
+            this.lblIdagenda.Cursor = System.Windows.Forms.Cursors.Default;
+            this.lblIdagenda.CursorType = System.Windows.Forms.Cursors.Default;
+            this.lblIdagenda.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblIdagenda.Location = new System.Drawing.Point(20, 111);
+            this.lblIdagenda.Name = "lblIdagenda";
+            this.lblIdagenda.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblIdagenda.Size = new System.Drawing.Size(75, 20);
+            this.lblIdagenda.TabIndex = 71;
+            this.lblIdagenda.Text = "ID agenda";
+            this.lblIdagenda.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.lblIdagenda.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
+            // lblFechaInicial
+            // 
+            this.lblFechaInicial.AllowParentOverrides = false;
+            this.lblFechaInicial.AutoEllipsis = false;
+            this.lblFechaInicial.Cursor = System.Windows.Forms.Cursors.Default;
+            this.lblFechaInicial.CursorType = System.Windows.Forms.Cursors.Default;
+            this.lblFechaInicial.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFechaInicial.Location = new System.Drawing.Point(474, 150);
+            this.lblFechaInicial.Name = "lblFechaInicial";
+            this.lblFechaInicial.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblFechaInicial.Size = new System.Drawing.Size(171, 20);
+            this.lblFechaInicial.TabIndex = 69;
+            this.lblFechaInicial.Text = "Fecha inicio de atención";
+            this.lblFechaInicial.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.lblFechaInicial.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
+            // guna2DateTimePicker1
+            // 
+            this.guna2DateTimePicker1.BorderRadius = 12;
+            this.guna2DateTimePicker1.Checked = true;
+            this.guna2DateTimePicker1.CheckedState.Parent = this.guna2DateTimePicker1;
+            this.guna2DateTimePicker1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(191)))), ((int)(((byte)(165)))));
+            this.guna2DateTimePicker1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2DateTimePicker1.ForeColor = System.Drawing.Color.White;
+            this.guna2DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.guna2DateTimePicker1.HoverState.Parent = this.guna2DateTimePicker1;
+            this.guna2DateTimePicker1.Location = new System.Drawing.Point(474, 189);
+            this.guna2DateTimePicker1.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.guna2DateTimePicker1.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.guna2DateTimePicker1.Name = "guna2DateTimePicker1";
+            this.guna2DateTimePicker1.ShadowDecoration.Parent = this.guna2DateTimePicker1;
+            this.guna2DateTimePicker1.Size = new System.Drawing.Size(229, 36);
+            this.guna2DateTimePicker1.TabIndex = 67;
+            this.guna2DateTimePicker1.Value = new System.DateTime(2021, 10, 31, 14, 39, 50, 721);
             // 
             // lblCodigo
             // 
@@ -266,42 +332,23 @@ namespace Presentacion
             this.lblAgenda.BackColor = System.Drawing.Color.Transparent;
             this.lblAgenda.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAgenda.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(191)))), ((int)(((byte)(165)))));
-            this.lblAgenda.Location = new System.Drawing.Point(395, 64);
+            this.lblAgenda.Location = new System.Drawing.Point(329, 64);
             this.lblAgenda.Name = "lblAgenda";
-            this.lblAgenda.Size = new System.Drawing.Size(83, 26);
+            this.lblAgenda.Size = new System.Drawing.Size(175, 26);
             this.lblAgenda.TabIndex = 20;
-            this.lblAgenda.Text = "AGENDA";
+            this.lblAgenda.Text = "AGENDAR MÉDICO";
             // 
             // ptrAgenda
             // 
             this.ptrAgenda.Image = ((System.Drawing.Image)(resources.GetObject("ptrAgenda.Image")));
             this.ptrAgenda.ImageRotate = 0F;
-            this.ptrAgenda.Location = new System.Drawing.Point(328, 25);
+            this.ptrAgenda.Location = new System.Drawing.Point(273, 25);
             this.ptrAgenda.Name = "ptrAgenda";
             this.ptrAgenda.ShadowDecoration.Parent = this.ptrAgenda;
             this.ptrAgenda.Size = new System.Drawing.Size(61, 65);
             this.ptrAgenda.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.ptrAgenda.TabIndex = 19;
             this.ptrAgenda.TabStop = false;
-            // 
-            // guna2DateTimePicker1
-            // 
-            this.guna2DateTimePicker1.BorderRadius = 12;
-            this.guna2DateTimePicker1.Checked = true;
-            this.guna2DateTimePicker1.CheckedState.Parent = this.guna2DateTimePicker1;
-            this.guna2DateTimePicker1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(191)))), ((int)(((byte)(165)))));
-            this.guna2DateTimePicker1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2DateTimePicker1.ForeColor = System.Drawing.Color.White;
-            this.guna2DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.guna2DateTimePicker1.HoverState.Parent = this.guna2DateTimePicker1;
-            this.guna2DateTimePicker1.Location = new System.Drawing.Point(474, 189);
-            this.guna2DateTimePicker1.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.guna2DateTimePicker1.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.guna2DateTimePicker1.Name = "guna2DateTimePicker1";
-            this.guna2DateTimePicker1.ShadowDecoration.Parent = this.guna2DateTimePicker1;
-            this.guna2DateTimePicker1.Size = new System.Drawing.Size(229, 36);
-            this.guna2DateTimePicker1.TabIndex = 67;
-            this.guna2DateTimePicker1.Value = new System.DateTime(2021, 10, 31, 14, 39, 50, 721);
             // 
             // guna2DateTimePicker2
             // 
@@ -322,21 +369,6 @@ namespace Presentacion
             this.guna2DateTimePicker2.TabIndex = 68;
             this.guna2DateTimePicker2.Value = new System.DateTime(2021, 10, 31, 14, 39, 50, 721);
             // 
-            // lblFechaInicial
-            // 
-            this.lblFechaInicial.AllowParentOverrides = false;
-            this.lblFechaInicial.AutoEllipsis = false;
-            this.lblFechaInicial.CursorType = System.Windows.Forms.Cursors.Default;
-            this.lblFechaInicial.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFechaInicial.Location = new System.Drawing.Point(474, 150);
-            this.lblFechaInicial.Name = "lblFechaInicial";
-            this.lblFechaInicial.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lblFechaInicial.Size = new System.Drawing.Size(171, 20);
-            this.lblFechaInicial.TabIndex = 69;
-            this.lblFechaInicial.Text = "Fecha inicio de atención";
-            this.lblFechaInicial.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.lblFechaInicial.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
-            // 
             // lblFechafinal
             // 
             this.lblFechafinal.AllowParentOverrides = false;
@@ -352,40 +384,11 @@ namespace Presentacion
             this.lblFechafinal.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.lblFechafinal.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
-            // lblIdagenda
-            // 
-            this.lblIdagenda.AllowParentOverrides = false;
-            this.lblIdagenda.AutoEllipsis = false;
-            this.lblIdagenda.CursorType = System.Windows.Forms.Cursors.Default;
-            this.lblIdagenda.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblIdagenda.Location = new System.Drawing.Point(20, 111);
-            this.lblIdagenda.Name = "lblIdagenda";
-            this.lblIdagenda.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lblIdagenda.Size = new System.Drawing.Size(77, 20);
-            this.lblIdagenda.TabIndex = 71;
-            this.lblIdagenda.Text = "ID Agenda";
-            this.lblIdagenda.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.lblIdagenda.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
-            // 
-            // lblNumeroAgenda
-            // 
-            this.lblNumeroAgenda.AllowParentOverrides = false;
-            this.lblNumeroAgenda.AutoEllipsis = false;
-            this.lblNumeroAgenda.CursorType = null;
-            this.lblNumeroAgenda.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNumeroAgenda.Location = new System.Drawing.Point(177, 111);
-            this.lblNumeroAgenda.Name = "lblNumeroAgenda";
-            this.lblNumeroAgenda.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lblNumeroAgenda.Size = new System.Drawing.Size(9, 20);
-            this.lblNumeroAgenda.TabIndex = 72;
-            this.lblNumeroAgenda.Text = "0";
-            this.lblNumeroAgenda.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.lblNumeroAgenda.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
-            // 
             // lblHorario
             // 
             this.lblHorario.AllowParentOverrides = false;
             this.lblHorario.AutoEllipsis = false;
+            this.lblHorario.Cursor = System.Windows.Forms.Cursors.Default;
             this.lblHorario.CursorType = System.Windows.Forms.Cursors.Default;
             this.lblHorario.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblHorario.Location = new System.Drawing.Point(24, 375);
@@ -468,6 +471,7 @@ namespace Presentacion
             // 
             this.lblHoraInicialDeAtencion.AllowParentOverrides = false;
             this.lblHoraInicialDeAtencion.AutoEllipsis = false;
+            this.lblHoraInicialDeAtencion.Cursor = System.Windows.Forms.Cursors.Default;
             this.lblHoraInicialDeAtencion.CursorType = System.Windows.Forms.Cursors.Default;
             this.lblHoraInicialDeAtencion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblHoraInicialDeAtencion.Location = new System.Drawing.Point(24, 425);
@@ -516,7 +520,7 @@ namespace Presentacion
             this.btnEstado.Text = "Disponibilidad";
             this.btnEstado.Click += new System.EventHandler(this.btnEstado_Click);
             // 
-            // FrmAgenda
+            // FrmAgendaMedico
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -524,7 +528,7 @@ namespace Presentacion
             this.ClientSize = new System.Drawing.Size(799, 677);
             this.Controls.Add(this.pnlAgenda);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "FrmAgenda";
+            this.Name = "FrmAgendaMedico";
             this.Text = "Form1";
             this.pnlAgenda.ResumeLayout(false);
             this.pnlAgenda.PerformLayout();
@@ -550,18 +554,18 @@ namespace Presentacion
         private Guna.UI2.WinForms.Guna2Button btnAgendar;
         private System.Windows.Forms.Label lblCodigo;
         private System.Windows.Forms.Label lblTCodigo;
-        private Bunifu.UI.WinForms.BunifuLabel lblFechafinal;
         private Bunifu.UI.WinForms.BunifuLabel lblFechaInicial;
-        private Guna.UI2.WinForms.Guna2DateTimePicker guna2DateTimePicker2;
         private Guna.UI2.WinForms.Guna2DateTimePicker guna2DateTimePicker1;
-        private Bunifu.UI.WinForms.BunifuLabel lblNumeroHorario;
-        private Bunifu.UI.WinForms.BunifuLabel lblHorario;
         private Bunifu.UI.WinForms.BunifuLabel lblNumeroAgenda;
         private Bunifu.UI.WinForms.BunifuLabel lblIdagenda;
+        private Guna.UI2.WinForms.Guna2Button btnEstado;
         private Bunifu.UI.WinForms.BunifuLabel lblHoraFinalDeAtencion;
         private Bunifu.UI.WinForms.BunifuLabel lblHoraInicialDeAtencion;
         private Guna.UI2.WinForms.Guna2TextBox txtHoraFinalDeAtencion;
         private Guna.UI2.WinForms.Guna2TextBox txtHoraInicialDeAtancion;
-        private Guna.UI2.WinForms.Guna2Button btnEstado;
+        private Bunifu.UI.WinForms.BunifuLabel lblNumeroHorario;
+        private Bunifu.UI.WinForms.BunifuLabel lblHorario;
+        private Bunifu.UI.WinForms.BunifuLabel lblFechafinal;
+        private Guna.UI2.WinForms.Guna2DateTimePicker guna2DateTimePicker2;
     }
 }

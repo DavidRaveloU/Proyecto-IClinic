@@ -16,7 +16,7 @@ namespace Presentacion
         {
             InitializeComponent();
             CustomizedDesing();
-            AbrirFormulario(new FrmAgenda());
+            AbrirFormulario(new FrmAgendaCita());
         }
 
 
@@ -87,8 +87,8 @@ namespace Presentacion
             else
                 subMenu.Visible = false;
         }
-   
-       
+
+
         private void btnAgenda_Click(object sender, EventArgs e)
         {
             showSubmenu(pnlAgenda);
@@ -160,7 +160,13 @@ namespace Presentacion
 
         private void btnAgendarMedico_Click(object sender, EventArgs e)
         {
-            AbrirFormulario(new FrmAgenda());
+            AbrirFormulario(new FrmAgendaMedico());
+            HideSubmenu();
+        }
+
+        private void btnAgendarCita_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario(new FrmAgendaCita ());
             HideSubmenu();
         }
     }

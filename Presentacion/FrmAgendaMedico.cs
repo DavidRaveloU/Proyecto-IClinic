@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Presentacion
 {
-    public partial class FrmAgenda : Form
+    public partial class FrmAgendaMedico : Form
     {
-        public FrmAgenda()
+        public FrmAgendaMedico()
         {
             InitializeComponent();
         }
@@ -41,6 +41,5 @@ namespace Presentacion
                 frmEstilo.Dispose();
             }
         }
-        
     }
 }

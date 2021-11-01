@@ -75,7 +75,6 @@ D:\PROYECTO\Proyecto-IClinic\Presentacion\bin\Debug\Bunifu.UI.WinForms.BunifuToo
 D:\PROYECTO\Proyecto-IClinic\Presentacion\bin\Debug\Bunifu.UI.WinForms.BunifuTransition.xml
 D:\PROYECTO\Proyecto-IClinic\Presentacion\bin\Debug\Bunifu.UI.WinForms.BunifuUserControl.xml
 D:\PROYECTO\Proyecto-IClinic\Presentacion\obj\Debug\Presentacion.csproj.AssemblyReference.cache
-D:\PROYECTO\Proyecto-IClinic\Presentacion\obj\Debug\Presentacion.FrmAgenda.resources
 D:\PROYECTO\Proyecto-IClinic\Presentacion\obj\Debug\Presentacion.FrmConsultaHistorial.resources
 D:\PROYECTO\Proyecto-IClinic\Presentacion\obj\Debug\Presentacion.FrmConsultaMedica.resources
 D:\PROYECTO\Proyecto-IClinic\Presentacion\obj\Debug\Presentacion.FrmConsultarMedico.resources
@@ -94,3 +93,5 @@ D:\PROYECTO\Proyecto-IClinic\Presentacion\obj\Debug\Presentacion.exe.licenses
 D:\PROYECTO\Proyecto-IClinic\Presentacion\obj\Debug\Presentacion.csproj.CoreCompileInputs.cache
 D:\PROYECTO\Proyecto-IClinic\Presentacion\obj\Debug\Presentacion.exe
 D:\PROYECTO\Proyecto-IClinic\Presentacion\obj\Debug\Presentacion.pdb
+D:\PROYECTO\Proyecto-IClinic\Presentacion\obj\Debug\Presentacion.FrmAgendaCita.resources
+D:\PROYECTO\Proyecto-IClinic\Presentacion\obj\Debug\Presentacion.FrmAgendaMedico.resources
