@@ -545,6 +545,30 @@
         TSelWMuaJ0OGDBkyZMiQIUOGDBkyZMiQIUOGDBkyZHDRocM/AQXW7K/PI8zxAAAAAElFTkSuQmCC
 </value>
   </data>
+  <data name="btnAgendarMedico.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABGdBTUEAALGPC/xhBQAAAYFJREFUSEvt
+        1r0rxHEAx/Eb+AeUWDzHIlaDh9HDqPgXzP4Ci8FEMSiTyaYkg8RmsVgUJXlm8FgIk4f3h66+8fndHb4/
+        GbzrVe53d7/PdZe7X+a/v1o1xrGHa5xgDg1IrV484sU4wyDKEbV63MONho4QdXwCbsgZRrS24UacDUQr
+        6bN1bhCtc7gRJ+rwItyIs4xozcONOAuI1inciHOMaOnbyo04Y4iaPjs3FFpC9HrgxkKdSKVRuEEZQqq5
+        UUk9Nyr5qsU6LjGgA1+pD25U+pGrRujnU4/Vb3neitGFWTzj42DWE2bQjSJkq0Pz+5+ZJlxg7e1WQq2Y
+        xhXcUJJbtEDp7dVvtL7rNar0InT8U6VYgTtpPhrVC1Y6+SGy9+lt1tttK8EOwpMV6g5tUDUIR+UAOm4b
+        QfjgQmm0HUoXhBoJ79+Hjie2hfAJhdBFQgeUTq6R8H5dkVYhZw8In1QIXY8pnfxboz9tCuHoLiqReqvI
+        jm6iDL+S/hs0PokKHUguk3kFMD0p3ACSMn0AAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="btnAgendarCita.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABGdBTUEAALGPC/xhBQAAAYFJREFUSEvt
+        1r0rxHEAx/Eb+AeUWDzHIlaDh9HDqPgXzP4Ci8FEMSiTyaYkg8RmsVgUJXlm8FgIk4f3h66+8fndHb4/
+        GbzrVe53d7/PdZe7X+a/v1o1xrGHa5xgDg1IrV484sU4wyDKEbV63MONho4QdXwCbsgZRrS24UacDUQr
+        6bN1bhCtc7gRJ+rwItyIs4xozcONOAuI1inciHOMaOnbyo04Y4iaPjs3FFpC9HrgxkKdSKVRuEEZQqq5
+        UUk9Nyr5qsU6LjGgA1+pD25U+pGrRujnU4/Vb3neitGFWTzj42DWE2bQjSJkq0Pz+5+ZJlxg7e1WQq2Y
+        xhXcUJJbtEDp7dVvtL7rNar0InT8U6VYgTtpPhrVC1Y6+SGy9+lt1tttK8EOwpMV6g5tUDUIR+UAOm4b
+        QfjgQmm0HUoXhBoJ79+Hjie2hfAJhdBFQgeUTq6R8H5dkVYhZw8In1QIXY8pnfxboz9tCuHoLiqReqvI
+        jm6iDL+S/hs0PokKHUguk3kFMD0p3ACSMn0AAAAASUVORK5CYII=
+</value>
+  </data>
   <data name="btnAgenda.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABGdBTUEAALGPC/xhBQAABEtJREFUeF7t
@@ -6328,7 +6352,7 @@
         cwAAAABJRU5ErkJggg==
 </value>
   </data>
-  <metadata name="guna2ShadowForm1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+  <metadata name="sombra.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">

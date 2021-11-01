@@ -64,9 +64,12 @@ namespace Presentacion
             pnlMedico.Visible = false;
             pnlPaciente.Visible = false;
             pnlConsulta.Visible = false;
+            pnlAgenda.Visible = false;
         }
         private void HideSubmenu()
         {
+            if (pnlAgenda.Visible == true)
+                pnlAgenda.Visible = false;
             if (pnlMedico.Visible == true)
                 pnlMedico.Visible = false;
             if (pnlPaciente.Visible == true)
@@ -84,63 +87,11 @@ namespace Presentacion
             else
                 subMenu.Visible = false;
         }
-           
-      
-
-        private void btnMedico_Click(object sender, EventArgs e)
-        {
-            showSubmenu(pnlMedico);
-        }
-
-        private void guna2Button2_Click(object sender, EventArgs e)
-        {
-            AbrirFormulario(new FrmRegistrarMedico());
-            HideSubmenu();
-        }
-
-        private void guna2Button3_Click(object sender, EventArgs e)
-        {
-            AbrirFormulario(new FrmConsultarMedico());
-            HideSubmenu();
-        }
-
-        private void btnPaciente_Click(object sender, EventArgs e)
-        {
-            showSubmenu(pnlPaciente);
-        }
-
-        private void guna2Button5_Click(object sender, EventArgs e)
-        {
-            AbrirFormulario(new FrmRegistrarPaciente());
-            HideSubmenu();
-        }
-
-        private void guna2Button4_Click(object sender, EventArgs e)
-        {
-            AbrirFormulario(new FrmConsultarPaciente());
-            HideSubmenu();
-        }
-
-        private void btnConsulta_Click(object sender, EventArgs e)
-        {
-            showSubmenu(pnlConsulta);
-        }
-
-        private void btnConsultaMedica_Click(object sender, EventArgs e)
-        {
-            AbrirFormulario(new FrmConsultaMedica());
-            HideSubmenu();
-        }
-
-        private void btnConsultarHistorial_Click(object sender, EventArgs e)
-        {
-            AbrirFormulario(new FrmConsultaHistorial());
-            HideSubmenu();
-        }
+   
+       
         private void btnAgenda_Click(object sender, EventArgs e)
         {
-            AbrirFormulario(new FrmAgenda());
-            HideSubmenu();
+            showSubmenu(pnlAgenda);
         }
 
         private void btnCerrarSecion_Click(object sender, EventArgs e)
@@ -154,6 +105,63 @@ namespace Presentacion
         private void pnlGrapper_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void btnMedico_Click_1(object sender, EventArgs e)
+        {
+            showSubmenu(pnlMedico);
+        }
+
+        private void btnRegistrarMedico_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario(new FrmRegistrarMedico());
+            HideSubmenu();
+        }
+
+        private void btnConsultarMedico_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario(new FrmConsultarMedico());
+            HideSubmenu();
+        }
+
+        private void btnPaciente_Click_1(object sender, EventArgs e)
+        {
+            showSubmenu(pnlPaciente);
+        }
+
+        private void btnRegistrarPaciente_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario(new FrmRegistrarPaciente());
+            HideSubmenu();
+        }
+
+        private void btnConsultarPaciente_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario(new FrmConsultarPaciente());
+            HideSubmenu();
+        }
+
+        private void btnConsulta_Click_1(object sender, EventArgs e)
+        {
+            showSubmenu(pnlConsulta);
+        }
+
+        private void btnConsultaMedica_Click_1(object sender, EventArgs e)
+        {
+            AbrirFormulario(new FrmConsultaMedica());
+            HideSubmenu();
+        }
+
+        private void btnConsultarHistorial_Click_1(object sender, EventArgs e)
+        {
+            AbrirFormulario(new FrmConsultaHistorial());
+            HideSubmenu();
+        }
+
+        private void btnAgendarMedico_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario(new FrmAgenda());
+            HideSubmenu();
         }
     }
 }
