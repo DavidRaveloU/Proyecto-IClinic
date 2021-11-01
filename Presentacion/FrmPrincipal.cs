@@ -169,5 +169,12 @@ namespace Presentacion
             AbrirFormulario(new FrmAgendaCita ());
             HideSubmenu();
         }
+
+        private void btnCerrarSesion_Click(object sender, EventArgs e)
+        {
+            FrmLogin frmLogin = new FrmLogin();
+            frmLogin.Show();
+            this.Dispose();
+        }
     }
 }
