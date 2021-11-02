@@ -25,7 +25,7 @@ namespace Presentacion
         private void OscurecerFondo()
         {
             Form frmEstilo = new Form();
-            using (FrmDisponibilidadMedico disponibilidadMedico = new FrmDisponibilidadMedico())
+            using (FrmHorario disponibilidadMedico = new FrmHorario())
             {
                 frmEstilo.StartPosition = FormStartPosition.Manual;
                 frmEstilo.FormBorderStyle = FormBorderStyle.None;

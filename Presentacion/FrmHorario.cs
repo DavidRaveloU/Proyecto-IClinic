@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Presentacion
 {
-    public partial class FrmDisponibilidadMedico : Form
+    public partial class FrmHorario : Form
     {
-        public FrmDisponibilidadMedico()
+        public FrmHorario()
         {
             InitializeComponent();
         }

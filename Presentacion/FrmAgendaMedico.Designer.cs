@@ -31,9 +31,12 @@ namespace Presentacion
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmAgendaMedico));
             this.pnlAgenda = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.btnEstado = new Guna.UI2.WinForms.Guna2Button();
             this.lblNumeroAgenda = new Bunifu.UI.WinForms.BunifuLabel();
             this.lblIdagenda = new Bunifu.UI.WinForms.BunifuLabel();
+            this.lblFechafinal = new Bunifu.UI.WinForms.BunifuLabel();
             this.lblFechaInicial = new Bunifu.UI.WinForms.BunifuLabel();
+            this.guna2DateTimePicker2 = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.guna2DateTimePicker1 = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.lblCodigo = new System.Windows.Forms.Label();
             this.lblTCodigo = new System.Windows.Forms.Label();
@@ -49,15 +52,6 @@ namespace Presentacion
             this.lblNumeroCédula = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lblAgenda = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.ptrAgenda = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2DateTimePicker2 = new Guna.UI2.WinForms.Guna2DateTimePicker();
-            this.lblFechafinal = new Bunifu.UI.WinForms.BunifuLabel();
-            this.lblHorario = new Bunifu.UI.WinForms.BunifuLabel();
-            this.lblNumeroHorario = new Bunifu.UI.WinForms.BunifuLabel();
-            this.txtHoraInicialDeAtancion = new Guna.UI2.WinForms.Guna2TextBox();
-            this.txtHoraFinalDeAtencion = new Guna.UI2.WinForms.Guna2TextBox();
-            this.lblHoraInicialDeAtencion = new Bunifu.UI.WinForms.BunifuLabel();
-            this.lblHoraFinalDeAtencion = new Bunifu.UI.WinForms.BunifuLabel();
-            this.btnEstado = new Guna.UI2.WinForms.Guna2Button();
             this.pnlAgenda.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptrAgenda)).BeginInit();
             this.SuspendLayout();
@@ -66,12 +60,6 @@ namespace Presentacion
             // 
             this.pnlAgenda.BackColor = System.Drawing.Color.Transparent;
             this.pnlAgenda.Controls.Add(this.btnEstado);
-            this.pnlAgenda.Controls.Add(this.lblHoraFinalDeAtencion);
-            this.pnlAgenda.Controls.Add(this.lblHoraInicialDeAtencion);
-            this.pnlAgenda.Controls.Add(this.txtHoraFinalDeAtencion);
-            this.pnlAgenda.Controls.Add(this.txtHoraInicialDeAtancion);
-            this.pnlAgenda.Controls.Add(this.lblNumeroHorario);
-            this.pnlAgenda.Controls.Add(this.lblHorario);
             this.pnlAgenda.Controls.Add(this.lblNumeroAgenda);
             this.pnlAgenda.Controls.Add(this.lblIdagenda);
             this.pnlAgenda.Controls.Add(this.lblFechafinal);
@@ -99,6 +87,28 @@ namespace Presentacion
             this.pnlAgenda.ShadowShift = 10;
             this.pnlAgenda.Size = new System.Drawing.Size(743, 616);
             this.pnlAgenda.TabIndex = 1;
+            // 
+            // btnEstado
+            // 
+            this.btnEstado.BorderRadius = 13;
+            this.btnEstado.CheckedState.Parent = this.btnEstado;
+            this.btnEstado.CustomImages.Parent = this.btnEstado;
+            this.btnEstado.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnEstado.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnEstado.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnEstado.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnEstado.DisabledState.Parent = this.btnEstado;
+            this.btnEstado.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(191)))), ((int)(((byte)(250)))));
+            this.btnEstado.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEstado.ForeColor = System.Drawing.Color.White;
+            this.btnEstado.HoverState.Parent = this.btnEstado;
+            this.btnEstado.Location = new System.Drawing.Point(329, 554);
+            this.btnEstado.Name = "btnEstado";
+            this.btnEstado.ShadowDecoration.Parent = this.btnEstado;
+            this.btnEstado.Size = new System.Drawing.Size(171, 31);
+            this.btnEstado.TabIndex = 79;
+            this.btnEstado.Text = "Disponibilidad";
+            this.btnEstado.Click += new System.EventHandler(this.btnEstado_Click);
             // 
             // lblNumeroAgenda
             // 
@@ -131,6 +141,21 @@ namespace Presentacion
             this.lblIdagenda.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.lblIdagenda.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
+            // lblFechafinal
+            // 
+            this.lblFechafinal.AllowParentOverrides = false;
+            this.lblFechafinal.AutoEllipsis = false;
+            this.lblFechafinal.CursorType = null;
+            this.lblFechafinal.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFechafinal.Location = new System.Drawing.Point(474, 244);
+            this.lblFechafinal.Name = "lblFechafinal";
+            this.lblFechafinal.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblFechafinal.Size = new System.Drawing.Size(165, 20);
+            this.lblFechafinal.TabIndex = 70;
+            this.lblFechafinal.Text = "Fecha final de atención";
+            this.lblFechafinal.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.lblFechafinal.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
             // lblFechaInicial
             // 
             this.lblFechaInicial.AllowParentOverrides = false;
@@ -146,6 +171,25 @@ namespace Presentacion
             this.lblFechaInicial.Text = "Fecha inicio de atención";
             this.lblFechaInicial.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.lblFechaInicial.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
+            // guna2DateTimePicker2
+            // 
+            this.guna2DateTimePicker2.BorderRadius = 12;
+            this.guna2DateTimePicker2.Checked = true;
+            this.guna2DateTimePicker2.CheckedState.Parent = this.guna2DateTimePicker2;
+            this.guna2DateTimePicker2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(191)))), ((int)(((byte)(165)))));
+            this.guna2DateTimePicker2.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2DateTimePicker2.ForeColor = System.Drawing.Color.White;
+            this.guna2DateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.guna2DateTimePicker2.HoverState.Parent = this.guna2DateTimePicker2;
+            this.guna2DateTimePicker2.Location = new System.Drawing.Point(474, 283);
+            this.guna2DateTimePicker2.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.guna2DateTimePicker2.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.guna2DateTimePicker2.Name = "guna2DateTimePicker2";
+            this.guna2DateTimePicker2.ShadowDecoration.Parent = this.guna2DateTimePicker2;
+            this.guna2DateTimePicker2.Size = new System.Drawing.Size(233, 36);
+            this.guna2DateTimePicker2.TabIndex = 68;
+            this.guna2DateTimePicker2.Value = new System.DateTime(2021, 10, 31, 14, 39, 50, 721);
             // 
             // guna2DateTimePicker1
             // 
@@ -350,176 +394,6 @@ namespace Presentacion
             this.ptrAgenda.TabIndex = 19;
             this.ptrAgenda.TabStop = false;
             // 
-            // guna2DateTimePicker2
-            // 
-            this.guna2DateTimePicker2.BorderRadius = 12;
-            this.guna2DateTimePicker2.Checked = true;
-            this.guna2DateTimePicker2.CheckedState.Parent = this.guna2DateTimePicker2;
-            this.guna2DateTimePicker2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(191)))), ((int)(((byte)(165)))));
-            this.guna2DateTimePicker2.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2DateTimePicker2.ForeColor = System.Drawing.Color.White;
-            this.guna2DateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.guna2DateTimePicker2.HoverState.Parent = this.guna2DateTimePicker2;
-            this.guna2DateTimePicker2.Location = new System.Drawing.Point(474, 283);
-            this.guna2DateTimePicker2.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.guna2DateTimePicker2.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.guna2DateTimePicker2.Name = "guna2DateTimePicker2";
-            this.guna2DateTimePicker2.ShadowDecoration.Parent = this.guna2DateTimePicker2;
-            this.guna2DateTimePicker2.Size = new System.Drawing.Size(233, 36);
-            this.guna2DateTimePicker2.TabIndex = 68;
-            this.guna2DateTimePicker2.Value = new System.DateTime(2021, 10, 31, 14, 39, 50, 721);
-            // 
-            // lblFechafinal
-            // 
-            this.lblFechafinal.AllowParentOverrides = false;
-            this.lblFechafinal.AutoEllipsis = false;
-            this.lblFechafinal.CursorType = null;
-            this.lblFechafinal.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFechafinal.Location = new System.Drawing.Point(474, 244);
-            this.lblFechafinal.Name = "lblFechafinal";
-            this.lblFechafinal.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lblFechafinal.Size = new System.Drawing.Size(165, 20);
-            this.lblFechafinal.TabIndex = 70;
-            this.lblFechafinal.Text = "Fecha final de atención";
-            this.lblFechafinal.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.lblFechafinal.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
-            // 
-            // lblHorario
-            // 
-            this.lblHorario.AllowParentOverrides = false;
-            this.lblHorario.AutoEllipsis = false;
-            this.lblHorario.Cursor = System.Windows.Forms.Cursors.Default;
-            this.lblHorario.CursorType = System.Windows.Forms.Cursors.Default;
-            this.lblHorario.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblHorario.Location = new System.Drawing.Point(24, 375);
-            this.lblHorario.Name = "lblHorario";
-            this.lblHorario.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lblHorario.Size = new System.Drawing.Size(73, 20);
-            this.lblHorario.TabIndex = 73;
-            this.lblHorario.Text = "ID Horario";
-            this.lblHorario.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.lblHorario.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
-            // 
-            // lblNumeroHorario
-            // 
-            this.lblNumeroHorario.AllowParentOverrides = false;
-            this.lblNumeroHorario.AutoEllipsis = false;
-            this.lblNumeroHorario.CursorType = null;
-            this.lblNumeroHorario.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNumeroHorario.Location = new System.Drawing.Point(177, 375);
-            this.lblNumeroHorario.Name = "lblNumeroHorario";
-            this.lblNumeroHorario.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lblNumeroHorario.Size = new System.Drawing.Size(9, 20);
-            this.lblNumeroHorario.TabIndex = 74;
-            this.lblNumeroHorario.Text = "0";
-            this.lblNumeroHorario.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.lblNumeroHorario.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
-            // 
-            // txtHoraInicialDeAtancion
-            // 
-            this.txtHoraInicialDeAtancion.Animated = true;
-            this.txtHoraInicialDeAtancion.BorderRadius = 12;
-            this.txtHoraInicialDeAtancion.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtHoraInicialDeAtancion.DefaultText = "";
-            this.txtHoraInicialDeAtancion.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtHoraInicialDeAtancion.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtHoraInicialDeAtancion.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtHoraInicialDeAtancion.DisabledState.Parent = this.txtHoraInicialDeAtancion;
-            this.txtHoraInicialDeAtancion.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtHoraInicialDeAtancion.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtHoraInicialDeAtancion.FocusedState.Parent = this.txtHoraInicialDeAtancion;
-            this.txtHoraInicialDeAtancion.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtHoraInicialDeAtancion.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtHoraInicialDeAtancion.HoverState.Parent = this.txtHoraInicialDeAtancion;
-            this.txtHoraInicialDeAtancion.Location = new System.Drawing.Point(193, 423);
-            this.txtHoraInicialDeAtancion.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtHoraInicialDeAtancion.Name = "txtHoraInicialDeAtancion";
-            this.txtHoraInicialDeAtancion.PasswordChar = '\0';
-            this.txtHoraInicialDeAtancion.PlaceholderText = "Digite la información";
-            this.txtHoraInicialDeAtancion.SelectedText = "";
-            this.txtHoraInicialDeAtancion.ShadowDecoration.Parent = this.txtHoraInicialDeAtancion;
-            this.txtHoraInicialDeAtancion.Size = new System.Drawing.Size(196, 29);
-            this.txtHoraInicialDeAtancion.TabIndex = 75;
-            // 
-            // txtHoraFinalDeAtencion
-            // 
-            this.txtHoraFinalDeAtencion.Animated = true;
-            this.txtHoraFinalDeAtencion.BorderRadius = 12;
-            this.txtHoraFinalDeAtencion.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtHoraFinalDeAtencion.DefaultText = "";
-            this.txtHoraFinalDeAtencion.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtHoraFinalDeAtencion.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtHoraFinalDeAtencion.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtHoraFinalDeAtencion.DisabledState.Parent = this.txtHoraFinalDeAtencion;
-            this.txtHoraFinalDeAtencion.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtHoraFinalDeAtencion.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtHoraFinalDeAtencion.FocusedState.Parent = this.txtHoraFinalDeAtencion;
-            this.txtHoraFinalDeAtencion.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtHoraFinalDeAtencion.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtHoraFinalDeAtencion.HoverState.Parent = this.txtHoraFinalDeAtencion;
-            this.txtHoraFinalDeAtencion.Location = new System.Drawing.Point(193, 472);
-            this.txtHoraFinalDeAtencion.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtHoraFinalDeAtencion.Name = "txtHoraFinalDeAtencion";
-            this.txtHoraFinalDeAtencion.PasswordChar = '\0';
-            this.txtHoraFinalDeAtencion.PlaceholderText = "Digite la información";
-            this.txtHoraFinalDeAtencion.SelectedText = "";
-            this.txtHoraFinalDeAtencion.ShadowDecoration.Parent = this.txtHoraFinalDeAtencion;
-            this.txtHoraFinalDeAtencion.Size = new System.Drawing.Size(196, 29);
-            this.txtHoraFinalDeAtencion.TabIndex = 76;
-            // 
-            // lblHoraInicialDeAtencion
-            // 
-            this.lblHoraInicialDeAtencion.AllowParentOverrides = false;
-            this.lblHoraInicialDeAtencion.AutoEllipsis = false;
-            this.lblHoraInicialDeAtencion.Cursor = System.Windows.Forms.Cursors.Default;
-            this.lblHoraInicialDeAtencion.CursorType = System.Windows.Forms.Cursors.Default;
-            this.lblHoraInicialDeAtencion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblHoraInicialDeAtencion.Location = new System.Drawing.Point(24, 425);
-            this.lblHoraInicialDeAtencion.Name = "lblHoraInicialDeAtencion";
-            this.lblHoraInicialDeAtencion.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lblHoraInicialDeAtencion.Size = new System.Drawing.Size(164, 20);
-            this.lblHoraInicialDeAtencion.TabIndex = 77;
-            this.lblHoraInicialDeAtencion.Text = "Hora inicial de atención";
-            this.lblHoraInicialDeAtencion.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.lblHoraInicialDeAtencion.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
-            // 
-            // lblHoraFinalDeAtencion
-            // 
-            this.lblHoraFinalDeAtencion.AllowParentOverrides = false;
-            this.lblHoraFinalDeAtencion.AutoEllipsis = false;
-            this.lblHoraFinalDeAtencion.CursorType = null;
-            this.lblHoraFinalDeAtencion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblHoraFinalDeAtencion.Location = new System.Drawing.Point(24, 478);
-            this.lblHoraFinalDeAtencion.Name = "lblHoraFinalDeAtencion";
-            this.lblHoraFinalDeAtencion.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lblHoraFinalDeAtencion.Size = new System.Drawing.Size(155, 20);
-            this.lblHoraFinalDeAtencion.TabIndex = 78;
-            this.lblHoraFinalDeAtencion.Text = "Hora final de atención";
-            this.lblHoraFinalDeAtencion.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.lblHoraFinalDeAtencion.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
-            // 
-            // btnEstado
-            // 
-            this.btnEstado.BorderRadius = 13;
-            this.btnEstado.CheckedState.Parent = this.btnEstado;
-            this.btnEstado.CustomImages.Parent = this.btnEstado;
-            this.btnEstado.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnEstado.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnEstado.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnEstado.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnEstado.DisabledState.Parent = this.btnEstado;
-            this.btnEstado.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(191)))), ((int)(((byte)(250)))));
-            this.btnEstado.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEstado.ForeColor = System.Drawing.Color.White;
-            this.btnEstado.HoverState.Parent = this.btnEstado;
-            this.btnEstado.Location = new System.Drawing.Point(329, 554);
-            this.btnEstado.Name = "btnEstado";
-            this.btnEstado.ShadowDecoration.Parent = this.btnEstado;
-            this.btnEstado.Size = new System.Drawing.Size(171, 31);
-            this.btnEstado.TabIndex = 79;
-            this.btnEstado.Text = "Disponibilidad";
-            this.btnEstado.Click += new System.EventHandler(this.btnEstado_Click);
-            // 
             // FrmAgendaMedico
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -559,12 +433,6 @@ namespace Presentacion
         private Bunifu.UI.WinForms.BunifuLabel lblNumeroAgenda;
         private Bunifu.UI.WinForms.BunifuLabel lblIdagenda;
         private Guna.UI2.WinForms.Guna2Button btnEstado;
-        private Bunifu.UI.WinForms.BunifuLabel lblHoraFinalDeAtencion;
-        private Bunifu.UI.WinForms.BunifuLabel lblHoraInicialDeAtencion;
-        private Guna.UI2.WinForms.Guna2TextBox txtHoraFinalDeAtencion;
-        private Guna.UI2.WinForms.Guna2TextBox txtHoraInicialDeAtancion;
-        private Bunifu.UI.WinForms.BunifuLabel lblNumeroHorario;
-        private Bunifu.UI.WinForms.BunifuLabel lblHorario;
         private Bunifu.UI.WinForms.BunifuLabel lblFechafinal;
         private Guna.UI2.WinForms.Guna2DateTimePicker guna2DateTimePicker2;
     }

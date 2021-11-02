@@ -11,6 +11,10 @@ namespace Entidad
         public string IdAgenda { get; set; }
         public List<DetalleAgenda> DetalleAgenda { get; set; }
 
-
+        public void AgregarDetalleAgenda(DetalleAgenda detalleAgenda)
+        {
+            if (!DetalleAgenda.Contains(detalleAgenda))
+                DetalleAgenda.Add(detalleAgenda);
+        }
     }
 }

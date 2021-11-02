@@ -145,6 +145,5 @@ C:\Users\David\source\repos\Proyecto-IClinic\Entidad\bin\Debug\Bunifu.UI.WinForm
 C:\Users\David\source\repos\Proyecto-IClinic\Entidad\bin\Debug\Bunifu.UI.WinForms.BunifuUserControl.xml
 C:\Users\David\source\repos\Proyecto-IClinic\Entidad\obj\Debug\Entidad.csproj.AssemblyReference.cache
 C:\Users\David\source\repos\Proyecto-IClinic\Entidad\obj\Debug\Entidad.csproj.CoreCompileInputs.cache
-C:\Users\David\source\repos\Proyecto-IClinic\Entidad\obj\Debug\Entidad.csproj.CopyComplete
 C:\Users\David\source\repos\Proyecto-IClinic\Entidad\obj\Debug\Entidad.dll
 C:\Users\David\source\repos\Proyecto-IClinic\Entidad\obj\Debug\Entidad.pdb

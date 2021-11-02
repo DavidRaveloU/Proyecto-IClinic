@@ -177,7 +177,6 @@ C:\Users\David\source\repos\Proyecto-IClinic\Presentacion\obj\Debug\Presentacion
 C:\Users\David\source\repos\Proyecto-IClinic\Presentacion\obj\Debug\Presentacion.FrmConsultaMedica.resources
 C:\Users\David\source\repos\Proyecto-IClinic\Presentacion\obj\Debug\Presentacion.FrmConsultarMedico.resources
 C:\Users\David\source\repos\Proyecto-IClinic\Presentacion\obj\Debug\Presentacion.FrmConsultarPaciente.resources
-C:\Users\David\source\repos\Proyecto-IClinic\Presentacion\obj\Debug\Presentacion.FrmDisponibilidadMedico.resources
 C:\Users\David\source\repos\Proyecto-IClinic\Presentacion\obj\Debug\Presentacion.FrmLogin.resources
 C:\Users\David\source\repos\Proyecto-IClinic\Presentacion\obj\Debug\Presentacion.FrmPrincipal.resources
 C:\Users\David\source\repos\Proyecto-IClinic\Presentacion\obj\Debug\Presentacion.FrmRegistrarMedico.resources
@@ -191,3 +190,5 @@ C:\Users\David\source\repos\Proyecto-IClinic\Presentacion\obj\Debug\Presentacion
 C:\Users\David\source\repos\Proyecto-IClinic\Presentacion\obj\Debug\Presentacion.csproj.CoreCompileInputs.cache
 C:\Users\David\source\repos\Proyecto-IClinic\Presentacion\obj\Debug\Presentacion.exe
 C:\Users\David\source\repos\Proyecto-IClinic\Presentacion\obj\Debug\Presentacion.pdb
+C:\Users\David\source\repos\Proyecto-IClinic\Presentacion\obj\Debug\Presentacion.FrmHorario.resources
+C:\Users\David\source\repos\Proyecto-IClinic\Presentacion\obj\Debug\Presentacion.csproj.CopyComplete
