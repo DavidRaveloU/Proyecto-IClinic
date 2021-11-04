@@ -203,11 +203,35 @@ namespace Presentacion
             }
         }
 
-        private void btnCerrarSesion_Click(object sender, EventArgs e)
+        private void btnCerrarSesion_Click_1(object sender, EventArgs e)
         {
             FrmLogin frmLogin = new FrmLogin();
             frmLogin.Show();
             this.Dispose();
+        }
+
+        private void btnHorario_Click(object sender, EventArgs e)
+        {
+            FrmHorario();
+        }
+        private void FrmHorario()
+        {
+            Form frmEstilo = new Form();
+            using (FrmHorario disponibilidadMedico = new FrmHorario())
+            {
+                frmEstilo.StartPosition = FormStartPosition.Manual;
+                frmEstilo.FormBorderStyle = FormBorderStyle.None;
+                frmEstilo.Opacity = .70d;
+                frmEstilo.BackColor = Color.Black;
+                frmEstilo.WindowState = FormWindowState.Maximized;
+                frmEstilo.TopMost = true;
+                frmEstilo.Location = this.Location;
+                frmEstilo.ShowInTaskbar = false;
+                frmEstilo.Show();
+                disponibilidadMedico.Owner = frmEstilo;
+                disponibilidadMedico.ShowDialog();
+                frmEstilo.Dispose();
+            }
         }
     }
 }

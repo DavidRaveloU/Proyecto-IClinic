@@ -16,30 +16,5 @@ namespace Presentacion
         {
             InitializeComponent();
         }
-
-        private void btnEstado_Click(object sender, EventArgs e)
-        {
-            OscurecerFondo();
-        }
-
-        private void OscurecerFondo()
-        {
-            Form frmEstilo = new Form();
-            using (FrmHorario disponibilidadMedico = new FrmHorario())
-            {
-                frmEstilo.StartPosition = FormStartPosition.Manual;
-                frmEstilo.FormBorderStyle = FormBorderStyle.None;
-                frmEstilo.Opacity = .70d;
-                frmEstilo.BackColor = Color.Black;
-                frmEstilo.WindowState = FormWindowState.Maximized;
-                frmEstilo.TopMost = true;
-                frmEstilo.Location = this.Location;
-                frmEstilo.ShowInTaskbar = false;
-                frmEstilo.Show();
-                disponibilidadMedico.Owner = frmEstilo;
-                disponibilidadMedico.ShowDialog();
-                frmEstilo.Dispose();
-            }
-        }
     }
 }

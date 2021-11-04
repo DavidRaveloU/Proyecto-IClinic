@@ -192,4 +192,3 @@ C:\Users\David\source\repos\Proyecto-IClinic\Presentacion\obj\Debug\Presentacion
 C:\Users\David\source\repos\Proyecto-IClinic\Presentacion\obj\Debug\Presentacion.FrmHorario.resources
 C:\Users\David\source\repos\Proyecto-IClinic\Presentacion\obj\Debug\Presentacion.csproj.CopyComplete
 D:\PROYECTO\Proyecto-IClinic\Presentacion\obj\Debug\Presentacion.FrmHorario.resources
-D:\PROYECTO\Proyecto-IClinic\Presentacion\obj\Debug\Presentacion.csproj.CopyComplete
