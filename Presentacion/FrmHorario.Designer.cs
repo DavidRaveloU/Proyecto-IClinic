@@ -84,7 +84,7 @@ namespace Presentacion
             this.lblHoraFinalDeAtencion.AutoEllipsis = false;
             this.lblHoraFinalDeAtencion.CursorType = null;
             this.lblHoraFinalDeAtencion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblHoraFinalDeAtencion.Location = new System.Drawing.Point(177, 168);
+            this.lblHoraFinalDeAtencion.Location = new System.Drawing.Point(176, 180);
             this.lblHoraFinalDeAtencion.Name = "lblHoraFinalDeAtencion";
             this.lblHoraFinalDeAtencion.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.lblHoraFinalDeAtencion.Size = new System.Drawing.Size(155, 20);
@@ -100,7 +100,7 @@ namespace Presentacion
             this.lblHoraInicialDeAtencion.Cursor = System.Windows.Forms.Cursors.Default;
             this.lblHoraInicialDeAtencion.CursorType = System.Windows.Forms.Cursors.Default;
             this.lblHoraInicialDeAtencion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblHoraInicialDeAtencion.Location = new System.Drawing.Point(177, 115);
+            this.lblHoraInicialDeAtencion.Location = new System.Drawing.Point(176, 138);
             this.lblHoraInicialDeAtencion.Name = "lblHoraInicialDeAtencion";
             this.lblHoraInicialDeAtencion.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.lblHoraInicialDeAtencion.Size = new System.Drawing.Size(164, 20);
@@ -125,7 +125,7 @@ namespace Presentacion
             this.txtHoraFinalDeAtencion.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtHoraFinalDeAtencion.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtHoraFinalDeAtencion.HoverState.Parent = this.txtHoraFinalDeAtencion;
-            this.txtHoraFinalDeAtencion.Location = new System.Drawing.Point(346, 162);
+            this.txtHoraFinalDeAtencion.Location = new System.Drawing.Point(352, 177);
             this.txtHoraFinalDeAtencion.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtHoraFinalDeAtencion.Name = "txtHoraFinalDeAtencion";
             this.txtHoraFinalDeAtencion.PasswordChar = '\0';
@@ -151,7 +151,7 @@ namespace Presentacion
             this.txtHoraInicialDeAtancion.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtHoraInicialDeAtancion.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtHoraInicialDeAtancion.HoverState.Parent = this.txtHoraInicialDeAtancion;
-            this.txtHoraInicialDeAtancion.Location = new System.Drawing.Point(346, 113);
+            this.txtHoraInicialDeAtancion.Location = new System.Drawing.Point(352, 134);
             this.txtHoraInicialDeAtancion.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtHoraInicialDeAtancion.Name = "txtHoraInicialDeAtancion";
             this.txtHoraInicialDeAtancion.PasswordChar = '\0';
@@ -167,7 +167,7 @@ namespace Presentacion
             this.lblNumeroHorario.AutoEllipsis = false;
             this.lblNumeroHorario.CursorType = null;
             this.lblNumeroHorario.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNumeroHorario.Location = new System.Drawing.Point(330, 65);
+            this.lblNumeroHorario.Location = new System.Drawing.Point(352, 96);
             this.lblNumeroHorario.Name = "lblNumeroHorario";
             this.lblNumeroHorario.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.lblNumeroHorario.Size = new System.Drawing.Size(9, 20);
@@ -183,7 +183,7 @@ namespace Presentacion
             this.lblHorario.Cursor = System.Windows.Forms.Cursors.Default;
             this.lblHorario.CursorType = System.Windows.Forms.Cursors.Default;
             this.lblHorario.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblHorario.Location = new System.Drawing.Point(177, 65);
+            this.lblHorario.Location = new System.Drawing.Point(176, 96);
             this.lblHorario.Name = "lblHorario";
             this.lblHorario.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.lblHorario.Size = new System.Drawing.Size(73, 20);

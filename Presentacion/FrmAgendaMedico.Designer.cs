@@ -31,7 +31,7 @@ namespace Presentacion
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmAgendaMedico));
             this.pnlAgenda = new Guna.UI2.WinForms.Guna2ShadowPanel();
-            this.btnEstado = new Guna.UI2.WinForms.Guna2Button();
+            this.btnHorario = new Guna.UI2.WinForms.Guna2Button();
             this.lblNumeroAgenda = new Bunifu.UI.WinForms.BunifuLabel();
             this.lblIdagenda = new Bunifu.UI.WinForms.BunifuLabel();
             this.lblFechafinal = new Bunifu.UI.WinForms.BunifuLabel();
@@ -59,7 +59,7 @@ namespace Presentacion
             // pnlAgenda
             // 
             this.pnlAgenda.BackColor = System.Drawing.Color.Transparent;
-            this.pnlAgenda.Controls.Add(this.btnEstado);
+            this.pnlAgenda.Controls.Add(this.btnHorario);
             this.pnlAgenda.Controls.Add(this.lblNumeroAgenda);
             this.pnlAgenda.Controls.Add(this.lblIdagenda);
             this.pnlAgenda.Controls.Add(this.lblFechafinal);
@@ -88,27 +88,27 @@ namespace Presentacion
             this.pnlAgenda.Size = new System.Drawing.Size(743, 616);
             this.pnlAgenda.TabIndex = 1;
             // 
-            // btnEstado
+            // btnHorario
             // 
-            this.btnEstado.BorderRadius = 13;
-            this.btnEstado.CheckedState.Parent = this.btnEstado;
-            this.btnEstado.CustomImages.Parent = this.btnEstado;
-            this.btnEstado.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnEstado.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnEstado.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnEstado.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnEstado.DisabledState.Parent = this.btnEstado;
-            this.btnEstado.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(191)))), ((int)(((byte)(250)))));
-            this.btnEstado.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEstado.ForeColor = System.Drawing.Color.White;
-            this.btnEstado.HoverState.Parent = this.btnEstado;
-            this.btnEstado.Location = new System.Drawing.Point(329, 554);
-            this.btnEstado.Name = "btnEstado";
-            this.btnEstado.ShadowDecoration.Parent = this.btnEstado;
-            this.btnEstado.Size = new System.Drawing.Size(171, 31);
-            this.btnEstado.TabIndex = 79;
-            this.btnEstado.Text = "Disponibilidad";
-            this.btnEstado.Click += new System.EventHandler(this.btnEstado_Click);
+            this.btnHorario.BorderRadius = 13;
+            this.btnHorario.CheckedState.Parent = this.btnHorario;
+            this.btnHorario.CustomImages.Parent = this.btnHorario;
+            this.btnHorario.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnHorario.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnHorario.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnHorario.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnHorario.DisabledState.Parent = this.btnHorario;
+            this.btnHorario.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(191)))), ((int)(((byte)(250)))));
+            this.btnHorario.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHorario.ForeColor = System.Drawing.Color.White;
+            this.btnHorario.HoverState.Parent = this.btnHorario;
+            this.btnHorario.Location = new System.Drawing.Point(329, 554);
+            this.btnHorario.Name = "btnHorario";
+            this.btnHorario.ShadowDecoration.Parent = this.btnHorario;
+            this.btnHorario.Size = new System.Drawing.Size(171, 31);
+            this.btnHorario.TabIndex = 79;
+            this.btnHorario.Text = "Horario";
+            this.btnHorario.Click += new System.EventHandler(this.btnEstado_Click);
             // 
             // lblNumeroAgenda
             // 
@@ -432,7 +432,7 @@ namespace Presentacion
         private Guna.UI2.WinForms.Guna2DateTimePicker guna2DateTimePicker1;
         private Bunifu.UI.WinForms.BunifuLabel lblNumeroAgenda;
         private Bunifu.UI.WinForms.BunifuLabel lblIdagenda;
-        private Guna.UI2.WinForms.Guna2Button btnEstado;
+        private Guna.UI2.WinForms.Guna2Button btnHorario;
         private Bunifu.UI.WinForms.BunifuLabel lblFechafinal;
         private Guna.UI2.WinForms.Guna2DateTimePicker guna2DateTimePicker2;
     }

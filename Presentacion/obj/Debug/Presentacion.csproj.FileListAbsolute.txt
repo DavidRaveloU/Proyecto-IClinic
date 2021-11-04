@@ -79,7 +79,6 @@ D:\PROYECTO\Proyecto-IClinic\Presentacion\obj\Debug\Presentacion.FrmConsultaHist
 D:\PROYECTO\Proyecto-IClinic\Presentacion\obj\Debug\Presentacion.FrmConsultaMedica.resources
 D:\PROYECTO\Proyecto-IClinic\Presentacion\obj\Debug\Presentacion.FrmConsultarMedico.resources
 D:\PROYECTO\Proyecto-IClinic\Presentacion\obj\Debug\Presentacion.FrmConsultarPaciente.resources
-D:\PROYECTO\Proyecto-IClinic\Presentacion\obj\Debug\Presentacion.FrmDisponibilidadMedico.resources
 D:\PROYECTO\Proyecto-IClinic\Presentacion\obj\Debug\Presentacion.FrmLogin.resources
 D:\PROYECTO\Proyecto-IClinic\Presentacion\obj\Debug\Presentacion.FrmPrincipal.resources
 D:\PROYECTO\Proyecto-IClinic\Presentacion\obj\Debug\Presentacion.FrmRegistrarMedico.resources
@@ -192,3 +191,5 @@ C:\Users\David\source\repos\Proyecto-IClinic\Presentacion\obj\Debug\Presentacion
 C:\Users\David\source\repos\Proyecto-IClinic\Presentacion\obj\Debug\Presentacion.pdb
 C:\Users\David\source\repos\Proyecto-IClinic\Presentacion\obj\Debug\Presentacion.FrmHorario.resources
 C:\Users\David\source\repos\Proyecto-IClinic\Presentacion\obj\Debug\Presentacion.csproj.CopyComplete
+D:\PROYECTO\Proyecto-IClinic\Presentacion\obj\Debug\Presentacion.FrmHorario.resources
+D:\PROYECTO\Proyecto-IClinic\Presentacion\obj\Debug\Presentacion.csproj.CopyComplete

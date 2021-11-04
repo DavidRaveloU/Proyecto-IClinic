@@ -49,6 +49,10 @@ namespace Presentacion
             this.lblNumeroCédula = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lblAgenda = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.ptrAgendaCita = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.lblHoraAtencion = new Bunifu.UI.WinForms.BunifuLabel();
+            this.cmbHoraAtencion = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.lblNombreMedico = new Bunifu.UI.WinForms.BunifuLabel();
+            this.guna2ComboBox1 = new Guna.UI2.WinForms.Guna2ComboBox();
             this.pnlAgenda.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptrAgendaCita)).BeginInit();
             this.SuspendLayout();
@@ -56,6 +60,10 @@ namespace Presentacion
             // pnlAgenda
             // 
             this.pnlAgenda.BackColor = System.Drawing.Color.Transparent;
+            this.pnlAgenda.Controls.Add(this.guna2ComboBox1);
+            this.pnlAgenda.Controls.Add(this.lblNombreMedico);
+            this.pnlAgenda.Controls.Add(this.cmbHoraAtencion);
+            this.pnlAgenda.Controls.Add(this.lblHoraAtencion);
             this.pnlAgenda.Controls.Add(this.lblNumeroAgenda);
             this.pnlAgenda.Controls.Add(this.lblIdagenda);
             this.pnlAgenda.Controls.Add(this.lblFechaInicial);
@@ -332,6 +340,78 @@ namespace Presentacion
             this.ptrAgendaCita.TabIndex = 19;
             this.ptrAgendaCita.TabStop = false;
             // 
+            // lblHoraAtencion
+            // 
+            this.lblHoraAtencion.AllowParentOverrides = false;
+            this.lblHoraAtencion.AutoEllipsis = false;
+            this.lblHoraAtencion.Cursor = System.Windows.Forms.Cursors.Default;
+            this.lblHoraAtencion.CursorType = System.Windows.Forms.Cursors.Default;
+            this.lblHoraAtencion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHoraAtencion.Location = new System.Drawing.Point(24, 350);
+            this.lblHoraAtencion.Name = "lblHoraAtencion";
+            this.lblHoraAtencion.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblHoraAtencion.Size = new System.Drawing.Size(122, 20);
+            this.lblHoraAtencion.TabIndex = 73;
+            this.lblHoraAtencion.Text = "Hora de atención";
+            this.lblHoraAtencion.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.lblHoraAtencion.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
+            // cmbHoraAtencion
+            // 
+            this.cmbHoraAtencion.BackColor = System.Drawing.Color.Transparent;
+            this.cmbHoraAtencion.BorderRadius = 12;
+            this.cmbHoraAtencion.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cmbHoraAtencion.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHoraAtencion.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cmbHoraAtencion.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cmbHoraAtencion.FocusedState.Parent = this.cmbHoraAtencion;
+            this.cmbHoraAtencion.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cmbHoraAtencion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.cmbHoraAtencion.HoverState.Parent = this.cmbHoraAtencion;
+            this.cmbHoraAtencion.ItemHeight = 30;
+            this.cmbHoraAtencion.ItemsAppearance.Parent = this.cmbHoraAtencion;
+            this.cmbHoraAtencion.Location = new System.Drawing.Point(24, 387);
+            this.cmbHoraAtencion.Name = "cmbHoraAtencion";
+            this.cmbHoraAtencion.ShadowDecoration.Parent = this.cmbHoraAtencion;
+            this.cmbHoraAtencion.Size = new System.Drawing.Size(229, 36);
+            this.cmbHoraAtencion.TabIndex = 74;
+            // 
+            // lblNombreMedico
+            // 
+            this.lblNombreMedico.AllowParentOverrides = false;
+            this.lblNombreMedico.AutoEllipsis = false;
+            this.lblNombreMedico.Cursor = System.Windows.Forms.Cursors.Default;
+            this.lblNombreMedico.CursorType = System.Windows.Forms.Cursors.Default;
+            this.lblNombreMedico.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNombreMedico.Location = new System.Drawing.Point(474, 256);
+            this.lblNombreMedico.Name = "lblNombreMedico";
+            this.lblNombreMedico.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblNombreMedico.Size = new System.Drawing.Size(142, 20);
+            this.lblNombreMedico.TabIndex = 75;
+            this.lblNombreMedico.Text = "Médicos disponibles";
+            this.lblNombreMedico.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.lblNombreMedico.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
+            // guna2ComboBox1
+            // 
+            this.guna2ComboBox1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ComboBox1.BorderRadius = 12;
+            this.guna2ComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.guna2ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.guna2ComboBox1.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2ComboBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2ComboBox1.FocusedState.Parent = this.guna2ComboBox1;
+            this.guna2ComboBox1.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.guna2ComboBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.guna2ComboBox1.HoverState.Parent = this.guna2ComboBox1;
+            this.guna2ComboBox1.ItemHeight = 30;
+            this.guna2ComboBox1.ItemsAppearance.Parent = this.guna2ComboBox1;
+            this.guna2ComboBox1.Location = new System.Drawing.Point(474, 292);
+            this.guna2ComboBox1.Name = "guna2ComboBox1";
+            this.guna2ComboBox1.ShadowDecoration.Parent = this.guna2ComboBox1;
+            this.guna2ComboBox1.Size = new System.Drawing.Size(229, 36);
+            this.guna2ComboBox1.TabIndex = 76;
+            // 
             // FrmAgendaCita
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -370,5 +450,9 @@ namespace Presentacion
         private Guna.UI2.WinForms.Guna2HtmlLabel lblNumeroCédula;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblAgenda;
         private Guna.UI2.WinForms.Guna2PictureBox ptrAgendaCita;
+        private Bunifu.UI.WinForms.BunifuLabel lblHoraAtencion;
+        private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox1;
+        private Bunifu.UI.WinForms.BunifuLabel lblNombreMedico;
+        private Guna.UI2.WinForms.Guna2ComboBox cmbHoraAtencion;
     }
 }

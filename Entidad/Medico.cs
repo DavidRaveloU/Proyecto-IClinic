@@ -18,7 +18,6 @@ namespace Entidad
         public string Direccion { get; set; }
         public string Sexo { get; set; }
         public string Ciudad { get; set; }
-        public bool Disponibilidad { get; set; }
         public ConsultaMedica ConsultaMedica { get; set; }
     }
 }

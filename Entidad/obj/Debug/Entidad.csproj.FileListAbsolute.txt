@@ -72,7 +72,6 @@ D:\PROYECTO\Proyecto-IClinic\Entidad\obj\Debug\Entidad.csproj.AssemblyReference.
 D:\PROYECTO\Proyecto-IClinic\Entidad\obj\Debug\Entidad.csproj.CoreCompileInputs.cache
 D:\PROYECTO\Proyecto-IClinic\Entidad\obj\Debug\Entidad.dll
 D:\PROYECTO\Proyecto-IClinic\Entidad\obj\Debug\Entidad.pdb
-D:\PROYECTO\Proyecto-IClinic\Entidad\obj\Debug\Entidad.csproj.CopyComplete
 C:\Users\David\source\repos\Proyecto-IClinic\Entidad\bin\Debug\Entidad.dll
 C:\Users\David\source\repos\Proyecto-IClinic\Entidad\bin\Debug\Entidad.pdb
 C:\Users\David\source\repos\Proyecto-IClinic\Entidad\bin\Debug\Bunifu.Licensing.dll
