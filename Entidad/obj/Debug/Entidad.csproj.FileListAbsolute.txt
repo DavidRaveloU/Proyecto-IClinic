@@ -146,3 +146,4 @@ C:\Users\David\source\repos\Proyecto-IClinic\Entidad\obj\Debug\Entidad.csproj.As
 C:\Users\David\source\repos\Proyecto-IClinic\Entidad\obj\Debug\Entidad.csproj.CoreCompileInputs.cache
 C:\Users\David\source\repos\Proyecto-IClinic\Entidad\obj\Debug\Entidad.dll
 C:\Users\David\source\repos\Proyecto-IClinic\Entidad\obj\Debug\Entidad.pdb
+C:\Users\David\source\repos\Proyecto-IClinic\Entidad\obj\Debug\Entidad.csproj.CopyComplete

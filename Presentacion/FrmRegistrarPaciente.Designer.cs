@@ -31,12 +31,18 @@ namespace Presentacion
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmRegistrarPaciente));
             this.pnlFondoRegistrarPaciente = new Guna.UI2.WinForms.Guna2ShadowPanel();
-            this.cmbSexo = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.txtCiudad = new Guna.UI2.WinForms.Guna2TextBox();
+            this.lblErrorCiudad = new System.Windows.Forms.Label();
+            this.lblErrorSexo = new System.Windows.Forms.Label();
+            this.lblErrorDireccion = new System.Windows.Forms.Label();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lblErrorCorreo = new System.Windows.Forms.Label();
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lblErrorCelular = new System.Windows.Forms.Label();
             this.lblRegistroMedico = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lblErrorPA = new System.Windows.Forms.Label();
             this.ptrMedico = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.lblErrorPN = new System.Windows.Forms.Label();
+            this.lblErrorCedula = new System.Windows.Forms.Label();
             this.btnCancelar = new Guna.UI2.WinForms.Guna2Button();
             this.btnGuardar = new Guna.UI2.WinForms.Guna2Button();
             this.txtDireccion = new Guna.UI2.WinForms.Guna2TextBox();
@@ -55,6 +61,8 @@ namespace Presentacion
             this.lblSegundoNombre = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lblPrimerNombre = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lblNumeroCédula = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.cmbSexo = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.txtCiudad = new Guna.UI2.WinForms.Guna2TextBox();
             this.pnlFondoRegistrarPaciente.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptrMedico)).BeginInit();
             this.SuspendLayout();
@@ -62,12 +70,18 @@ namespace Presentacion
             // pnlFondoRegistrarPaciente
             // 
             this.pnlFondoRegistrarPaciente.BackColor = System.Drawing.Color.Transparent;
-            this.pnlFondoRegistrarPaciente.Controls.Add(this.cmbSexo);
-            this.pnlFondoRegistrarPaciente.Controls.Add(this.txtCiudad);
+            this.pnlFondoRegistrarPaciente.Controls.Add(this.lblErrorCiudad);
+            this.pnlFondoRegistrarPaciente.Controls.Add(this.lblErrorSexo);
+            this.pnlFondoRegistrarPaciente.Controls.Add(this.lblErrorDireccion);
             this.pnlFondoRegistrarPaciente.Controls.Add(this.guna2HtmlLabel1);
+            this.pnlFondoRegistrarPaciente.Controls.Add(this.lblErrorCorreo);
             this.pnlFondoRegistrarPaciente.Controls.Add(this.guna2HtmlLabel2);
+            this.pnlFondoRegistrarPaciente.Controls.Add(this.lblErrorCelular);
             this.pnlFondoRegistrarPaciente.Controls.Add(this.lblRegistroMedico);
+            this.pnlFondoRegistrarPaciente.Controls.Add(this.lblErrorPA);
             this.pnlFondoRegistrarPaciente.Controls.Add(this.ptrMedico);
+            this.pnlFondoRegistrarPaciente.Controls.Add(this.lblErrorPN);
+            this.pnlFondoRegistrarPaciente.Controls.Add(this.lblErrorCedula);
             this.pnlFondoRegistrarPaciente.Controls.Add(this.btnCancelar);
             this.pnlFondoRegistrarPaciente.Controls.Add(this.btnGuardar);
             this.pnlFondoRegistrarPaciente.Controls.Add(this.txtDireccion);
@@ -86,6 +100,8 @@ namespace Presentacion
             this.pnlFondoRegistrarPaciente.Controls.Add(this.lblSegundoNombre);
             this.pnlFondoRegistrarPaciente.Controls.Add(this.lblPrimerNombre);
             this.pnlFondoRegistrarPaciente.Controls.Add(this.lblNumeroCédula);
+            this.pnlFondoRegistrarPaciente.Controls.Add(this.cmbSexo);
+            this.pnlFondoRegistrarPaciente.Controls.Add(this.txtCiudad);
             this.pnlFondoRegistrarPaciente.FillColor = System.Drawing.Color.White;
             this.pnlFondoRegistrarPaciente.ForeColor = System.Drawing.SystemColors.AppWorkspace;
             this.pnlFondoRegistrarPaciente.Location = new System.Drawing.Point(28, 30);
@@ -95,54 +111,38 @@ namespace Presentacion
             this.pnlFondoRegistrarPaciente.Size = new System.Drawing.Size(743, 616);
             this.pnlFondoRegistrarPaciente.TabIndex = 1;
             // 
-            // cmbSexo
+            // lblErrorCiudad
             // 
-            this.cmbSexo.BackColor = System.Drawing.Color.Transparent;
-            this.cmbSexo.BorderRadius = 15;
-            this.cmbSexo.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cmbSexo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbSexo.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cmbSexo.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cmbSexo.FocusedState.Parent = this.cmbSexo;
-            this.cmbSexo.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.cmbSexo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.cmbSexo.HoverState.Parent = this.cmbSexo;
-            this.cmbSexo.ItemHeight = 30;
-            this.cmbSexo.Items.AddRange(new object[] {
-            "Femenino",
-            "Masculino"});
-            this.cmbSexo.ItemsAppearance.Parent = this.cmbSexo;
-            this.cmbSexo.Location = new System.Drawing.Point(165, 410);
-            this.cmbSexo.Name = "cmbSexo";
-            this.cmbSexo.ShadowDecoration.Parent = this.cmbSexo;
-            this.cmbSexo.Size = new System.Drawing.Size(196, 36);
-            this.cmbSexo.TabIndex = 24;
+            this.lblErrorCiudad.AutoSize = true;
+            this.lblErrorCiudad.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblErrorCiudad.ForeColor = System.Drawing.Color.Red;
+            this.lblErrorCiudad.Location = new System.Drawing.Point(544, 453);
+            this.lblErrorCiudad.Name = "lblErrorCiudad";
+            this.lblErrorCiudad.Size = new System.Drawing.Size(127, 16);
+            this.lblErrorCiudad.TabIndex = 46;
+            this.lblErrorCiudad.Text = "* Campo obligatorio";
             // 
-            // txtCiudad
+            // lblErrorSexo
             // 
-            this.txtCiudad.Animated = true;
-            this.txtCiudad.BorderRadius = 12;
-            this.txtCiudad.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtCiudad.DefaultText = "";
-            this.txtCiudad.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtCiudad.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtCiudad.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtCiudad.DisabledState.Parent = this.txtCiudad;
-            this.txtCiudad.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtCiudad.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtCiudad.FocusedState.Parent = this.txtCiudad;
-            this.txtCiudad.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCiudad.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtCiudad.HoverState.Parent = this.txtCiudad;
-            this.txtCiudad.Location = new System.Drawing.Point(522, 416);
-            this.txtCiudad.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtCiudad.Name = "txtCiudad";
-            this.txtCiudad.PasswordChar = '\0';
-            this.txtCiudad.PlaceholderText = "Ej: Valledupar";
-            this.txtCiudad.SelectedText = "";
-            this.txtCiudad.ShadowDecoration.Parent = this.txtCiudad;
-            this.txtCiudad.Size = new System.Drawing.Size(196, 29);
-            this.txtCiudad.TabIndex = 23;
+            this.lblErrorSexo.AutoSize = true;
+            this.lblErrorSexo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblErrorSexo.ForeColor = System.Drawing.Color.Red;
+            this.lblErrorSexo.Location = new System.Drawing.Point(179, 453);
+            this.lblErrorSexo.Name = "lblErrorSexo";
+            this.lblErrorSexo.Size = new System.Drawing.Size(127, 16);
+            this.lblErrorSexo.TabIndex = 45;
+            this.lblErrorSexo.Text = "* Campo obligatorio";
+            // 
+            // lblErrorDireccion
+            // 
+            this.lblErrorDireccion.AutoSize = true;
+            this.lblErrorDireccion.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblErrorDireccion.ForeColor = System.Drawing.Color.Red;
+            this.lblErrorDireccion.Location = new System.Drawing.Point(544, 378);
+            this.lblErrorDireccion.Name = "lblErrorDireccion";
+            this.lblErrorDireccion.Size = new System.Drawing.Size(127, 16);
+            this.lblErrorDireccion.TabIndex = 44;
+            this.lblErrorDireccion.Text = "* Campo obligatorio";
             // 
             // guna2HtmlLabel1
             // 
@@ -155,6 +155,17 @@ namespace Presentacion
             this.guna2HtmlLabel1.TabIndex = 21;
             this.guna2HtmlLabel1.Text = "Ciudad";
             // 
+            // lblErrorCorreo
+            // 
+            this.lblErrorCorreo.AutoSize = true;
+            this.lblErrorCorreo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblErrorCorreo.ForeColor = System.Drawing.Color.Red;
+            this.lblErrorCorreo.Location = new System.Drawing.Point(179, 378);
+            this.lblErrorCorreo.Name = "lblErrorCorreo";
+            this.lblErrorCorreo.Size = new System.Drawing.Size(127, 16);
+            this.lblErrorCorreo.TabIndex = 43;
+            this.lblErrorCorreo.Text = "* Campo obligatorio";
+            // 
             // guna2HtmlLabel2
             // 
             this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
@@ -165,6 +176,17 @@ namespace Presentacion
             this.guna2HtmlLabel2.Size = new System.Drawing.Size(39, 22);
             this.guna2HtmlLabel2.TabIndex = 20;
             this.guna2HtmlLabel2.Text = "Sexo";
+            // 
+            // lblErrorCelular
+            // 
+            this.lblErrorCelular.AutoSize = true;
+            this.lblErrorCelular.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblErrorCelular.ForeColor = System.Drawing.Color.Red;
+            this.lblErrorCelular.Location = new System.Drawing.Point(544, 314);
+            this.lblErrorCelular.Name = "lblErrorCelular";
+            this.lblErrorCelular.Size = new System.Drawing.Size(127, 16);
+            this.lblErrorCelular.TabIndex = 42;
+            this.lblErrorCelular.Text = "* Campo obligatorio";
             // 
             // lblRegistroMedico
             // 
@@ -177,6 +199,17 @@ namespace Presentacion
             this.lblRegistroMedico.TabIndex = 19;
             this.lblRegistroMedico.Text = "REGISTRO PACIENTE";
             // 
+            // lblErrorPA
+            // 
+            this.lblErrorPA.AutoSize = true;
+            this.lblErrorPA.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblErrorPA.ForeColor = System.Drawing.Color.Red;
+            this.lblErrorPA.Location = new System.Drawing.Point(544, 243);
+            this.lblErrorPA.Name = "lblErrorPA";
+            this.lblErrorPA.Size = new System.Drawing.Size(127, 16);
+            this.lblErrorPA.TabIndex = 41;
+            this.lblErrorPA.Text = "* Campo obligatorio";
+            // 
             // ptrMedico
             // 
             this.ptrMedico.Image = ((System.Drawing.Image)(resources.GetObject("ptrMedico.Image")));
@@ -188,6 +221,28 @@ namespace Presentacion
             this.ptrMedico.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.ptrMedico.TabIndex = 18;
             this.ptrMedico.TabStop = false;
+            // 
+            // lblErrorPN
+            // 
+            this.lblErrorPN.AutoSize = true;
+            this.lblErrorPN.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblErrorPN.ForeColor = System.Drawing.Color.Red;
+            this.lblErrorPN.Location = new System.Drawing.Point(544, 161);
+            this.lblErrorPN.Name = "lblErrorPN";
+            this.lblErrorPN.Size = new System.Drawing.Size(127, 16);
+            this.lblErrorPN.TabIndex = 40;
+            this.lblErrorPN.Text = "* Campo obligatorio";
+            // 
+            // lblErrorCedula
+            // 
+            this.lblErrorCedula.AutoSize = true;
+            this.lblErrorCedula.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblErrorCedula.ForeColor = System.Drawing.Color.Red;
+            this.lblErrorCedula.Location = new System.Drawing.Point(179, 161);
+            this.lblErrorCedula.Name = "lblErrorCedula";
+            this.lblErrorCedula.Size = new System.Drawing.Size(127, 16);
+            this.lblErrorCedula.TabIndex = 39;
+            this.lblErrorCedula.Text = "* Campo obligatorio";
             // 
             // btnCancelar
             // 
@@ -220,6 +275,7 @@ namespace Presentacion
             this.btnGuardar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnGuardar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnGuardar.DisabledState.Parent = this.btnGuardar;
+            this.btnGuardar.Enabled = false;
             this.btnGuardar.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(191)))), ((int)(((byte)(165)))));
             this.btnGuardar.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGuardar.ForeColor = System.Drawing.Color.White;
@@ -257,6 +313,7 @@ namespace Presentacion
             this.txtDireccion.ShadowDecoration.Parent = this.txtDireccion;
             this.txtDireccion.Size = new System.Drawing.Size(196, 29);
             this.txtDireccion.TabIndex = 15;
+            this.txtDireccion.TextChanged += new System.EventHandler(this.txtDireccion_TextChanged);
             // 
             // txtTelefono
             // 
@@ -283,6 +340,7 @@ namespace Presentacion
             this.txtTelefono.ShadowDecoration.Parent = this.txtTelefono;
             this.txtTelefono.Size = new System.Drawing.Size(196, 29);
             this.txtTelefono.TabIndex = 14;
+            this.txtTelefono.TextChanged += new System.EventHandler(this.txtTelefono_TextChanged);
             this.txtTelefono.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtTelefono_KeyPress);
             // 
             // txtPrimerApellido
@@ -310,6 +368,7 @@ namespace Presentacion
             this.txtPrimerApellido.ShadowDecoration.Parent = this.txtPrimerApellido;
             this.txtPrimerApellido.Size = new System.Drawing.Size(196, 29);
             this.txtPrimerApellido.TabIndex = 13;
+            this.txtPrimerApellido.TextChanged += new System.EventHandler(this.txtPrimerApellido_TextChanged);
             // 
             // txtPrimerNombre
             // 
@@ -336,7 +395,7 @@ namespace Presentacion
             this.txtPrimerNombre.ShadowDecoration.Parent = this.txtPrimerNombre;
             this.txtPrimerNombre.Size = new System.Drawing.Size(196, 29);
             this.txtPrimerNombre.TabIndex = 12;
-            this.txtPrimerNombre.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPrimerNombre_KeyPress);
+            this.txtPrimerNombre.TextChanged += new System.EventHandler(this.txtPrimerNombre_TextChanged);
             // 
             // txtCorreo
             // 
@@ -363,6 +422,7 @@ namespace Presentacion
             this.txtCorreo.ShadowDecoration.Parent = this.txtCorreo;
             this.txtCorreo.Size = new System.Drawing.Size(196, 29);
             this.txtCorreo.TabIndex = 11;
+            this.txtCorreo.TextChanged += new System.EventHandler(this.txtCorreo_TextChanged);
             // 
             // txtSegundoApellido
             // 
@@ -441,6 +501,7 @@ namespace Presentacion
             this.txtNumeroDeCedula.ShadowDecoration.Parent = this.txtNumeroDeCedula;
             this.txtNumeroDeCedula.Size = new System.Drawing.Size(196, 29);
             this.txtNumeroDeCedula.TabIndex = 8;
+            this.txtNumeroDeCedula.TextChanged += new System.EventHandler(this.txtNumeroDeCedula_TextChanged);
             this.txtNumeroDeCedula.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNumeroDeCedula_KeyPress);
             // 
             // lblDireccion
@@ -531,6 +592,57 @@ namespace Presentacion
             this.lblNumeroCédula.TabIndex = 0;
             this.lblNumeroCédula.Text = "Número de cédula";
             // 
+            // cmbSexo
+            // 
+            this.cmbSexo.BackColor = System.Drawing.Color.Transparent;
+            this.cmbSexo.BorderRadius = 15;
+            this.cmbSexo.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cmbSexo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbSexo.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cmbSexo.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cmbSexo.FocusedState.Parent = this.cmbSexo;
+            this.cmbSexo.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cmbSexo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.cmbSexo.HoverState.Parent = this.cmbSexo;
+            this.cmbSexo.ItemHeight = 30;
+            this.cmbSexo.Items.AddRange(new object[] {
+            "Femenino",
+            "Masculino"});
+            this.cmbSexo.ItemsAppearance.Parent = this.cmbSexo;
+            this.cmbSexo.Location = new System.Drawing.Point(165, 410);
+            this.cmbSexo.Name = "cmbSexo";
+            this.cmbSexo.ShadowDecoration.Parent = this.cmbSexo;
+            this.cmbSexo.Size = new System.Drawing.Size(196, 36);
+            this.cmbSexo.TabIndex = 24;
+            this.cmbSexo.SelectedIndexChanged += new System.EventHandler(this.cmbSexo_SelectedIndexChanged);
+            // 
+            // txtCiudad
+            // 
+            this.txtCiudad.Animated = true;
+            this.txtCiudad.BorderRadius = 12;
+            this.txtCiudad.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtCiudad.DefaultText = "";
+            this.txtCiudad.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtCiudad.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtCiudad.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtCiudad.DisabledState.Parent = this.txtCiudad;
+            this.txtCiudad.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtCiudad.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtCiudad.FocusedState.Parent = this.txtCiudad;
+            this.txtCiudad.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCiudad.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtCiudad.HoverState.Parent = this.txtCiudad;
+            this.txtCiudad.Location = new System.Drawing.Point(522, 416);
+            this.txtCiudad.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtCiudad.Name = "txtCiudad";
+            this.txtCiudad.PasswordChar = '\0';
+            this.txtCiudad.PlaceholderText = "Ej: Valledupar";
+            this.txtCiudad.SelectedText = "";
+            this.txtCiudad.ShadowDecoration.Parent = this.txtCiudad;
+            this.txtCiudad.Size = new System.Drawing.Size(196, 29);
+            this.txtCiudad.TabIndex = 23;
+            this.txtCiudad.TextChanged += new System.EventHandler(this.txtCiudad_TextChanged);
+            // 
             // FrmRegistrarPaciente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -575,5 +687,13 @@ namespace Presentacion
         private Guna.UI2.WinForms.Guna2TextBox txtCiudad;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
+        private System.Windows.Forms.Label lblErrorCiudad;
+        private System.Windows.Forms.Label lblErrorSexo;
+        private System.Windows.Forms.Label lblErrorDireccion;
+        private System.Windows.Forms.Label lblErrorCorreo;
+        private System.Windows.Forms.Label lblErrorCelular;
+        private System.Windows.Forms.Label lblErrorPA;
+        private System.Windows.Forms.Label lblErrorPN;
+        private System.Windows.Forms.Label lblErrorCedula;
     }
 }

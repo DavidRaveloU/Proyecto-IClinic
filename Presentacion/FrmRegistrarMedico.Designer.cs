@@ -31,6 +31,14 @@ namespace Presentacion
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmRegistrarMedico));
             this.pnlFondoRegistrarMedico = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.lblErrorCiudad = new System.Windows.Forms.Label();
+            this.lblErrorSexo = new System.Windows.Forms.Label();
+            this.lblErrorDireccion = new System.Windows.Forms.Label();
+            this.lblErrorCorreo = new System.Windows.Forms.Label();
+            this.lblErrorCelular = new System.Windows.Forms.Label();
+            this.lblErrorPA = new System.Windows.Forms.Label();
+            this.lblErrorPN = new System.Windows.Forms.Label();
+            this.lblErrorCedula = new System.Windows.Forms.Label();
             this.cmbSexo = new Guna.UI2.WinForms.Guna2ComboBox();
             this.txtCiudad = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -39,10 +47,10 @@ namespace Presentacion
             this.ptrMedico = new Guna.UI2.WinForms.Guna2PictureBox();
             this.btnCancelar = new Guna.UI2.WinForms.Guna2Button();
             this.btnGuardar = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2TextBox4 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2TextBox3 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2TextBox2 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtDireccion = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtTelefono = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtPrimerApellido = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtPrimerNombre = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtCorreo = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtSgundoApellido = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtSegundoNombre = new Guna.UI2.WinForms.Guna2TextBox();
@@ -62,6 +70,14 @@ namespace Presentacion
             // pnlFondoRegistrarMedico
             // 
             this.pnlFondoRegistrarMedico.BackColor = System.Drawing.Color.Transparent;
+            this.pnlFondoRegistrarMedico.Controls.Add(this.lblErrorCiudad);
+            this.pnlFondoRegistrarMedico.Controls.Add(this.lblErrorSexo);
+            this.pnlFondoRegistrarMedico.Controls.Add(this.lblErrorDireccion);
+            this.pnlFondoRegistrarMedico.Controls.Add(this.lblErrorCorreo);
+            this.pnlFondoRegistrarMedico.Controls.Add(this.lblErrorCelular);
+            this.pnlFondoRegistrarMedico.Controls.Add(this.lblErrorPA);
+            this.pnlFondoRegistrarMedico.Controls.Add(this.lblErrorPN);
+            this.pnlFondoRegistrarMedico.Controls.Add(this.lblErrorCedula);
             this.pnlFondoRegistrarMedico.Controls.Add(this.cmbSexo);
             this.pnlFondoRegistrarMedico.Controls.Add(this.txtCiudad);
             this.pnlFondoRegistrarMedico.Controls.Add(this.guna2HtmlLabel1);
@@ -70,10 +86,10 @@ namespace Presentacion
             this.pnlFondoRegistrarMedico.Controls.Add(this.ptrMedico);
             this.pnlFondoRegistrarMedico.Controls.Add(this.btnCancelar);
             this.pnlFondoRegistrarMedico.Controls.Add(this.btnGuardar);
-            this.pnlFondoRegistrarMedico.Controls.Add(this.guna2TextBox4);
-            this.pnlFondoRegistrarMedico.Controls.Add(this.guna2TextBox3);
-            this.pnlFondoRegistrarMedico.Controls.Add(this.guna2TextBox2);
-            this.pnlFondoRegistrarMedico.Controls.Add(this.guna2TextBox1);
+            this.pnlFondoRegistrarMedico.Controls.Add(this.txtDireccion);
+            this.pnlFondoRegistrarMedico.Controls.Add(this.txtTelefono);
+            this.pnlFondoRegistrarMedico.Controls.Add(this.txtPrimerApellido);
+            this.pnlFondoRegistrarMedico.Controls.Add(this.txtPrimerNombre);
             this.pnlFondoRegistrarMedico.Controls.Add(this.txtCorreo);
             this.pnlFondoRegistrarMedico.Controls.Add(this.txtSgundoApellido);
             this.pnlFondoRegistrarMedico.Controls.Add(this.txtSegundoNombre);
@@ -94,6 +110,94 @@ namespace Presentacion
             this.pnlFondoRegistrarMedico.ShadowShift = 10;
             this.pnlFondoRegistrarMedico.Size = new System.Drawing.Size(743, 616);
             this.pnlFondoRegistrarMedico.TabIndex = 0;
+            // 
+            // lblErrorCiudad
+            // 
+            this.lblErrorCiudad.AutoSize = true;
+            this.lblErrorCiudad.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblErrorCiudad.ForeColor = System.Drawing.Color.Red;
+            this.lblErrorCiudad.Location = new System.Drawing.Point(540, 487);
+            this.lblErrorCiudad.Name = "lblErrorCiudad";
+            this.lblErrorCiudad.Size = new System.Drawing.Size(127, 16);
+            this.lblErrorCiudad.TabIndex = 38;
+            this.lblErrorCiudad.Text = "* Campo obligatorio";
+            // 
+            // lblErrorSexo
+            // 
+            this.lblErrorSexo.AutoSize = true;
+            this.lblErrorSexo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblErrorSexo.ForeColor = System.Drawing.Color.Red;
+            this.lblErrorSexo.Location = new System.Drawing.Point(175, 487);
+            this.lblErrorSexo.Name = "lblErrorSexo";
+            this.lblErrorSexo.Size = new System.Drawing.Size(127, 16);
+            this.lblErrorSexo.TabIndex = 37;
+            this.lblErrorSexo.Text = "* Campo obligatorio";
+            // 
+            // lblErrorDireccion
+            // 
+            this.lblErrorDireccion.AutoSize = true;
+            this.lblErrorDireccion.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblErrorDireccion.ForeColor = System.Drawing.Color.Red;
+            this.lblErrorDireccion.Location = new System.Drawing.Point(540, 414);
+            this.lblErrorDireccion.Name = "lblErrorDireccion";
+            this.lblErrorDireccion.Size = new System.Drawing.Size(127, 16);
+            this.lblErrorDireccion.TabIndex = 36;
+            this.lblErrorDireccion.Text = "* Campo obligatorio";
+            // 
+            // lblErrorCorreo
+            // 
+            this.lblErrorCorreo.AutoSize = true;
+            this.lblErrorCorreo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblErrorCorreo.ForeColor = System.Drawing.Color.Red;
+            this.lblErrorCorreo.Location = new System.Drawing.Point(175, 414);
+            this.lblErrorCorreo.Name = "lblErrorCorreo";
+            this.lblErrorCorreo.Size = new System.Drawing.Size(127, 16);
+            this.lblErrorCorreo.TabIndex = 35;
+            this.lblErrorCorreo.Text = "* Campo obligatorio";
+            // 
+            // lblErrorCelular
+            // 
+            this.lblErrorCelular.AutoSize = true;
+            this.lblErrorCelular.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblErrorCelular.ForeColor = System.Drawing.Color.Red;
+            this.lblErrorCelular.Location = new System.Drawing.Point(540, 331);
+            this.lblErrorCelular.Name = "lblErrorCelular";
+            this.lblErrorCelular.Size = new System.Drawing.Size(127, 16);
+            this.lblErrorCelular.TabIndex = 34;
+            this.lblErrorCelular.Text = "* Campo obligatorio";
+            // 
+            // lblErrorPA
+            // 
+            this.lblErrorPA.AutoSize = true;
+            this.lblErrorPA.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblErrorPA.ForeColor = System.Drawing.Color.Red;
+            this.lblErrorPA.Location = new System.Drawing.Point(540, 236);
+            this.lblErrorPA.Name = "lblErrorPA";
+            this.lblErrorPA.Size = new System.Drawing.Size(127, 16);
+            this.lblErrorPA.TabIndex = 32;
+            this.lblErrorPA.Text = "* Campo obligatorio";
+            // 
+            // lblErrorPN
+            // 
+            this.lblErrorPN.AutoSize = true;
+            this.lblErrorPN.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblErrorPN.ForeColor = System.Drawing.Color.Red;
+            this.lblErrorPN.Location = new System.Drawing.Point(540, 154);
+            this.lblErrorPN.Name = "lblErrorPN";
+            this.lblErrorPN.Size = new System.Drawing.Size(127, 16);
+            this.lblErrorPN.TabIndex = 30;
+            this.lblErrorPN.Text = "* Campo obligatorio";
+            // 
+            // lblErrorCedula
+            // 
+            this.lblErrorCedula.AutoSize = true;
+            this.lblErrorCedula.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblErrorCedula.ForeColor = System.Drawing.Color.Red;
+            this.lblErrorCedula.Location = new System.Drawing.Point(175, 154);
+            this.lblErrorCedula.Name = "lblErrorCedula";
+            this.lblErrorCedula.Size = new System.Drawing.Size(127, 16);
+            this.lblErrorCedula.TabIndex = 29;
+            this.lblErrorCedula.Text = "* Campo obligatorio";
             // 
             // cmbSexo
             // 
@@ -117,6 +221,7 @@ namespace Presentacion
             this.cmbSexo.ShadowDecoration.Parent = this.cmbSexo;
             this.cmbSexo.Size = new System.Drawing.Size(196, 36);
             this.cmbSexo.TabIndex = 28;
+            this.cmbSexo.SelectedIndexChanged += new System.EventHandler(this.cmbSexo_SelectedIndexChanged);
             // 
             // txtCiudad
             // 
@@ -143,6 +248,7 @@ namespace Presentacion
             this.txtCiudad.ShadowDecoration.Parent = this.txtCiudad;
             this.txtCiudad.Size = new System.Drawing.Size(196, 29);
             this.txtCiudad.TabIndex = 27;
+            this.txtCiudad.TextChanged += new System.EventHandler(this.txtCiudad_TextChanged);
             // 
             // guna2HtmlLabel1
             // 
@@ -221,6 +327,7 @@ namespace Presentacion
             this.btnGuardar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnGuardar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnGuardar.DisabledState.Parent = this.btnGuardar;
+            this.btnGuardar.Enabled = false;
             this.btnGuardar.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(191)))), ((int)(((byte)(165)))));
             this.btnGuardar.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGuardar.ForeColor = System.Drawing.Color.White;
@@ -232,109 +339,114 @@ namespace Presentacion
             this.btnGuardar.TabIndex = 16;
             this.btnGuardar.Text = "Guardar";
             // 
-            // guna2TextBox4
+            // txtDireccion
             // 
-            this.guna2TextBox4.Animated = true;
-            this.guna2TextBox4.BorderRadius = 12;
-            this.guna2TextBox4.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox4.DefaultText = "";
-            this.guna2TextBox4.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox4.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox4.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox4.DisabledState.Parent = this.guna2TextBox4;
-            this.guna2TextBox4.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox4.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox4.FocusedState.Parent = this.guna2TextBox4;
-            this.guna2TextBox4.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2TextBox4.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox4.HoverState.Parent = this.guna2TextBox4;
-            this.guna2TextBox4.Location = new System.Drawing.Point(522, 375);
-            this.guna2TextBox4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.guna2TextBox4.Name = "guna2TextBox4";
-            this.guna2TextBox4.PasswordChar = '\0';
-            this.guna2TextBox4.PlaceholderText = "Digite la información";
-            this.guna2TextBox4.SelectedText = "";
-            this.guna2TextBox4.ShadowDecoration.Parent = this.guna2TextBox4;
-            this.guna2TextBox4.Size = new System.Drawing.Size(196, 29);
-            this.guna2TextBox4.TabIndex = 15;
+            this.txtDireccion.Animated = true;
+            this.txtDireccion.BorderRadius = 12;
+            this.txtDireccion.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtDireccion.DefaultText = "";
+            this.txtDireccion.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtDireccion.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtDireccion.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtDireccion.DisabledState.Parent = this.txtDireccion;
+            this.txtDireccion.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtDireccion.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtDireccion.FocusedState.Parent = this.txtDireccion;
+            this.txtDireccion.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDireccion.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtDireccion.HoverState.Parent = this.txtDireccion;
+            this.txtDireccion.Location = new System.Drawing.Point(522, 375);
+            this.txtDireccion.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtDireccion.Name = "txtDireccion";
+            this.txtDireccion.PasswordChar = '\0';
+            this.txtDireccion.PlaceholderText = "Digite la información";
+            this.txtDireccion.SelectedText = "";
+            this.txtDireccion.ShadowDecoration.Parent = this.txtDireccion;
+            this.txtDireccion.Size = new System.Drawing.Size(196, 29);
+            this.txtDireccion.TabIndex = 15;
+            this.txtDireccion.TextChanged += new System.EventHandler(this.txtDireccion_TextChanged);
             // 
-            // guna2TextBox3
+            // txtTelefono
             // 
-            this.guna2TextBox3.Animated = true;
-            this.guna2TextBox3.BorderRadius = 12;
-            this.guna2TextBox3.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox3.DefaultText = "";
-            this.guna2TextBox3.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox3.DisabledState.Parent = this.guna2TextBox3;
-            this.guna2TextBox3.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox3.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox3.FocusedState.Parent = this.guna2TextBox3;
-            this.guna2TextBox3.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2TextBox3.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox3.HoverState.Parent = this.guna2TextBox3;
-            this.guna2TextBox3.Location = new System.Drawing.Point(522, 289);
-            this.guna2TextBox3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.guna2TextBox3.Name = "guna2TextBox3";
-            this.guna2TextBox3.PasswordChar = '\0';
-            this.guna2TextBox3.PlaceholderText = "Digite la información";
-            this.guna2TextBox3.SelectedText = "";
-            this.guna2TextBox3.ShadowDecoration.Parent = this.guna2TextBox3;
-            this.guna2TextBox3.Size = new System.Drawing.Size(196, 29);
-            this.guna2TextBox3.TabIndex = 14;
+            this.txtTelefono.Animated = true;
+            this.txtTelefono.BorderRadius = 12;
+            this.txtTelefono.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtTelefono.DefaultText = "";
+            this.txtTelefono.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtTelefono.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtTelefono.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtTelefono.DisabledState.Parent = this.txtTelefono;
+            this.txtTelefono.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtTelefono.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtTelefono.FocusedState.Parent = this.txtTelefono;
+            this.txtTelefono.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTelefono.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtTelefono.HoverState.Parent = this.txtTelefono;
+            this.txtTelefono.Location = new System.Drawing.Point(522, 289);
+            this.txtTelefono.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtTelefono.Name = "txtTelefono";
+            this.txtTelefono.PasswordChar = '\0';
+            this.txtTelefono.PlaceholderText = "Digite la información";
+            this.txtTelefono.SelectedText = "";
+            this.txtTelefono.ShadowDecoration.Parent = this.txtTelefono;
+            this.txtTelefono.Size = new System.Drawing.Size(196, 29);
+            this.txtTelefono.TabIndex = 14;
+            this.txtTelefono.TextChanged += new System.EventHandler(this.txtTelefono_TextChanged);
+            this.txtTelefono.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtTelefono_KeyPress);
             // 
-            // guna2TextBox2
+            // txtPrimerApellido
             // 
-            this.guna2TextBox2.Animated = true;
-            this.guna2TextBox2.BorderRadius = 12;
-            this.guna2TextBox2.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox2.DefaultText = "";
-            this.guna2TextBox2.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox2.DisabledState.Parent = this.guna2TextBox2;
-            this.guna2TextBox2.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox2.FocusedState.Parent = this.guna2TextBox2;
-            this.guna2TextBox2.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2TextBox2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox2.HoverState.Parent = this.guna2TextBox2;
-            this.guna2TextBox2.Location = new System.Drawing.Point(522, 203);
-            this.guna2TextBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.guna2TextBox2.Name = "guna2TextBox2";
-            this.guna2TextBox2.PasswordChar = '\0';
-            this.guna2TextBox2.PlaceholderText = "Digite la información";
-            this.guna2TextBox2.SelectedText = "";
-            this.guna2TextBox2.ShadowDecoration.Parent = this.guna2TextBox2;
-            this.guna2TextBox2.Size = new System.Drawing.Size(196, 29);
-            this.guna2TextBox2.TabIndex = 13;
+            this.txtPrimerApellido.Animated = true;
+            this.txtPrimerApellido.BorderRadius = 12;
+            this.txtPrimerApellido.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtPrimerApellido.DefaultText = "";
+            this.txtPrimerApellido.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtPrimerApellido.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtPrimerApellido.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtPrimerApellido.DisabledState.Parent = this.txtPrimerApellido;
+            this.txtPrimerApellido.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtPrimerApellido.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtPrimerApellido.FocusedState.Parent = this.txtPrimerApellido;
+            this.txtPrimerApellido.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPrimerApellido.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtPrimerApellido.HoverState.Parent = this.txtPrimerApellido;
+            this.txtPrimerApellido.Location = new System.Drawing.Point(522, 203);
+            this.txtPrimerApellido.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtPrimerApellido.Name = "txtPrimerApellido";
+            this.txtPrimerApellido.PasswordChar = '\0';
+            this.txtPrimerApellido.PlaceholderText = "Digite la información";
+            this.txtPrimerApellido.SelectedText = "";
+            this.txtPrimerApellido.ShadowDecoration.Parent = this.txtPrimerApellido;
+            this.txtPrimerApellido.Size = new System.Drawing.Size(196, 29);
+            this.txtPrimerApellido.TabIndex = 13;
+            this.txtPrimerApellido.TextChanged += new System.EventHandler(this.txtPrimerApellido_TextChanged);
             // 
-            // guna2TextBox1
+            // txtPrimerNombre
             // 
-            this.guna2TextBox1.Animated = true;
-            this.guna2TextBox1.BorderRadius = 12;
-            this.guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox1.DefaultText = "";
-            this.guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.DisabledState.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.FocusedState.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.HoverState.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.Location = new System.Drawing.Point(522, 117);
-            this.guna2TextBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.guna2TextBox1.Name = "guna2TextBox1";
-            this.guna2TextBox1.PasswordChar = '\0';
-            this.guna2TextBox1.PlaceholderText = "Digite la información";
-            this.guna2TextBox1.SelectedText = "";
-            this.guna2TextBox1.ShadowDecoration.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.Size = new System.Drawing.Size(196, 29);
-            this.guna2TextBox1.TabIndex = 12;
+            this.txtPrimerNombre.Animated = true;
+            this.txtPrimerNombre.BorderRadius = 12;
+            this.txtPrimerNombre.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtPrimerNombre.DefaultText = "";
+            this.txtPrimerNombre.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtPrimerNombre.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtPrimerNombre.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtPrimerNombre.DisabledState.Parent = this.txtPrimerNombre;
+            this.txtPrimerNombre.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtPrimerNombre.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtPrimerNombre.FocusedState.Parent = this.txtPrimerNombre;
+            this.txtPrimerNombre.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPrimerNombre.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtPrimerNombre.HoverState.Parent = this.txtPrimerNombre;
+            this.txtPrimerNombre.Location = new System.Drawing.Point(522, 117);
+            this.txtPrimerNombre.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtPrimerNombre.Name = "txtPrimerNombre";
+            this.txtPrimerNombre.PasswordChar = '\0';
+            this.txtPrimerNombre.PlaceholderText = "Digite la información";
+            this.txtPrimerNombre.SelectedText = "";
+            this.txtPrimerNombre.ShadowDecoration.Parent = this.txtPrimerNombre;
+            this.txtPrimerNombre.Size = new System.Drawing.Size(196, 29);
+            this.txtPrimerNombre.TabIndex = 12;
+            this.txtPrimerNombre.TextChanged += new System.EventHandler(this.txtPrimerNombre_TextChanged);
             // 
             // txtCorreo
             // 
@@ -361,6 +473,7 @@ namespace Presentacion
             this.txtCorreo.ShadowDecoration.Parent = this.txtCorreo;
             this.txtCorreo.Size = new System.Drawing.Size(196, 29);
             this.txtCorreo.TabIndex = 11;
+            this.txtCorreo.TextChanged += new System.EventHandler(this.txtCorreo_TextChanged);
             // 
             // txtSgundoApellido
             // 
@@ -439,6 +552,8 @@ namespace Presentacion
             this.txtNumeroDeCedula.ShadowDecoration.Parent = this.txtNumeroDeCedula;
             this.txtNumeroDeCedula.Size = new System.Drawing.Size(196, 29);
             this.txtNumeroDeCedula.TabIndex = 8;
+            this.txtNumeroDeCedula.TextChanged += new System.EventHandler(this.txtNumeroDeCedula_TextChanged);
+            this.txtNumeroDeCedula.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNumeroDeCedula_KeyPress);
             // 
             // lblDireccion
             // 
@@ -548,10 +663,10 @@ namespace Presentacion
         #endregion
 
         private Guna.UI2.WinForms.Guna2ShadowPanel pnlFondoRegistrarMedico;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox4;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox3;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox2;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
+        private Guna.UI2.WinForms.Guna2TextBox txtDireccion;
+        private Guna.UI2.WinForms.Guna2TextBox txtTelefono;
+        private Guna.UI2.WinForms.Guna2TextBox txtPrimerApellido;
+        private Guna.UI2.WinForms.Guna2TextBox txtPrimerNombre;
         private Guna.UI2.WinForms.Guna2TextBox txtCorreo;
         private Guna.UI2.WinForms.Guna2TextBox txtSgundoApellido;
         private Guna.UI2.WinForms.Guna2TextBox txtSegundoNombre;
@@ -572,5 +687,13 @@ namespace Presentacion
         private Guna.UI2.WinForms.Guna2TextBox txtCiudad;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
+        private System.Windows.Forms.Label lblErrorCiudad;
+        private System.Windows.Forms.Label lblErrorSexo;
+        private System.Windows.Forms.Label lblErrorDireccion;
+        private System.Windows.Forms.Label lblErrorCorreo;
+        private System.Windows.Forms.Label lblErrorCelular;
+        private System.Windows.Forms.Label lblErrorPA;
+        private System.Windows.Forms.Label lblErrorPN;
+        private System.Windows.Forms.Label lblErrorCedula;
     }
 }

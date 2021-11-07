@@ -21,61 +21,7 @@ namespace Presentacion
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
-            string validarCampos = ValidarCampos();
-            if (!validarCampos.Equals("ok"))
-            {
-                FrmVentanaError frmVentanaError = new FrmVentanaError();
-                frmVentanaError.lblMensajeError.Text = validarCampos;
-                frmVentanaError.ShowDialog();
-            }
-            else
-            {
-                FrmVentanaCorrecto frmVentanaCorrecto = new FrmVentanaCorrecto();
-                frmVentanaCorrecto.lblMensajeCorrecto.Text = "Datos guardados correctamente";
-                frmVentanaCorrecto.ShowDialog();
-            }
-        }
-        public string ValidarCampos()
-        {
-            bool validarEmail = ValidarEmail();
-            if (string.IsNullOrEmpty(txtNumeroDeCedula.Text) || txtNumeroDeCedula.Text.Length < 6)
-            {
-                return "Ingrese un cedula válida";
-            }
-            else if (string.IsNullOrEmpty(txtPrimerNombre.Text) || txtPrimerNombre.Text.Length < 3)
-            {
-                return "Ingrese un primer nombre válido";
-            }
-            else if (string.IsNullOrEmpty(txtPrimerApellido.Text) || txtPrimerApellido.Text.Length < 3)
-            {
-                return "Ingrese un primer apellido válido";
-            }
             
-            else if (string.IsNullOrEmpty(txtSegundoApellido.Text) || txtSegundoApellido.Text.Length < 3)
-            {
-                return "Ingrese un segundo apellido válido";
-            }
-            else if (string.IsNullOrEmpty(txtTelefono.Text) || txtTelefono.Text.Length != 10)
-            {
-                return "Ingrese un telefono válido";
-            }
-            else if (validarEmail == false)
-            {
-                return "Ingrese un correo válido";
-            }
-            else if (string.IsNullOrEmpty(txtDireccion.Text) || txtDireccion.Text.Length < 6)
-            {
-                return "Ingrese una dirección válida";
-            }
-            else if (string.IsNullOrEmpty(cmbSexo.Text))
-            {
-                return "Eliga un sexo";
-            }
-            else if (string.IsNullOrEmpty(txtCiudad.Text) || txtCiudad.Text.Length < 3)
-            {
-                return "Ingrese una ciudad válida";
-            }
-            return "ok";
         }
         private bool ValidarEmail()
         {
@@ -111,17 +57,162 @@ namespace Presentacion
 
         private void txtNumeroDeCedula_KeyPress(object sender, KeyPressEventArgs e)
         {
+            if (txtNumeroDeCedula.TextLength > 11)
+            {
+                if (e.KeyChar != 8)
+                {
+                    e.Handled = true;
+                    SystemSounds.Beep.Play();
+                }
+            }
             validarSoloNumeros(e);
-        }
-
-        private void txtPrimerNombre_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            validarSoloLetras(e);
         }
 
         private void txtTelefono_KeyPress(object sender, KeyPressEventArgs e)
         {
+            if (txtTelefono.TextLength > 9)
+            {
+                if (e.KeyChar != 8)
+                {
+                    e.Handled = true;
+                    SystemSounds.Beep.Play();
+                }
+            }
             validarSoloNumeros(e);
+        }
+        private void Validar()
+        {
+            bool validaEmail = ValidarEmail();
+            if (txtNumeroDeCedula.Text != string.Empty && txtPrimerNombre.Text != string.Empty && txtPrimerApellido.Text != string.Empty
+                && txtTelefono.Text != string.Empty && txtCorreo.Text != string.Empty && validaEmail == true && txtDireccion.Text != string.Empty &&
+                cmbSexo.Text != string.Empty && txtCiudad.Text != string.Empty)
+            {
+                btnGuardar.Enabled = true;
+            }
+            else
+            {
+                btnGuardar.Enabled = false;
+            }
+        }
+        private void txtNumeroDeCedula_TextChanged(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(txtNumeroDeCedula.Text))
+            {
+                lblErrorCedula.Visible = true;
+                Validar();
+            }
+            else
+            {
+                lblErrorCedula.Visible = false;
+                Validar();
+            }
+        }
+
+        private void txtPrimerNombre_TextChanged(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(txtPrimerNombre.Text))
+            {
+                lblErrorPN.Visible = true;
+                Validar();
+            }
+            else
+            {
+                lblErrorPN.Visible = false;
+                Validar();
+            }
+        }
+
+        private void txtPrimerApellido_TextChanged(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(txtPrimerApellido.Text))
+            {
+                lblErrorPA.Visible = true;
+                Validar();
+            }
+            else
+            {
+                lblErrorPA.Visible = false;
+                Validar();
+            }
+        }
+
+        private void txtTelefono_TextChanged(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(txtTelefono.Text))
+            {
+                lblErrorCelular.Visible = true;
+                Validar();
+            }
+            else
+            {
+                lblErrorCelular.Visible = false;
+                Validar();
+            }
+        }
+
+        private void txtCorreo_TextChanged(object sender, EventArgs e)
+        {
+            bool validarEmail = ValidarEmail();
+            if (string.IsNullOrEmpty(txtCorreo.Text))
+            {
+                lblErrorCorreo.Text = "* Campo obligatorio";
+                lblErrorCorreo.Visible = true;
+                Validar();
+            }
+            else if(!validarEmail)
+            {
+                lblErrorCorreo.Text = "Formato de correo invalido";
+                lblErrorCorreo.Visible = true;
+                Validar();
+            }
+            else
+            {
+                lblErrorCorreo.Visible = false;
+                lblErrorCorreo.Text = "* Campo obligatorio";
+                Validar();
+            }
+        }
+
+        private void txtDireccion_TextChanged(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(txtDireccion.Text))
+            {
+                lblErrorDireccion.Visible = true;
+                Validar();
+            }
+            else
+            {
+                lblErrorDireccion.Visible = false;
+                Validar();
+            }
+        }
+
+        private void txtCiudad_TextChanged(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(txtCiudad.Text))
+            {
+                lblErrorCiudad.Visible = true;
+                Validar();
+            }
+            else
+            {
+                lblErrorCiudad.Visible = false;
+                Validar();
+            }
+        }
+
+        private void cmbSexo_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbSexo.SelectedIndex == -1)
+            {
+                lblErrorSexo.Visible = true;
+                Validar();
+            }
+            else
+            {
+                lblErrorSexo.Visible = false;
+                Validar();
+            }
         }
     }
 }
