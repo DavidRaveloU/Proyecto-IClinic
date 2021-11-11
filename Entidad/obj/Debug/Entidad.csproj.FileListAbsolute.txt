@@ -147,3 +147,4 @@ C:\Users\David\source\repos\Proyecto-IClinic\Entidad\obj\Debug\Entidad.csproj.Co
 C:\Users\David\source\repos\Proyecto-IClinic\Entidad\obj\Debug\Entidad.dll
 C:\Users\David\source\repos\Proyecto-IClinic\Entidad\obj\Debug\Entidad.pdb
 C:\Users\David\source\repos\Proyecto-IClinic\Entidad\obj\Debug\Entidad.csproj.CopyComplete
+D:\PROYECTO\Proyecto-IClinic\Entidad\obj\Debug\Entidad.csproj.CopyComplete

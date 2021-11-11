@@ -35,6 +35,12 @@ namespace Presentacion
             this.chkConsultaMedica = new Bunifu.UI.WinForms.BunifuCheckBox();
             this.tabConsultaMedica = new Bunifu.UI.WinForms.BunifuPages();
             this.pageConsultaMedica = new System.Windows.Forms.TabPage();
+            this.lblErrorDiagnostico = new System.Windows.Forms.Label();
+            this.lblErrorPresion = new System.Windows.Forms.Label();
+            this.lblErrorPeso = new System.Windows.Forms.Label();
+            this.lblErrorEstatura = new System.Windows.Forms.Label();
+            this.lblErrorTemperatura = new System.Windows.Forms.Label();
+            this.lblErroCedula = new System.Windows.Forms.Label();
             this.btnSiguiente1 = new Guna.UI2.WinForms.Guna2Button();
             this.txtDiagnostico = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtAntecedentes = new Guna.UI2.WinForms.Guna2TextBox();
@@ -57,6 +63,7 @@ namespace Presentacion
             this.lblFechaHoy = new System.Windows.Forms.Label();
             this.lblFecha = new System.Windows.Forms.Label();
             this.pageTratamiento = new System.Windows.Forms.TabPage();
+            this.lblErrorTratamiento = new System.Windows.Forms.Label();
             this.btnRegresar = new Guna.UI2.WinForms.Guna2Button();
             this.btnFinalizar = new Guna.UI2.WinForms.Guna2Button();
             this.txtIndicaciones = new Guna.UI2.WinForms.Guna2TextBox();
@@ -75,6 +82,9 @@ namespace Presentacion
             this.lblTratamiento = new Bunifu.UI.WinForms.BunifuLabel();
             this.lblConslutaMedica = new Bunifu.UI.WinForms.BunifuLabel();
             this.lblSeparadora = new Bunifu.UI.WinForms.BunifuSeparator();
+            this.lblErrorMedicamento = new System.Windows.Forms.Label();
+            this.lblErrorDescripcion = new System.Windows.Forms.Label();
+            this.lblErrorIndicaciones = new System.Windows.Forms.Label();
             this.guna2ShadowPanel1.SuspendLayout();
             this.tabConsultaMedica.SuspendLayout();
             this.pageConsultaMedica.SuspendLayout();
@@ -189,6 +199,12 @@ namespace Presentacion
             // pageConsultaMedica
             // 
             this.pageConsultaMedica.BackColor = System.Drawing.Color.White;
+            this.pageConsultaMedica.Controls.Add(this.lblErrorDiagnostico);
+            this.pageConsultaMedica.Controls.Add(this.lblErrorPresion);
+            this.pageConsultaMedica.Controls.Add(this.lblErrorPeso);
+            this.pageConsultaMedica.Controls.Add(this.lblErrorEstatura);
+            this.pageConsultaMedica.Controls.Add(this.lblErrorTemperatura);
+            this.pageConsultaMedica.Controls.Add(this.lblErroCedula);
             this.pageConsultaMedica.Controls.Add(this.btnSiguiente1);
             this.pageConsultaMedica.Controls.Add(this.txtDiagnostico);
             this.pageConsultaMedica.Controls.Add(this.txtAntecedentes);
@@ -217,6 +233,60 @@ namespace Presentacion
             this.pageConsultaMedica.TabIndex = 0;
             this.pageConsultaMedica.Text = "consulta medica";
             // 
+            // lblErrorDiagnostico
+            // 
+            this.lblErrorDiagnostico.AutoSize = true;
+            this.lblErrorDiagnostico.ForeColor = System.Drawing.Color.Red;
+            this.lblErrorDiagnostico.Location = new System.Drawing.Point(38, 444);
+            this.lblErrorDiagnostico.Name = "lblErrorDiagnostico";
+            this.lblErrorDiagnostico.Size = new System.Drawing.Size(0, 13);
+            this.lblErrorDiagnostico.TabIndex = 70;
+            // 
+            // lblErrorPresion
+            // 
+            this.lblErrorPresion.AutoSize = true;
+            this.lblErrorPresion.ForeColor = System.Drawing.Color.Red;
+            this.lblErrorPresion.Location = new System.Drawing.Point(522, 191);
+            this.lblErrorPresion.Name = "lblErrorPresion";
+            this.lblErrorPresion.Size = new System.Drawing.Size(0, 13);
+            this.lblErrorPresion.TabIndex = 69;
+            // 
+            // lblErrorPeso
+            // 
+            this.lblErrorPeso.AutoSize = true;
+            this.lblErrorPeso.ForeColor = System.Drawing.Color.Red;
+            this.lblErrorPeso.Location = new System.Drawing.Point(524, 148);
+            this.lblErrorPeso.Name = "lblErrorPeso";
+            this.lblErrorPeso.Size = new System.Drawing.Size(0, 13);
+            this.lblErrorPeso.TabIndex = 68;
+            // 
+            // lblErrorEstatura
+            // 
+            this.lblErrorEstatura.AutoSize = true;
+            this.lblErrorEstatura.ForeColor = System.Drawing.Color.Red;
+            this.lblErrorEstatura.Location = new System.Drawing.Point(522, 107);
+            this.lblErrorEstatura.Name = "lblErrorEstatura";
+            this.lblErrorEstatura.Size = new System.Drawing.Size(0, 13);
+            this.lblErrorEstatura.TabIndex = 67;
+            // 
+            // lblErrorTemperatura
+            // 
+            this.lblErrorTemperatura.AutoSize = true;
+            this.lblErrorTemperatura.ForeColor = System.Drawing.Color.Red;
+            this.lblErrorTemperatura.Location = new System.Drawing.Point(522, 66);
+            this.lblErrorTemperatura.Name = "lblErrorTemperatura";
+            this.lblErrorTemperatura.Size = new System.Drawing.Size(0, 13);
+            this.lblErrorTemperatura.TabIndex = 66;
+            // 
+            // lblErroCedula
+            // 
+            this.lblErroCedula.AutoSize = true;
+            this.lblErroCedula.ForeColor = System.Drawing.Color.Red;
+            this.lblErroCedula.Location = new System.Drawing.Point(104, 101);
+            this.lblErroCedula.Name = "lblErroCedula";
+            this.lblErroCedula.Size = new System.Drawing.Size(0, 13);
+            this.lblErroCedula.TabIndex = 65;
+            // 
             // btnSiguiente1
             // 
             this.btnSiguiente1.BorderRadius = 14;
@@ -227,6 +297,7 @@ namespace Presentacion
             this.btnSiguiente1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnSiguiente1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnSiguiente1.DisabledState.Parent = this.btnSiguiente1;
+            this.btnSiguiente1.Enabled = false;
             this.btnSiguiente1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnSiguiente1.ForeColor = System.Drawing.Color.White;
             this.btnSiguiente1.HoverState.Parent = this.btnSiguiente1;
@@ -263,6 +334,7 @@ namespace Presentacion
             this.txtDiagnostico.ShadowDecoration.Parent = this.txtDiagnostico;
             this.txtDiagnostico.Size = new System.Drawing.Size(615, 105);
             this.txtDiagnostico.TabIndex = 63;
+            this.txtDiagnostico.TextChanged += new System.EventHandler(this.txtDiagnostico_TextChanged);
             // 
             // txtAntecedentes
             // 
@@ -296,7 +368,7 @@ namespace Presentacion
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.Location = new System.Drawing.Point(31, 307);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(95, 16);
+            this.label11.Size = new System.Drawing.Size(94, 16);
             this.label11.TabIndex = 61;
             this.label11.Text = "Diagnóstico:";
             // 
@@ -306,7 +378,7 @@ namespace Presentacion
             this.lblAntecedente.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAntecedente.Location = new System.Drawing.Point(33, 204);
             this.lblAntecedente.Name = "lblAntecedente";
-            this.lblAntecedente.Size = new System.Drawing.Size(188, 16);
+            this.lblAntecedente.Size = new System.Drawing.Size(187, 16);
             this.lblAntecedente.TabIndex = 60;
             this.lblAntecedente.Text = "Antecedentes quirúrgicos:";
             // 
@@ -316,7 +388,7 @@ namespace Presentacion
             this.lblSexo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSexo.Location = new System.Drawing.Point(101, 166);
             this.lblSexo.Name = "lblSexo";
-            this.lblSexo.Size = new System.Drawing.Size(39, 16);
+            this.lblSexo.Size = new System.Drawing.Size(38, 16);
             this.lblSexo.TabIndex = 59;
             this.lblSexo.Text = "Sexo";
             // 
@@ -326,7 +398,7 @@ namespace Presentacion
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.Location = new System.Drawing.Point(33, 166);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(47, 16);
+            this.label8.Size = new System.Drawing.Size(46, 16);
             this.label8.TabIndex = 58;
             this.label8.Text = "Sexo:";
             // 
@@ -353,6 +425,7 @@ namespace Presentacion
             this.txtPresion.ShadowDecoration.Parent = this.txtPresion;
             this.txtPresion.Size = new System.Drawing.Size(107, 22);
             this.txtPresion.TabIndex = 57;
+            this.txtPresion.TextChanged += new System.EventHandler(this.txtPresion_TextChanged);
             // 
             // label7
             // 
@@ -360,7 +433,7 @@ namespace Presentacion
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(412, 166);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(65, 16);
+            this.label7.Size = new System.Drawing.Size(64, 16);
             this.label7.TabIndex = 56;
             this.label7.Text = "Presión:";
             // 
@@ -387,6 +460,7 @@ namespace Presentacion
             this.txtPeso.ShadowDecoration.Parent = this.txtPeso;
             this.txtPeso.Size = new System.Drawing.Size(107, 22);
             this.txtPeso.TabIndex = 55;
+            this.txtPeso.TextChanged += new System.EventHandler(this.txtPeso_TextChanged);
             // 
             // label6
             // 
@@ -394,7 +468,7 @@ namespace Presentacion
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(412, 122);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(48, 16);
+            this.label6.Size = new System.Drawing.Size(47, 16);
             this.label6.TabIndex = 54;
             this.label6.Text = "Peso:";
             // 
@@ -421,6 +495,7 @@ namespace Presentacion
             this.txtEstatura.ShadowDecoration.Parent = this.txtEstatura;
             this.txtEstatura.Size = new System.Drawing.Size(107, 22);
             this.txtEstatura.TabIndex = 53;
+            this.txtEstatura.TextChanged += new System.EventHandler(this.txtEstatura_TextChanged);
             // 
             // label1
             // 
@@ -428,7 +503,7 @@ namespace Presentacion
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(412, 82);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(69, 16);
+            this.label1.Size = new System.Drawing.Size(68, 16);
             this.label1.TabIndex = 52;
             this.label1.Text = "Estatura:";
             // 
@@ -455,6 +530,7 @@ namespace Presentacion
             this.txtTemperatura.ShadowDecoration.Parent = this.txtTemperatura;
             this.txtTemperatura.Size = new System.Drawing.Size(107, 22);
             this.txtTemperatura.TabIndex = 51;
+            this.txtTemperatura.TextChanged += new System.EventHandler(this.txtTemperatura_TextChanged);
             // 
             // label5
             // 
@@ -462,7 +538,7 @@ namespace Presentacion
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(412, 45);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(101, 16);
+            this.label5.Size = new System.Drawing.Size(100, 16);
             this.label5.TabIndex = 50;
             this.label5.Text = "Temperatura:";
             // 
@@ -472,7 +548,7 @@ namespace Presentacion
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(33, 82);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(61, 16);
+            this.label4.Size = new System.Drawing.Size(60, 16);
             this.label4.TabIndex = 49;
             this.label4.Text = "Cédula:";
             // 
@@ -482,7 +558,7 @@ namespace Presentacion
             this.lblNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNombre.Location = new System.Drawing.Point(101, 122);
             this.lblNombre.Name = "lblNombre";
-            this.lblNombre.Size = new System.Drawing.Size(57, 16);
+            this.lblNombre.Size = new System.Drawing.Size(56, 16);
             this.lblNombre.TabIndex = 48;
             this.lblNombre.Text = "Nombre";
             // 
@@ -492,7 +568,7 @@ namespace Presentacion
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(33, 122);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(67, 16);
+            this.label2.Size = new System.Drawing.Size(66, 16);
             this.label2.TabIndex = 47;
             this.label2.Text = "Nombre:";
             // 
@@ -519,6 +595,7 @@ namespace Presentacion
             this.txtCedula.ShadowDecoration.Parent = this.txtCedula;
             this.txtCedula.Size = new System.Drawing.Size(117, 22);
             this.txtCedula.TabIndex = 46;
+            this.txtCedula.TextChanged += new System.EventHandler(this.txtCedula_TextChanged);
             // 
             // lblFechaHoy
             // 
@@ -526,7 +603,7 @@ namespace Presentacion
             this.lblFechaHoy.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblFechaHoy.Location = new System.Drawing.Point(101, 45);
             this.lblFechaHoy.Name = "lblFechaHoy";
-            this.lblFechaHoy.Size = new System.Drawing.Size(46, 16);
+            this.lblFechaHoy.Size = new System.Drawing.Size(45, 16);
             this.lblFechaHoy.TabIndex = 45;
             this.lblFechaHoy.Text = "Fecha";
             // 
@@ -536,13 +613,17 @@ namespace Presentacion
             this.lblFecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblFecha.Location = new System.Drawing.Point(33, 45);
             this.lblFecha.Name = "lblFecha";
-            this.lblFecha.Size = new System.Drawing.Size(55, 16);
+            this.lblFecha.Size = new System.Drawing.Size(54, 16);
             this.lblFecha.TabIndex = 44;
             this.lblFecha.Text = "Fecha:";
             // 
             // pageTratamiento
             // 
             this.pageTratamiento.BackColor = System.Drawing.Color.White;
+            this.pageTratamiento.Controls.Add(this.lblErrorIndicaciones);
+            this.pageTratamiento.Controls.Add(this.lblErrorDescripcion);
+            this.pageTratamiento.Controls.Add(this.lblErrorMedicamento);
+            this.pageTratamiento.Controls.Add(this.lblErrorTratamiento);
             this.pageTratamiento.Controls.Add(this.btnRegresar);
             this.pageTratamiento.Controls.Add(this.btnFinalizar);
             this.pageTratamiento.Controls.Add(this.txtIndicaciones);
@@ -564,6 +645,17 @@ namespace Presentacion
             this.pageTratamiento.TabIndex = 1;
             this.pageTratamiento.Text = "tratamiento";
             // 
+            // lblErrorTratamiento
+            // 
+            this.lblErrorTratamiento.AutoSize = true;
+            this.lblErrorTratamiento.BackColor = System.Drawing.Color.Transparent;
+            this.lblErrorTratamiento.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblErrorTratamiento.ForeColor = System.Drawing.Color.Red;
+            this.lblErrorTratamiento.Location = new System.Drawing.Point(458, 50);
+            this.lblErrorTratamiento.Name = "lblErrorTratamiento";
+            this.lblErrorTratamiento.Size = new System.Drawing.Size(0, 18);
+            this.lblErrorTratamiento.TabIndex = 22;
+            // 
             // btnRegresar
             // 
             this.btnRegresar.BorderRadius = 14;
@@ -578,7 +670,7 @@ namespace Presentacion
             this.btnRegresar.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnRegresar.ForeColor = System.Drawing.Color.White;
             this.btnRegresar.HoverState.Parent = this.btnRegresar;
-            this.btnRegresar.Location = new System.Drawing.Point(43, 451);
+            this.btnRegresar.Location = new System.Drawing.Point(43, 458);
             this.btnRegresar.Name = "btnRegresar";
             this.btnRegresar.ShadowDecoration.Parent = this.btnRegresar;
             this.btnRegresar.Size = new System.Drawing.Size(180, 45);
@@ -596,10 +688,11 @@ namespace Presentacion
             this.btnFinalizar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnFinalizar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnFinalizar.DisabledState.Parent = this.btnFinalizar;
+            this.btnFinalizar.Enabled = false;
             this.btnFinalizar.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnFinalizar.ForeColor = System.Drawing.Color.White;
             this.btnFinalizar.HoverState.Parent = this.btnFinalizar;
-            this.btnFinalizar.Location = new System.Drawing.Point(461, 453);
+            this.btnFinalizar.Location = new System.Drawing.Point(461, 460);
             this.btnFinalizar.Name = "btnFinalizar";
             this.btnFinalizar.ShadowDecoration.Parent = this.btnFinalizar;
             this.btnFinalizar.Size = new System.Drawing.Size(180, 45);
@@ -621,7 +714,7 @@ namespace Presentacion
             this.txtIndicaciones.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtIndicaciones.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtIndicaciones.HoverState.Parent = this.txtIndicaciones;
-            this.txtIndicaciones.Location = new System.Drawing.Point(29, 334);
+            this.txtIndicaciones.Location = new System.Drawing.Point(29, 342);
             this.txtIndicaciones.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtIndicaciones.Multiline = true;
             this.txtIndicaciones.Name = "txtIndicaciones";
@@ -632,12 +725,13 @@ namespace Presentacion
             this.txtIndicaciones.ShadowDecoration.Parent = this.txtIndicaciones;
             this.txtIndicaciones.Size = new System.Drawing.Size(637, 86);
             this.txtIndicaciones.TabIndex = 19;
+            this.txtIndicaciones.TextChanged += new System.EventHandler(this.txtIndicaciones_TextChanged);
             // 
             // lblIndicaciones
             // 
             this.lblIndicaciones.AutoSize = true;
             this.lblIndicaciones.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblIndicaciones.Location = new System.Drawing.Point(26, 309);
+            this.lblIndicaciones.Location = new System.Drawing.Point(26, 317);
             this.lblIndicaciones.Name = "lblIndicaciones";
             this.lblIndicaciones.Size = new System.Drawing.Size(118, 21);
             this.lblIndicaciones.TabIndex = 18;
@@ -658,7 +752,7 @@ namespace Presentacion
             this.txtNombreMedicamento.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtNombreMedicamento.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtNombreMedicamento.HoverState.Parent = this.txtNombreMedicamento;
-            this.txtNombreMedicamento.Location = new System.Drawing.Point(242, 264);
+            this.txtNombreMedicamento.Location = new System.Drawing.Point(242, 272);
             this.txtNombreMedicamento.Name = "txtNombreMedicamento";
             this.txtNombreMedicamento.PasswordChar = '\0';
             this.txtNombreMedicamento.PlaceholderText = "";
@@ -666,12 +760,13 @@ namespace Presentacion
             this.txtNombreMedicamento.ShadowDecoration.Parent = this.txtNombreMedicamento;
             this.txtNombreMedicamento.Size = new System.Drawing.Size(234, 36);
             this.txtNombreMedicamento.TabIndex = 17;
+            this.txtNombreMedicamento.TextChanged += new System.EventHandler(this.txtNombreMedicamento_TextChanged);
             // 
             // lblNombreMedicamento
             // 
             this.lblNombreMedicamento.AutoSize = true;
             this.lblNombreMedicamento.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNombreMedicamento.Location = new System.Drawing.Point(26, 270);
+            this.lblNombreMedicamento.Location = new System.Drawing.Point(26, 278);
             this.lblNombreMedicamento.Name = "lblNombreMedicamento";
             this.lblNombreMedicamento.Size = new System.Drawing.Size(219, 21);
             this.lblNombreMedicamento.TabIndex = 16;
@@ -691,7 +786,7 @@ namespace Presentacion
             this.txtDescripcion.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDescripcion.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtDescripcion.HoverState.Parent = this.txtDescripcion;
-            this.txtDescripcion.Location = new System.Drawing.Point(24, 122);
+            this.txtDescripcion.Location = new System.Drawing.Point(24, 105);
             this.txtDescripcion.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtDescripcion.Multiline = true;
             this.txtDescripcion.Name = "txtDescripcion";
@@ -702,12 +797,13 @@ namespace Presentacion
             this.txtDescripcion.ShadowDecoration.Parent = this.txtDescripcion;
             this.txtDescripcion.Size = new System.Drawing.Size(637, 102);
             this.txtDescripcion.TabIndex = 15;
+            this.txtDescripcion.TextChanged += new System.EventHandler(this.txtDescripcion_TextChanged);
             // 
             // lblIdRecetaMedica
             // 
             this.lblIdRecetaMedica.AutoSize = true;
             this.lblIdRecetaMedica.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblIdRecetaMedica.Location = new System.Drawing.Point(208, 233);
+            this.lblIdRecetaMedica.Location = new System.Drawing.Point(208, 241);
             this.lblIdRecetaMedica.Name = "lblIdRecetaMedica";
             this.lblIdRecetaMedica.Size = new System.Drawing.Size(37, 21);
             this.lblIdRecetaMedica.TabIndex = 14;
@@ -717,7 +813,7 @@ namespace Presentacion
             // 
             this.lblCodigoRecetaMedica.AutoSize = true;
             this.lblCodigoRecetaMedica.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCodigoRecetaMedica.Location = new System.Drawing.Point(26, 231);
+            this.lblCodigoRecetaMedica.Location = new System.Drawing.Point(26, 240);
             this.lblCodigoRecetaMedica.Name = "lblCodigoRecetaMedica";
             this.lblCodigoRecetaMedica.Size = new System.Drawing.Size(184, 21);
             this.lblCodigoRecetaMedica.TabIndex = 13;
@@ -738,7 +834,7 @@ namespace Presentacion
             this.txtNombreTratamiento.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtNombreTratamiento.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtNombreTratamiento.HoverState.Parent = this.txtNombreTratamiento;
-            this.txtNombreTratamiento.Location = new System.Drawing.Point(218, 57);
+            this.txtNombreTratamiento.Location = new System.Drawing.Point(218, 40);
             this.txtNombreTratamiento.Name = "txtNombreTratamiento";
             this.txtNombreTratamiento.PasswordChar = '\0';
             this.txtNombreTratamiento.PlaceholderText = "";
@@ -746,12 +842,13 @@ namespace Presentacion
             this.txtNombreTratamiento.ShadowDecoration.Parent = this.txtNombreTratamiento;
             this.txtNombreTratamiento.Size = new System.Drawing.Size(234, 36);
             this.txtNombreTratamiento.TabIndex = 11;
+            this.txtNombreTratamiento.TextChanged += new System.EventHandler(this.txtNombreTratamiento_TextChanged);
             // 
             // lblNombreTratamiento
             // 
             this.lblNombreTratamiento.AutoSize = true;
             this.lblNombreTratamiento.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNombreTratamiento.Location = new System.Drawing.Point(20, 64);
+            this.lblNombreTratamiento.Location = new System.Drawing.Point(20, 47);
             this.lblNombreTratamiento.Name = "lblNombreTratamiento";
             this.lblNombreTratamiento.Size = new System.Drawing.Size(204, 21);
             this.lblNombreTratamiento.TabIndex = 10;
@@ -761,7 +858,7 @@ namespace Presentacion
             // 
             this.lblDescrpcion.AutoSize = true;
             this.lblDescrpcion.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDescrpcion.Location = new System.Drawing.Point(20, 97);
+            this.lblDescrpcion.Location = new System.Drawing.Point(20, 80);
             this.lblDescrpcion.Name = "lblDescrpcion";
             this.lblDescrpcion.Size = new System.Drawing.Size(108, 21);
             this.lblDescrpcion.TabIndex = 8;
@@ -771,7 +868,7 @@ namespace Presentacion
             // 
             this.lblIdTratamiento.AutoSize = true;
             this.lblIdTratamiento.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblIdTratamiento.Location = new System.Drawing.Point(181, 29);
+            this.lblIdTratamiento.Location = new System.Drawing.Point(181, 12);
             this.lblIdTratamiento.Name = "lblIdTratamiento";
             this.lblIdTratamiento.Size = new System.Drawing.Size(37, 21);
             this.lblIdTratamiento.TabIndex = 7;
@@ -781,7 +878,7 @@ namespace Presentacion
             // 
             this.lblCódigoTratamiento.AutoSize = true;
             this.lblCódigoTratamiento.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCódigoTratamiento.Location = new System.Drawing.Point(20, 28);
+            this.lblCódigoTratamiento.Location = new System.Drawing.Point(20, 11);
             this.lblCódigoTratamiento.Name = "lblCódigoTratamiento";
             this.lblCódigoTratamiento.Size = new System.Drawing.Size(164, 21);
             this.lblCódigoTratamiento.TabIndex = 6;
@@ -889,6 +986,39 @@ namespace Presentacion
             this.lblSeparadora.Size = new System.Drawing.Size(49, 21);
             this.lblSeparadora.TabIndex = 2;
             // 
+            // lblErrorMedicamento
+            // 
+            this.lblErrorMedicamento.AutoSize = true;
+            this.lblErrorMedicamento.BackColor = System.Drawing.Color.Transparent;
+            this.lblErrorMedicamento.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblErrorMedicamento.ForeColor = System.Drawing.Color.Red;
+            this.lblErrorMedicamento.Location = new System.Drawing.Point(482, 282);
+            this.lblErrorMedicamento.Name = "lblErrorMedicamento";
+            this.lblErrorMedicamento.Size = new System.Drawing.Size(0, 18);
+            this.lblErrorMedicamento.TabIndex = 23;
+            // 
+            // lblErrorDescripcion
+            // 
+            this.lblErrorDescripcion.AutoSize = true;
+            this.lblErrorDescripcion.BackColor = System.Drawing.Color.Transparent;
+            this.lblErrorDescripcion.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblErrorDescripcion.ForeColor = System.Drawing.Color.Red;
+            this.lblErrorDescripcion.Location = new System.Drawing.Point(31, 211);
+            this.lblErrorDescripcion.Name = "lblErrorDescripcion";
+            this.lblErrorDescripcion.Size = new System.Drawing.Size(0, 18);
+            this.lblErrorDescripcion.TabIndex = 24;
+            // 
+            // lblErrorIndicaciones
+            // 
+            this.lblErrorIndicaciones.AutoSize = true;
+            this.lblErrorIndicaciones.BackColor = System.Drawing.Color.Transparent;
+            this.lblErrorIndicaciones.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblErrorIndicaciones.ForeColor = System.Drawing.Color.Red;
+            this.lblErrorIndicaciones.Location = new System.Drawing.Point(31, 432);
+            this.lblErrorIndicaciones.Name = "lblErrorIndicaciones";
+            this.lblErrorIndicaciones.Size = new System.Drawing.Size(0, 18);
+            this.lblErrorIndicaciones.TabIndex = 25;
+            // 
             // FrmConsultaMedica
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -956,5 +1086,15 @@ namespace Presentacion
         private Guna.UI2.WinForms.Guna2Button btnRegresar;
         private Guna.UI2.WinForms.Guna2Button btnFinalizar;
         private Bunifu.UI.WinForms.BunifuCheckBox chkConsultaMedica;
+        private System.Windows.Forms.Label lblErrorTratamiento;
+        private System.Windows.Forms.Label lblErrorDiagnostico;
+        private System.Windows.Forms.Label lblErrorPresion;
+        private System.Windows.Forms.Label lblErrorPeso;
+        private System.Windows.Forms.Label lblErrorEstatura;
+        private System.Windows.Forms.Label lblErrorTemperatura;
+        private System.Windows.Forms.Label lblErroCedula;
+        private System.Windows.Forms.Label lblErrorIndicaciones;
+        private System.Windows.Forms.Label lblErrorDescripcion;
+        private System.Windows.Forms.Label lblErrorMedicamento;
     }
 }

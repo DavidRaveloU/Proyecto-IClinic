@@ -1,0 +1,16 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "779151ed-800b-484a-875a-995e38335824": {
+      "ProjectGuid": "779151ed-800b-484a-875a-995e38335824",
+      "DisplayName": "Presentacion",
+      "ColorIndex": 0
+    },
+    "4375228d-7726-47d1-9738-cec80bf95b0d": {
+      "ProjectGuid": "4375228d-7726-47d1-9738-cec80bf95b0d",
+      "DisplayName": "Entidad",
+      "ColorIndex": 1
+    }
+  },
+  "NextColorIndex": 2
+}

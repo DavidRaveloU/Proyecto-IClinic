@@ -191,3 +191,5 @@ C:\Users\David\source\repos\Proyecto-IClinic\Presentacion\obj\Debug\Presentacion
 C:\Users\David\source\repos\Proyecto-IClinic\Presentacion\obj\Debug\Presentacion.pdb
 C:\Users\David\source\repos\Proyecto-IClinic\Presentacion\obj\Debug\Presentacion.FrmHorario.resources
 D:\PROYECTO\Proyecto-IClinic\Presentacion\obj\Debug\Presentacion.FrmHorario.resources
+D:\PROYECTO\Proyecto-IClinic\Presentacion\obj\Debug\Presentacion.csproj.SuggestedBindingRedirects.cache
+D:\PROYECTO\Proyecto-IClinic\Presentacion\obj\Debug\Presentacion.csproj.CopyComplete
