@@ -45,7 +45,7 @@ namespace Presentacion
             chkTratamiento.Checked = chkTratamiento.Enabled = true;
             lblTratamiento.ForeColor = Color.Blue;
         }
-        private void ValidarCampo(Label label, Guna.UI2.WinForms.Guna2TextBox textBox)
+        private void ValidarCampoVacio(Label label, Guna.UI2.WinForms.Guna2TextBox textBox)
         {
             label.Text = (string.IsNullOrEmpty(textBox.Text)) ? "*Digite Informacion*" : " ";
         }
@@ -66,61 +66,61 @@ namespace Presentacion
 
         private void txtNombreTratamiento_TextChanged(object sender, EventArgs e)
         {
-            ValidarCampo(lblErrorTratamiento,txtNombreTratamiento);
+            ValidarCampoVacio(lblErrorTratamiento,txtNombreTratamiento);
             HabilitarBotonSiguiente();
         }
 
         private void txtCedula_TextChanged(object sender, EventArgs e)
         {
-            ValidarCampo(lblErroCedula, txtCedula);
+            ValidarCampoVacio(lblErroCedula, txtCedula);
             HabilitarBotonSiguiente();
         }
 
         private void txtTemperatura_TextChanged(object sender, EventArgs e)
         {
-            ValidarCampo(lblErrorTemperatura, txtTemperatura);
+            ValidarCampoVacio(lblErrorTemperatura, txtTemperatura);
             HabilitarBotonSiguiente();
         }
 
         private void txtEstatura_TextChanged(object sender, EventArgs e)
         {
-            ValidarCampo(lblErrorEstatura , txtEstatura );
+            ValidarCampoVacio(lblErrorEstatura , txtEstatura );
             HabilitarBotonSiguiente();
         }
 
         private void txtPeso_TextChanged(object sender, EventArgs e)
         {
-            ValidarCampo(lblErrorPeso,txtPeso);
+            ValidarCampoVacio(lblErrorPeso,txtPeso);
             HabilitarBotonSiguiente();
         }
 
         private void txtPresion_TextChanged(object sender, EventArgs e)
         {
-            ValidarCampo(lblErrorPresion, txtPresion);
+            ValidarCampoVacio(lblErrorPresion, txtPresion);
             HabilitarBotonSiguiente();
         }
 
         private void txtDiagnostico_TextChanged(object sender, EventArgs e)
         {
-            ValidarCampo(lblErrorDiagnostico,txtDiagnostico);
+            ValidarCampoVacio(lblErrorDiagnostico,txtDiagnostico);
             HabilitarBotonSiguiente();
         }
 
         private void txtDescripcion_TextChanged(object sender, EventArgs e)
         {
-            ValidarCampo(lblErrorDescripcion, txtDescripcion);
+            ValidarCampoVacio(lblErrorDescripcion, txtDescripcion);
             HabilitarBotonFinalizar();
         }
 
         private void txtNombreMedicamento_TextChanged(object sender, EventArgs e)
         {
-            ValidarCampo(lblErrorMedicamento,txtNombreMedicamento);
+            ValidarCampoVacio(lblErrorMedicamento,txtNombreMedicamento);
             HabilitarBotonFinalizar();
         }
 
         private void txtIndicaciones_TextChanged(object sender, EventArgs e)
         {
-            ValidarCampo(lblErrorIndicaciones, txtIndicaciones);
+            ValidarCampoVacio(lblErrorIndicaciones, txtIndicaciones);
             HabilitarBotonFinalizar();
         }
         private void HabilitarBotonFinalizar()
