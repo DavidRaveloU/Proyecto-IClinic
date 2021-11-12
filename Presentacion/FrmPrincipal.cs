@@ -33,8 +33,7 @@ namespace Presentacion
 
         private int posX = 0;
         private int posY = 0;
-
-        private void pnlSuperior_MouseMove(object sender, MouseEventArgs e)
+        private void MoverVentana(object sender, MouseEventArgs e)
         {
             if (e.Button != MouseButtons.Left)
             {
@@ -46,6 +45,10 @@ namespace Presentacion
                 Left += (e.X - posX);
                 Top += (e.Y - posY);
             }
+        }
+        private void pnlSuperior_MouseMove(object sender, MouseEventArgs e)
+        {
+            MoverVentana(sender, e);
         }
         private Form frmPadre = null;
         private void AbrirFormulario(Form frmHijo)
