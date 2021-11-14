@@ -1,30 +1,32 @@
+﻿create database Iclinic;
+
 CREATE SEQUENCE  id_agenda
  start with 1
   increment by 1
   maxvalue 99999
   minvalue 1
-  nocycle;
+  no cycle;
   
 CREATE SEQUENCE   id_cita  
  start with 1
   increment by 1
   maxvalue 99999
   minvalue 1
-  nocycle;
+  no cycle;
   
 CREATE SEQUENCE  id_consultamedica   
  start with 1
   increment by 1
   maxvalue 99999
   minvalue 1
-  nocycle;
+  no cycle;
   
  CREATE SEQUENCE  id_detalle  
  start with 1
   increment by 1
   maxvalue 99999
   minvalue 1
-  nocycle;    
+  no cycle;    
   
    
  CREATE SEQUENCE  id_horario 
@@ -32,66 +34,65 @@ CREATE SEQUENCE  id_consultamedica
   increment by 1
   maxvalue 99999
   minvalue 1
-  nocycle;    
+  no cycle;    
 
   
 
 CREATE TABLE agenda (
-    id_agenda                  NUMBER(5) NOT NULL,
-    cita_medica_id_cita        NUMBER NOT NULL,
-    detalleagenda_id_detalle   NUMBER(5),
-    medico_cedula_medico       NUMBER(12) NOT NULL
+    id_agenda                   INT NOT NULL,
+    cita_medica_id_cita         INT NOT NULL,
+    detalleagenda_id_detalle    INT,
+    medico_cedula_medico        INT NOT NULL
 );
 
 ALTER TABLE agenda ADD CONSTRAINT agenda_pk PRIMARY KEY ( id_agenda );
 
 CREATE TABLE cita_medica (
-    id_cita                    NUMBER(5) NOT NULL,
+    id_cita                    INT NOT NULL,
     hora_cita                  DATE NOT NULL,
     fecha_cita                 DATE NOT NULL,
-    medico_cedula_medico       NUMBER(12),
-    paciente_cedula_paciente   NUMBER(12) NOT NULL
+    medico_cedula_medico       INT,
+    paciente_cedula_paciente   INT NOT NULL
 );
 
 ALTER TABLE cita_medica ADD CONSTRAINT cita_medica_pk PRIMARY KEY ( id_cita );
 
 CREATE TABLE consulta (
-    id_consultamedica              NUMBER(5) NOT NULL,
-    peso                           VARCHAR2(5) NOT NULL,
-    estatura                       VARCHAR2(5) NOT NULL,
-    presion_arterial               VARCHAR2(10) NOT NULL,
-    ritmo_cardiaco                 VARCHAR2(10) NOT NULL,
-    antecedentes_quirurjicos       VARCHAR2(50),
-    tratamiento_id_tratamiento     NUMBER(5),
-    diagnostico_id_diagnostico     NUMBER(5),
-    recetamedica_id_recetamedica   NUMBER(5),
-    cita_medica_id_cita            NUMBER(5) NOT NULL,
-    medico_cedula_medico           NUMBER(12) NOT NULL,
-    id_tratamiento                 NUMBER
+    id_consultamedica              INT NOT NULL,
+    peso                           VARCHAR(5) NOT NULL,
+    estatura                       VARCHAR(5) NOT NULL,
+    presion_arterial               VARCHAR(10) NOT NULL,
+    ritmo_cardiaco                 VARCHAR(10) NOT NULL,
+    antecedentes_quirurjicos       VARCHAR(50),
+    tratamiento_id_tratamiento     INT,
+    diagnostico_id_diagnostico     INT,
+    recetamedica_id_recetamedica   INT,
+    cita_medica_id_cita            INT NOT NULL,
+    medico_cedula_medico           INT NOT NULL,
 );
 
 ALTER TABLE consulta ADD CONSTRAINT consulta_pk PRIMARY KEY ( id_consultamedica );
 
 CREATE TABLE detalleagenda (
-    id_detalle             NUMBER(5) NOT NULL,
+    id_detalle             INT NOT NULL,
     fecha_disponible       DATE NOT NULL,
     fecha_final_atencion   DATE NOT NULL,
     estado                 CHAR(1) NOT NULL,
-    horario_id_horario     NUMBER(5) NOT NULL,
-    medico_cedula_medico   NUMBER(12) NOT NULL
+    horario_id_horario     INT NOT NULL,
+    medico_cedula_medico   INT NOT NULL
 );
 
 ALTER TABLE detalleagenda ADD CONSTRAINT detalleagenda_pk PRIMARY KEY ( id_detalle );
 
 CREATE TABLE diagnostico (
-    id_diagnostico   NUMBER(5) NOT NULL,
-    descripcion      VARCHAR2(100) NOT NULL
+    id_diagnostico   INT NOT NULL,
+    descripcion      VARCHAR(100) NOT NULL
 );
 
 ALTER TABLE diagnostico ADD CONSTRAINT diagnostico_pk PRIMARY KEY ( id_diagnostico );
 
 CREATE TABLE horario (
-    id_horario     NUMBER(5) NOT NULL,
+    id_horario     INT NOT NULL,
     hora_inicial   DATE NOT NULL,
     hora_final     DATE NOT NULL
 );
@@ -99,47 +100,47 @@ CREATE TABLE horario (
 ALTER TABLE horario ADD CONSTRAINT horario_pk PRIMARY KEY ( id_horario );
 
 CREATE TABLE medico (
-    cedula_medico        NUMBER(12) NOT NULL,
-    primer_nombre        VARCHAR2(22) NOT NULL,
-    segundo_nombre       VARCHAR2(22),
-    primer_apellido      VARCHAR2(22) NOT NULL,
-    segundo_apellido     VARCHAR2(22),
-    telefono             VARCHAR2(15) NOT NULL,
-    correo_electronico   VARCHAR2(50) NOT NULL,
-    direccion            VARCHAR2(50) NOT NULL,
+    cedula_medico        INT NOT NULL,
+    primer_nombre        VARCHAR(22) NOT NULL,
+    segundo_nombre       VARCHAR(22),
+    primer_apellido      VARCHAR(22) NOT NULL,
+    segundo_apellido     VARCHAR(22),
+    telefono             VARCHAR(15) NOT NULL,
+    correo_electronico   VARCHAR(50) NOT NULL,
+    direccion            VARCHAR(50) NOT NULL,
     sexo                 CHAR(1) NOT NULL,
-    ciudad               VARCHAR2(32) NOT NULL
+    ciudad               VARCHAR(32) NOT NULL
 );
 
 ALTER TABLE medico ADD CONSTRAINT medico_pk PRIMARY KEY ( cedula_medico );
 
 CREATE TABLE paciente (
-    cedula_paciente      NUMBER(12) NOT NULL,
-    primer_nombre        VARCHAR2(22) NOT NULL,
-    segundo_nombre       VARCHAR2(22),
-    primer_apellido      VARCHAR2(22) NOT NULL,
-    segundo_apellido     VARCHAR2(22),
-    telefono             VARCHAR2(15) NOT NULL,
-    correo_electronico   VARCHAR2(50) NOT NULL,
-    direccion            VARCHAR2(50) NOT NULL,
+    cedula_paciente      INT NOT NULL,
+    primer_nombre        VARCHAR(22) NOT NULL,
+    segundo_nombre       VARCHAR(22),
+    primer_apellido      VARCHAR(22) NOT NULL,
+    segundo_apellido     VARCHAR(22),
+    telefono             VARCHAR(15) NOT NULL,
+    correo_electronico   VARCHAR(50) NOT NULL,
+    direccion            VARCHAR(50) NOT NULL,
     sexo                 CHAR(1) NOT NULL,
-    ciudad               VARCHAR2(32) NOT NULL
+    ciudad               VARCHAR(32) NOT NULL
 );
 
 ALTER TABLE paciente ADD CONSTRAINT paciente_pk PRIMARY KEY ( cedula_paciente );
 
 CREATE TABLE recetamedica (
-    id_recetamedica      NUMBER(5) NOT NULL,
-    nombre_medicamento   VARCHAR2(50) NOT NULL,
-    indicaciones         VARCHAR2(300) NOT NULL
+    id_recetamedica      INT NOT NULL,
+    nombre_medicamento   VARCHAR(50) NOT NULL,
+    indicaciones         VARCHAR(300) NOT NULL
 );
 
 ALTER TABLE recetamedica ADD CONSTRAINT recetamedica_pk PRIMARY KEY ( id_recetamedica );
 
 CREATE TABLE tratamiento (
-    id_tratamiento       NUMBER(5) NOT NULL,
-    nombre_tratamiento   VARCHAR2(25) NOT NULL,
-    descripcion          VARCHAR2(100) NOT NULL
+    id_tratamiento       INT NOT NULL,
+    nombre_tratamiento   VARCHAR(25) NOT NULL,
+    descripcion          VARCHAR(100) NOT NULL
 );
 
 ALTER TABLE tratamiento ADD CONSTRAINT tratamiento_pk PRIMARY KEY ( id_tratamiento );
@@ -191,3 +192,5 @@ ALTER TABLE detalleagenda
 ALTER TABLE detalleagenda
     ADD CONSTRAINT detalleagenda_medico_fk FOREIGN KEY ( medico_cedula_medico )
         REFERENCES medico ( cedula_medico );
+
+     SELECT * FROM sys.sequences; 
