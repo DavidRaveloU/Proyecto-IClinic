@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data.SqlClient;
 using System.Data.Common;
+using Oracle.ManagedDataAccess.Client;
 
 namespace Datos
 {
@@ -13,7 +14,7 @@ namespace Datos
         DbConnection conn;
         public ConnectionManager(string _connection)
         {
-            conn = new SqlConnection(_connection);
+            conn = new OracleConnection(_connection);
         }
 
         public void Open()
