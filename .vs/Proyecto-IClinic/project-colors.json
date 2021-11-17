@@ -15,7 +15,12 @@
       "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
       "DisplayName": "Archivos varios",
       "ColorIndex": -1
+    },
+    "09d452a3-e40e-45bc-95df-4a77e689f9ae": {
+      "ProjectGuid": "09d452a3-e40e-45bc-95df-4a77e689f9ae",
+      "DisplayName": "Datos",
+      "ColorIndex": 2
     }
   },
-  "NextColorIndex": 2
+  "NextColorIndex": 3
 }
