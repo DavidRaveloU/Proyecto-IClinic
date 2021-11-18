@@ -20,7 +20,12 @@
       "ProjectGuid": "09d452a3-e40e-45bc-95df-4a77e689f9ae",
       "DisplayName": "Datos",
       "ColorIndex": 2
+    },
+    "fbd9b549-3a69-4274-8223-2fe1b6eab8d1": {
+      "ProjectGuid": "fbd9b549-3a69-4274-8223-2fe1b6eab8d1",
+      "DisplayName": "Logica",
+      "ColorIndex": 3
     }
   },
-  "NextColorIndex": 3
+  "NextColorIndex": 4
 }
