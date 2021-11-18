@@ -253,3 +253,6 @@ D:\PROYECTO\Proyecto-IClinic\Presentacion\bin\Debug\System.Text.Encodings.Web.xm
 D:\PROYECTO\Proyecto-IClinic\Presentacion\bin\Debug\System.Text.Json.xml
 D:\PROYECTO\Proyecto-IClinic\Presentacion\bin\Debug\System.Threading.Tasks.Extensions.xml
 D:\PROYECTO\Proyecto-IClinic\Presentacion\bin\Debug\System.ValueTuple.xml
+D:\PROYECTO\Proyecto-IClinic\Presentacion\bin\Debug\Datos.dll
+D:\PROYECTO\Proyecto-IClinic\Presentacion\bin\Debug\Datos.pdb
+D:\PROYECTO\Proyecto-IClinic\Presentacion\bin\Debug\Datos.dll.config
