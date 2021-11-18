@@ -12,8 +12,8 @@ namespace Logica
         CitaMedicaRepository _citaMedicaRepository;
         public CitaMedicaService(string conn)
         {
-            _connectionManager = new ConnectionManager(conn);   
-            _citaMedicaRepository = new CitaMedicaRepository(_connectionManager.conn)
+            _connectionManager = new ConnectionManager(conn);
+            _citaMedicaRepository = new CitaMedicaRepository(_connectionManager.conn);
         }
     }
 }
