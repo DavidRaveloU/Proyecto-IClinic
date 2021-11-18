@@ -180,10 +180,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="CitaMedicaService.cs" />
+    <Compile Include="TratamientoService.cs" />
+    <Compile Include="ConsultaMedicaService.cs" />
+    <Compile Include="DetalleAgendaService.cs" />
+    <Compile Include="DiagnosticoService.cs" />
+    <Compile Include="HorarioService.cs" />
     <Compile Include="MedicoService.cs" />
     <Compile Include="PacienteService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RecetaMedicaService.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Datos\Datos.csproj">

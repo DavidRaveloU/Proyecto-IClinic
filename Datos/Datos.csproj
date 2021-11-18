@@ -180,10 +180,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CitaMedicaRepository.cs" />
     <Compile Include="ConnectionManager.cs" />
+    <Compile Include="ConsultaMedicaRepository.cs" />
+    <Compile Include="DetalleAgendaRepository.cs" />
+    <Compile Include="DiagnosticoRepository.cs" />
+    <Compile Include="HorarioRepository.cs" />
     <Compile Include="MedicoRepository.cs" />
     <Compile Include="PacienteRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RecetaMedicaRepository.cs" />
+    <Compile Include="TratamientoRepository.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Entidad\Entidad.csproj">
