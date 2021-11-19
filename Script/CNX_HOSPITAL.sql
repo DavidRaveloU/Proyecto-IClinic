@@ -34,7 +34,28 @@ CREATE SEQUENCE  id_consultamedica
   minvalue 1
   nocycle;    
 
+
+CREATE SEQUENCE  id_diagnostico
+ start with 1
+  increment by 1
+  maxvalue 99999
+  minvalue 1
+  nocycle; 
   
+CREATE SEQUENCE   id_recetamedica
+ start with 1
+  increment by 1
+  maxvalue 99999
+  minvalue 1
+  nocycle; 
+   
+  CREATE SEQUENCE   id_tratamiento 
+ start with 1
+  increment by 1
+  maxvalue 99999
+  minvalue 1
+  nocycle;
+
 
 CREATE TABLE agenda (
     id_agenda                  NUMBER(5) NOT NULL,
@@ -67,7 +88,7 @@ CREATE TABLE consulta (
     recetamedica_id_recetamedica   NUMBER(5),
     cita_medica_id_cita            NUMBER(5) NOT NULL,
     medico_cedula_medico           NUMBER(12) NOT NULL,
-    id_tratamiento                 NUMBER
+    id_tratamiento                 NUMBER -----------------------DATO DE MÁS
 );
 
 ALTER TABLE consulta ADD CONSTRAINT consulta_pk PRIMARY KEY ( id_consultamedica );
@@ -142,6 +163,9 @@ CREATE TABLE tratamiento (
     descripcion          VARCHAR2(100) NOT NULL
 );
 
+
+
+
 ALTER TABLE tratamiento ADD CONSTRAINT tratamiento_pk PRIMARY KEY ( id_tratamiento );
 
 ALTER TABLE agenda
@@ -191,3 +215,5 @@ ALTER TABLE detalleagenda
 ALTER TABLE detalleagenda
     ADD CONSTRAINT detalleagenda_medico_fk FOREIGN KEY ( medico_cedula_medico )
         REFERENCES medico ( cedula_medico );
+
+
