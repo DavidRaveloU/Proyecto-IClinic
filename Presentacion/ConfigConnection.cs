@@ -7,8 +7,8 @@ using System.Threading.Tasks;
 
 namespace Presentacion
 {
-    public class ConfigConnection
+    public static class ConfigConnection
     {
-        public static string Connection = ConfigurationManager.ConnectionStrings["Oracle"].ConnectionString;
+        public static string Connection = ConfigurationManager.ConnectionStrings["DefaultConnection"].ConnectionString;
     }
 }

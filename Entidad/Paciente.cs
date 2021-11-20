@@ -8,6 +8,24 @@ namespace Entidad
 {
     public class Paciente
     {
+        public Paciente()
+        {
+        }
+
+        public Paciente(string numeroDeCedula, string primerNombre, string segundoNombre, string primerApellido, string segundoApellido, string numeroTelefono, string correoElectronico, string direccion, string sexo, string ciudad)
+        {
+            NumeroDeCedula = numeroDeCedula;
+            PrimerNombre = primerNombre;
+            SegundoNombre = segundoNombre;
+            PrimerApellido = primerApellido;
+            SegundoApellido = segundoApellido;
+            NumeroTelefono = numeroTelefono;
+            CorreoElectronico = correoElectronico;
+            Direccion = direccion;
+            Sexo = sexo;
+            Ciudad = ciudad;
+        }
+
         public string NumeroDeCedula { get; set; }
         public string PrimerNombre{ get; set; }
         public string SegundoNombre { get; set; }

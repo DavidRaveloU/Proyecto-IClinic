@@ -42,7 +42,7 @@ CREATE TABLE agenda (
     id_agenda                   INT NOT NULL,
     cita_medica_id_cita         INT NOT NULL,
     detalleagenda_id_detalle    INT,
-    medico_cedula_medico        INT NOT NULL
+    medico_cedula_medico        VARCHAR(15) NOT NULL
 );
 
 ALTER TABLE agenda ADD CONSTRAINT agenda_pk PRIMARY KEY ( id_agenda );
@@ -51,8 +51,8 @@ CREATE TABLE cita_medica (
     id_cita                    INT NOT NULL,
     hora_cita                  DATE NOT NULL,
     fecha_cita                 DATE NOT NULL,
-    medico_cedula_medico       INT,
-    paciente_cedula_paciente   INT NOT NULL
+    medico_cedula_medico       VARCHAR(15),
+    paciente_cedula_paciente   VARCHAR(15) NOT NULL
 );
 
 ALTER TABLE cita_medica ADD CONSTRAINT cita_medica_pk PRIMARY KEY ( id_cita );
@@ -68,7 +68,7 @@ CREATE TABLE consulta (
     diagnostico_id_diagnostico     INT,
     recetamedica_id_recetamedica   INT,
     cita_medica_id_cita            INT NOT NULL,
-    medico_cedula_medico           INT NOT NULL,
+    medico_cedula_medico           VARCHAR(15) NOT NULL,
 );
 
 ALTER TABLE consulta ADD CONSTRAINT consulta_pk PRIMARY KEY ( id_consultamedica );
@@ -79,7 +79,7 @@ CREATE TABLE detalleagenda (
     fecha_final_atencion   DATE NOT NULL,
     estado                 CHAR(1) NOT NULL,
     horario_id_horario     INT NOT NULL,
-    medico_cedula_medico   INT NOT NULL
+    medico_cedula_medico   VARCHAR(15) NOT NULL
 );
 
 ALTER TABLE detalleagenda ADD CONSTRAINT detalleagenda_pk PRIMARY KEY ( id_detalle );
@@ -100,7 +100,7 @@ CREATE TABLE horario (
 ALTER TABLE horario ADD CONSTRAINT horario_pk PRIMARY KEY ( id_horario );
 
 CREATE TABLE medico (
-    cedula_medico        INT NOT NULL,
+    cedula_medico        VARCHAR(15) NOT NULL,
     primer_nombre        VARCHAR(22) NOT NULL,
     segundo_nombre       VARCHAR(22),
     primer_apellido      VARCHAR(22) NOT NULL,
@@ -108,14 +108,14 @@ CREATE TABLE medico (
     telefono             VARCHAR(15) NOT NULL,
     correo_electronico   VARCHAR(50) NOT NULL,
     direccion            VARCHAR(50) NOT NULL,
-    sexo                 CHAR(1) NOT NULL,
+    sexo                 VARCHAR(15) NOT NULL,
     ciudad               VARCHAR(32) NOT NULL
 );
 
 ALTER TABLE medico ADD CONSTRAINT medico_pk PRIMARY KEY ( cedula_medico );
 
 CREATE TABLE paciente (
-    cedula_paciente      INT NOT NULL,
+    cedula_paciente      VARCHAR(15) NOT NULL,
     primer_nombre        VARCHAR(22) NOT NULL,
     segundo_nombre       VARCHAR(22),
     primer_apellido      VARCHAR(22) NOT NULL,
@@ -123,7 +123,7 @@ CREATE TABLE paciente (
     telefono             VARCHAR(15) NOT NULL,
     correo_electronico   VARCHAR(50) NOT NULL,
     direccion            VARCHAR(50) NOT NULL,
-    sexo                 CHAR(1) NOT NULL,
+    sexo                 VARCHAR(15) NOT NULL,
     ciudad               VARCHAR(32) NOT NULL
 );
 

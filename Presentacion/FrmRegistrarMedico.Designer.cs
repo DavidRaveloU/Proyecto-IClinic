@@ -118,7 +118,7 @@ namespace Presentacion
             this.lblErrorCiudad.ForeColor = System.Drawing.Color.Red;
             this.lblErrorCiudad.Location = new System.Drawing.Point(540, 487);
             this.lblErrorCiudad.Name = "lblErrorCiudad";
-            this.lblErrorCiudad.Size = new System.Drawing.Size(127, 16);
+            this.lblErrorCiudad.Size = new System.Drawing.Size(126, 16);
             this.lblErrorCiudad.TabIndex = 38;
             this.lblErrorCiudad.Text = "* Campo obligatorio";
             // 
@@ -129,7 +129,7 @@ namespace Presentacion
             this.lblErrorSexo.ForeColor = System.Drawing.Color.Red;
             this.lblErrorSexo.Location = new System.Drawing.Point(175, 487);
             this.lblErrorSexo.Name = "lblErrorSexo";
-            this.lblErrorSexo.Size = new System.Drawing.Size(127, 16);
+            this.lblErrorSexo.Size = new System.Drawing.Size(126, 16);
             this.lblErrorSexo.TabIndex = 37;
             this.lblErrorSexo.Text = "* Campo obligatorio";
             // 
@@ -140,7 +140,7 @@ namespace Presentacion
             this.lblErrorDireccion.ForeColor = System.Drawing.Color.Red;
             this.lblErrorDireccion.Location = new System.Drawing.Point(540, 414);
             this.lblErrorDireccion.Name = "lblErrorDireccion";
-            this.lblErrorDireccion.Size = new System.Drawing.Size(127, 16);
+            this.lblErrorDireccion.Size = new System.Drawing.Size(126, 16);
             this.lblErrorDireccion.TabIndex = 36;
             this.lblErrorDireccion.Text = "* Campo obligatorio";
             // 
@@ -151,7 +151,7 @@ namespace Presentacion
             this.lblErrorCorreo.ForeColor = System.Drawing.Color.Red;
             this.lblErrorCorreo.Location = new System.Drawing.Point(175, 414);
             this.lblErrorCorreo.Name = "lblErrorCorreo";
-            this.lblErrorCorreo.Size = new System.Drawing.Size(127, 16);
+            this.lblErrorCorreo.Size = new System.Drawing.Size(126, 16);
             this.lblErrorCorreo.TabIndex = 35;
             this.lblErrorCorreo.Text = "* Campo obligatorio";
             // 
@@ -162,7 +162,7 @@ namespace Presentacion
             this.lblErrorCelular.ForeColor = System.Drawing.Color.Red;
             this.lblErrorCelular.Location = new System.Drawing.Point(540, 331);
             this.lblErrorCelular.Name = "lblErrorCelular";
-            this.lblErrorCelular.Size = new System.Drawing.Size(127, 16);
+            this.lblErrorCelular.Size = new System.Drawing.Size(126, 16);
             this.lblErrorCelular.TabIndex = 34;
             this.lblErrorCelular.Text = "* Campo obligatorio";
             // 
@@ -173,7 +173,7 @@ namespace Presentacion
             this.lblErrorPA.ForeColor = System.Drawing.Color.Red;
             this.lblErrorPA.Location = new System.Drawing.Point(540, 236);
             this.lblErrorPA.Name = "lblErrorPA";
-            this.lblErrorPA.Size = new System.Drawing.Size(127, 16);
+            this.lblErrorPA.Size = new System.Drawing.Size(126, 16);
             this.lblErrorPA.TabIndex = 32;
             this.lblErrorPA.Text = "* Campo obligatorio";
             // 
@@ -184,7 +184,7 @@ namespace Presentacion
             this.lblErrorPN.ForeColor = System.Drawing.Color.Red;
             this.lblErrorPN.Location = new System.Drawing.Point(540, 154);
             this.lblErrorPN.Name = "lblErrorPN";
-            this.lblErrorPN.Size = new System.Drawing.Size(127, 16);
+            this.lblErrorPN.Size = new System.Drawing.Size(126, 16);
             this.lblErrorPN.TabIndex = 30;
             this.lblErrorPN.Text = "* Campo obligatorio";
             // 
@@ -195,7 +195,7 @@ namespace Presentacion
             this.lblErrorCedula.ForeColor = System.Drawing.Color.Red;
             this.lblErrorCedula.Location = new System.Drawing.Point(175, 154);
             this.lblErrorCedula.Name = "lblErrorCedula";
-            this.lblErrorCedula.Size = new System.Drawing.Size(127, 16);
+            this.lblErrorCedula.Size = new System.Drawing.Size(126, 16);
             this.lblErrorCedula.TabIndex = 29;
             this.lblErrorCedula.Text = "* Campo obligatorio";
             // 
@@ -338,6 +338,7 @@ namespace Presentacion
             this.btnGuardar.Size = new System.Drawing.Size(171, 31);
             this.btnGuardar.TabIndex = 16;
             this.btnGuardar.Text = "Guardar";
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // txtDireccion
             // 

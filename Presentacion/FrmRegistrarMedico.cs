@@ -9,14 +9,18 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Entidad;
+using Logica;
 
 namespace Presentacion
 {
     public partial class FrmRegistrarMedico : Form
     {
+        MedicoService medicoService;
         public FrmRegistrarMedico()
         {
             InitializeComponent();
+            medicoService = new MedicoService(ConfigConnection.Connection);
         }
 
         private void txtNumeroDeCedula_TextChanged(object sender, EventArgs e)
@@ -200,6 +204,28 @@ namespace Presentacion
                 }
             }
             return false;
+        }
+        private Medico MapearMedico()
+        {
+            Medico medico = new Medico();
+            medico.NumeroDeCedula = txtNumeroDeCedula.Text;
+            medico.PrimerNombre = txtPrimerNombre.Text;
+            medico.SegundoNombre = txtSegundoNombre.Text;
+            medico.PrimerApellido = txtPrimerApellido.Text;
+            medico.SegundoApellido = txtSegundoNombre.Text;
+            medico.NumeroTelefono = txtTelefono.Text;
+            medico.CorreoElectronico = txtCorreo.Text;
+            medico.Direccion = txtDireccion.Text;
+            medico.Sexo = cmbSexo.Text;
+            medico.Ciudad = txtCiudad.Text;
+            return medico;
+        }
+        private void btnGuardar_Click(object sender, EventArgs e)
+        {
+            Medico medico = MapearMedico();
+            string mensaje = medicoService.Guardar(medico);
+            MessageBox.Show(mensaje, "Guardar Medico", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
         }
     }
 }

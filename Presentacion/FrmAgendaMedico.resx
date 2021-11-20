@@ -117,6 +117,37 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="ptbBuscarCedula.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAQxSURBVGhD7Zr7i01RFMcnb/GDt7z+ABE/ecQvflJinHMul18880opCilKowg/ISSlZJx9hlt+
+        05iROfsM5SflkeRRkzzCeEdcmvBdd9awz55bXLPPvtc4n1rNNGud/V2rOWfvdfY+VSkpKSkp/ws1NTU9
+        3CYx1ZX+ZleKM7BbsDeqeZG4iZ/w+ZszkT+FruHL/x0y0h/rSbHPk8ETFPO9RHtM185rOjWGh6tcsg25
+        IUj4MCyvFPC3lncicciVJwfx8JWFGwaLkGSrlrQJe46xF7BM+Vl77XhvNxLHiyTaYW/dUNQ6oVhGz+j8
+        S8HIuVfEYDL6nf7mSX85xRRii4/x3Y38o6TFsuVhdmPtACTT0Ck5GJ7D264MlqyQJ/tx+G+h2ELx0r9T
+        bExH+hdIk8PtMkvKXkiiXk8K9gG2IZvL9eTQkuGxN8I+8pg/DUWfJz+H2oNuMT0Z3Nr3vOYz4zmky1SH
+        wQSMe1/XocmMQ+zAE1QsCdj17OXccA4xBj3nvFbH9LxQZDgkWagoCL7SEnjgNdaO4BDjZC6fHgWNFk2z
+        1bt0aiiHJAeETmjCHz1ZO5HdieGFpydD65Oq7UhxjN3J4DTXjYPQV1UUM+omdieOFwVb49oiP/9i3Wh2
+        mwcz5F5N8K7NGbOw5uPxUXNATrvZbZbCUhGJpzGxKFjJbms4Mlit5gB7lMgLRyb0Z8aEIvE+ezXXn93W
+        4GaH1vqfuThh3TR2mwOt4XZVBAULdlkH+jk1F0xe29hlDhR4ThWBrWKXdXBbr9NyybHLHO298S8RavrZ
+        ZR28b09Xc6HGhF3mwH/4tSqSRFf1p1CTo+YCa2WXOVDwF1UELwd92GWdOfX1fdVcYHl2mUMvuJzvpnYK
+        1vrnahkMY5d1rNzS/+OkFVuWqONhl3UsLUvBDlUEi73PLuu4kX9Wy8V84+E01c1QRWDvKqW1pM1+dpuD
+        9qhwW5f95cGL/DVqDrBkXh6ISnw9xIS1h93moeMPiGinCuXbAMCz+5m2f9idDBA5oorCyrbF48rgALuT
+        g8+PXsaFxQPaXeQQ4/Am3kNN87m1c6fi27TBjSR2Ltsfo6DVDeN61rZpOyi6EY9JDP/pSRzSZWgnwwv9
+        J3qxbrNo4BB70IxJZz2xRNot74XBTmrwObRk6IzJifxd+guLYm3wLeVwe2RlbiCEG4skRNZCB2OlHqbh
+        ulUw/XktZm10WMeX2qOwNpZ4XEpNDBn9Tl2Sclz6TrtWNTq40/bExTdor+dU7ILbezESMH8gHokXGHsh
+        adBEhb9VTtGmP3mAHdSXnoormujqRy1uFOynMXi4TlRk0UTHZ0vozrYgIfWzpY4k//qzJfruA9dVXtFJ
+        khadFp0W3b2gzgtFogOLFd1m/UXDJsWKpuWR3d2TTkVH4im7ui/UjsKeFSwKqvnPKSkpKSn/EFVVPwBY
+        jY9TfpiAtwAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="lblHoraFinalDeAtencion.BaseStylesheet" xml:space="preserve">
+    <value>#bunifu-label { padding: 0px; font-family: 'Microsoft Sans Serif'; font-size: 12pt; width: 100%; height: 100%; font-style: normal; font-weight: normal; text-decoration: none; color: rgb(0, 0, 0); text-align: left; }</value>
+  </data>
+  <data name="lblHoraInicialDeAtencion.BaseStylesheet" xml:space="preserve">
+    <value>#bunifu-label { padding: 0px; font-family: 'Microsoft Sans Serif'; font-size: 12pt; width: 100%; height: 100%; font-style: normal; font-weight: normal; text-decoration: none; color: rgb(0, 0, 0); text-align: left; }</value>
+  </data>
   <data name="lblNumeroAgenda.BaseStylesheet" xml:space="preserve">
     <value>#bunifu-label { padding: 0px; font-family: 'Microsoft Sans Serif'; font-size: 12pt; width: 100%; height: 100%; font-style: normal; font-weight: normal; text-decoration: none; color: rgb(0, 0, 0); text-align: left; }</value>
   </data>
@@ -129,7 +160,6 @@
   <data name="lblFechaInicial.BaseStylesheet" xml:space="preserve">
     <value>#bunifu-label { padding: 0px; font-family: 'Microsoft Sans Serif'; font-size: 12pt; width: 100%; height: 100%; font-style: normal; font-weight: normal; text-decoration: none; color: rgb(0, 0, 0); text-align: left; }</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="ptrAgenda.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAYAAADDPmHLAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAD

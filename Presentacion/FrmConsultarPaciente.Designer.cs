@@ -30,36 +30,46 @@ namespace Presentacion
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmConsultarPaciente));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pnlFondoConsultarMedico = new Guna.UI2.WinForms.Guna2ShadowPanel();
             this.txtConsulta = new Guna.UI2.WinForms.Guna2TextBox();
             this.btnEliminar = new Guna.UI2.WinForms.Guna2Button();
             this.ptrConsulta = new System.Windows.Forms.PictureBox();
             this.btnModificar = new Guna.UI2.WinForms.Guna2Button();
-            this.dtgConsulta = new Guna.UI2.WinForms.Guna2DataGridView();
             this.lblConsulta = new System.Windows.Forms.Label();
             this.pnlCantidadDeMedicos = new System.Windows.Forms.Panel();
             this.lblCantidadDeMedicos = new System.Windows.Forms.Label();
             this.lblMedico = new System.Windows.Forms.Label();
             this.pnlLineaSeparadora = new System.Windows.Forms.Panel();
             this.ptrCantidadDeMedicos = new System.Windows.Forms.PictureBox();
+            this.dtgConsulta = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.ColumnCedula = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnPrimerNombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnSegundoNombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnPrimerApellido = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnSegundoApellido = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnTelefono = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnCorreo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnDireccion = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnSexo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnCiudad = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pnlFondoConsultarMedico.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptrConsulta)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dtgConsulta)).BeginInit();
             this.pnlCantidadDeMedicos.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptrCantidadDeMedicos)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgConsulta)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlFondoConsultarMedico
             // 
             this.pnlFondoConsultarMedico.BackColor = System.Drawing.Color.Transparent;
+            this.pnlFondoConsultarMedico.Controls.Add(this.dtgConsulta);
             this.pnlFondoConsultarMedico.Controls.Add(this.txtConsulta);
             this.pnlFondoConsultarMedico.Controls.Add(this.btnEliminar);
             this.pnlFondoConsultarMedico.Controls.Add(this.ptrConsulta);
             this.pnlFondoConsultarMedico.Controls.Add(this.btnModificar);
-            this.pnlFondoConsultarMedico.Controls.Add(this.dtgConsulta);
             this.pnlFondoConsultarMedico.Controls.Add(this.lblConsulta);
             this.pnlFondoConsultarMedico.Controls.Add(this.pnlCantidadDeMedicos);
             this.pnlFondoConsultarMedico.FillColor = System.Drawing.Color.White;
@@ -151,62 +161,6 @@ namespace Presentacion
             this.btnModificar.TabIndex = 4;
             this.btnModificar.Text = "Modificar";
             // 
-            // dtgConsulta
-            // 
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
-            this.dtgConsulta.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
-            this.dtgConsulta.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dtgConsulta.BackgroundColor = System.Drawing.Color.White;
-            this.dtgConsulta.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dtgConsulta.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.dtgConsulta.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgConsulta.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
-            this.dtgConsulta.ColumnHeadersHeight = 4;
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dtgConsulta.DefaultCellStyle = dataGridViewCellStyle9;
-            this.dtgConsulta.EnableHeadersVisualStyles = false;
-            this.dtgConsulta.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dtgConsulta.Location = new System.Drawing.Point(40, 229);
-            this.dtgConsulta.Name = "dtgConsulta";
-            this.dtgConsulta.RowHeadersVisible = false;
-            this.dtgConsulta.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dtgConsulta.Size = new System.Drawing.Size(656, 288);
-            this.dtgConsulta.TabIndex = 3;
-            this.dtgConsulta.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
-            this.dtgConsulta.ThemeStyle.AlternatingRowsStyle.Font = null;
-            this.dtgConsulta.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
-            this.dtgConsulta.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
-            this.dtgConsulta.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-            this.dtgConsulta.ThemeStyle.BackColor = System.Drawing.Color.White;
-            this.dtgConsulta.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dtgConsulta.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.dtgConsulta.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.dtgConsulta.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            this.dtgConsulta.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.dtgConsulta.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.dtgConsulta.ThemeStyle.HeaderStyle.Height = 4;
-            this.dtgConsulta.ThemeStyle.ReadOnly = false;
-            this.dtgConsulta.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
-            this.dtgConsulta.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.dtgConsulta.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            this.dtgConsulta.ThemeStyle.RowsStyle.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.dtgConsulta.ThemeStyle.RowsStyle.Height = 22;
-            this.dtgConsulta.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dtgConsulta.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            // 
             // lblConsulta
             // 
             this.lblConsulta.AutoSize = true;
@@ -269,6 +223,137 @@ namespace Presentacion
             this.ptrCantidadDeMedicos.TabIndex = 0;
             this.ptrCantidadDeMedicos.TabStop = false;
             // 
+            // dtgConsulta
+            // 
+            this.dtgConsulta.AllowUserToAddRows = false;
+            this.dtgConsulta.AllowUserToDeleteRows = false;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.dtgConsulta.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dtgConsulta.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dtgConsulta.BackgroundColor = System.Drawing.Color.White;
+            this.dtgConsulta.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dtgConsulta.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.dtgConsulta.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(205)))), ((int)(((byte)(185)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgConsulta.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dtgConsulta.ColumnHeadersHeight = 25;
+            this.dtgConsulta.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.ColumnCedula,
+            this.ColumnPrimerNombre,
+            this.ColumnSegundoNombre,
+            this.ColumnPrimerApellido,
+            this.ColumnSegundoApellido,
+            this.ColumnTelefono,
+            this.ColumnCorreo,
+            this.ColumnDireccion,
+            this.ColumnSexo,
+            this.ColumnCiudad});
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dtgConsulta.DefaultCellStyle = dataGridViewCellStyle3;
+            this.dtgConsulta.EnableHeadersVisualStyles = false;
+            this.dtgConsulta.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(221)))), ((int)(((byte)(208)))));
+            this.dtgConsulta.Location = new System.Drawing.Point(48, 227);
+            this.dtgConsulta.Name = "dtgConsulta";
+            this.dtgConsulta.ReadOnly = true;
+            this.dtgConsulta.RowHeadersVisible = false;
+            this.dtgConsulta.RowHeadersWidth = 40;
+            this.dtgConsulta.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dtgConsulta.Size = new System.Drawing.Size(656, 288);
+            this.dtgConsulta.TabIndex = 10;
+            this.dtgConsulta.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
+            this.dtgConsulta.ThemeStyle.AlternatingRowsStyle.Font = null;
+            this.dtgConsulta.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
+            this.dtgConsulta.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+            this.dtgConsulta.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+            this.dtgConsulta.ThemeStyle.BackColor = System.Drawing.Color.White;
+            this.dtgConsulta.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(221)))), ((int)(((byte)(208)))));
+            this.dtgConsulta.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(205)))), ((int)(((byte)(185)))));
+            this.dtgConsulta.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.dtgConsulta.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            this.dtgConsulta.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.dtgConsulta.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.dtgConsulta.ThemeStyle.HeaderStyle.Height = 25;
+            this.dtgConsulta.ThemeStyle.ReadOnly = true;
+            this.dtgConsulta.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.dtgConsulta.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.dtgConsulta.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            this.dtgConsulta.ThemeStyle.RowsStyle.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.dtgConsulta.ThemeStyle.RowsStyle.Height = 22;
+            this.dtgConsulta.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.dtgConsulta.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            // 
+            // ColumnCedula
+            // 
+            this.ColumnCedula.HeaderText = "Cedula";
+            this.ColumnCedula.Name = "ColumnCedula";
+            this.ColumnCedula.ReadOnly = true;
+            // 
+            // ColumnPrimerNombre
+            // 
+            this.ColumnPrimerNombre.HeaderText = "Primer nombre";
+            this.ColumnPrimerNombre.Name = "ColumnPrimerNombre";
+            this.ColumnPrimerNombre.ReadOnly = true;
+            // 
+            // ColumnSegundoNombre
+            // 
+            this.ColumnSegundoNombre.HeaderText = "Segundo nombre";
+            this.ColumnSegundoNombre.Name = "ColumnSegundoNombre";
+            this.ColumnSegundoNombre.ReadOnly = true;
+            // 
+            // ColumnPrimerApellido
+            // 
+            this.ColumnPrimerApellido.HeaderText = "Primer apellido";
+            this.ColumnPrimerApellido.Name = "ColumnPrimerApellido";
+            this.ColumnPrimerApellido.ReadOnly = true;
+            // 
+            // ColumnSegundoApellido
+            // 
+            this.ColumnSegundoApellido.HeaderText = "Segundo apellido";
+            this.ColumnSegundoApellido.Name = "ColumnSegundoApellido";
+            this.ColumnSegundoApellido.ReadOnly = true;
+            // 
+            // ColumnTelefono
+            // 
+            this.ColumnTelefono.HeaderText = "Telefono";
+            this.ColumnTelefono.Name = "ColumnTelefono";
+            this.ColumnTelefono.ReadOnly = true;
+            // 
+            // ColumnCorreo
+            // 
+            this.ColumnCorreo.HeaderText = "Correo";
+            this.ColumnCorreo.Name = "ColumnCorreo";
+            this.ColumnCorreo.ReadOnly = true;
+            // 
+            // ColumnDireccion
+            // 
+            this.ColumnDireccion.HeaderText = "Direccion";
+            this.ColumnDireccion.Name = "ColumnDireccion";
+            this.ColumnDireccion.ReadOnly = true;
+            // 
+            // ColumnSexo
+            // 
+            this.ColumnSexo.HeaderText = "Sexo";
+            this.ColumnSexo.Name = "ColumnSexo";
+            this.ColumnSexo.ReadOnly = true;
+            // 
+            // ColumnCiudad
+            // 
+            this.ColumnCiudad.HeaderText = "Ciudad";
+            this.ColumnCiudad.Name = "ColumnCiudad";
+            this.ColumnCiudad.ReadOnly = true;
+            // 
             // FrmConsultarPaciente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -282,10 +367,10 @@ namespace Presentacion
             this.pnlFondoConsultarMedico.ResumeLayout(false);
             this.pnlFondoConsultarMedico.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptrConsulta)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dtgConsulta)).EndInit();
             this.pnlCantidadDeMedicos.ResumeLayout(false);
             this.pnlCantidadDeMedicos.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptrCantidadDeMedicos)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgConsulta)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -297,12 +382,22 @@ namespace Presentacion
         private Guna.UI2.WinForms.Guna2Button btnEliminar;
         private System.Windows.Forms.PictureBox ptrConsulta;
         private Guna.UI2.WinForms.Guna2Button btnModificar;
-        private Guna.UI2.WinForms.Guna2DataGridView dtgConsulta;
         private System.Windows.Forms.Label lblConsulta;
         private System.Windows.Forms.Panel pnlCantidadDeMedicos;
         private System.Windows.Forms.Label lblCantidadDeMedicos;
         private System.Windows.Forms.Label lblMedico;
         private System.Windows.Forms.Panel pnlLineaSeparadora;
         private System.Windows.Forms.PictureBox ptrCantidadDeMedicos;
+        private Guna.UI2.WinForms.Guna2DataGridView dtgConsulta;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnCedula;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnPrimerNombre;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnSegundoNombre;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnPrimerApellido;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnSegundoApellido;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnTelefono;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnCorreo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnDireccion;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnSexo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnCiudad;
     }
 }

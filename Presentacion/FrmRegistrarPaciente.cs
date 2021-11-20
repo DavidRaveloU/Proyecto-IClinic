@@ -9,19 +9,25 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Entidad;
+using Logica;
 
 namespace Presentacion
 {
     public partial class FrmRegistrarPaciente : Form
     {
+        PacienteService pacienteService;
         public FrmRegistrarPaciente()
         {
             InitializeComponent();
+            pacienteService = new PacienteService(ConfigConnection.Connection);
         }
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
-            
+            Paciente paciente = MapearPaciente();
+            string mensaje = pacienteService.Guardar(paciente);
+            MessageBox.Show(mensaje, "Guardar Medico", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
         private bool ValidarEmail()
         {
@@ -213,6 +219,21 @@ namespace Presentacion
                 lblErrorSexo.Visible = false;
                 Validar();
             }
+        }
+        private Paciente MapearPaciente()
+        {
+            Paciente paciente = new Paciente();
+            paciente.NumeroDeCedula = txtNumeroDeCedula.Text;
+            paciente.PrimerNombre = txtPrimerNombre.Text;
+            paciente.SegundoNombre = txtSegundoNombre.Text;
+            paciente.PrimerApellido = txtPrimerApellido.Text;
+            paciente.SegundoApellido = txtSegundoNombre.Text;
+            paciente.NumeroTelefono = txtTelefono.Text;
+            paciente.CorreoElectronico = txtCorreo.Text;
+            paciente.Direccion = txtDireccion.Text;
+            paciente.Sexo = cmbSexo.Text;
+            paciente.Ciudad = txtCiudad.Text;
+            return paciente;
         }
     }
 }

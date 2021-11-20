@@ -14,7 +14,7 @@ namespace Datos
        public  DbConnection conn;
         public ConnectionManager(string _connection)
         {
-            conn = new OracleConnection(_connection);
+            conn = new SqlConnection(_connection);
         }
 
         public void Open()
