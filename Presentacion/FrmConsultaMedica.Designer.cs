@@ -46,8 +46,6 @@ namespace Presentacion
             this.txtAntecedentes = new Guna.UI2.WinForms.Guna2TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.lblAntecedente = new System.Windows.Forms.Label();
-            this.lblSexo = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
             this.txtPresion = new Guna.UI2.WinForms.Guna2TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.txtPeso = new Guna.UI2.WinForms.Guna2TextBox();
@@ -56,13 +54,16 @@ namespace Presentacion
             this.label1 = new System.Windows.Forms.Label();
             this.txtTemperatura = new Guna.UI2.WinForms.Guna2TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
+            this.lblTituloCedulaPaciente = new System.Windows.Forms.Label();
             this.lblNombre = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.txtCedula = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtCedulaPaciente = new Guna.UI2.WinForms.Guna2TextBox();
             this.lblFechaHoy = new System.Windows.Forms.Label();
             this.lblFecha = new System.Windows.Forms.Label();
             this.pageTratamiento = new System.Windows.Forms.TabPage();
+            this.lblErrorIndicaciones = new System.Windows.Forms.Label();
+            this.lblErrorDescripcion = new System.Windows.Forms.Label();
+            this.lblErrorMedicamento = new System.Windows.Forms.Label();
             this.lblErrorTratamiento = new System.Windows.Forms.Label();
             this.btnRegresar = new Guna.UI2.WinForms.Guna2Button();
             this.btnFinalizar = new Guna.UI2.WinForms.Guna2Button();
@@ -82,13 +83,18 @@ namespace Presentacion
             this.lblTratamiento = new Bunifu.UI.WinForms.BunifuLabel();
             this.lblConslutaMedica = new Bunifu.UI.WinForms.BunifuLabel();
             this.lblSeparadora = new Bunifu.UI.WinForms.BunifuSeparator();
-            this.lblErrorMedicamento = new System.Windows.Forms.Label();
-            this.lblErrorDescripcion = new System.Windows.Forms.Label();
-            this.lblErrorIndicaciones = new System.Windows.Forms.Label();
+            this.lblidConsulta = new System.Windows.Forms.Label();
+            this.lblTituloIdConsulta = new System.Windows.Forms.Label();
+            this.lblTituloCedulaMedico = new System.Windows.Forms.Label();
+            this.txtCedulaMedico = new Guna.UI2.WinForms.Guna2TextBox();
+            this.ptbBuscarCedulaMedico = new System.Windows.Forms.PictureBox();
+            this.ptbBuscarCedulaPaciente = new System.Windows.Forms.PictureBox();
             this.guna2ShadowPanel1.SuspendLayout();
             this.tabConsultaMedica.SuspendLayout();
             this.pageConsultaMedica.SuspendLayout();
             this.pageTratamiento.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbBuscarCedulaMedico)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbBuscarCedulaPaciente)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2ShadowPanel1
@@ -171,10 +177,10 @@ namespace Presentacion
             this.tabConsultaMedica.Location = new System.Drawing.Point(27, 59);
             this.tabConsultaMedica.Multiline = true;
             this.tabConsultaMedica.Name = "tabConsultaMedica";
-            this.tabConsultaMedica.Page = this.pageTratamiento;
-            this.tabConsultaMedica.PageIndex = 1;
-            this.tabConsultaMedica.PageName = "pageTratamiento";
-            this.tabConsultaMedica.PageTitle = "tratamiento";
+            this.tabConsultaMedica.Page = this.pageConsultaMedica;
+            this.tabConsultaMedica.PageIndex = 0;
+            this.tabConsultaMedica.PageName = "pageConsultaMedica";
+            this.tabConsultaMedica.PageTitle = "consulta medica";
             this.tabConsultaMedica.SelectedIndex = 0;
             this.tabConsultaMedica.Size = new System.Drawing.Size(691, 538);
             this.tabConsultaMedica.TabIndex = 15;
@@ -199,6 +205,12 @@ namespace Presentacion
             // pageConsultaMedica
             // 
             this.pageConsultaMedica.BackColor = System.Drawing.Color.White;
+            this.pageConsultaMedica.Controls.Add(this.ptbBuscarCedulaPaciente);
+            this.pageConsultaMedica.Controls.Add(this.ptbBuscarCedulaMedico);
+            this.pageConsultaMedica.Controls.Add(this.lblTituloCedulaMedico);
+            this.pageConsultaMedica.Controls.Add(this.txtCedulaMedico);
+            this.pageConsultaMedica.Controls.Add(this.lblidConsulta);
+            this.pageConsultaMedica.Controls.Add(this.lblTituloIdConsulta);
             this.pageConsultaMedica.Controls.Add(this.lblErrorDiagnostico);
             this.pageConsultaMedica.Controls.Add(this.lblErrorPresion);
             this.pageConsultaMedica.Controls.Add(this.lblErrorPeso);
@@ -210,8 +222,6 @@ namespace Presentacion
             this.pageConsultaMedica.Controls.Add(this.txtAntecedentes);
             this.pageConsultaMedica.Controls.Add(this.label11);
             this.pageConsultaMedica.Controls.Add(this.lblAntecedente);
-            this.pageConsultaMedica.Controls.Add(this.lblSexo);
-            this.pageConsultaMedica.Controls.Add(this.label8);
             this.pageConsultaMedica.Controls.Add(this.txtPresion);
             this.pageConsultaMedica.Controls.Add(this.label7);
             this.pageConsultaMedica.Controls.Add(this.txtPeso);
@@ -220,10 +230,10 @@ namespace Presentacion
             this.pageConsultaMedica.Controls.Add(this.label1);
             this.pageConsultaMedica.Controls.Add(this.txtTemperatura);
             this.pageConsultaMedica.Controls.Add(this.label5);
-            this.pageConsultaMedica.Controls.Add(this.label4);
+            this.pageConsultaMedica.Controls.Add(this.lblTituloCedulaPaciente);
             this.pageConsultaMedica.Controls.Add(this.lblNombre);
             this.pageConsultaMedica.Controls.Add(this.label2);
-            this.pageConsultaMedica.Controls.Add(this.txtCedula);
+            this.pageConsultaMedica.Controls.Add(this.txtCedulaPaciente);
             this.pageConsultaMedica.Controls.Add(this.lblFechaHoy);
             this.pageConsultaMedica.Controls.Add(this.lblFecha);
             this.pageConsultaMedica.Location = new System.Drawing.Point(4, 4);
@@ -382,26 +392,6 @@ namespace Presentacion
             this.lblAntecedente.TabIndex = 60;
             this.lblAntecedente.Text = "Antecedentes quirúrgicos:";
             // 
-            // lblSexo
-            // 
-            this.lblSexo.AutoSize = true;
-            this.lblSexo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSexo.Location = new System.Drawing.Point(101, 166);
-            this.lblSexo.Name = "lblSexo";
-            this.lblSexo.Size = new System.Drawing.Size(38, 16);
-            this.lblSexo.TabIndex = 59;
-            this.lblSexo.Text = "Sexo";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(33, 166);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(46, 16);
-            this.label8.TabIndex = 58;
-            this.label8.Text = "Sexo:";
-            // 
             // txtPresion
             // 
             this.txtPresion.BorderRadius = 7;
@@ -542,21 +532,21 @@ namespace Presentacion
             this.label5.TabIndex = 50;
             this.label5.Text = "Temperatura:";
             // 
-            // label4
+            // lblTituloCedulaPaciente
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(33, 82);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(60, 16);
-            this.label4.TabIndex = 49;
-            this.label4.Text = "Cédula:";
+            this.lblTituloCedulaPaciente.AutoSize = true;
+            this.lblTituloCedulaPaciente.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTituloCedulaPaciente.Location = new System.Drawing.Point(37, 125);
+            this.lblTituloCedulaPaciente.Name = "lblTituloCedulaPaciente";
+            this.lblTituloCedulaPaciente.Size = new System.Drawing.Size(124, 16);
+            this.lblTituloCedulaPaciente.TabIndex = 49;
+            this.lblTituloCedulaPaciente.Text = "Cédula paciente:";
             // 
             // lblNombre
             // 
             this.lblNombre.AutoSize = true;
             this.lblNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNombre.Location = new System.Drawing.Point(101, 122);
+            this.lblNombre.Location = new System.Drawing.Point(162, 166);
             this.lblNombre.Name = "lblNombre";
             this.lblNombre.Size = new System.Drawing.Size(56, 16);
             this.lblNombre.TabIndex = 48;
@@ -566,42 +556,42 @@ namespace Presentacion
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(33, 122);
+            this.label2.Location = new System.Drawing.Point(36, 166);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(66, 16);
             this.label2.TabIndex = 47;
             this.label2.Text = "Nombre:";
             // 
-            // txtCedula
+            // txtCedulaPaciente
             // 
-            this.txtCedula.BorderRadius = 7;
-            this.txtCedula.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtCedula.DefaultText = "";
-            this.txtCedula.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtCedula.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtCedula.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtCedula.DisabledState.Parent = this.txtCedula;
-            this.txtCedula.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtCedula.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtCedula.FocusedState.Parent = this.txtCedula;
-            this.txtCedula.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtCedula.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtCedula.HoverState.Parent = this.txtCedula;
-            this.txtCedula.Location = new System.Drawing.Point(104, 76);
-            this.txtCedula.Name = "txtCedula";
-            this.txtCedula.PasswordChar = '\0';
-            this.txtCedula.PlaceholderText = "";
-            this.txtCedula.SelectedText = "";
-            this.txtCedula.ShadowDecoration.Parent = this.txtCedula;
-            this.txtCedula.Size = new System.Drawing.Size(117, 22);
-            this.txtCedula.TabIndex = 46;
-            this.txtCedula.TextChanged += new System.EventHandler(this.txtCedula_TextChanged);
+            this.txtCedulaPaciente.BorderRadius = 7;
+            this.txtCedulaPaciente.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtCedulaPaciente.DefaultText = "";
+            this.txtCedulaPaciente.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtCedulaPaciente.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtCedulaPaciente.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtCedulaPaciente.DisabledState.Parent = this.txtCedulaPaciente;
+            this.txtCedulaPaciente.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtCedulaPaciente.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtCedulaPaciente.FocusedState.Parent = this.txtCedulaPaciente;
+            this.txtCedulaPaciente.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtCedulaPaciente.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtCedulaPaciente.HoverState.Parent = this.txtCedulaPaciente;
+            this.txtCedulaPaciente.Location = new System.Drawing.Point(161, 123);
+            this.txtCedulaPaciente.Name = "txtCedulaPaciente";
+            this.txtCedulaPaciente.PasswordChar = '\0';
+            this.txtCedulaPaciente.PlaceholderText = "";
+            this.txtCedulaPaciente.SelectedText = "";
+            this.txtCedulaPaciente.ShadowDecoration.Parent = this.txtCedulaPaciente;
+            this.txtCedulaPaciente.Size = new System.Drawing.Size(117, 22);
+            this.txtCedulaPaciente.TabIndex = 46;
+            this.txtCedulaPaciente.TextChanged += new System.EventHandler(this.txtCedula_TextChanged);
             // 
             // lblFechaHoy
             // 
             this.lblFechaHoy.AutoSize = true;
             this.lblFechaHoy.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFechaHoy.Location = new System.Drawing.Point(101, 45);
+            this.lblFechaHoy.Location = new System.Drawing.Point(161, 55);
             this.lblFechaHoy.Name = "lblFechaHoy";
             this.lblFechaHoy.Size = new System.Drawing.Size(45, 16);
             this.lblFechaHoy.TabIndex = 45;
@@ -611,7 +601,7 @@ namespace Presentacion
             // 
             this.lblFecha.AutoSize = true;
             this.lblFecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFecha.Location = new System.Drawing.Point(33, 45);
+            this.lblFecha.Location = new System.Drawing.Point(37, 57);
             this.lblFecha.Name = "lblFecha";
             this.lblFecha.Size = new System.Drawing.Size(54, 16);
             this.lblFecha.TabIndex = 44;
@@ -644,6 +634,39 @@ namespace Presentacion
             this.pageTratamiento.Size = new System.Drawing.Size(683, 512);
             this.pageTratamiento.TabIndex = 1;
             this.pageTratamiento.Text = "tratamiento";
+            // 
+            // lblErrorIndicaciones
+            // 
+            this.lblErrorIndicaciones.AutoSize = true;
+            this.lblErrorIndicaciones.BackColor = System.Drawing.Color.Transparent;
+            this.lblErrorIndicaciones.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblErrorIndicaciones.ForeColor = System.Drawing.Color.Red;
+            this.lblErrorIndicaciones.Location = new System.Drawing.Point(31, 432);
+            this.lblErrorIndicaciones.Name = "lblErrorIndicaciones";
+            this.lblErrorIndicaciones.Size = new System.Drawing.Size(0, 18);
+            this.lblErrorIndicaciones.TabIndex = 25;
+            // 
+            // lblErrorDescripcion
+            // 
+            this.lblErrorDescripcion.AutoSize = true;
+            this.lblErrorDescripcion.BackColor = System.Drawing.Color.Transparent;
+            this.lblErrorDescripcion.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblErrorDescripcion.ForeColor = System.Drawing.Color.Red;
+            this.lblErrorDescripcion.Location = new System.Drawing.Point(31, 211);
+            this.lblErrorDescripcion.Name = "lblErrorDescripcion";
+            this.lblErrorDescripcion.Size = new System.Drawing.Size(0, 18);
+            this.lblErrorDescripcion.TabIndex = 24;
+            // 
+            // lblErrorMedicamento
+            // 
+            this.lblErrorMedicamento.AutoSize = true;
+            this.lblErrorMedicamento.BackColor = System.Drawing.Color.Transparent;
+            this.lblErrorMedicamento.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblErrorMedicamento.ForeColor = System.Drawing.Color.Red;
+            this.lblErrorMedicamento.Location = new System.Drawing.Point(482, 282);
+            this.lblErrorMedicamento.Name = "lblErrorMedicamento";
+            this.lblErrorMedicamento.Size = new System.Drawing.Size(0, 18);
+            this.lblErrorMedicamento.TabIndex = 23;
             // 
             // lblErrorTratamiento
             // 
@@ -986,38 +1009,83 @@ namespace Presentacion
             this.lblSeparadora.Size = new System.Drawing.Size(49, 21);
             this.lblSeparadora.TabIndex = 2;
             // 
-            // lblErrorMedicamento
+            // lblidConsulta
             // 
-            this.lblErrorMedicamento.AutoSize = true;
-            this.lblErrorMedicamento.BackColor = System.Drawing.Color.Transparent;
-            this.lblErrorMedicamento.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblErrorMedicamento.ForeColor = System.Drawing.Color.Red;
-            this.lblErrorMedicamento.Location = new System.Drawing.Point(482, 282);
-            this.lblErrorMedicamento.Name = "lblErrorMedicamento";
-            this.lblErrorMedicamento.Size = new System.Drawing.Size(0, 18);
-            this.lblErrorMedicamento.TabIndex = 23;
+            this.lblidConsulta.AutoSize = true;
+            this.lblidConsulta.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblidConsulta.Location = new System.Drawing.Point(161, 25);
+            this.lblidConsulta.Name = "lblidConsulta";
+            this.lblidConsulta.Size = new System.Drawing.Size(49, 16);
+            this.lblidConsulta.TabIndex = 72;
+            this.lblidConsulta.Text = "codigo";
             // 
-            // lblErrorDescripcion
+            // lblTituloIdConsulta
             // 
-            this.lblErrorDescripcion.AutoSize = true;
-            this.lblErrorDescripcion.BackColor = System.Drawing.Color.Transparent;
-            this.lblErrorDescripcion.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblErrorDescripcion.ForeColor = System.Drawing.Color.Red;
-            this.lblErrorDescripcion.Location = new System.Drawing.Point(31, 211);
-            this.lblErrorDescripcion.Name = "lblErrorDescripcion";
-            this.lblErrorDescripcion.Size = new System.Drawing.Size(0, 18);
-            this.lblErrorDescripcion.TabIndex = 24;
+            this.lblTituloIdConsulta.AutoSize = true;
+            this.lblTituloIdConsulta.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTituloIdConsulta.Location = new System.Drawing.Point(37, 23);
+            this.lblTituloIdConsulta.Name = "lblTituloIdConsulta";
+            this.lblTituloIdConsulta.Size = new System.Drawing.Size(61, 16);
+            this.lblTituloIdConsulta.TabIndex = 71;
+            this.lblTituloIdConsulta.Text = "Codigo:";
             // 
-            // lblErrorIndicaciones
+            // lblTituloCedulaMedico
             // 
-            this.lblErrorIndicaciones.AutoSize = true;
-            this.lblErrorIndicaciones.BackColor = System.Drawing.Color.Transparent;
-            this.lblErrorIndicaciones.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblErrorIndicaciones.ForeColor = System.Drawing.Color.Red;
-            this.lblErrorIndicaciones.Location = new System.Drawing.Point(31, 432);
-            this.lblErrorIndicaciones.Name = "lblErrorIndicaciones";
-            this.lblErrorIndicaciones.Size = new System.Drawing.Size(0, 18);
-            this.lblErrorIndicaciones.TabIndex = 25;
+            this.lblTituloCedulaMedico.AutoSize = true;
+            this.lblTituloCedulaMedico.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTituloCedulaMedico.Location = new System.Drawing.Point(37, 91);
+            this.lblTituloCedulaMedico.Name = "lblTituloCedulaMedico";
+            this.lblTituloCedulaMedico.Size = new System.Drawing.Size(115, 16);
+            this.lblTituloCedulaMedico.TabIndex = 74;
+            this.lblTituloCedulaMedico.Text = "Cédula médico:";
+            // 
+            // txtCedulaMedico
+            // 
+            this.txtCedulaMedico.BorderRadius = 7;
+            this.txtCedulaMedico.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtCedulaMedico.DefaultText = "";
+            this.txtCedulaMedico.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtCedulaMedico.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtCedulaMedico.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtCedulaMedico.DisabledState.Parent = this.txtCedulaMedico;
+            this.txtCedulaMedico.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtCedulaMedico.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtCedulaMedico.FocusedState.Parent = this.txtCedulaMedico;
+            this.txtCedulaMedico.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtCedulaMedico.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtCedulaMedico.HoverState.Parent = this.txtCedulaMedico;
+            this.txtCedulaMedico.Location = new System.Drawing.Point(161, 87);
+            this.txtCedulaMedico.Name = "txtCedulaMedico";
+            this.txtCedulaMedico.PasswordChar = '\0';
+            this.txtCedulaMedico.PlaceholderText = "";
+            this.txtCedulaMedico.SelectedText = "";
+            this.txtCedulaMedico.ShadowDecoration.Parent = this.txtCedulaMedico;
+            this.txtCedulaMedico.Size = new System.Drawing.Size(117, 22);
+            this.txtCedulaMedico.TabIndex = 73;
+            // 
+            // ptbBuscarCedulaMedico
+            // 
+            this.ptbBuscarCedulaMedico.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ptbBuscarCedulaMedico.Image = ((System.Drawing.Image)(resources.GetObject("ptbBuscarCedulaMedico.Image")));
+            this.ptbBuscarCedulaMedico.Location = new System.Drawing.Point(297, 82);
+            this.ptbBuscarCedulaMedico.Name = "ptbBuscarCedulaMedico";
+            this.ptbBuscarCedulaMedico.Size = new System.Drawing.Size(29, 29);
+            this.ptbBuscarCedulaMedico.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ptbBuscarCedulaMedico.TabIndex = 90;
+            this.ptbBuscarCedulaMedico.TabStop = false;
+            this.ptbBuscarCedulaMedico.Click += new System.EventHandler(this.ptbBuscarCedulaMedico_Click);
+            // 
+            // ptbBuscarCedulaPaciente
+            // 
+            this.ptbBuscarCedulaPaciente.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ptbBuscarCedulaPaciente.Image = ((System.Drawing.Image)(resources.GetObject("ptbBuscarCedulaPaciente.Image")));
+            this.ptbBuscarCedulaPaciente.Location = new System.Drawing.Point(297, 117);
+            this.ptbBuscarCedulaPaciente.Name = "ptbBuscarCedulaPaciente";
+            this.ptbBuscarCedulaPaciente.Size = new System.Drawing.Size(29, 29);
+            this.ptbBuscarCedulaPaciente.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ptbBuscarCedulaPaciente.TabIndex = 91;
+            this.ptbBuscarCedulaPaciente.TabStop = false;
+            this.ptbBuscarCedulaPaciente.Click += new System.EventHandler(this.ptbBuscarCedulaPaciente_Click);
             // 
             // FrmConsultaMedica
             // 
@@ -1029,6 +1097,7 @@ namespace Presentacion
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmConsultaMedica";
             this.Text = "FrmConsultaMedica";
+            this.Load += new System.EventHandler(this.FrmConsultaMedica_Load);
             this.guna2ShadowPanel1.ResumeLayout(false);
             this.guna2ShadowPanel1.PerformLayout();
             this.tabConsultaMedica.ResumeLayout(false);
@@ -1036,6 +1105,8 @@ namespace Presentacion
             this.pageConsultaMedica.PerformLayout();
             this.pageTratamiento.ResumeLayout(false);
             this.pageTratamiento.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbBuscarCedulaMedico)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbBuscarCedulaPaciente)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1066,8 +1137,6 @@ namespace Presentacion
         private Guna.UI2.WinForms.Guna2TextBox txtAntecedentes;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label lblAntecedente;
-        private System.Windows.Forms.Label lblSexo;
-        private System.Windows.Forms.Label label8;
         private Guna.UI2.WinForms.Guna2TextBox txtPresion;
         private System.Windows.Forms.Label label7;
         private Guna.UI2.WinForms.Guna2TextBox txtPeso;
@@ -1076,10 +1145,10 @@ namespace Presentacion
         private System.Windows.Forms.Label label1;
         private Guna.UI2.WinForms.Guna2TextBox txtTemperatura;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label lblTituloCedulaPaciente;
         private System.Windows.Forms.Label lblNombre;
         private System.Windows.Forms.Label label2;
-        private Guna.UI2.WinForms.Guna2TextBox txtCedula;
+        private Guna.UI2.WinForms.Guna2TextBox txtCedulaPaciente;
         private System.Windows.Forms.Label lblFechaHoy;
         private System.Windows.Forms.Label lblFecha;
         private Guna.UI2.WinForms.Guna2Button btnSiguiente1;
@@ -1096,5 +1165,11 @@ namespace Presentacion
         private System.Windows.Forms.Label lblErrorIndicaciones;
         private System.Windows.Forms.Label lblErrorDescripcion;
         private System.Windows.Forms.Label lblErrorMedicamento;
+        private System.Windows.Forms.Label lblidConsulta;
+        private System.Windows.Forms.Label lblTituloIdConsulta;
+        private System.Windows.Forms.Label lblTituloCedulaMedico;
+        private Guna.UI2.WinForms.Guna2TextBox txtCedulaMedico;
+        private System.Windows.Forms.PictureBox ptbBuscarCedulaPaciente;
+        private System.Windows.Forms.PictureBox ptbBuscarCedulaMedico;
     }
 }

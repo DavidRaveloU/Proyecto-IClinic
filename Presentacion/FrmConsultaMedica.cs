@@ -7,14 +7,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Logica;
+using Entidad;
 
 namespace Presentacion
 {
     public partial class FrmConsultaMedica : Form
     {
+        ConsultaMedicaService consultaMedicaService;
         public FrmConsultaMedica()
         {
             InitializeComponent();
+            consultaMedicaService = new ConsultaMedicaService(ConfigConnection.Connection);
         }
 
         private void btnSiguiente1_Click(object sender, EventArgs e)
@@ -22,7 +26,10 @@ namespace Presentacion
             chkConsultaMedica.Checked = chkConsultaMedica.Enabled = true;
             lblConslutaMedica.ForeColor = Color.Blue;
             tabConsultaMedica.SetPage("tratamiento");
-           
+            lblIdTratamiento.Text = lblidConsulta.Text;
+            lblIdRecetaMedica.Text = lblidConsulta.Text;
+
+
         }
 
         private void btnRegresar_Click(object sender, EventArgs e)
@@ -44,6 +51,7 @@ namespace Presentacion
         {
             chkTratamiento.Checked = chkTratamiento.Enabled = true;
             lblTratamiento.ForeColor = Color.Blue;
+
         }
         private void ValidarCampoVacio(Label label, Guna.UI2.WinForms.Guna2TextBox textBox)
         {
@@ -52,7 +60,7 @@ namespace Presentacion
 
         private void HabilitarBotonSiguiente()
         {
-            if (txtCedula.Text != string.Empty && !string.IsNullOrEmpty(txtTemperatura.Text)
+            if (txtCedulaPaciente.Text != string.Empty && !string.IsNullOrEmpty(txtTemperatura.Text)
                 && !string.IsNullOrEmpty(txtEstatura.Text) && !string.IsNullOrEmpty(txtPeso.Text) 
                 && !string.IsNullOrEmpty(txtPresion.Text) && txtDiagnostico.Text != string.Empty)
             {
@@ -72,7 +80,7 @@ namespace Presentacion
 
         private void txtCedula_TextChanged(object sender, EventArgs e)
         {
-            ValidarCampoVacio(lblErroCedula, txtCedula);
+            ValidarCampoVacio(lblErroCedula, txtCedulaPaciente);
             HabilitarBotonSiguiente();
         }
 
@@ -136,5 +144,43 @@ namespace Presentacion
             }
         }
 
+        private void FrmConsultaMedica_Load(object sender, EventArgs e)
+        {
+            string numero = "0";
+            DataTable dt = consultaMedicaService.ExtraerNumeroSecuencia();  
+            if(dt.Rows.Count > 0)
+            {
+                DataRow row = dt.Rows[0];
+                numero = Convert.ToString(row[0]);
+            }
+            var dateAndTime = DateTime.Now;
+            var date = dateAndTime.ToShortDateString();
+            lblidConsulta.Text = numero;
+            lblFechaHoy.Text = date.ToString();
+        }
+
+        private void ptbBuscarCedulaMedico_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ptbBuscarCedulaPaciente_Click(object sender, EventArgs e)
+        {
+            ConsultaResponse respuesta;
+            respuesta = consultaMedicaService.FiltrarPorCedula(txtCedulaPaciente.Text);
+            List<Paciente> pacientes = respuesta.Pacientes;
+            if (pacientes.Any())
+            {
+                foreach (var item in pacientes)
+                {
+                    lblNombre.Text = item.PrimerNombre;
+                }
+            }
+            else
+            {
+                lblNombre.Text = "Nombre";
+                MessageBox.Show("El paciente no existe");
+            }
+        }
     }
 }

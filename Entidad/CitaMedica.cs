@@ -8,6 +8,10 @@ namespace Entidad
 {
     public class CitaMedica
     {
+        public CitaMedica()
+        {
+
+        }
         public CitaMedica(string idCita,  string cedulaPaciente, DetalleAgenda detalleAgenda)
         {
             IdCita = idCita;

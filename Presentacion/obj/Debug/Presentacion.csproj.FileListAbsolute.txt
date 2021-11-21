@@ -386,3 +386,6 @@ C:\Users\David\Desktop\Proyecto-IClinic\Presentacion\obj\Debug\Presentacion.cspr
 C:\Users\David\Desktop\Proyecto-IClinic\Presentacion\obj\Debug\Presentacion.csproj.CopyComplete
 C:\Users\David\Desktop\Proyecto-IClinic\Presentacion\obj\Debug\Presentacion.exe
 C:\Users\David\Desktop\Proyecto-IClinic\Presentacion\obj\Debug\Presentacion.pdb
+C:\Users\David\source\repos\Proyecto-IClinic\Presentacion\bin\Debug\Datos.dll
+C:\Users\David\source\repos\Proyecto-IClinic\Presentacion\bin\Debug\Datos.pdb
+C:\Users\David\source\repos\Proyecto-IClinic\Presentacion\bin\Debug\Datos.dll.config

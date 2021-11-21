@@ -31,6 +31,11 @@ namespace Presentacion
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmAgendaMedico));
             this.pnlAgenda = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.ptbBuscarCedula = new System.Windows.Forms.PictureBox();
+            this.lblHoraFinalDeAtencion = new Bunifu.UI.WinForms.BunifuLabel();
+            this.lblHoraInicialDeAtencion = new Bunifu.UI.WinForms.BunifuLabel();
+            this.txtHoraFinalDeAtencion = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtHoraInicialDeAtancion = new Guna.UI2.WinForms.Guna2TextBox();
             this.lblNumeroAgenda = new Bunifu.UI.WinForms.BunifuLabel();
             this.lblIdagenda = new Bunifu.UI.WinForms.BunifuLabel();
             this.lblFechafinal = new Bunifu.UI.WinForms.BunifuLabel();
@@ -49,14 +54,9 @@ namespace Presentacion
             this.lblNumeroCédula = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lblAgenda = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.ptrAgenda = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.lblHoraFinalDeAtencion = new Bunifu.UI.WinForms.BunifuLabel();
-            this.lblHoraInicialDeAtencion = new Bunifu.UI.WinForms.BunifuLabel();
-            this.txtHoraFinalDeAtencion = new Guna.UI2.WinForms.Guna2TextBox();
-            this.txtHoraInicialDeAtancion = new Guna.UI2.WinForms.Guna2TextBox();
-            this.ptbBuscarCedula = new System.Windows.Forms.PictureBox();
             this.pnlAgenda.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ptrAgenda)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptbBuscarCedula)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptrAgenda)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlAgenda
@@ -92,6 +92,102 @@ namespace Presentacion
             this.pnlAgenda.ShadowShift = 10;
             this.pnlAgenda.Size = new System.Drawing.Size(743, 616);
             this.pnlAgenda.TabIndex = 1;
+            // 
+            // ptbBuscarCedula
+            // 
+            this.ptbBuscarCedula.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ptbBuscarCedula.Image = ((System.Drawing.Image)(resources.GetObject("ptbBuscarCedula.Image")));
+            this.ptbBuscarCedula.Location = new System.Drawing.Point(359, 144);
+            this.ptbBuscarCedula.Name = "ptbBuscarCedula";
+            this.ptbBuscarCedula.Size = new System.Drawing.Size(29, 29);
+            this.ptbBuscarCedula.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ptbBuscarCedula.TabIndex = 89;
+            this.ptbBuscarCedula.TabStop = false;
+            // 
+            // lblHoraFinalDeAtencion
+            // 
+            this.lblHoraFinalDeAtencion.AllowParentOverrides = false;
+            this.lblHoraFinalDeAtencion.AutoEllipsis = false;
+            this.lblHoraFinalDeAtencion.CursorType = null;
+            this.lblHoraFinalDeAtencion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHoraFinalDeAtencion.Location = new System.Drawing.Point(26, 407);
+            this.lblHoraFinalDeAtencion.Name = "lblHoraFinalDeAtencion";
+            this.lblHoraFinalDeAtencion.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblHoraFinalDeAtencion.Size = new System.Drawing.Size(155, 20);
+            this.lblHoraFinalDeAtencion.TabIndex = 88;
+            this.lblHoraFinalDeAtencion.Text = "Hora final de atención";
+            this.lblHoraFinalDeAtencion.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.lblHoraFinalDeAtencion.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
+            // lblHoraInicialDeAtencion
+            // 
+            this.lblHoraInicialDeAtencion.AllowParentOverrides = false;
+            this.lblHoraInicialDeAtencion.AutoEllipsis = false;
+            this.lblHoraInicialDeAtencion.Cursor = System.Windows.Forms.Cursors.Default;
+            this.lblHoraInicialDeAtencion.CursorType = System.Windows.Forms.Cursors.Default;
+            this.lblHoraInicialDeAtencion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHoraInicialDeAtencion.Location = new System.Drawing.Point(26, 365);
+            this.lblHoraInicialDeAtencion.Name = "lblHoraInicialDeAtencion";
+            this.lblHoraInicialDeAtencion.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblHoraInicialDeAtencion.Size = new System.Drawing.Size(164, 20);
+            this.lblHoraInicialDeAtencion.TabIndex = 87;
+            this.lblHoraInicialDeAtencion.Text = "Hora inicial de atención";
+            this.lblHoraInicialDeAtencion.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.lblHoraInicialDeAtencion.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
+            // txtHoraFinalDeAtencion
+            // 
+            this.txtHoraFinalDeAtencion.Animated = true;
+            this.txtHoraFinalDeAtencion.BorderRadius = 12;
+            this.txtHoraFinalDeAtencion.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtHoraFinalDeAtencion.DefaultText = "";
+            this.txtHoraFinalDeAtencion.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtHoraFinalDeAtencion.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtHoraFinalDeAtencion.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtHoraFinalDeAtencion.DisabledState.Parent = this.txtHoraFinalDeAtencion;
+            this.txtHoraFinalDeAtencion.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtHoraFinalDeAtencion.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtHoraFinalDeAtencion.FocusedState.Parent = this.txtHoraFinalDeAtencion;
+            this.txtHoraFinalDeAtencion.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtHoraFinalDeAtencion.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtHoraFinalDeAtencion.HoverState.Parent = this.txtHoraFinalDeAtencion;
+            this.txtHoraFinalDeAtencion.Location = new System.Drawing.Point(202, 404);
+            this.txtHoraFinalDeAtencion.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtHoraFinalDeAtencion.Name = "txtHoraFinalDeAtencion";
+            this.txtHoraFinalDeAtencion.PasswordChar = '\0';
+            this.txtHoraFinalDeAtencion.PlaceholderText = "Digite la información";
+            this.txtHoraFinalDeAtencion.SelectedText = "";
+            this.txtHoraFinalDeAtencion.ShadowDecoration.Parent = this.txtHoraFinalDeAtencion;
+            this.txtHoraFinalDeAtencion.Size = new System.Drawing.Size(196, 29);
+            this.txtHoraFinalDeAtencion.TabIndex = 86;
+            this.txtHoraFinalDeAtencion.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtHoraFinalDeAtencion_KeyPress);
+            // 
+            // txtHoraInicialDeAtancion
+            // 
+            this.txtHoraInicialDeAtancion.Animated = true;
+            this.txtHoraInicialDeAtancion.BorderRadius = 12;
+            this.txtHoraInicialDeAtancion.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtHoraInicialDeAtancion.DefaultText = "";
+            this.txtHoraInicialDeAtancion.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtHoraInicialDeAtancion.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtHoraInicialDeAtancion.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtHoraInicialDeAtancion.DisabledState.Parent = this.txtHoraInicialDeAtancion;
+            this.txtHoraInicialDeAtancion.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtHoraInicialDeAtancion.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtHoraInicialDeAtancion.FocusedState.Parent = this.txtHoraInicialDeAtancion;
+            this.txtHoraInicialDeAtancion.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtHoraInicialDeAtancion.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtHoraInicialDeAtancion.HoverState.Parent = this.txtHoraInicialDeAtancion;
+            this.txtHoraInicialDeAtancion.Location = new System.Drawing.Point(202, 361);
+            this.txtHoraInicialDeAtancion.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtHoraInicialDeAtancion.Name = "txtHoraInicialDeAtancion";
+            this.txtHoraInicialDeAtancion.PasswordChar = '\0';
+            this.txtHoraInicialDeAtancion.PlaceholderText = "Digite la información";
+            this.txtHoraInicialDeAtancion.SelectedText = "";
+            this.txtHoraInicialDeAtancion.ShadowDecoration.Parent = this.txtHoraInicialDeAtancion;
+            this.txtHoraInicialDeAtancion.Size = new System.Drawing.Size(196, 29);
+            this.txtHoraInicialDeAtancion.TabIndex = 85;
+            this.txtHoraInicialDeAtancion.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtHoraInicialDeAtancion_KeyPress);
             // 
             // lblNumeroAgenda
             // 
@@ -322,6 +418,7 @@ namespace Presentacion
             this.txtNumeroDeCedula.ShadowDecoration.Parent = this.txtNumeroDeCedula;
             this.txtNumeroDeCedula.Size = new System.Drawing.Size(175, 29);
             this.txtNumeroDeCedula.TabIndex = 22;
+            this.txtNumeroDeCedula.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNumeroDeCedula_KeyPress);
             // 
             // lblNumeroCédula
             // 
@@ -357,100 +454,6 @@ namespace Presentacion
             this.ptrAgenda.TabIndex = 19;
             this.ptrAgenda.TabStop = false;
             // 
-            // lblHoraFinalDeAtencion
-            // 
-            this.lblHoraFinalDeAtencion.AllowParentOverrides = false;
-            this.lblHoraFinalDeAtencion.AutoEllipsis = false;
-            this.lblHoraFinalDeAtencion.CursorType = null;
-            this.lblHoraFinalDeAtencion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblHoraFinalDeAtencion.Location = new System.Drawing.Point(26, 407);
-            this.lblHoraFinalDeAtencion.Name = "lblHoraFinalDeAtencion";
-            this.lblHoraFinalDeAtencion.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lblHoraFinalDeAtencion.Size = new System.Drawing.Size(155, 20);
-            this.lblHoraFinalDeAtencion.TabIndex = 88;
-            this.lblHoraFinalDeAtencion.Text = "Hora final de atención";
-            this.lblHoraFinalDeAtencion.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.lblHoraFinalDeAtencion.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
-            // 
-            // lblHoraInicialDeAtencion
-            // 
-            this.lblHoraInicialDeAtencion.AllowParentOverrides = false;
-            this.lblHoraInicialDeAtencion.AutoEllipsis = false;
-            this.lblHoraInicialDeAtencion.Cursor = System.Windows.Forms.Cursors.Default;
-            this.lblHoraInicialDeAtencion.CursorType = System.Windows.Forms.Cursors.Default;
-            this.lblHoraInicialDeAtencion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblHoraInicialDeAtencion.Location = new System.Drawing.Point(26, 365);
-            this.lblHoraInicialDeAtencion.Name = "lblHoraInicialDeAtencion";
-            this.lblHoraInicialDeAtencion.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lblHoraInicialDeAtencion.Size = new System.Drawing.Size(164, 20);
-            this.lblHoraInicialDeAtencion.TabIndex = 87;
-            this.lblHoraInicialDeAtencion.Text = "Hora inicial de atención";
-            this.lblHoraInicialDeAtencion.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.lblHoraInicialDeAtencion.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
-            // 
-            // txtHoraFinalDeAtencion
-            // 
-            this.txtHoraFinalDeAtencion.Animated = true;
-            this.txtHoraFinalDeAtencion.BorderRadius = 12;
-            this.txtHoraFinalDeAtencion.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtHoraFinalDeAtencion.DefaultText = "";
-            this.txtHoraFinalDeAtencion.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtHoraFinalDeAtencion.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtHoraFinalDeAtencion.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtHoraFinalDeAtencion.DisabledState.Parent = this.txtHoraFinalDeAtencion;
-            this.txtHoraFinalDeAtencion.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtHoraFinalDeAtencion.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtHoraFinalDeAtencion.FocusedState.Parent = this.txtHoraFinalDeAtencion;
-            this.txtHoraFinalDeAtencion.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtHoraFinalDeAtencion.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtHoraFinalDeAtencion.HoverState.Parent = this.txtHoraFinalDeAtencion;
-            this.txtHoraFinalDeAtencion.Location = new System.Drawing.Point(202, 404);
-            this.txtHoraFinalDeAtencion.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtHoraFinalDeAtencion.Name = "txtHoraFinalDeAtencion";
-            this.txtHoraFinalDeAtencion.PasswordChar = '\0';
-            this.txtHoraFinalDeAtencion.PlaceholderText = "Digite la información";
-            this.txtHoraFinalDeAtencion.SelectedText = "";
-            this.txtHoraFinalDeAtencion.ShadowDecoration.Parent = this.txtHoraFinalDeAtencion;
-            this.txtHoraFinalDeAtencion.Size = new System.Drawing.Size(196, 29);
-            this.txtHoraFinalDeAtencion.TabIndex = 86;
-            // 
-            // txtHoraInicialDeAtancion
-            // 
-            this.txtHoraInicialDeAtancion.Animated = true;
-            this.txtHoraInicialDeAtancion.BorderRadius = 12;
-            this.txtHoraInicialDeAtancion.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtHoraInicialDeAtancion.DefaultText = "";
-            this.txtHoraInicialDeAtancion.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtHoraInicialDeAtancion.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtHoraInicialDeAtancion.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtHoraInicialDeAtancion.DisabledState.Parent = this.txtHoraInicialDeAtancion;
-            this.txtHoraInicialDeAtancion.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtHoraInicialDeAtancion.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtHoraInicialDeAtancion.FocusedState.Parent = this.txtHoraInicialDeAtancion;
-            this.txtHoraInicialDeAtancion.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtHoraInicialDeAtancion.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtHoraInicialDeAtancion.HoverState.Parent = this.txtHoraInicialDeAtancion;
-            this.txtHoraInicialDeAtancion.Location = new System.Drawing.Point(202, 361);
-            this.txtHoraInicialDeAtancion.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtHoraInicialDeAtancion.Name = "txtHoraInicialDeAtancion";
-            this.txtHoraInicialDeAtancion.PasswordChar = '\0';
-            this.txtHoraInicialDeAtancion.PlaceholderText = "Digite la información";
-            this.txtHoraInicialDeAtancion.SelectedText = "";
-            this.txtHoraInicialDeAtancion.ShadowDecoration.Parent = this.txtHoraInicialDeAtancion;
-            this.txtHoraInicialDeAtancion.Size = new System.Drawing.Size(196, 29);
-            this.txtHoraInicialDeAtancion.TabIndex = 85;
-            // 
-            // ptbBuscarCedula
-            // 
-            this.ptbBuscarCedula.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ptbBuscarCedula.Image = ((System.Drawing.Image)(resources.GetObject("ptbBuscarCedula.Image")));
-            this.ptbBuscarCedula.Location = new System.Drawing.Point(359, 144);
-            this.ptbBuscarCedula.Name = "ptbBuscarCedula";
-            this.ptbBuscarCedula.Size = new System.Drawing.Size(29, 29);
-            this.ptbBuscarCedula.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.ptbBuscarCedula.TabIndex = 89;
-            this.ptbBuscarCedula.TabStop = false;
-            // 
             // FrmAgendaMedico
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -463,8 +466,8 @@ namespace Presentacion
             this.Text = "Form1";
             this.pnlAgenda.ResumeLayout(false);
             this.pnlAgenda.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ptrAgenda)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptbBuscarCedula)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptrAgenda)).EndInit();
             this.ResumeLayout(false);
 
         }
