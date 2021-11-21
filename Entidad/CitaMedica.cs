@@ -12,17 +12,18 @@ namespace Entidad
         {
 
         }
-        public CitaMedica(string idCita,  string cedulaPaciente, DetalleAgenda detalleAgenda)
+
+        public CitaMedica(string idCita, string horaCitaMedica, DateTime fechaCitaMedica, string cedulaPaciente, Medico medico)
         {
             IdCita = idCita;
-            HoraCitaMedica = detalleAgenda.Horario.HoraInicial;
-            FechaCitaMedica = detalleAgenda.FechaDisponible;
+            HoraCitaMedica = horaCitaMedica;
+            FechaCitaMedica = fechaCitaMedica;
             CedulaPaciente = cedulaPaciente;
-            Medico = detalleAgenda.Medico;
+            Medico = medico;
         }
 
         public string IdCita { get; set; }
-        public DateTime HoraCitaMedica { get; set; }
+        public string HoraCitaMedica { get; set; }
         public DateTime FechaCitaMedica { get; set; }
         public string CedulaPaciente { get; set; }
         public Medico Medico { get; set; }

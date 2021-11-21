@@ -27,24 +27,32 @@ namespace Datos
             adap.Fill(dt);
             return dt;
         }
-        /*public void Guardar(Tratamiento tratamiento, RecetaMedica recetaMedica, Diagnostico diagnostico)
+        public void Guardar(Tratamiento tratamiento, RecetaMedica recetaMedica, Diagnostico diagnostico)
         {
             using (var command = _connection.CreateCommand())
             {
-                command.CommandText = "insert into paciente (cedula_paciente, primer_nombre,segundo_nombre,primer_apellido,segundo_apellido,telefono,correo_electronico,direccion,sexo,ciudad) values (@cedula_paciente, @primer_nombre,@segundo_nombre,@primer_apellido,@segundo_apellido,@telefono,@correo_electronico,@direccion,@sexo,@ciudad)";
-                command.Parameters.Add(new SqlParameter("@cedula_paciente", paciente.NumeroDeCedula));
-                command.Parameters.Add(new SqlParameter("@primer_nombre", paciente.PrimerNombre));
-                command.Parameters.Add(new SqlParameter("@segundo_nombre", paciente.SegundoNombre));
-                command.Parameters.Add(new SqlParameter("@primer_apellido", paciente.PrimerApellido));
-                command.Parameters.Add(new SqlParameter("@segundo_apellido", paciente.SegundoApellido));
-                command.Parameters.Add(new SqlParameter("@telefono", paciente.NumeroTelefono));
-                command.Parameters.Add(new SqlParameter("@correo_electronico", paciente.CorreoElectronico));
-                command.Parameters.Add(new SqlParameter("@direccion", paciente.Direccion));
-                command.Parameters.Add(new SqlParameter("@sexo", paciente.Sexo));
-                command.Parameters.Add(new SqlParameter("@ciudad", paciente.Ciudad));
+                command.CommandText = "insert into tratamiento (id_tratamiento,nombre_tratamiento,descripcion) values (@id_tratamiento, @nombre_tratamiento,@descripcion)";
+                command.Parameters.Add(new SqlParameter("@id_tratamiento", tratamiento.IdTratamiento));
+                command.Parameters.Add(new SqlParameter("@nombre_tratamiento", tratamiento.NombreTratamiento));
+                command.Parameters.Add(new SqlParameter("@descripcion", tratamiento.Descripcion));
                 int fila = command.ExecuteNonQuery();
             }
-        }*/
+            using (var command = _connection.CreateCommand())
+            {
+                command.CommandText = "insert into recetamedica (id_recetamedica,nombre_medicamento,indicaciones) values (@id_recetamedica, @nombre_medicamento,@indicaciones)";
+                command.Parameters.Add(new SqlParameter("@id_recetamedica", recetaMedica.IdReceta));
+                command.Parameters.Add(new SqlParameter("@nombre_medicamento", recetaMedica.NombreMedicamento));
+                command.Parameters.Add(new SqlParameter("@indicaciones", recetaMedica.Indicaciones));
+                int fila = command.ExecuteNonQuery();
+            }
+            using (var command = _connection.CreateCommand())
+            {
+                command.CommandText = "insert into diagnostico (id_diagnostico,descripcion) values (NEXT VALUE FOR id_consultamedica, @descripcion)";
+                command.Parameters.Add(new SqlParameter("@descripcion", diagnostico.Descripcion));
+                int fila = command.ExecuteNonQuery();
+            }
+            
+        }
         public List<Paciente> ConsultarPaciente()
         {
             List<Paciente> pacientes = new List<Paciente>();
@@ -103,7 +111,7 @@ namespace Datos
 
         public List<Paciente> FiltrarPorCedulaPaciente(string cedula)
         {
-            return ConsultarPaciente().Where(p => p.NumeroDeCedula.ToLower().Contains(cedula.ToLower())).ToList();
+            return ConsultarPaciente().Where(p => p.NumeroDeCedula.Contains(cedula)).ToList();
         }
 
         public List<Medico> FiltraPorCedulaMedico(string cedula)

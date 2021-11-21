@@ -34,14 +34,18 @@ namespace Presentacion
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pnlAgenda = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.ptbBuscarCedula = new System.Windows.Forms.PictureBox();
+            this.guna2DataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.ColumnNombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnFechaAtencion = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnHora = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnSeleccionar = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.guna2ComboBox1 = new Guna.UI2.WinForms.Guna2ComboBox();
             this.lblNombreMedico = new Bunifu.UI.WinForms.BunifuLabel();
             this.lblNumeroAgenda = new Bunifu.UI.WinForms.BunifuLabel();
             this.lblIdagenda = new Bunifu.UI.WinForms.BunifuLabel();
             this.lblFechaInicial = new Bunifu.UI.WinForms.BunifuLabel();
-            this.guna2DateTimePicker1 = new Guna.UI2.WinForms.Guna2DateTimePicker();
-            this.lblCodigo = new System.Windows.Forms.Label();
-            this.lblTCodigo = new System.Windows.Forms.Label();
+            this.dtpFecha = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.btnEliminar = new Guna.UI2.WinForms.Guna2Button();
             this.btnAgendar = new Guna.UI2.WinForms.Guna2Button();
             this.lblTelefono = new System.Windows.Forms.Label();
@@ -54,28 +58,23 @@ namespace Presentacion
             this.lblNumeroCédula = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lblAgenda = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.ptrAgendaCita = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2DataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.ColumnNombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnFechaAtencion = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnHora = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnSeleccionar = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.pnlAgenda.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ptrAgendaCita)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbBuscarCedula)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptrAgendaCita)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlAgenda
             // 
             this.pnlAgenda.BackColor = System.Drawing.Color.Transparent;
+            this.pnlAgenda.Controls.Add(this.ptbBuscarCedula);
             this.pnlAgenda.Controls.Add(this.guna2DataGridView1);
             this.pnlAgenda.Controls.Add(this.guna2ComboBox1);
             this.pnlAgenda.Controls.Add(this.lblNombreMedico);
             this.pnlAgenda.Controls.Add(this.lblNumeroAgenda);
             this.pnlAgenda.Controls.Add(this.lblIdagenda);
             this.pnlAgenda.Controls.Add(this.lblFechaInicial);
-            this.pnlAgenda.Controls.Add(this.guna2DateTimePicker1);
-            this.pnlAgenda.Controls.Add(this.lblCodigo);
-            this.pnlAgenda.Controls.Add(this.lblTCodigo);
+            this.pnlAgenda.Controls.Add(this.dtpFecha);
             this.pnlAgenda.Controls.Add(this.btnEliminar);
             this.pnlAgenda.Controls.Add(this.btnAgendar);
             this.pnlAgenda.Controls.Add(this.lblTelefono);
@@ -95,6 +94,105 @@ namespace Presentacion
             this.pnlAgenda.ShadowShift = 10;
             this.pnlAgenda.Size = new System.Drawing.Size(743, 616);
             this.pnlAgenda.TabIndex = 2;
+            // 
+            // ptbBuscarCedula
+            // 
+            this.ptbBuscarCedula.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ptbBuscarCedula.Image = ((System.Drawing.Image)(resources.GetObject("ptbBuscarCedula.Image")));
+            this.ptbBuscarCedula.Location = new System.Drawing.Point(377, 145);
+            this.ptbBuscarCedula.Name = "ptbBuscarCedula";
+            this.ptbBuscarCedula.Size = new System.Drawing.Size(29, 29);
+            this.ptbBuscarCedula.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ptbBuscarCedula.TabIndex = 90;
+            this.ptbBuscarCedula.TabStop = false;
+            // 
+            // guna2DataGridView1
+            // 
+            this.guna2DataGridView1.AllowUserToAddRows = false;
+            this.guna2DataGridView1.AllowUserToDeleteRows = false;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.guna2DataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.guna2DataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.guna2DataGridView1.BackgroundColor = System.Drawing.Color.White;
+            this.guna2DataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.guna2DataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.guna2DataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(191)))), ((int)(((byte)(165)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.guna2DataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.guna2DataGridView1.ColumnHeadersHeight = 21;
+            this.guna2DataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.ColumnNombre,
+            this.ColumnFechaAtencion,
+            this.ColumnHora,
+            this.ColumnSeleccionar});
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.guna2DataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
+            this.guna2DataGridView1.EnableHeadersVisualStyles = false;
+            this.guna2DataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(221)))), ((int)(((byte)(208)))));
+            this.guna2DataGridView1.Location = new System.Drawing.Point(29, 344);
+            this.guna2DataGridView1.Name = "guna2DataGridView1";
+            this.guna2DataGridView1.ReadOnly = true;
+            this.guna2DataGridView1.RowHeadersVisible = false;
+            this.guna2DataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.guna2DataGridView1.Size = new System.Drawing.Size(683, 187);
+            this.guna2DataGridView1.TabIndex = 77;
+            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
+            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.Font = null;
+            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
+            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+            this.guna2DataGridView1.ThemeStyle.BackColor = System.Drawing.Color.White;
+            this.guna2DataGridView1.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(221)))), ((int)(((byte)(208)))));
+            this.guna2DataGridView1.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(191)))), ((int)(((byte)(165)))));
+            this.guna2DataGridView1.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.guna2DataGridView1.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            this.guna2DataGridView1.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.guna2DataGridView1.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.guna2DataGridView1.ThemeStyle.HeaderStyle.Height = 21;
+            this.guna2DataGridView1.ThemeStyle.ReadOnly = true;
+            this.guna2DataGridView1.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.guna2DataGridView1.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.guna2DataGridView1.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            this.guna2DataGridView1.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.guna2DataGridView1.ThemeStyle.RowsStyle.Height = 22;
+            this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            // 
+            // ColumnNombre
+            // 
+            this.ColumnNombre.HeaderText = "Nombre";
+            this.ColumnNombre.Name = "ColumnNombre";
+            this.ColumnNombre.ReadOnly = true;
+            // 
+            // ColumnFechaAtencion
+            // 
+            this.ColumnFechaAtencion.HeaderText = "Fecha de atención";
+            this.ColumnFechaAtencion.Name = "ColumnFechaAtencion";
+            this.ColumnFechaAtencion.ReadOnly = true;
+            // 
+            // ColumnHora
+            // 
+            this.ColumnHora.HeaderText = "Hora de atención";
+            this.ColumnHora.Name = "ColumnHora";
+            this.ColumnHora.ReadOnly = true;
+            // 
+            // ColumnSeleccionar
+            // 
+            this.ColumnSeleccionar.HeaderText = "";
+            this.ColumnSeleccionar.Name = "ColumnSeleccionar";
+            this.ColumnSeleccionar.ReadOnly = true;
             // 
             // guna2ComboBox1
             // 
@@ -179,44 +277,24 @@ namespace Presentacion
             this.lblFechaInicial.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.lblFechaInicial.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
-            // guna2DateTimePicker1
+            // dtpFecha
             // 
-            this.guna2DateTimePicker1.BorderRadius = 12;
-            this.guna2DateTimePicker1.Checked = true;
-            this.guna2DateTimePicker1.CheckedState.Parent = this.guna2DateTimePicker1;
-            this.guna2DateTimePicker1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(191)))), ((int)(((byte)(165)))));
-            this.guna2DateTimePicker1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2DateTimePicker1.ForeColor = System.Drawing.Color.White;
-            this.guna2DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.guna2DateTimePicker1.HoverState.Parent = this.guna2DateTimePicker1;
-            this.guna2DateTimePicker1.Location = new System.Drawing.Point(474, 189);
-            this.guna2DateTimePicker1.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.guna2DateTimePicker1.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.guna2DateTimePicker1.Name = "guna2DateTimePicker1";
-            this.guna2DateTimePicker1.ShadowDecoration.Parent = this.guna2DateTimePicker1;
-            this.guna2DateTimePicker1.Size = new System.Drawing.Size(229, 36);
-            this.guna2DateTimePicker1.TabIndex = 67;
-            this.guna2DateTimePicker1.Value = new System.DateTime(2021, 10, 31, 14, 39, 50, 721);
-            // 
-            // lblCodigo
-            // 
-            this.lblCodigo.AutoSize = true;
-            this.lblCodigo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.lblCodigo.Location = new System.Drawing.Point(173, 187);
-            this.lblCodigo.Name = "lblCodigo";
-            this.lblCodigo.Size = new System.Drawing.Size(59, 20);
-            this.lblCodigo.TabIndex = 61;
-            this.lblCodigo.Text = "Codigo";
-            // 
-            // lblTCodigo
-            // 
-            this.lblTCodigo.AutoSize = true;
-            this.lblTCodigo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.lblTCodigo.Location = new System.Drawing.Point(20, 184);
-            this.lblTCodigo.Name = "lblTCodigo";
-            this.lblTCodigo.Size = new System.Drawing.Size(63, 20);
-            this.lblTCodigo.TabIndex = 60;
-            this.lblTCodigo.Text = "Codigo:";
+            this.dtpFecha.BorderRadius = 12;
+            this.dtpFecha.Checked = true;
+            this.dtpFecha.CheckedState.Parent = this.dtpFecha;
+            this.dtpFecha.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(191)))), ((int)(((byte)(165)))));
+            this.dtpFecha.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.dtpFecha.ForeColor = System.Drawing.Color.White;
+            this.dtpFecha.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.dtpFecha.HoverState.Parent = this.dtpFecha;
+            this.dtpFecha.Location = new System.Drawing.Point(474, 189);
+            this.dtpFecha.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.dtpFecha.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.dtpFecha.Name = "dtpFecha";
+            this.dtpFecha.ShadowDecoration.Parent = this.dtpFecha;
+            this.dtpFecha.Size = new System.Drawing.Size(229, 36);
+            this.dtpFecha.TabIndex = 67;
+            this.dtpFecha.Value = new System.DateTime(2021, 10, 31, 14, 39, 50, 721);
             // 
             // btnEliminar
             // 
@@ -266,7 +344,7 @@ namespace Presentacion
             // 
             this.lblTelefono.AutoSize = true;
             this.lblTelefono.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.lblTelefono.Location = new System.Drawing.Point(173, 293);
+            this.lblTelefono.Location = new System.Drawing.Point(173, 265);
             this.lblTelefono.Name = "lblTelefono";
             this.lblTelefono.Size = new System.Drawing.Size(71, 20);
             this.lblTelefono.TabIndex = 54;
@@ -276,7 +354,7 @@ namespace Presentacion
             // 
             this.lblTTelefono.AutoSize = true;
             this.lblTTelefono.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.lblTTelefono.Location = new System.Drawing.Point(20, 292);
+            this.lblTTelefono.Location = new System.Drawing.Point(20, 264);
             this.lblTTelefono.Name = "lblTTelefono";
             this.lblTTelefono.Size = new System.Drawing.Size(75, 20);
             this.lblTTelefono.TabIndex = 53;
@@ -286,7 +364,7 @@ namespace Presentacion
             // 
             this.lblSexo.AutoSize = true;
             this.lblSexo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.lblSexo.Location = new System.Drawing.Point(173, 256);
+            this.lblSexo.Location = new System.Drawing.Point(173, 228);
             this.lblSexo.Name = "lblSexo";
             this.lblSexo.Size = new System.Drawing.Size(45, 20);
             this.lblSexo.TabIndex = 52;
@@ -296,7 +374,7 @@ namespace Presentacion
             // 
             this.lblTSexo.AutoSize = true;
             this.lblTSexo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.lblTSexo.Location = new System.Drawing.Point(20, 256);
+            this.lblTSexo.Location = new System.Drawing.Point(20, 228);
             this.lblTSexo.Name = "lblTSexo";
             this.lblTSexo.Size = new System.Drawing.Size(49, 20);
             this.lblTSexo.TabIndex = 51;
@@ -306,7 +384,7 @@ namespace Presentacion
             // 
             this.lblNombre.AutoSize = true;
             this.lblNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.lblNombre.Location = new System.Drawing.Point(173, 222);
+            this.lblNombre.Location = new System.Drawing.Point(173, 194);
             this.lblNombre.Name = "lblNombre";
             this.lblNombre.Size = new System.Drawing.Size(65, 20);
             this.lblNombre.TabIndex = 50;
@@ -316,7 +394,7 @@ namespace Presentacion
             // 
             this.lblTNombre.AutoSize = true;
             this.lblTNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.lblTNombre.Location = new System.Drawing.Point(20, 220);
+            this.lblTNombre.Location = new System.Drawing.Point(20, 192);
             this.lblTNombre.Name = "lblTNombre";
             this.lblTNombre.Size = new System.Drawing.Size(69, 20);
             this.lblTNombre.TabIndex = 49;
@@ -382,94 +460,6 @@ namespace Presentacion
             this.ptrAgendaCita.TabIndex = 19;
             this.ptrAgendaCita.TabStop = false;
             // 
-            // guna2DataGridView1
-            // 
-            this.guna2DataGridView1.AllowUserToAddRows = false;
-            this.guna2DataGridView1.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.guna2DataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.guna2DataGridView1.BackgroundColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.guna2DataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.guna2DataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(191)))), ((int)(((byte)(165)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.guna2DataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.guna2DataGridView1.ColumnHeadersHeight = 21;
-            this.guna2DataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.ColumnNombre,
-            this.ColumnFechaAtencion,
-            this.ColumnHora,
-            this.ColumnSeleccionar});
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.guna2DataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
-            this.guna2DataGridView1.EnableHeadersVisualStyles = false;
-            this.guna2DataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(221)))), ((int)(((byte)(208)))));
-            this.guna2DataGridView1.Location = new System.Drawing.Point(20, 344);
-            this.guna2DataGridView1.Name = "guna2DataGridView1";
-            this.guna2DataGridView1.ReadOnly = true;
-            this.guna2DataGridView1.RowHeadersVisible = false;
-            this.guna2DataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.guna2DataGridView1.Size = new System.Drawing.Size(683, 187);
-            this.guna2DataGridView1.TabIndex = 77;
-            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.Font = null;
-            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
-            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
-            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-            this.guna2DataGridView1.ThemeStyle.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(221)))), ((int)(((byte)(208)))));
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(191)))), ((int)(((byte)(165)))));
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.Height = 21;
-            this.guna2DataGridView1.ThemeStyle.ReadOnly = true;
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.Height = 22;
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            // 
-            // ColumnNombre
-            // 
-            this.ColumnNombre.HeaderText = "Nombre";
-            this.ColumnNombre.Name = "ColumnNombre";
-            this.ColumnNombre.ReadOnly = true;
-            // 
-            // ColumnFechaAtencion
-            // 
-            this.ColumnFechaAtencion.HeaderText = "Fecha de atención";
-            this.ColumnFechaAtencion.Name = "ColumnFechaAtencion";
-            this.ColumnFechaAtencion.ReadOnly = true;
-            // 
-            // ColumnHora
-            // 
-            this.ColumnHora.HeaderText = "Hora de atención";
-            this.ColumnHora.Name = "ColumnHora";
-            this.ColumnHora.ReadOnly = true;
-            // 
-            // ColumnSeleccionar
-            // 
-            this.ColumnSeleccionar.HeaderText = "";
-            this.ColumnSeleccionar.Name = "ColumnSeleccionar";
-            this.ColumnSeleccionar.ReadOnly = true;
-            // 
             // FrmAgendaCita
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -480,10 +470,12 @@ namespace Presentacion
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmAgendaCita";
             this.Text = "FrmAgendaCita";
+            this.Load += new System.EventHandler(this.FrmAgendaCita_Load);
             this.pnlAgenda.ResumeLayout(false);
             this.pnlAgenda.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ptrAgendaCita)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbBuscarCedula)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptrAgendaCita)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -494,9 +486,7 @@ namespace Presentacion
         private Bunifu.UI.WinForms.BunifuLabel lblNumeroAgenda;
         private Bunifu.UI.WinForms.BunifuLabel lblIdagenda;
         private Bunifu.UI.WinForms.BunifuLabel lblFechaInicial;
-        private Guna.UI2.WinForms.Guna2DateTimePicker guna2DateTimePicker1;
-        private System.Windows.Forms.Label lblCodigo;
-        private System.Windows.Forms.Label lblTCodigo;
+        private Guna.UI2.WinForms.Guna2DateTimePicker dtpFecha;
         private Guna.UI2.WinForms.Guna2Button btnEliminar;
         private Guna.UI2.WinForms.Guna2Button btnAgendar;
         private System.Windows.Forms.Label lblTelefono;
@@ -516,5 +506,6 @@ namespace Presentacion
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnFechaAtencion;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnHora;
         private System.Windows.Forms.DataGridViewCheckBoxColumn ColumnSeleccionar;
+        private System.Windows.Forms.PictureBox ptbBuscarCedula;
     }
 }

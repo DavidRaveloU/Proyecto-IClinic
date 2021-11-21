@@ -47,7 +47,6 @@ namespace Presentacion
             this.ColumnCiudad = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.txtConsulta = new Guna.UI2.WinForms.Guna2TextBox();
             this.btnEliminar = new Guna.UI2.WinForms.Guna2Button();
-            this.ptrConsulta = new System.Windows.Forms.PictureBox();
             this.btnModificar = new Guna.UI2.WinForms.Guna2Button();
             this.lblConsulta = new System.Windows.Forms.Label();
             this.pnlCantidadDeMedicos = new System.Windows.Forms.Panel();
@@ -57,7 +56,6 @@ namespace Presentacion
             this.ptrCantidadDeMedicos = new System.Windows.Forms.PictureBox();
             this.pnlFondoConsultarMedico.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgConsulta)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptrConsulta)).BeginInit();
             this.pnlCantidadDeMedicos.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptrCantidadDeMedicos)).BeginInit();
             this.SuspendLayout();
@@ -68,7 +66,6 @@ namespace Presentacion
             this.pnlFondoConsultarMedico.Controls.Add(this.dtgConsulta);
             this.pnlFondoConsultarMedico.Controls.Add(this.txtConsulta);
             this.pnlFondoConsultarMedico.Controls.Add(this.btnEliminar);
-            this.pnlFondoConsultarMedico.Controls.Add(this.ptrConsulta);
             this.pnlFondoConsultarMedico.Controls.Add(this.btnModificar);
             this.pnlFondoConsultarMedico.Controls.Add(this.lblConsulta);
             this.pnlFondoConsultarMedico.Controls.Add(this.pnlCantidadDeMedicos);
@@ -238,6 +235,7 @@ namespace Presentacion
             this.txtConsulta.ShadowDecoration.Parent = this.txtConsulta;
             this.txtConsulta.Size = new System.Drawing.Size(408, 29);
             this.txtConsulta.TabIndex = 9;
+            this.txtConsulta.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtConsulta_KeyUp);
             // 
             // btnEliminar
             // 
@@ -259,17 +257,6 @@ namespace Presentacion
             this.btnEliminar.Size = new System.Drawing.Size(171, 31);
             this.btnEliminar.TabIndex = 5;
             this.btnEliminar.Text = "Eliminar";
-            // 
-            // ptrConsulta
-            // 
-            this.ptrConsulta.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ptrConsulta.Image = ((System.Drawing.Image)(resources.GetObject("ptrConsulta.Image")));
-            this.ptrConsulta.Location = new System.Drawing.Point(569, 172);
-            this.ptrConsulta.Name = "ptrConsulta";
-            this.ptrConsulta.Size = new System.Drawing.Size(31, 27);
-            this.ptrConsulta.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.ptrConsulta.TabIndex = 3;
-            this.ptrConsulta.TabStop = false;
             // 
             // btnModificar
             // 
@@ -367,7 +354,6 @@ namespace Presentacion
             this.pnlFondoConsultarMedico.ResumeLayout(false);
             this.pnlFondoConsultarMedico.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgConsulta)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptrConsulta)).EndInit();
             this.pnlCantidadDeMedicos.ResumeLayout(false);
             this.pnlCantidadDeMedicos.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptrCantidadDeMedicos)).EndInit();
@@ -380,7 +366,6 @@ namespace Presentacion
         private Guna.UI2.WinForms.Guna2ShadowPanel pnlFondoConsultarMedico;
         private Guna.UI2.WinForms.Guna2TextBox txtConsulta;
         private Guna.UI2.WinForms.Guna2Button btnEliminar;
-        private System.Windows.Forms.PictureBox ptrConsulta;
         private Guna.UI2.WinForms.Guna2Button btnModificar;
         private System.Windows.Forms.Label lblConsulta;
         private System.Windows.Forms.Panel pnlCantidadDeMedicos;

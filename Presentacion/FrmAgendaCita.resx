@@ -117,6 +117,31 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="ptbBuscarCedula.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAABGdBTUEAALGPC/xhBQAABDFJREFUaEPt
+        mvuLTVEUxydv8YO3vP4AET95xC9+UmKccy6XXzzzSikKKUqjCD8hJKVknH2GW37TmJE5+wzlJ+WR5FGT
+        PMJ4R1ya8F131rDPnltcs8++1zifWs00a539Xas5Z+919j5VKSkpKSn/CzU1NT3cJjHVlf5mV4ozsFuw
+        N6p5kbiJn/D5mzORP4Wu4cv/HTLSH+tJsc+TwRMU871Ee0zXzms6NYaHq1yyDbkhSPgwLK8U8LeWdyJx
+        yJUnB/HwlYUbBouQZKuWtAl7jrEXsEz5WXvteG83EseLJNphb91Q1DqhWEbP6PxLwci5V8RgMvqd/uZJ
+        fznFFGKLj/HdjfyjpMWy5WF2Y+0AJNPQKTkYnsPbrgyWrJAn+3H4b6HYQvHSv1NsTEf6F0iTw+0yS8pe
+        SKJeTwr2AbYhm8v15NCS4bE3wj7ymD8NRZ8nP4fag24xPRnc2ve85jPjOaTLVIfBBIx7X9ehyYxD7MAT
+        VCwJ2PXs5dxwDjEGPee8Vsf0vFBkOCRZqCgIvtISeOA11o7gEONkLp8eBY0WTbPVu3RqKIckB4ROaMIf
+        PVk7kd2J4YWnJ0Prk6rtSHGM3cngNNeNg9BXVRQz6iZ2J44XBVvj2iI//2LdaHabBzPkXk3wrs0Zs7Dm
+        4/FRc0BOu9ltlsJSEYmnMbEoWMluazgyWK3mAHuUyAtHJvRnxoQi8T57Ndef3dbgZofW+p+5OGHdNHab
+        A63hdlUEBQt2WQf6OTUXTF7b2GUOFHhOFYGtYpd1cFuv03LJscsc7b3xLxFq+tllHbxvT1dzocaEXebA
+        f/i1KpJEV/WnUJOj5gJrZZc5UPAXVQQvB33YZZ059fV91VxgeXaZQy+4nO+mdgrW+udqGQxjl3Ws3NL/
+        46QVW5ao42GXdSwtS8EOVQSLvc8u67iRf1bLxXzj4TTVzVBFYO8qpbWkzX52m4P2qHBbl/3lwYv8NWoO
+        sGReHohKfD3EhLWH3eah4w+IaKcK5dsAwLP7mbZ/2J0MEDmiisLKtsXjyuAAu5ODz49exoXFA9pd5BDj
+        8CbeQ03zubVzp+LbtMGNJHYu2x+joNUN43rWtmk7KLoRj0kM/+lJHNJlaCfDC/0nerFus2jgEHvQjEln
+        PbFE2i3vhcFOavA5tGTojMmJ/F36C4tibfAt5XB7ZGVuIIQbiyRE1kIHY6UepuG6VTD9eS1mbXRYx5fa
+        o7A2lnhcSk0MGf1OXZJyXPpOu1Y1OrjT9sTFN2iv51Tsgtt7MRIwfyAeiRcYeyFp0ESFv1VO0aY/eYAd
+        1Jeeiiua6OpHLW4U7KcxeLhOVGTRRMdnS+jOtiAh9bOljiT/+rMl+u4D11Ve0UmSFp0WnRbdvaDOC0Wi
+        A4sV3Wb9RcMmxYqm5ZHd3ZNORUfiKbu6L9SOwp4VLAqq+c8pKSkpKf8QVVU/AFiNj1N+mIC3AAAAAElF
+        TkSuQmCC
+</value>
+  </data>
   <metadata name="ColumnNombre.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -141,7 +166,6 @@
   <data name="lblFechaInicial.BaseStylesheet" xml:space="preserve">
     <value>#bunifu-label { padding: 0px; font-family: 'Microsoft Sans Serif'; font-size: 12pt; width: 100%; height: 100%; font-style: normal; font-weight: normal; text-decoration: none; color: rgb(0, 0, 0); text-align: left; }</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="ptrAgendaCita.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAPAAAADwCAYAAAA+VemSAAAABGdBTUEAALGPC/xhBQAAD7tJREFUeF7t

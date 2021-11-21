@@ -44,8 +44,20 @@ namespace Presentacion
             {
                 MessageBox.Show(response.Mensaje, "Error al Consultar", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-        } 
+        }
 
+        private void txtConsulta_KeyUp(object sender, KeyEventArgs e)
+        {
+            ConsultaResponse response = pacienteService.FiltrarPaciente(txtConsulta.Text);
+            if (!response.Error)
+            {
+                LlenarGrid(response.Pacientes);
+            }
+            else
+            {
+                MessageBox.Show(response.Mensaje, "Error al Consultar", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
     }
 
 }

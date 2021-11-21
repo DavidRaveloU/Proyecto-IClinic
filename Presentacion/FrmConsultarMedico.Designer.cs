@@ -29,22 +29,15 @@ namespace Presentacion
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmConsultarMedico));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmConsultarMedico));
             this.pnlFondoConsultarMedico = new Guna.UI2.WinForms.Guna2ShadowPanel();
             this.txtConsulta = new Guna.UI2.WinForms.Guna2TextBox();
             this.btnEliminar = new Guna.UI2.WinForms.Guna2Button();
-            this.ptrConsulta = new System.Windows.Forms.PictureBox();
             this.btnModificar = new Guna.UI2.WinForms.Guna2Button();
             this.dtgConsultarMedicos = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.lblConsulta = new System.Windows.Forms.Label();
-            this.pnlCantidadDeMedicos = new System.Windows.Forms.Panel();
-            this.lblCantidadDeMedicos = new System.Windows.Forms.Label();
-            this.lblMedico = new System.Windows.Forms.Label();
-            this.pnlLineaSeparadora = new System.Windows.Forms.Panel();
-            this.ptrCantidadDeMedicos = new System.Windows.Forms.PictureBox();
             this.ColumnCedula = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnPrimerNombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnSegundoNombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -55,8 +48,13 @@ namespace Presentacion
             this.ColumnDireccion = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnSexo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnCiudad = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lblConsulta = new System.Windows.Forms.Label();
+            this.pnlCantidadDeMedicos = new System.Windows.Forms.Panel();
+            this.lblCantidadDeMedicos = new System.Windows.Forms.Label();
+            this.lblMedico = new System.Windows.Forms.Label();
+            this.pnlLineaSeparadora = new System.Windows.Forms.Panel();
+            this.ptrCantidadDeMedicos = new System.Windows.Forms.PictureBox();
             this.pnlFondoConsultarMedico.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ptrConsulta)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtgConsultarMedicos)).BeginInit();
             this.pnlCantidadDeMedicos.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptrCantidadDeMedicos)).BeginInit();
@@ -67,7 +65,6 @@ namespace Presentacion
             this.pnlFondoConsultarMedico.BackColor = System.Drawing.Color.Transparent;
             this.pnlFondoConsultarMedico.Controls.Add(this.txtConsulta);
             this.pnlFondoConsultarMedico.Controls.Add(this.btnEliminar);
-            this.pnlFondoConsultarMedico.Controls.Add(this.ptrConsulta);
             this.pnlFondoConsultarMedico.Controls.Add(this.btnModificar);
             this.pnlFondoConsultarMedico.Controls.Add(this.dtgConsultarMedicos);
             this.pnlFondoConsultarMedico.Controls.Add(this.lblConsulta);
@@ -107,6 +104,7 @@ namespace Presentacion
             this.txtConsulta.ShadowDecoration.Parent = this.txtConsulta;
             this.txtConsulta.Size = new System.Drawing.Size(408, 29);
             this.txtConsulta.TabIndex = 9;
+            this.txtConsulta.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtConsulta_KeyUp);
             // 
             // btnEliminar
             // 
@@ -129,17 +127,6 @@ namespace Presentacion
             this.btnEliminar.TabIndex = 5;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
-            // 
-            // ptrConsulta
-            // 
-            this.ptrConsulta.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ptrConsulta.Image = ((System.Drawing.Image)(resources.GetObject("ptrConsulta.Image")));
-            this.ptrConsulta.Location = new System.Drawing.Point(569, 172);
-            this.ptrConsulta.Name = "ptrConsulta";
-            this.ptrConsulta.Size = new System.Drawing.Size(31, 27);
-            this.ptrConsulta.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.ptrConsulta.TabIndex = 3;
-            this.ptrConsulta.TabStop = false;
             // 
             // btnModificar
             // 
@@ -233,6 +220,66 @@ namespace Presentacion
             this.dtgConsultarMedicos.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dtgConsultarMedicos.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             // 
+            // ColumnCedula
+            // 
+            this.ColumnCedula.HeaderText = "Cedula";
+            this.ColumnCedula.Name = "ColumnCedula";
+            this.ColumnCedula.ReadOnly = true;
+            // 
+            // ColumnPrimerNombre
+            // 
+            this.ColumnPrimerNombre.HeaderText = "Primer nombre";
+            this.ColumnPrimerNombre.Name = "ColumnPrimerNombre";
+            this.ColumnPrimerNombre.ReadOnly = true;
+            // 
+            // ColumnSegundoNombre
+            // 
+            this.ColumnSegundoNombre.HeaderText = "Segundo nombre";
+            this.ColumnSegundoNombre.Name = "ColumnSegundoNombre";
+            this.ColumnSegundoNombre.ReadOnly = true;
+            // 
+            // ColumnPrimerApellido
+            // 
+            this.ColumnPrimerApellido.HeaderText = "Primer apellido";
+            this.ColumnPrimerApellido.Name = "ColumnPrimerApellido";
+            this.ColumnPrimerApellido.ReadOnly = true;
+            // 
+            // ColumnSegundoApellido
+            // 
+            this.ColumnSegundoApellido.HeaderText = "Segundo apellido";
+            this.ColumnSegundoApellido.Name = "ColumnSegundoApellido";
+            this.ColumnSegundoApellido.ReadOnly = true;
+            // 
+            // ColumnTelefono
+            // 
+            this.ColumnTelefono.HeaderText = "Telefono";
+            this.ColumnTelefono.Name = "ColumnTelefono";
+            this.ColumnTelefono.ReadOnly = true;
+            // 
+            // ColumnCorreo
+            // 
+            this.ColumnCorreo.HeaderText = "Correo";
+            this.ColumnCorreo.Name = "ColumnCorreo";
+            this.ColumnCorreo.ReadOnly = true;
+            // 
+            // ColumnDireccion
+            // 
+            this.ColumnDireccion.HeaderText = "Direccion";
+            this.ColumnDireccion.Name = "ColumnDireccion";
+            this.ColumnDireccion.ReadOnly = true;
+            // 
+            // ColumnSexo
+            // 
+            this.ColumnSexo.HeaderText = "Sexo";
+            this.ColumnSexo.Name = "ColumnSexo";
+            this.ColumnSexo.ReadOnly = true;
+            // 
+            // ColumnCiudad
+            // 
+            this.ColumnCiudad.HeaderText = "Ciudad";
+            this.ColumnCiudad.Name = "ColumnCiudad";
+            this.ColumnCiudad.ReadOnly = true;
+            // 
             // lblConsulta
             // 
             this.lblConsulta.AutoSize = true;
@@ -294,66 +341,6 @@ namespace Presentacion
             this.ptrCantidadDeMedicos.TabIndex = 0;
             this.ptrCantidadDeMedicos.TabStop = false;
             // 
-            // ColumnCedula
-            // 
-            this.ColumnCedula.HeaderText = "Cedula";
-            this.ColumnCedula.Name = "ColumnCedula";
-            this.ColumnCedula.ReadOnly = true;
-            // 
-            // ColumnPrimerNombre
-            // 
-            this.ColumnPrimerNombre.HeaderText = "Primer nombre";
-            this.ColumnPrimerNombre.Name = "ColumnPrimerNombre";
-            this.ColumnPrimerNombre.ReadOnly = true;
-            // 
-            // ColumnSegundoNombre
-            // 
-            this.ColumnSegundoNombre.HeaderText = "Segundo nombre";
-            this.ColumnSegundoNombre.Name = "ColumnSegundoNombre";
-            this.ColumnSegundoNombre.ReadOnly = true;
-            // 
-            // ColumnPrimerApellido
-            // 
-            this.ColumnPrimerApellido.HeaderText = "Primer apellido";
-            this.ColumnPrimerApellido.Name = "ColumnPrimerApellido";
-            this.ColumnPrimerApellido.ReadOnly = true;
-            // 
-            // ColumnSegundoApellido
-            // 
-            this.ColumnSegundoApellido.HeaderText = "Segundo apellido";
-            this.ColumnSegundoApellido.Name = "ColumnSegundoApellido";
-            this.ColumnSegundoApellido.ReadOnly = true;
-            // 
-            // ColumnTelefono
-            // 
-            this.ColumnTelefono.HeaderText = "Telefono";
-            this.ColumnTelefono.Name = "ColumnTelefono";
-            this.ColumnTelefono.ReadOnly = true;
-            // 
-            // ColumnCorreo
-            // 
-            this.ColumnCorreo.HeaderText = "Correo";
-            this.ColumnCorreo.Name = "ColumnCorreo";
-            this.ColumnCorreo.ReadOnly = true;
-            // 
-            // ColumnDireccion
-            // 
-            this.ColumnDireccion.HeaderText = "Direccion";
-            this.ColumnDireccion.Name = "ColumnDireccion";
-            this.ColumnDireccion.ReadOnly = true;
-            // 
-            // ColumnSexo
-            // 
-            this.ColumnSexo.HeaderText = "Sexo";
-            this.ColumnSexo.Name = "ColumnSexo";
-            this.ColumnSexo.ReadOnly = true;
-            // 
-            // ColumnCiudad
-            // 
-            this.ColumnCiudad.HeaderText = "Ciudad";
-            this.ColumnCiudad.Name = "ColumnCiudad";
-            this.ColumnCiudad.ReadOnly = true;
-            // 
             // FrmConsultarMedico
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -366,7 +353,6 @@ namespace Presentacion
             this.Text = "FrmConsultarMedico";
             this.pnlFondoConsultarMedico.ResumeLayout(false);
             this.pnlFondoConsultarMedico.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ptrConsulta)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtgConsultarMedicos)).EndInit();
             this.pnlCantidadDeMedicos.ResumeLayout(false);
             this.pnlCantidadDeMedicos.PerformLayout();
@@ -384,7 +370,6 @@ namespace Presentacion
         private System.Windows.Forms.Panel pnlLineaSeparadora;
         private System.Windows.Forms.PictureBox ptrCantidadDeMedicos;
         private System.Windows.Forms.Label lblConsulta;
-        private System.Windows.Forms.PictureBox ptrConsulta;
         private Guna.UI2.WinForms.Guna2DataGridView dtgConsultarMedicos;
         private Guna.UI2.WinForms.Guna2Button btnEliminar;
         private Guna.UI2.WinForms.Guna2Button btnModificar;

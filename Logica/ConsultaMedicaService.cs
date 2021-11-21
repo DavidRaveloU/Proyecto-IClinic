@@ -66,5 +66,25 @@ namespace Logica
                 _connectionManager.Close();
             }
         }
+        public string Guardar(Tratamiento tratamiento, RecetaMedica recetaMedica, Diagnostico diagnostico)
+        {
+            try
+            {
+                _connectionManager.Open();
+           
+                {
+                    consultaMedicaRepository.Guardar(tratamiento,recetaMedica,diagnostico);
+                    return "Datos Guardados Satisfactoriamente";
+                }
+            }
+            catch (Exception exception)
+            {
+                return "Se presentó el siguiente error:" + exception.Message;
+            }
+            finally
+            {
+                _connectionManager.Close();
+            }
+        }
     }
 }

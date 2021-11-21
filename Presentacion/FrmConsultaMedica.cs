@@ -52,6 +52,34 @@ namespace Presentacion
             chkTratamiento.Checked = chkTratamiento.Enabled = true;
             lblTratamiento.ForeColor = Color.Blue;
 
+            Tratamiento tratamiento = MapearTratamiento();
+            RecetaMedica recetaMedica = MapearRecetaMedica();
+            Diagnostico diagnostico = MapearDiagnostico();
+            string mensaje = consultaMedicaService.Guardar(tratamiento, recetaMedica, diagnostico);
+            MessageBox.Show(mensaje, "Guardar", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+        private Tratamiento MapearTratamiento()
+        {
+            Tratamiento tratamiento = new Tratamiento();
+            tratamiento.IdTratamiento = int.Parse(lblIdTratamiento.Text);
+            tratamiento.NombreTratamiento = txtNombreTratamiento.Text;
+            tratamiento.Descripcion = txtDescripcion.Text;
+            return tratamiento;
+        }
+        private RecetaMedica MapearRecetaMedica()
+        {
+            RecetaMedica recetaMedica = new RecetaMedica();
+            recetaMedica.IdReceta = int.Parse(lblIdRecetaMedica.Text);
+            recetaMedica.NombreMedicamento = txtNombreMedicamento.Text;
+            recetaMedica.Indicaciones = txtIndicaciones.Text;
+            return recetaMedica;
+        }
+        private Diagnostico MapearDiagnostico()
+        {
+            Diagnostico diagnostico = new Diagnostico();
+            diagnostico.IdDiagnostico = int.Parse(lblidConsulta.Text);
+            diagnostico.Descripcion = txtDiagnostico.Text;
+            return diagnostico;
         }
         private void ValidarCampoVacio(Label label, Guna.UI2.WinForms.Guna2TextBox textBox)
         {
@@ -62,7 +90,7 @@ namespace Presentacion
         {
             if (txtCedulaPaciente.Text != string.Empty && !string.IsNullOrEmpty(txtTemperatura.Text)
                 && !string.IsNullOrEmpty(txtEstatura.Text) && !string.IsNullOrEmpty(txtPeso.Text) 
-                && !string.IsNullOrEmpty(txtPresion.Text) && txtDiagnostico.Text != string.Empty)
+                && !string.IsNullOrEmpty(txtPresion.Text) && txtDiagnostico.Text != string.Empty )
             {
                 btnSiguiente1.Enabled = true;
             }
@@ -161,32 +189,60 @@ namespace Presentacion
 
         private void ptbBuscarCedulaMedico_Click(object sender, EventArgs e)
         {
-            ConsultaResponse respuesta;
-            respuesta = consultaMedicaService.FiltrarPorCedulaMedico(txtCedulaMedico.Text);
-            List<Medico> medicos = respuesta.Medicos;
-            if (!medicos.Any())
+            if (txtCedulaMedico.Text != "")
             {
-                MessageBox.Show("El medico no existe");
+                ConsultaResponse respuesta;
+                respuesta = consultaMedicaService.FiltrarPorCedulaMedico(txtCedulaMedico.Text);
+                List<Medico> medicos = respuesta.Medicos;
+                if (!medicos.Any())
+                {
+                    FrmVentanaError frmVentanaError = new FrmVentanaError();
+                    frmVentanaError.lblMensajeError.Text = "El medico no existe";
+                    frmVentanaError.ShowDialog();
+                }
+                else
+                {
+                    FrmVentanaCorrecto frmVentanaCorrecto = new FrmVentanaCorrecto();
+                    frmVentanaCorrecto.lblMensajeCorrecto.Text = "El medico existe";
+                    frmVentanaCorrecto.ShowDialog();
+                }
+            }
+            else
+            {
+                FrmVentanaError frmVentanaError = new FrmVentanaError();
+                frmVentanaError.lblMensajeError.Text = "Ingrese una cedula";
+                frmVentanaError.ShowDialog();
             }
             
         }
 
         private void ptbBuscarCedulaPaciente_Click(object sender, EventArgs e)
         {
-            ConsultaResponse respuesta;
-            respuesta = consultaMedicaService.FiltrarPorCedulaPaciente(txtCedulaPaciente.Text);
-            List<Paciente> pacientes = respuesta.Pacientes;
-            if (pacientes.Any())
+            if (txtCedulaPaciente.Text != "")
             {
-                foreach (var item in pacientes)
+                ConsultaResponse respuesta;
+                respuesta = consultaMedicaService.FiltrarPorCedulaPaciente(txtCedulaPaciente.Text);
+                List<Paciente> pacientes = respuesta.Pacientes;
+                if (pacientes.Any())
                 {
-                    lblNombre.Text = item.PrimerNombre;
+                    foreach (var item in pacientes)
+                    {
+                        lblNombre.Text = item.PrimerNombre;
+                    }
+                }
+                else
+                {
+                    lblNombre.Text = "Nombre";
+                    FrmVentanaError frmVentanaError = new FrmVentanaError();
+                    frmVentanaError.lblMensajeError.Text = "El paciente no existe";
+                    frmVentanaError.ShowDialog();
                 }
             }
             else
             {
-                lblNombre.Text = "Nombre";
-                MessageBox.Show("El paciente no existe");
+                FrmVentanaError frmVentanaError = new FrmVentanaError();
+                frmVentanaError.lblMensajeError.Text = "Ingrese una cedula";
+                frmVentanaError.ShowDialog();
             }
         }
     }

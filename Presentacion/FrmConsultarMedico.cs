@@ -57,5 +57,18 @@ namespace Presentacion
                 MessageBox.Show(response.Mensaje, "Error al Consultar", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void txtConsulta_KeyUp(object sender, KeyEventArgs e)
+        {
+            ConsultaResponse response = medicoService.FiltrarMedico(txtConsulta.Text);
+            if (!response.Error)
+            {
+                LlenarGrid(response.Medicos);
+            }
+            else
+            {
+                MessageBox.Show(response.Mensaje, "Error al Consultar", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
     }
 }
