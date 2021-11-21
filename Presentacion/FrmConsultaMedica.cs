@@ -161,13 +161,20 @@ namespace Presentacion
 
         private void ptbBuscarCedulaMedico_Click(object sender, EventArgs e)
         {
-
+            ConsultaResponse respuesta;
+            respuesta = consultaMedicaService.FiltrarPorCedulaMedico(txtCedulaMedico.Text);
+            List<Medico> medicos = respuesta.Medicos;
+            if (!medicos.Any())
+            {
+                MessageBox.Show("El medico no existe");
+            }
+            
         }
 
         private void ptbBuscarCedulaPaciente_Click(object sender, EventArgs e)
         {
             ConsultaResponse respuesta;
-            respuesta = consultaMedicaService.FiltrarPorCedula(txtCedulaPaciente.Text);
+            respuesta = consultaMedicaService.FiltrarPorCedulaPaciente(txtCedulaPaciente.Text);
             List<Paciente> pacientes = respuesta.Pacientes;
             if (pacientes.Any())
             {

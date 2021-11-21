@@ -90,5 +90,12 @@ namespace Datos
             }
             return null;
         }
+
+        public List<Medico> FiltrarMedico(string cedula)
+        {
+            return Consultar().Where(p => p.NumeroDeCedula.Contains(cedula)).ToList();
+        }
+
+
     }
 }

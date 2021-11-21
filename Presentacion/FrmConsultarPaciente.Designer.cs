@@ -29,21 +29,11 @@ namespace Presentacion
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmConsultarPaciente));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmConsultarPaciente));
             this.pnlFondoConsultarMedico = new Guna.UI2.WinForms.Guna2ShadowPanel();
-            this.txtConsulta = new Guna.UI2.WinForms.Guna2TextBox();
-            this.btnEliminar = new Guna.UI2.WinForms.Guna2Button();
-            this.ptrConsulta = new System.Windows.Forms.PictureBox();
-            this.btnModificar = new Guna.UI2.WinForms.Guna2Button();
-            this.lblConsulta = new System.Windows.Forms.Label();
-            this.pnlCantidadDeMedicos = new System.Windows.Forms.Panel();
-            this.lblCantidadDeMedicos = new System.Windows.Forms.Label();
-            this.lblMedico = new System.Windows.Forms.Label();
-            this.pnlLineaSeparadora = new System.Windows.Forms.Panel();
-            this.ptrCantidadDeMedicos = new System.Windows.Forms.PictureBox();
             this.dtgConsulta = new Guna.UI2.WinForms.Guna2DataGridView();
             this.ColumnCedula = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnPrimerNombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -55,11 +45,21 @@ namespace Presentacion
             this.ColumnDireccion = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnSexo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnCiudad = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.txtConsulta = new Guna.UI2.WinForms.Guna2TextBox();
+            this.btnEliminar = new Guna.UI2.WinForms.Guna2Button();
+            this.ptrConsulta = new System.Windows.Forms.PictureBox();
+            this.btnModificar = new Guna.UI2.WinForms.Guna2Button();
+            this.lblConsulta = new System.Windows.Forms.Label();
+            this.pnlCantidadDeMedicos = new System.Windows.Forms.Panel();
+            this.lblCantidadDePacientes = new System.Windows.Forms.Label();
+            this.lblMedico = new System.Windows.Forms.Label();
+            this.pnlLineaSeparadora = new System.Windows.Forms.Panel();
+            this.ptrCantidadDeMedicos = new System.Windows.Forms.PictureBox();
             this.pnlFondoConsultarMedico.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgConsulta)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptrConsulta)).BeginInit();
             this.pnlCantidadDeMedicos.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptrCantidadDeMedicos)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dtgConsulta)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlFondoConsultarMedico
@@ -80,148 +80,6 @@ namespace Presentacion
             this.pnlFondoConsultarMedico.ShadowShift = 10;
             this.pnlFondoConsultarMedico.Size = new System.Drawing.Size(754, 616);
             this.pnlFondoConsultarMedico.TabIndex = 2;
-            // 
-            // txtConsulta
-            // 
-            this.txtConsulta.Animated = true;
-            this.txtConsulta.BorderColor = System.Drawing.Color.Black;
-            this.txtConsulta.BorderRadius = 12;
-            this.txtConsulta.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtConsulta.DefaultText = "";
-            this.txtConsulta.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtConsulta.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtConsulta.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtConsulta.DisabledState.Parent = this.txtConsulta;
-            this.txtConsulta.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtConsulta.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtConsulta.FocusedState.Parent = this.txtConsulta;
-            this.txtConsulta.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtConsulta.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtConsulta.HoverState.Parent = this.txtConsulta;
-            this.txtConsulta.Location = new System.Drawing.Point(155, 170);
-            this.txtConsulta.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtConsulta.Name = "txtConsulta";
-            this.txtConsulta.PasswordChar = '\0';
-            this.txtConsulta.PlaceholderText = "Digite número de cédula";
-            this.txtConsulta.SelectedText = "";
-            this.txtConsulta.ShadowDecoration.Parent = this.txtConsulta;
-            this.txtConsulta.Size = new System.Drawing.Size(408, 29);
-            this.txtConsulta.TabIndex = 9;
-            // 
-            // btnEliminar
-            // 
-            this.btnEliminar.BorderRadius = 13;
-            this.btnEliminar.CheckedState.Parent = this.btnEliminar;
-            this.btnEliminar.CustomImages.Parent = this.btnEliminar;
-            this.btnEliminar.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnEliminar.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnEliminar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnEliminar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnEliminar.DisabledState.Parent = this.btnEliminar;
-            this.btnEliminar.FillColor = System.Drawing.Color.Red;
-            this.btnEliminar.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEliminar.ForeColor = System.Drawing.Color.White;
-            this.btnEliminar.HoverState.Parent = this.btnEliminar;
-            this.btnEliminar.Location = new System.Drawing.Point(560, 546);
-            this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.ShadowDecoration.Parent = this.btnEliminar;
-            this.btnEliminar.Size = new System.Drawing.Size(171, 31);
-            this.btnEliminar.TabIndex = 5;
-            this.btnEliminar.Text = "Eliminar";
-            // 
-            // ptrConsulta
-            // 
-            this.ptrConsulta.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ptrConsulta.Image = ((System.Drawing.Image)(resources.GetObject("ptrConsulta.Image")));
-            this.ptrConsulta.Location = new System.Drawing.Point(569, 172);
-            this.ptrConsulta.Name = "ptrConsulta";
-            this.ptrConsulta.Size = new System.Drawing.Size(31, 27);
-            this.ptrConsulta.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.ptrConsulta.TabIndex = 3;
-            this.ptrConsulta.TabStop = false;
-            // 
-            // btnModificar
-            // 
-            this.btnModificar.BorderRadius = 13;
-            this.btnModificar.CheckedState.Parent = this.btnModificar;
-            this.btnModificar.CustomImages.Parent = this.btnModificar;
-            this.btnModificar.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnModificar.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnModificar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnModificar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnModificar.DisabledState.Parent = this.btnModificar;
-            this.btnModificar.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(191)))), ((int)(((byte)(250)))));
-            this.btnModificar.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnModificar.ForeColor = System.Drawing.Color.White;
-            this.btnModificar.HoverState.Parent = this.btnModificar;
-            this.btnModificar.Location = new System.Drawing.Point(352, 546);
-            this.btnModificar.Name = "btnModificar";
-            this.btnModificar.ShadowDecoration.Parent = this.btnModificar;
-            this.btnModificar.Size = new System.Drawing.Size(171, 31);
-            this.btnModificar.TabIndex = 4;
-            this.btnModificar.Text = "Modificar";
-            // 
-            // lblConsulta
-            // 
-            this.lblConsulta.AutoSize = true;
-            this.lblConsulta.Font = new System.Drawing.Font("Microsoft Tai Le", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblConsulta.ForeColor = System.Drawing.Color.Black;
-            this.lblConsulta.Location = new System.Drawing.Point(58, 172);
-            this.lblConsulta.Name = "lblConsulta";
-            this.lblConsulta.Size = new System.Drawing.Size(93, 26);
-            this.lblConsulta.TabIndex = 1;
-            this.lblConsulta.Text = "Consulta";
-            // 
-            // pnlCantidadDeMedicos
-            // 
-            this.pnlCantidadDeMedicos.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlCantidadDeMedicos.BackgroundImage")));
-            this.pnlCantidadDeMedicos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pnlCantidadDeMedicos.Controls.Add(this.lblCantidadDeMedicos);
-            this.pnlCantidadDeMedicos.Controls.Add(this.lblMedico);
-            this.pnlCantidadDeMedicos.Controls.Add(this.pnlLineaSeparadora);
-            this.pnlCantidadDeMedicos.Controls.Add(this.ptrCantidadDeMedicos);
-            this.pnlCantidadDeMedicos.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.pnlCantidadDeMedicos.Location = new System.Drawing.Point(40, 24);
-            this.pnlCantidadDeMedicos.Name = "pnlCantidadDeMedicos";
-            this.pnlCantidadDeMedicos.Size = new System.Drawing.Size(222, 91);
-            this.pnlCantidadDeMedicos.TabIndex = 0;
-            // 
-            // lblCantidadDeMedicos
-            // 
-            this.lblCantidadDeMedicos.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCantidadDeMedicos.Location = new System.Drawing.Point(61, 21);
-            this.lblCantidadDeMedicos.Name = "lblCantidadDeMedicos";
-            this.lblCantidadDeMedicos.Size = new System.Drawing.Size(142, 32);
-            this.lblCantidadDeMedicos.TabIndex = 3;
-            this.lblCantidadDeMedicos.Text = "0";
-            // 
-            // lblMedico
-            // 
-            this.lblMedico.AutoSize = true;
-            this.lblMedico.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMedico.Location = new System.Drawing.Point(15, 59);
-            this.lblMedico.Name = "lblMedico";
-            this.lblMedico.Size = new System.Drawing.Size(168, 20);
-            this.lblMedico.TabIndex = 2;
-            this.lblMedico.Text = "Cantidad de pacientes";
-            // 
-            // pnlLineaSeparadora
-            // 
-            this.pnlLineaSeparadora.BackColor = System.Drawing.Color.Black;
-            this.pnlLineaSeparadora.Location = new System.Drawing.Point(13, 56);
-            this.pnlLineaSeparadora.Name = "pnlLineaSeparadora";
-            this.pnlLineaSeparadora.Size = new System.Drawing.Size(190, 1);
-            this.pnlLineaSeparadora.TabIndex = 1;
-            // 
-            // ptrCantidadDeMedicos
-            // 
-            this.ptrCantidadDeMedicos.Image = ((System.Drawing.Image)(resources.GetObject("ptrCantidadDeMedicos.Image")));
-            this.ptrCantidadDeMedicos.Location = new System.Drawing.Point(8, 3);
-            this.ptrCantidadDeMedicos.Name = "ptrCantidadDeMedicos";
-            this.ptrCantidadDeMedicos.Size = new System.Drawing.Size(47, 52);
-            this.ptrCantidadDeMedicos.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.ptrCantidadDeMedicos.TabIndex = 0;
-            this.ptrCantidadDeMedicos.TabStop = false;
             // 
             // dtgConsulta
             // 
@@ -354,6 +212,148 @@ namespace Presentacion
             this.ColumnCiudad.Name = "ColumnCiudad";
             this.ColumnCiudad.ReadOnly = true;
             // 
+            // txtConsulta
+            // 
+            this.txtConsulta.Animated = true;
+            this.txtConsulta.BorderColor = System.Drawing.Color.Black;
+            this.txtConsulta.BorderRadius = 12;
+            this.txtConsulta.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtConsulta.DefaultText = "";
+            this.txtConsulta.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtConsulta.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtConsulta.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtConsulta.DisabledState.Parent = this.txtConsulta;
+            this.txtConsulta.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtConsulta.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtConsulta.FocusedState.Parent = this.txtConsulta;
+            this.txtConsulta.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtConsulta.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtConsulta.HoverState.Parent = this.txtConsulta;
+            this.txtConsulta.Location = new System.Drawing.Point(155, 170);
+            this.txtConsulta.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtConsulta.Name = "txtConsulta";
+            this.txtConsulta.PasswordChar = '\0';
+            this.txtConsulta.PlaceholderText = "Digite número de cédula";
+            this.txtConsulta.SelectedText = "";
+            this.txtConsulta.ShadowDecoration.Parent = this.txtConsulta;
+            this.txtConsulta.Size = new System.Drawing.Size(408, 29);
+            this.txtConsulta.TabIndex = 9;
+            // 
+            // btnEliminar
+            // 
+            this.btnEliminar.BorderRadius = 13;
+            this.btnEliminar.CheckedState.Parent = this.btnEliminar;
+            this.btnEliminar.CustomImages.Parent = this.btnEliminar;
+            this.btnEliminar.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnEliminar.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnEliminar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnEliminar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnEliminar.DisabledState.Parent = this.btnEliminar;
+            this.btnEliminar.FillColor = System.Drawing.Color.Red;
+            this.btnEliminar.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEliminar.ForeColor = System.Drawing.Color.White;
+            this.btnEliminar.HoverState.Parent = this.btnEliminar;
+            this.btnEliminar.Location = new System.Drawing.Point(560, 546);
+            this.btnEliminar.Name = "btnEliminar";
+            this.btnEliminar.ShadowDecoration.Parent = this.btnEliminar;
+            this.btnEliminar.Size = new System.Drawing.Size(171, 31);
+            this.btnEliminar.TabIndex = 5;
+            this.btnEliminar.Text = "Eliminar";
+            // 
+            // ptrConsulta
+            // 
+            this.ptrConsulta.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ptrConsulta.Image = ((System.Drawing.Image)(resources.GetObject("ptrConsulta.Image")));
+            this.ptrConsulta.Location = new System.Drawing.Point(569, 172);
+            this.ptrConsulta.Name = "ptrConsulta";
+            this.ptrConsulta.Size = new System.Drawing.Size(31, 27);
+            this.ptrConsulta.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ptrConsulta.TabIndex = 3;
+            this.ptrConsulta.TabStop = false;
+            // 
+            // btnModificar
+            // 
+            this.btnModificar.BorderRadius = 13;
+            this.btnModificar.CheckedState.Parent = this.btnModificar;
+            this.btnModificar.CustomImages.Parent = this.btnModificar;
+            this.btnModificar.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnModificar.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnModificar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnModificar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnModificar.DisabledState.Parent = this.btnModificar;
+            this.btnModificar.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(191)))), ((int)(((byte)(250)))));
+            this.btnModificar.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnModificar.ForeColor = System.Drawing.Color.White;
+            this.btnModificar.HoverState.Parent = this.btnModificar;
+            this.btnModificar.Location = new System.Drawing.Point(352, 546);
+            this.btnModificar.Name = "btnModificar";
+            this.btnModificar.ShadowDecoration.Parent = this.btnModificar;
+            this.btnModificar.Size = new System.Drawing.Size(171, 31);
+            this.btnModificar.TabIndex = 4;
+            this.btnModificar.Text = "Modificar";
+            // 
+            // lblConsulta
+            // 
+            this.lblConsulta.AutoSize = true;
+            this.lblConsulta.Font = new System.Drawing.Font("Microsoft Tai Le", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblConsulta.ForeColor = System.Drawing.Color.Black;
+            this.lblConsulta.Location = new System.Drawing.Point(58, 172);
+            this.lblConsulta.Name = "lblConsulta";
+            this.lblConsulta.Size = new System.Drawing.Size(93, 26);
+            this.lblConsulta.TabIndex = 1;
+            this.lblConsulta.Text = "Consulta";
+            // 
+            // pnlCantidadDeMedicos
+            // 
+            this.pnlCantidadDeMedicos.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlCantidadDeMedicos.BackgroundImage")));
+            this.pnlCantidadDeMedicos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pnlCantidadDeMedicos.Controls.Add(this.lblCantidadDePacientes);
+            this.pnlCantidadDeMedicos.Controls.Add(this.lblMedico);
+            this.pnlCantidadDeMedicos.Controls.Add(this.pnlLineaSeparadora);
+            this.pnlCantidadDeMedicos.Controls.Add(this.ptrCantidadDeMedicos);
+            this.pnlCantidadDeMedicos.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.pnlCantidadDeMedicos.Location = new System.Drawing.Point(40, 24);
+            this.pnlCantidadDeMedicos.Name = "pnlCantidadDeMedicos";
+            this.pnlCantidadDeMedicos.Size = new System.Drawing.Size(222, 91);
+            this.pnlCantidadDeMedicos.TabIndex = 0;
+            // 
+            // lblCantidadDePacientes
+            // 
+            this.lblCantidadDePacientes.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCantidadDePacientes.Location = new System.Drawing.Point(61, 21);
+            this.lblCantidadDePacientes.Name = "lblCantidadDePacientes";
+            this.lblCantidadDePacientes.Size = new System.Drawing.Size(142, 32);
+            this.lblCantidadDePacientes.TabIndex = 3;
+            this.lblCantidadDePacientes.Text = "0";
+            // 
+            // lblMedico
+            // 
+            this.lblMedico.AutoSize = true;
+            this.lblMedico.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMedico.Location = new System.Drawing.Point(15, 59);
+            this.lblMedico.Name = "lblMedico";
+            this.lblMedico.Size = new System.Drawing.Size(168, 20);
+            this.lblMedico.TabIndex = 2;
+            this.lblMedico.Text = "Cantidad de pacientes";
+            // 
+            // pnlLineaSeparadora
+            // 
+            this.pnlLineaSeparadora.BackColor = System.Drawing.Color.Black;
+            this.pnlLineaSeparadora.Location = new System.Drawing.Point(13, 56);
+            this.pnlLineaSeparadora.Name = "pnlLineaSeparadora";
+            this.pnlLineaSeparadora.Size = new System.Drawing.Size(190, 1);
+            this.pnlLineaSeparadora.TabIndex = 1;
+            // 
+            // ptrCantidadDeMedicos
+            // 
+            this.ptrCantidadDeMedicos.Image = ((System.Drawing.Image)(resources.GetObject("ptrCantidadDeMedicos.Image")));
+            this.ptrCantidadDeMedicos.Location = new System.Drawing.Point(8, 3);
+            this.ptrCantidadDeMedicos.Name = "ptrCantidadDeMedicos";
+            this.ptrCantidadDeMedicos.Size = new System.Drawing.Size(47, 52);
+            this.ptrCantidadDeMedicos.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ptrCantidadDeMedicos.TabIndex = 0;
+            this.ptrCantidadDeMedicos.TabStop = false;
+            // 
             // FrmConsultarPaciente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -366,11 +366,11 @@ namespace Presentacion
             this.Text = "FrmConsultarPaciente";
             this.pnlFondoConsultarMedico.ResumeLayout(false);
             this.pnlFondoConsultarMedico.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgConsulta)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptrConsulta)).EndInit();
             this.pnlCantidadDeMedicos.ResumeLayout(false);
             this.pnlCantidadDeMedicos.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptrCantidadDeMedicos)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dtgConsulta)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -384,7 +384,7 @@ namespace Presentacion
         private Guna.UI2.WinForms.Guna2Button btnModificar;
         private System.Windows.Forms.Label lblConsulta;
         private System.Windows.Forms.Panel pnlCantidadDeMedicos;
-        private System.Windows.Forms.Label lblCantidadDeMedicos;
+        private System.Windows.Forms.Label lblCantidadDePacientes;
         private System.Windows.Forms.Label lblMedico;
         private System.Windows.Forms.Panel pnlLineaSeparadora;
         private System.Windows.Forms.PictureBox ptrCantidadDeMedicos;

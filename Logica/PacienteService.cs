@@ -55,5 +55,23 @@ namespace Logica
                 connectionManager.Close();
             }
         }
+
+        public ConsultaResponse FiltrarPaciente(string cedula)
+        {
+            try
+            {
+                connectionManager.Open();
+                return new ConsultaResponse(pacienteRepository.FiltrarPaciente(cedula));
+            }
+            catch (Exception exception)
+            {
+                return new ConsultaResponse("Se presentó el siguiente error: " + exception.Message);
+            }
+            finally
+            {
+                connectionManager.Close();
+            }
+        }
+
     }
 }

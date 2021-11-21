@@ -20,6 +20,7 @@ namespace Presentacion
             InitializeComponent();
             medicoService = new MedicoService(ConfigConnection.Connection);
             MostrarMedicos();
+            lblCantidadDeMedicos.Text = dtgConsultarMedicos.RowCount.ToString();
         }
 
         private void btnEliminar_Click(object sender, EventArgs e)

@@ -45,7 +45,7 @@ namespace Datos
                 int fila = command.ExecuteNonQuery();
             }
         }*/
-        public List<Paciente> Consultar()
+        public List<Paciente> ConsultarPaciente()
         {
             List<Paciente> pacientes = new List<Paciente>();
             using (var command = _connection.CreateCommand())
@@ -71,9 +71,44 @@ namespace Datos
             }
             return pacientes;
         }
-        public List<Paciente> FiltrarPorCedula(string cedula)
+
+
+
+        public List<Medico> ConsultarMedico()
         {
-            return Consultar().Where(p => p.NumeroDeCedula.ToLower().Contains(cedula.ToLower())).ToList();
+            List<Medico> medicos = new List<Medico>();
+            using (var command = _connection.CreateCommand())
+            {
+                command.CommandText = "select * from medico";
+                var reader = command.ExecuteReader();
+                while (reader.Read())
+                {
+                    Medico medico = new Medico();
+                    medico.NumeroDeCedula = reader.GetString(0);
+                    medico.PrimerNombre = reader.GetString(1);
+                    medico.SegundoNombre = reader.GetString(2);
+                    medico.PrimerApellido = reader.GetString(3);
+                    medico.SegundoApellido = reader.GetString(4);
+                    medico.NumeroTelefono = reader.GetString(5);
+                    medico.CorreoElectronico = reader.GetString(6);
+                    medico.Direccion = reader.GetString(7);
+                    medico.Sexo = reader.GetString(8);
+                    medico.Ciudad = reader.GetString(9);
+                    medicos.Add(medico);
+                }
+                reader.Close();
+            }
+            return medicos;
+        }
+
+        public List<Paciente> FiltrarPorCedulaPaciente(string cedula)
+        {
+            return ConsultarPaciente().Where(p => p.NumeroDeCedula.ToLower().Contains(cedula.ToLower())).ToList();
+        }
+
+        public List<Medico> FiltraPorCedulaMedico(string cedula)
+        {
+            return ConsultarMedico().Where(p => p.NumeroDeCedula.Contains(cedula)).ToList();
         }
     }
 }

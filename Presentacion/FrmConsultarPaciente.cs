@@ -20,6 +20,7 @@ namespace Presentacion
             InitializeComponent();
             pacienteService = new PacienteService(ConfigConnection.Connection);
             MostrarPacientes();
+            lblCantidadDePacientes.Text = dtgConsulta.RowCount.ToString();
         }
         public void LlenarGrid(List<Paciente> pacientes)
         {
@@ -43,7 +44,8 @@ namespace Presentacion
             {
                 MessageBox.Show(response.Mensaje, "Error al Consultar", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-        }
+        } 
+
     }
 
 }
