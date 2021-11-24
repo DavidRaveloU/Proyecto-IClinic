@@ -39,15 +39,56 @@ namespace Presentacion
         {
 
         }
-        /*private CitaMedica MapearCita()
+
+        private void btnAgregarHora_Click(object sender, EventArgs e)
         {
-            CitaMedica cita = new CitaMedica();
-            cita.IdCita = txtNumeroDeCedula.Text;
-            cita.HoraCitaMedica = hor;
-            cita.FechaCitaMedica = txtSegundoNombre.Text;
-            cita.Medico.NumeroDeCedula = txtPrimerApellido.Text;
-            cita.CedulaPaciente = txtSegundoNombre.Text;
-            return cita;
-        }*/
+            GenerarListaDeHora();
+        }
+
+        private void GenerarListaDeHora()
+        {
+
+            FrmHorario frmHorario = new FrmHorario();
+            frmHorario.ShowDialog();
+
+            if (frmHorario.txtHoraInicialDeAtancion.Text != "" && frmHorario.txtHoraFinalDeAtencion.Text != "")
+            {
+                DateTime time = new DateTime();
+                var horaInicial = Convert.ToInt32(frmHorario.txtHoraInicialDeAtancion.Text);
+                var hours = Convert.ToInt32(frmHorario.txtHoraFinalDeAtencion.Text);
+                    for (int i = horaInicial; i < hours; i++)
+                    {
+                        DateTime tiempo = time.AddHours(i);
+                        string Formato = tiempo.ToString("HH':'mm");
+                        cmbHora.Items.Add(Formato);
+
+                        for (int j = 1; j <= 3; j++)
+                        {
+                            tiempo = tiempo.AddMinutes(15);
+                            string FormatoM = tiempo.ToString("HH':'mm");
+                            cmbHora.Items.Add(FormatoM);
+                        }
+
+
+                    }
+                
+            }
+
+        }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            cmbHora.Items.Clear();
+        }
+        /*private CitaMedica MapearCita()
+{
+CitaMedica cita = new CitaMedica();
+cita.IdCita = txtNumeroDeCedula.Text;
+cita.HoraCitaMedica = hor;
+cita.FechaCitaMedica = txtSegundoNombre.Text;
+cita.Medico.NumeroDeCedula = txtPrimerApellido.Text;
+cita.CedulaPaciente = txtSegundoNombre.Text;
+return cita;
+}*/
     }
 }

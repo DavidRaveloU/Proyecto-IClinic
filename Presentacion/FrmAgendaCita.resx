@@ -118,6 +118,87 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="guna2Button1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAY9JREFUWEft
+        kkErRGEYhS81lrMbyoo/QFEsyZaiiD9BFMUfMCyIolhbEwsiC4tZUxR7C2ZBLCQ7jfPpGWnqNu97Z+7u
+        Ps2p6fQ+50sjyvBSiaKcsqY8KhUSvheVHGfpoUfC49WHa1PkLD30SJnHhqhCN0xXpkoPPfLNY61Uv9Dp
+        0yBaaFNqf+NGY/8f0dE6UhpZ5Zl4dPTM8d9v3CjaGmHziSoeDvVpLubd6mFa4Zl4dFH6LzQ5JZ6pj47v
+        kPqo3MjtZ+OWyo6kE+RJKjdyp9g4prIjaRt5kcqN3CU2tqjsSFpA3qFyI3eXjXkqO5ImkE+p3Mg9Y2Oc
+        yo6kXuR7KjdyH9joobIjKY/8qbRQmwmO8sVGntqHxHcG2qnMyOnAfaPyI/mGkQEqM3IGca+p/Eg+YmSa
+        yoycGdxDKj+SNxlZpjIjZwV3g8qP5DlG9qjMyNnHnaXyI3mMkXMqM3IucEep/EjuZuRF6aSui24Lyitu
+        F3UyNHDFUJJcMpMcjYS/5kD5YNSScBucAjMZGTFE0Q8c7si+OI45JgAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="btnAgregarHora.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+</value>
+  </data>
   <data name="ptbBuscarCedula.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAABGdBTUEAALGPC/xhBQAABDFJREFUaEPt
@@ -142,18 +223,6 @@
         TkSuQmCC
 </value>
   </data>
-  <metadata name="ColumnNombre.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="ColumnFechaAtencion.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="ColumnHora.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="ColumnSeleccionar.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <data name="lblNombreMedico.BaseStylesheet" xml:space="preserve">
     <value>#bunifu-label { padding: 0px; font-family: 'Microsoft Sans Serif'; font-size: 12pt; width: 100%; height: 100%; font-style: normal; font-weight: normal; text-decoration: none; color: rgb(0, 0, 0); text-align: left; }</value>
   </data>

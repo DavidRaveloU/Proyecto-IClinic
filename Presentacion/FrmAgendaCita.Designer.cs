@@ -30,16 +30,10 @@ namespace Presentacion
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmAgendaCita));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pnlAgenda = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.btnAgregarHora = new Guna.UI2.WinForms.Guna2Button();
+            this.cmbHora = new Guna.UI2.WinForms.Guna2ComboBox();
             this.ptbBuscarCedula = new System.Windows.Forms.PictureBox();
-            this.guna2DataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.ColumnNombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnFechaAtencion = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnHora = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnSeleccionar = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.guna2ComboBox1 = new Guna.UI2.WinForms.Guna2ComboBox();
             this.lblNombreMedico = new Bunifu.UI.WinForms.BunifuLabel();
             this.lblNumeroAgenda = new Bunifu.UI.WinForms.BunifuLabel();
@@ -58,17 +52,19 @@ namespace Presentacion
             this.lblNumeroCédula = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lblAgenda = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.ptrAgendaCita = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.pnlAgenda.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptbBuscarCedula)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptrAgendaCita)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlAgenda
             // 
             this.pnlAgenda.BackColor = System.Drawing.Color.Transparent;
+            this.pnlAgenda.Controls.Add(this.guna2Button1);
+            this.pnlAgenda.Controls.Add(this.btnAgregarHora);
+            this.pnlAgenda.Controls.Add(this.cmbHora);
             this.pnlAgenda.Controls.Add(this.ptbBuscarCedula);
-            this.pnlAgenda.Controls.Add(this.guna2DataGridView1);
             this.pnlAgenda.Controls.Add(this.guna2ComboBox1);
             this.pnlAgenda.Controls.Add(this.lblNombreMedico);
             this.pnlAgenda.Controls.Add(this.lblNumeroAgenda);
@@ -95,6 +91,47 @@ namespace Presentacion
             this.pnlAgenda.Size = new System.Drawing.Size(743, 616);
             this.pnlAgenda.TabIndex = 2;
             // 
+            // btnAgregarHora
+            // 
+            this.btnAgregarHora.CheckedState.Parent = this.btnAgregarHora;
+            this.btnAgregarHora.CustomImages.Parent = this.btnAgregarHora;
+            this.btnAgregarHora.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnAgregarHora.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnAgregarHora.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnAgregarHora.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnAgregarHora.DisabledState.Parent = this.btnAgregarHora;
+            this.btnAgregarHora.FillColor = System.Drawing.Color.Transparent;
+            this.btnAgregarHora.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnAgregarHora.ForeColor = System.Drawing.Color.White;
+            this.btnAgregarHora.HoverState.Parent = this.btnAgregarHora;
+            this.btnAgregarHora.Image = ((System.Drawing.Image)(resources.GetObject("btnAgregarHora.Image")));
+            this.btnAgregarHora.Location = new System.Drawing.Point(645, 257);
+            this.btnAgregarHora.Name = "btnAgregarHora";
+            this.btnAgregarHora.ShadowDecoration.Parent = this.btnAgregarHora;
+            this.btnAgregarHora.Size = new System.Drawing.Size(32, 36);
+            this.btnAgregarHora.TabIndex = 92;
+            this.btnAgregarHora.Click += new System.EventHandler(this.btnAgregarHora_Click);
+            // 
+            // cmbHora
+            // 
+            this.cmbHora.BackColor = System.Drawing.Color.Transparent;
+            this.cmbHora.BorderRadius = 12;
+            this.cmbHora.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cmbHora.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHora.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cmbHora.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cmbHora.FocusedState.Parent = this.cmbHora;
+            this.cmbHora.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cmbHora.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.cmbHora.HoverState.Parent = this.cmbHora;
+            this.cmbHora.ItemHeight = 30;
+            this.cmbHora.ItemsAppearance.Parent = this.cmbHora;
+            this.cmbHora.Location = new System.Drawing.Point(474, 256);
+            this.cmbHora.Name = "cmbHora";
+            this.cmbHora.ShadowDecoration.Parent = this.cmbHora;
+            this.cmbHora.Size = new System.Drawing.Size(165, 36);
+            this.cmbHora.TabIndex = 91;
+            // 
             // ptbBuscarCedula
             // 
             this.ptbBuscarCedula.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -105,94 +142,6 @@ namespace Presentacion
             this.ptbBuscarCedula.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.ptbBuscarCedula.TabIndex = 90;
             this.ptbBuscarCedula.TabStop = false;
-            // 
-            // guna2DataGridView1
-            // 
-            this.guna2DataGridView1.AllowUserToAddRows = false;
-            this.guna2DataGridView1.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.guna2DataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.guna2DataGridView1.BackgroundColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.guna2DataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.guna2DataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(191)))), ((int)(((byte)(165)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.guna2DataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.guna2DataGridView1.ColumnHeadersHeight = 21;
-            this.guna2DataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.ColumnNombre,
-            this.ColumnFechaAtencion,
-            this.ColumnHora,
-            this.ColumnSeleccionar});
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.guna2DataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
-            this.guna2DataGridView1.EnableHeadersVisualStyles = false;
-            this.guna2DataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(221)))), ((int)(((byte)(208)))));
-            this.guna2DataGridView1.Location = new System.Drawing.Point(29, 344);
-            this.guna2DataGridView1.Name = "guna2DataGridView1";
-            this.guna2DataGridView1.ReadOnly = true;
-            this.guna2DataGridView1.RowHeadersVisible = false;
-            this.guna2DataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.guna2DataGridView1.Size = new System.Drawing.Size(683, 187);
-            this.guna2DataGridView1.TabIndex = 77;
-            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.Font = null;
-            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
-            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
-            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-            this.guna2DataGridView1.ThemeStyle.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(221)))), ((int)(((byte)(208)))));
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(191)))), ((int)(((byte)(165)))));
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.Height = 21;
-            this.guna2DataGridView1.ThemeStyle.ReadOnly = true;
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.Height = 22;
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            // 
-            // ColumnNombre
-            // 
-            this.ColumnNombre.HeaderText = "Nombre";
-            this.ColumnNombre.Name = "ColumnNombre";
-            this.ColumnNombre.ReadOnly = true;
-            // 
-            // ColumnFechaAtencion
-            // 
-            this.ColumnFechaAtencion.HeaderText = "Fecha de atención";
-            this.ColumnFechaAtencion.Name = "ColumnFechaAtencion";
-            this.ColumnFechaAtencion.ReadOnly = true;
-            // 
-            // ColumnHora
-            // 
-            this.ColumnHora.HeaderText = "Hora de atención";
-            this.ColumnHora.Name = "ColumnHora";
-            this.ColumnHora.ReadOnly = true;
-            // 
-            // ColumnSeleccionar
-            // 
-            this.ColumnSeleccionar.HeaderText = "";
-            this.ColumnSeleccionar.Name = "ColumnSeleccionar";
-            this.ColumnSeleccionar.ReadOnly = true;
             // 
             // guna2ComboBox1
             // 
@@ -208,7 +157,7 @@ namespace Presentacion
             this.guna2ComboBox1.HoverState.Parent = this.guna2ComboBox1;
             this.guna2ComboBox1.ItemHeight = 30;
             this.guna2ComboBox1.ItemsAppearance.Parent = this.guna2ComboBox1;
-            this.guna2ComboBox1.Location = new System.Drawing.Point(474, 292);
+            this.guna2ComboBox1.Location = new System.Drawing.Point(24, 346);
             this.guna2ComboBox1.Name = "guna2ComboBox1";
             this.guna2ComboBox1.ShadowDecoration.Parent = this.guna2ComboBox1;
             this.guna2ComboBox1.Size = new System.Drawing.Size(229, 36);
@@ -221,7 +170,7 @@ namespace Presentacion
             this.lblNombreMedico.Cursor = System.Windows.Forms.Cursors.Default;
             this.lblNombreMedico.CursorType = System.Windows.Forms.Cursors.Default;
             this.lblNombreMedico.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNombreMedico.Location = new System.Drawing.Point(474, 256);
+            this.lblNombreMedico.Location = new System.Drawing.Point(24, 320);
             this.lblNombreMedico.Name = "lblNombreMedico";
             this.lblNombreMedico.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.lblNombreMedico.Size = new System.Drawing.Size(142, 20);
@@ -460,6 +409,28 @@ namespace Presentacion
             this.ptrAgendaCita.TabIndex = 19;
             this.ptrAgendaCita.TabStop = false;
             // 
+            // guna2Button1
+            // 
+            this.guna2Button1.CheckedState.Parent = this.guna2Button1;
+            this.guna2Button1.CustomImages.Parent = this.guna2Button1;
+            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button1.DisabledState.Parent = this.guna2Button1;
+            this.guna2Button1.FillColor = System.Drawing.Color.Transparent;
+            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2Button1.ForeColor = System.Drawing.Color.White;
+            this.guna2Button1.HoverState.Parent = this.guna2Button1;
+            this.guna2Button1.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button1.Image")));
+            this.guna2Button1.ImageSize = new System.Drawing.Size(25, 25);
+            this.guna2Button1.Location = new System.Drawing.Point(683, 257);
+            this.guna2Button1.Name = "guna2Button1";
+            this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
+            this.guna2Button1.Size = new System.Drawing.Size(32, 36);
+            this.guna2Button1.TabIndex = 93;
+            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
+            // 
             // FrmAgendaCita
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -474,7 +445,6 @@ namespace Presentacion
             this.pnlAgenda.ResumeLayout(false);
             this.pnlAgenda.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptbBuscarCedula)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptrAgendaCita)).EndInit();
             this.ResumeLayout(false);
 
@@ -501,11 +471,9 @@ namespace Presentacion
         private Guna.UI2.WinForms.Guna2PictureBox ptrAgendaCita;
         private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox1;
         private Bunifu.UI.WinForms.BunifuLabel lblNombreMedico;
-        private Guna.UI2.WinForms.Guna2DataGridView guna2DataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnNombre;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnFechaAtencion;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnHora;
-        private System.Windows.Forms.DataGridViewCheckBoxColumn ColumnSeleccionar;
         private System.Windows.Forms.PictureBox ptbBuscarCedula;
+        private Guna.UI2.WinForms.Guna2Button btnAgregarHora;
+        public Guna.UI2.WinForms.Guna2ComboBox cmbHora;
+        private Guna.UI2.WinForms.Guna2Button guna2Button1;
     }
 }

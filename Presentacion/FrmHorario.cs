@@ -19,6 +19,8 @@ namespace Presentacion
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
+            txtHoraFinalDeAtencion.Text = "";
+            txtHoraInicialDeAtancion.Text = "";
             this.Close();
         }
         private int posX = 0;
@@ -35,6 +37,39 @@ namespace Presentacion
                 Left += (e.X - posX);
                 Top += (e.Y - posY);
             }
+        }
+
+        private void btnGuardar_Click(object sender, EventArgs e)
+        {
+            FrmVentanaError error = new FrmVentanaError();
+            if (txtHoraInicialDeAtancion.Text == "" || txtHoraFinalDeAtencion.Text == "" )
+            {
+                error.lblMensajeError.Text = "Digite informacion en los campos pertinentes";
+                error.Show();
+                error.TopMost = true;
+            }
+            else if ((Convert.ToInt32(txtHoraInicialDeAtancion.Text) > Convert.ToInt32(txtHoraFinalDeAtencion.Text)))
+            {
+                error.lblMensajeError.Text = "La hora inicial debe ser menor a la hora final";
+                error.Show();
+                error.TopMost = true;
+            }
+            else
+            {
+                this.Close();
+            }
+
+        }
+
+        private void VerificarHora()
+        { 
+        
+        
+        }
+
+        private void guna2ShadowPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

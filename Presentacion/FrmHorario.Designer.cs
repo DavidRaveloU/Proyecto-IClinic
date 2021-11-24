@@ -42,6 +42,7 @@ namespace Presentacion
             this.lblHorario = new Bunifu.UI.WinForms.BunifuLabel();
             this.btnCancelar = new Guna.UI2.WinForms.Guna2Button();
             this.btnGuardar = new Guna.UI2.WinForms.Guna2Button();
+            this.lblFormatoHora = new System.Windows.Forms.Label();
             this.guna2ShadowPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -63,6 +64,7 @@ namespace Presentacion
             // guna2ShadowPanel1
             // 
             this.guna2ShadowPanel1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ShadowPanel1.Controls.Add(this.lblFormatoHora);
             this.guna2ShadowPanel1.Controls.Add(this.lblHoraFinalDeAtencion);
             this.guna2ShadowPanel1.Controls.Add(this.lblHoraInicialDeAtencion);
             this.guna2ShadowPanel1.Controls.Add(this.txtHoraFinalDeAtencion);
@@ -77,6 +79,7 @@ namespace Presentacion
             this.guna2ShadowPanel1.ShadowColor = System.Drawing.Color.Black;
             this.guna2ShadowPanel1.Size = new System.Drawing.Size(694, 365);
             this.guna2ShadowPanel1.TabIndex = 12;
+            this.guna2ShadowPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2ShadowPanel1_Paint);
             // 
             // lblHoraFinalDeAtencion
             // 
@@ -234,6 +237,18 @@ namespace Presentacion
             this.btnGuardar.Size = new System.Drawing.Size(171, 31);
             this.btnGuardar.TabIndex = 17;
             this.btnGuardar.Text = "Guardar";
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
+            // 
+            // lblFormatoHora
+            // 
+            this.lblFormatoHora.AutoSize = true;
+            this.lblFormatoHora.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFormatoHora.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(191)))), ((int)(((byte)(165)))));
+            this.lblFormatoHora.Location = new System.Drawing.Point(246, 14);
+            this.lblFormatoHora.Name = "lblFormatoHora";
+            this.lblFormatoHora.Size = new System.Drawing.Size(203, 33);
+            this.lblFormatoHora.TabIndex = 85;
+            this.lblFormatoHora.Text = "Formato 24 Hr";
             // 
             // FrmHorario
             // 
@@ -262,9 +277,10 @@ namespace Presentacion
         private Guna.UI2.WinForms.Guna2Button btnCancelar;
         private Bunifu.UI.WinForms.BunifuLabel lblHoraFinalDeAtencion;
         private Bunifu.UI.WinForms.BunifuLabel lblHoraInicialDeAtencion;
-        private Guna.UI2.WinForms.Guna2TextBox txtHoraFinalDeAtencion;
-        private Guna.UI2.WinForms.Guna2TextBox txtHoraInicialDeAtancion;
         private Bunifu.UI.WinForms.BunifuLabel lblNumeroHorario;
         private Bunifu.UI.WinForms.BunifuLabel lblHorario;
+        public Guna.UI2.WinForms.Guna2TextBox txtHoraFinalDeAtencion;
+        public Guna.UI2.WinForms.Guna2TextBox txtHoraInicialDeAtancion;
+        private System.Windows.Forms.Label lblFormatoHora;
     }
 }
