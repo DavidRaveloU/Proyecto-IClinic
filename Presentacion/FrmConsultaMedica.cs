@@ -55,8 +55,13 @@ namespace Presentacion
             Tratamiento tratamiento = MapearTratamiento();
             RecetaMedica recetaMedica = MapearRecetaMedica();
             Diagnostico diagnostico = MapearDiagnostico();
-            string mensaje = consultaMedicaService.Guardar(tratamiento, recetaMedica, diagnostico);
+            ConsultaMedica consultaMedica = MapearConsulta();
+            string mensaje = consultaMedicaService.Guardar(tratamiento, recetaMedica, diagnostico, consultaMedica);
             MessageBox.Show(mensaje, "Guardar", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            if(mensaje.Equals("Datos Guardados Satisfactoriamente"))
+            {
+                CargarFomulario();
+            }
         }
         private Tratamiento MapearTratamiento()
         {
@@ -81,6 +86,22 @@ namespace Presentacion
             diagnostico.Descripcion = txtDiagnostico.Text;
             return diagnostico;
         }
+        private ConsultaMedica MapearConsulta()
+        {
+            ConsultaMedica consultaMedica = new ConsultaMedica();
+            consultaMedica.IdConsulta = int.Parse(lblidConsulta.Text);
+            consultaMedica.Peso = txtPeso.Text;
+            consultaMedica.Estatura = txtEstatura.Text;
+            consultaMedica.PresionArterial = txtPresion.Text;
+            consultaMedica.RitmoCardiaco = txtRitmoCardiaco.Text;
+            consultaMedica.AntecedentesQuirurjicos = txtAntecedentes.Text;
+            consultaMedica.IdTratamiento = int.Parse(lblIdTratamiento.Text);
+            consultaMedica.IdDiagnostico = int.Parse(lblidConsulta.Text);
+            consultaMedica.IdRecetaMedica = int.Parse(lblIdRecetaMedica.Text);
+            consultaMedica.CedulaMedico = txtCedulaMedico.Text;
+            consultaMedica.CedulaPaciente = txtCedulaPaciente.Text;
+            return consultaMedica;
+        }
         private void ValidarCampoVacio(Label label, Guna.UI2.WinForms.Guna2TextBox textBox)
         {
             label.Text = (string.IsNullOrEmpty(textBox.Text)) ? "*Digite Informacion*" : " ";
@@ -88,7 +109,7 @@ namespace Presentacion
 
         private void HabilitarBotonSiguiente()
         {
-            if (txtCedulaPaciente.Text != string.Empty && !string.IsNullOrEmpty(txtTemperatura.Text)
+            if (txtCedulaPaciente.Text != string.Empty && !string.IsNullOrEmpty(txtRitmoCardiaco.Text)
                 && !string.IsNullOrEmpty(txtEstatura.Text) && !string.IsNullOrEmpty(txtPeso.Text) 
                 && !string.IsNullOrEmpty(txtPresion.Text) && txtDiagnostico.Text != string.Empty )
             {
@@ -114,7 +135,7 @@ namespace Presentacion
 
         private void txtTemperatura_TextChanged(object sender, EventArgs e)
         {
-            ValidarCampoVacio(lblErrorTemperatura, txtTemperatura);
+            ValidarCampoVacio(lblErrorTemperatura, txtRitmoCardiaco);
             HabilitarBotonSiguiente();
         }
 
@@ -174,17 +195,23 @@ namespace Presentacion
 
         private void FrmConsultaMedica_Load(object sender, EventArgs e)
         {
+            CargarFomulario();
+        }
+
+        private void CargarFomulario()
+        {
             string numero = "0";
-            DataTable dt = consultaMedicaService.ExtraerNumeroSecuencia();  
-            if(dt.Rows.Count > 0)
+            DataTable dt = consultaMedicaService.ExtraerNumeroSecuencia();
+            if (dt.Rows.Count > 0)
             {
                 DataRow row = dt.Rows[0];
                 numero = Convert.ToString(row[0]);
             }
+            lblidConsulta.Text = numero; ;
             var dateAndTime = DateTime.Now;
             var date = dateAndTime.ToShortDateString();
-            lblidConsulta.Text = numero;
             lblFechaHoy.Text = date.ToString();
+
         }
 
         private void ptbBuscarCedulaMedico_Click(object sender, EventArgs e)

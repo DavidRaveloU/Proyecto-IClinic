@@ -58,8 +58,8 @@ namespace Presentacion
             this.label6 = new System.Windows.Forms.Label();
             this.txtEstatura = new Guna.UI2.WinForms.Guna2TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.txtTemperatura = new Guna.UI2.WinForms.Guna2TextBox();
-            this.label5 = new System.Windows.Forms.Label();
+            this.txtRitmoCardiaco = new Guna.UI2.WinForms.Guna2TextBox();
+            this.lblTituloRitmo = new System.Windows.Forms.Label();
             this.lblTituloCedulaPaciente = new System.Windows.Forms.Label();
             this.lblNombre = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -177,10 +177,10 @@ namespace Presentacion
             this.tabConsultaMedica.Location = new System.Drawing.Point(27, 59);
             this.tabConsultaMedica.Multiline = true;
             this.tabConsultaMedica.Name = "tabConsultaMedica";
-            this.tabConsultaMedica.Page = this.pageConsultaMedica;
-            this.tabConsultaMedica.PageIndex = 0;
-            this.tabConsultaMedica.PageName = "pageConsultaMedica";
-            this.tabConsultaMedica.PageTitle = "consulta medica";
+            this.tabConsultaMedica.Page = this.pageTratamiento;
+            this.tabConsultaMedica.PageIndex = 1;
+            this.tabConsultaMedica.PageName = "pageTratamiento";
+            this.tabConsultaMedica.PageTitle = "tratamiento";
             this.tabConsultaMedica.SelectedIndex = 0;
             this.tabConsultaMedica.Size = new System.Drawing.Size(691, 538);
             this.tabConsultaMedica.TabIndex = 15;
@@ -228,8 +228,8 @@ namespace Presentacion
             this.pageConsultaMedica.Controls.Add(this.label6);
             this.pageConsultaMedica.Controls.Add(this.txtEstatura);
             this.pageConsultaMedica.Controls.Add(this.label1);
-            this.pageConsultaMedica.Controls.Add(this.txtTemperatura);
-            this.pageConsultaMedica.Controls.Add(this.label5);
+            this.pageConsultaMedica.Controls.Add(this.txtRitmoCardiaco);
+            this.pageConsultaMedica.Controls.Add(this.lblTituloRitmo);
             this.pageConsultaMedica.Controls.Add(this.lblTituloCedulaPaciente);
             this.pageConsultaMedica.Controls.Add(this.lblNombre);
             this.pageConsultaMedica.Controls.Add(this.label2);
@@ -310,6 +310,7 @@ namespace Presentacion
             this.lblidConsulta.Size = new System.Drawing.Size(49, 16);
             this.lblidConsulta.TabIndex = 72;
             this.lblidConsulta.Text = "codigo";
+            this.lblidConsulta.Visible = false;
             // 
             // lblTituloIdConsulta
             // 
@@ -320,6 +321,7 @@ namespace Presentacion
             this.lblTituloIdConsulta.Size = new System.Drawing.Size(61, 16);
             this.lblTituloIdConsulta.TabIndex = 71;
             this.lblTituloIdConsulta.Text = "Codigo:";
+            this.lblTituloIdConsulta.Visible = false;
             // 
             // lblErrorDiagnostico
             // 
@@ -485,7 +487,7 @@ namespace Presentacion
             this.txtPresion.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtPresion.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtPresion.HoverState.Parent = this.txtPresion;
-            this.txtPresion.Location = new System.Drawing.Point(519, 166);
+            this.txtPresion.Location = new System.Drawing.Point(533, 166);
             this.txtPresion.Name = "txtPresion";
             this.txtPresion.PasswordChar = '\0';
             this.txtPresion.PlaceholderText = "";
@@ -520,7 +522,7 @@ namespace Presentacion
             this.txtPeso.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtPeso.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtPeso.HoverState.Parent = this.txtPeso;
-            this.txtPeso.Location = new System.Drawing.Point(519, 122);
+            this.txtPeso.Location = new System.Drawing.Point(533, 122);
             this.txtPeso.Name = "txtPeso";
             this.txtPeso.PasswordChar = '\0';
             this.txtPeso.PlaceholderText = "";
@@ -555,7 +557,7 @@ namespace Presentacion
             this.txtEstatura.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtEstatura.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtEstatura.HoverState.Parent = this.txtEstatura;
-            this.txtEstatura.Location = new System.Drawing.Point(519, 82);
+            this.txtEstatura.Location = new System.Drawing.Point(533, 82);
             this.txtEstatura.Name = "txtEstatura";
             this.txtEstatura.PasswordChar = '\0';
             this.txtEstatura.PlaceholderText = "";
@@ -575,40 +577,40 @@ namespace Presentacion
             this.label1.TabIndex = 52;
             this.label1.Text = "Estatura:";
             // 
-            // txtTemperatura
+            // txtRitmoCardiaco
             // 
-            this.txtTemperatura.BorderRadius = 7;
-            this.txtTemperatura.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtTemperatura.DefaultText = "";
-            this.txtTemperatura.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtTemperatura.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtTemperatura.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtTemperatura.DisabledState.Parent = this.txtTemperatura;
-            this.txtTemperatura.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtTemperatura.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtTemperatura.FocusedState.Parent = this.txtTemperatura;
-            this.txtTemperatura.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtTemperatura.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtTemperatura.HoverState.Parent = this.txtTemperatura;
-            this.txtTemperatura.Location = new System.Drawing.Point(519, 42);
-            this.txtTemperatura.Name = "txtTemperatura";
-            this.txtTemperatura.PasswordChar = '\0';
-            this.txtTemperatura.PlaceholderText = "";
-            this.txtTemperatura.SelectedText = "";
-            this.txtTemperatura.ShadowDecoration.Parent = this.txtTemperatura;
-            this.txtTemperatura.Size = new System.Drawing.Size(107, 22);
-            this.txtTemperatura.TabIndex = 51;
-            this.txtTemperatura.TextChanged += new System.EventHandler(this.txtTemperatura_TextChanged);
+            this.txtRitmoCardiaco.BorderRadius = 7;
+            this.txtRitmoCardiaco.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtRitmoCardiaco.DefaultText = "";
+            this.txtRitmoCardiaco.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtRitmoCardiaco.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtRitmoCardiaco.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtRitmoCardiaco.DisabledState.Parent = this.txtRitmoCardiaco;
+            this.txtRitmoCardiaco.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtRitmoCardiaco.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtRitmoCardiaco.FocusedState.Parent = this.txtRitmoCardiaco;
+            this.txtRitmoCardiaco.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtRitmoCardiaco.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtRitmoCardiaco.HoverState.Parent = this.txtRitmoCardiaco;
+            this.txtRitmoCardiaco.Location = new System.Drawing.Point(533, 42);
+            this.txtRitmoCardiaco.Name = "txtRitmoCardiaco";
+            this.txtRitmoCardiaco.PasswordChar = '\0';
+            this.txtRitmoCardiaco.PlaceholderText = "";
+            this.txtRitmoCardiaco.SelectedText = "";
+            this.txtRitmoCardiaco.ShadowDecoration.Parent = this.txtRitmoCardiaco;
+            this.txtRitmoCardiaco.Size = new System.Drawing.Size(107, 22);
+            this.txtRitmoCardiaco.TabIndex = 51;
+            this.txtRitmoCardiaco.TextChanged += new System.EventHandler(this.txtTemperatura_TextChanged);
             // 
-            // label5
+            // lblTituloRitmo
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(412, 45);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(100, 16);
-            this.label5.TabIndex = 50;
-            this.label5.Text = "Temperatura:";
+            this.lblTituloRitmo.AutoSize = true;
+            this.lblTituloRitmo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTituloRitmo.Location = new System.Drawing.Point(412, 45);
+            this.lblTituloRitmo.Name = "lblTituloRitmo";
+            this.lblTituloRitmo.Size = new System.Drawing.Size(116, 16);
+            this.lblTituloRitmo.TabIndex = 50;
+            this.lblTituloRitmo.Text = "Ritmo cardiaco:";
             // 
             // lblTituloCedulaPaciente
             // 
@@ -910,6 +912,7 @@ namespace Presentacion
             this.lblIdRecetaMedica.Size = new System.Drawing.Size(37, 21);
             this.lblIdRecetaMedica.TabIndex = 14;
             this.lblIdRecetaMedica.Text = "123";
+            this.lblIdRecetaMedica.Visible = false;
             // 
             // lblCodigoRecetaMedica
             // 
@@ -920,6 +923,7 @@ namespace Presentacion
             this.lblCodigoRecetaMedica.Size = new System.Drawing.Size(184, 21);
             this.lblCodigoRecetaMedica.TabIndex = 13;
             this.lblCodigoRecetaMedica.Text = "Código Receta Medica:";
+            this.lblCodigoRecetaMedica.Visible = false;
             // 
             // txtNombreTratamiento
             // 
@@ -975,6 +979,7 @@ namespace Presentacion
             this.lblIdTratamiento.Size = new System.Drawing.Size(37, 21);
             this.lblIdTratamiento.TabIndex = 7;
             this.lblIdTratamiento.Text = "123";
+            this.lblIdTratamiento.Visible = false;
             // 
             // lblCódigoTratamiento
             // 
@@ -985,6 +990,7 @@ namespace Presentacion
             this.lblCódigoTratamiento.Size = new System.Drawing.Size(164, 21);
             this.lblCódigoTratamiento.TabIndex = 6;
             this.lblCódigoTratamiento.Text = "Código tratamiento:";
+            this.lblCódigoTratamiento.Visible = false;
             // 
             // chkTratamiento
             // 
@@ -1144,8 +1150,8 @@ namespace Presentacion
         private System.Windows.Forms.Label label6;
         private Guna.UI2.WinForms.Guna2TextBox txtEstatura;
         private System.Windows.Forms.Label label1;
-        private Guna.UI2.WinForms.Guna2TextBox txtTemperatura;
-        private System.Windows.Forms.Label label5;
+        private Guna.UI2.WinForms.Guna2TextBox txtRitmoCardiaco;
+        private System.Windows.Forms.Label lblTituloRitmo;
         private System.Windows.Forms.Label lblTituloCedulaPaciente;
         private System.Windows.Forms.Label lblNombre;
         private System.Windows.Forms.Label label2;

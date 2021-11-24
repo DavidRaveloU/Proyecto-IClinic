@@ -27,7 +27,7 @@ namespace Datos
             adap.Fill(dt);
             return dt;
         }
-        public void Guardar(Tratamiento tratamiento, RecetaMedica recetaMedica, Diagnostico diagnostico)
+        public void Guardar(Tratamiento tratamiento, RecetaMedica recetaMedica, Diagnostico diagnostico, ConsultaMedica consultaMedica)
         {
             using (var command = _connection.CreateCommand())
             {
@@ -47,11 +47,35 @@ namespace Datos
             }
             using (var command = _connection.CreateCommand())
             {
-                command.CommandText = "insert into diagnostico (id_diagnostico,descripcion) values (NEXT VALUE FOR id_consultamedica, @descripcion)";
+                command.CommandText = "insert into diagnostico (id_diagnostico,descripcion) values (@id, @descripcion)";
+                command.Parameters.Add(new SqlParameter("@id", diagnostico.IdDiagnostico));
                 command.Parameters.Add(new SqlParameter("@descripcion", diagnostico.Descripcion));
                 int fila = command.ExecuteNonQuery();
             }
-            
+            using (var command = _connection.CreateCommand())
+            {
+                command.CommandText = "insert into consulta (id_consultamedica,peso,estatura,presion_arterial,ritmo_cardiaco,antecedentes_quirurjicos,tratamiento_id_tratamiento," +
+                    "diagnostico_id_diagnostico,recetamedica_id_recetamedica,medico_cedula_medico, paciente_cedula_paciente) values (@id, @peso, @estatura,@presion_arterial,@ritmo_cardiaco,@antecedentes_quirurjicos," +
+                    "@tratamiento_id_tratamiento, @diagnostico_id_diagnostico,@recetamedica_id_recetamedica,@medico_cedula_medico, @paciente_cedula_paciente)";
+                command.Parameters.Add(new SqlParameter("@id", consultaMedica.IdConsulta));
+                command.Parameters.Add(new SqlParameter("@peso", consultaMedica.Peso));
+                command.Parameters.Add(new SqlParameter("@estatura", consultaMedica.Estatura));
+                command.Parameters.Add(new SqlParameter("@presion_arterial", consultaMedica.PresionArterial));
+                command.Parameters.Add(new SqlParameter("@ritmo_cardiaco", consultaMedica.RitmoCardiaco));
+                command.Parameters.Add(new SqlParameter("@antecedentes_quirurjicos", consultaMedica.AntecedentesQuirurjicos));
+                command.Parameters.Add(new SqlParameter("@tratamiento_id_tratamiento", consultaMedica.IdTratamiento));
+                command.Parameters.Add(new SqlParameter("@diagnostico_id_diagnostico", consultaMedica.IdDiagnostico));
+                command.Parameters.Add(new SqlParameter("@recetamedica_id_recetamedica", consultaMedica.IdRecetaMedica));
+                command.Parameters.Add(new SqlParameter("@medico_cedula_medico", consultaMedica.CedulaMedico));
+                command.Parameters.Add(new SqlParameter("@paciente_cedula_paciente", consultaMedica.CedulaPaciente));
+                int fila = command.ExecuteNonQuery();
+            }
+            using (var command = _connection.CreateCommand())
+            {
+                command.CommandText = "SELECT NEXT VALUE FOR id_consultamedica";
+                int fila = command.ExecuteNonQuery();
+            }
+
         }
         public List<Paciente> ConsultarPaciente()
         {

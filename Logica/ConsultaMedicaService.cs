@@ -66,14 +66,14 @@ namespace Logica
                 _connectionManager.Close();
             }
         }
-        public string Guardar(Tratamiento tratamiento, RecetaMedica recetaMedica, Diagnostico diagnostico)
+        public string Guardar(Tratamiento tratamiento, RecetaMedica recetaMedica, Diagnostico diagnostico, ConsultaMedica consultaMedica)
         {
             try
             {
                 _connectionManager.Open();
            
                 {
-                    consultaMedicaRepository.Guardar(tratamiento,recetaMedica,diagnostico);
+                    consultaMedicaRepository.Guardar(tratamiento,recetaMedica,diagnostico, consultaMedica);
                     return "Datos Guardados Satisfactoriamente";
                 }
             }
