@@ -187,4 +187,9 @@ ALTER TABLE detalleagenda
     ADD CONSTRAINT detalleagenda_medico_fk FOREIGN KEY ( medico_cedula_medico )
         REFERENCES medico ( cedula_medico );
 
+ALTER TABLE consulta ADD
+  paciente_cedula_paciente VARCHAR(15) NOT NULL;
 
+  ALTER TABLE consulta
+  ADD CONSTRAINT consulta_paciente_fk FOREIGN KEY (paciente_cedula_paciente)
+  REFERENCES paciente(cedula_paciente );
