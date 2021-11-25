@@ -13,17 +13,16 @@ namespace Entidad
 
         }
 
-        public ConsultaMedica(int idConsulta, string peso, string estatura, string presionArterial, string ritmoCardiaco, string alergia, string antecedentesQuirurjicos, int idDiagnostico, int idTratamiento, int idRecetaMedica, string cedulaMedico, string cedulaPaciente)
+        public ConsultaMedica(int idConsulta, string peso, string estatura, string presionArterial, string ritmoCardiaco, string antecedentesQuirurjicos, int idTratamiento, int idDiagnostico, int idRecetaMedica, string cedulaMedico, string cedulaPaciente)
         {
             IdConsulta = idConsulta;
             Peso = peso;
             Estatura = estatura;
             PresionArterial = presionArterial;
             RitmoCardiaco = ritmoCardiaco;
-            Alergia = alergia;
             AntecedentesQuirurjicos = antecedentesQuirurjicos;
-            IdDiagnostico = idDiagnostico;
             IdTratamiento = idTratamiento;
+            IdDiagnostico = idDiagnostico;
             IdRecetaMedica = idRecetaMedica;
             CedulaMedico = cedulaMedico;
             CedulaPaciente = cedulaPaciente;
@@ -34,10 +33,9 @@ namespace Entidad
         public string Estatura { get; set; }
         public string PresionArterial { get; set; }
         public string RitmoCardiaco { get; set; }
-        public string Alergia { get; set; }
         public string  AntecedentesQuirurjicos { get; set; }
-        public int IdDiagnostico { get; set; }
         public int IdTratamiento { get; set; }
+        public int IdDiagnostico { get; set; }
         public int IdRecetaMedica { get; set; }
         public string CedulaMedico { get; set; }
         public string CedulaPaciente { get; set; }

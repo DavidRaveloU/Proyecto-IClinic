@@ -34,6 +34,7 @@ namespace Presentacion
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.guna2ShadowPanel1 = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.btnGenerarPDF = new Guna.UI2.WinForms.Guna2Button();
             this.lblCantidadDeHistoriales = new System.Windows.Forms.Label();
             this.pnlCantidadDeMedicos = new System.Windows.Forms.Panel();
             this.lblMedico = new System.Windows.Forms.Label();
@@ -43,7 +44,18 @@ namespace Presentacion
             this.ptrConsulta = new System.Windows.Forms.PictureBox();
             this.dtgConsulta = new Guna.UI2.WinForms.Guna2DataGridView();
             this.lblConsulta = new System.Windows.Forms.Label();
-            this.btnGenerarPDF = new Guna.UI2.WinForms.Guna2Button();
+            this.Column12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.guna2ShadowPanel1.SuspendLayout();
             this.pnlCantidadDeMedicos.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptrCantidadDeMedicos)).BeginInit();
@@ -62,6 +74,27 @@ namespace Presentacion
             this.guna2ShadowPanel1.ShadowShift = 10;
             this.guna2ShadowPanel1.Size = new System.Drawing.Size(743, 616);
             this.guna2ShadowPanel1.TabIndex = 0;
+            // 
+            // btnGenerarPDF
+            // 
+            this.btnGenerarPDF.BorderRadius = 13;
+            this.btnGenerarPDF.CheckedState.Parent = this.btnGenerarPDF;
+            this.btnGenerarPDF.CustomImages.Parent = this.btnGenerarPDF;
+            this.btnGenerarPDF.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnGenerarPDF.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnGenerarPDF.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnGenerarPDF.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnGenerarPDF.DisabledState.Parent = this.btnGenerarPDF;
+            this.btnGenerarPDF.FillColor = System.Drawing.Color.Red;
+            this.btnGenerarPDF.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGenerarPDF.ForeColor = System.Drawing.Color.White;
+            this.btnGenerarPDF.HoverState.Parent = this.btnGenerarPDF;
+            this.btnGenerarPDF.Location = new System.Drawing.Point(501, 553);
+            this.btnGenerarPDF.Name = "btnGenerarPDF";
+            this.btnGenerarPDF.ShadowDecoration.Parent = this.btnGenerarPDF;
+            this.btnGenerarPDF.Size = new System.Drawing.Size(171, 31);
+            this.btnGenerarPDF.TabIndex = 15;
+            this.btnGenerarPDF.Text = "Generar en PDF";
             // 
             // lblCantidadDeHistoriales
             // 
@@ -144,6 +177,7 @@ namespace Presentacion
             this.txtConsulta.ShadowDecoration.Parent = this.txtConsulta;
             this.txtConsulta.Size = new System.Drawing.Size(408, 29);
             this.txtConsulta.TabIndex = 14;
+            this.txtConsulta.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtConsulta_KeyUp);
             // 
             // ptrConsulta
             // 
@@ -159,6 +193,8 @@ namespace Presentacion
             // 
             // dtgConsulta
             // 
+            this.dtgConsulta.AllowUserToAddRows = false;
+            this.dtgConsulta.AllowUserToDeleteRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
             this.dtgConsulta.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dtgConsulta.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
@@ -174,7 +210,20 @@ namespace Presentacion
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dtgConsulta.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.dtgConsulta.ColumnHeadersHeight = 4;
+            this.dtgConsulta.ColumnHeadersHeight = 25;
+            this.dtgConsulta.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column1,
+            this.Column2,
+            this.Column3,
+            this.Column4,
+            this.Column5,
+            this.Column6,
+            this.Column7,
+            this.Column8,
+            this.Column9,
+            this.Column10,
+            this.Column11,
+            this.Column12});
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
@@ -187,6 +236,7 @@ namespace Presentacion
             this.dtgConsulta.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dtgConsulta.Location = new System.Drawing.Point(71, 297);
             this.dtgConsulta.Name = "dtgConsulta";
+            this.dtgConsulta.ReadOnly = true;
             this.dtgConsulta.RowHeadersVisible = false;
             this.dtgConsulta.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dtgConsulta.Size = new System.Drawing.Size(656, 268);
@@ -203,8 +253,8 @@ namespace Presentacion
             this.dtgConsulta.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
             this.dtgConsulta.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
             this.dtgConsulta.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.dtgConsulta.ThemeStyle.HeaderStyle.Height = 4;
-            this.dtgConsulta.ThemeStyle.ReadOnly = false;
+            this.dtgConsulta.ThemeStyle.HeaderStyle.Height = 25;
+            this.dtgConsulta.ThemeStyle.ReadOnly = true;
             this.dtgConsulta.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
             this.dtgConsulta.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dtgConsulta.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
@@ -225,26 +275,91 @@ namespace Presentacion
             this.lblConsulta.TabIndex = 11;
             this.lblConsulta.Text = "Consulta";
             // 
-            // btnGenerarPDF
+            // Column12
             // 
-            this.btnGenerarPDF.BorderRadius = 13;
-            this.btnGenerarPDF.CheckedState.Parent = this.btnGenerarPDF;
-            this.btnGenerarPDF.CustomImages.Parent = this.btnGenerarPDF;
-            this.btnGenerarPDF.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnGenerarPDF.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnGenerarPDF.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnGenerarPDF.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnGenerarPDF.DisabledState.Parent = this.btnGenerarPDF;
-            this.btnGenerarPDF.FillColor = System.Drawing.Color.Red;
-            this.btnGenerarPDF.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGenerarPDF.ForeColor = System.Drawing.Color.White;
-            this.btnGenerarPDF.HoverState.Parent = this.btnGenerarPDF;
-            this.btnGenerarPDF.Location = new System.Drawing.Point(501, 553);
-            this.btnGenerarPDF.Name = "btnGenerarPDF";
-            this.btnGenerarPDF.ShadowDecoration.Parent = this.btnGenerarPDF;
-            this.btnGenerarPDF.Size = new System.Drawing.Size(171, 31);
-            this.btnGenerarPDF.TabIndex = 15;
-            this.btnGenerarPDF.Text = "Generar en PDF";
+            this.Column12.FillWeight = 20.62333F;
+            this.Column12.HeaderText = "Cedula Paciente";
+            this.Column12.Name = "Column12";
+            this.Column12.ReadOnly = true;
+            // 
+            // Column11
+            // 
+            this.Column11.FillWeight = 20.62333F;
+            this.Column11.HeaderText = "Cedeula médico";
+            this.Column11.Name = "Column11";
+            this.Column11.ReadOnly = true;
+            // 
+            // Column10
+            // 
+            this.Column10.FillWeight = 20.62333F;
+            this.Column10.HeaderText = "ID_Receta";
+            this.Column10.Name = "Column10";
+            this.Column10.ReadOnly = true;
+            // 
+            // Column9
+            // 
+            this.Column9.FillWeight = 20.62333F;
+            this.Column9.HeaderText = "ID_Tratam";
+            this.Column9.Name = "Column9";
+            this.Column9.ReadOnly = true;
+            // 
+            // Column8
+            // 
+            this.Column8.FillWeight = 227.6045F;
+            this.Column8.HeaderText = "ID_Diag";
+            this.Column8.Name = "Column8";
+            this.Column8.ReadOnly = true;
+            // 
+            // Column7
+            // 
+            this.Column7.FillWeight = 330.0392F;
+            this.Column7.HeaderText = "Antecedentes. Q";
+            this.Column7.Name = "Column7";
+            this.Column7.ReadOnly = true;
+            // 
+            // Column6
+            // 
+            this.Column6.FillWeight = 169.2014F;
+            this.Column6.HeaderText = "Alergia";
+            this.Column6.Name = "Column6";
+            this.Column6.ReadOnly = true;
+            // 
+            // Column5
+            // 
+            this.Column5.FillWeight = 172.7812F;
+            this.Column5.HeaderText = "Ritmo C";
+            this.Column5.Name = "Column5";
+            this.Column5.ReadOnly = true;
+            // 
+            // Column4
+            // 
+            this.Column4.FillWeight = 156.0196F;
+            this.Column4.HeaderText = "Presion";
+            this.Column4.Name = "Column4";
+            this.Column4.ReadOnly = true;
+            // 
+            // Column3
+            // 
+            this.Column3.FillWeight = 164.1009F;
+            this.Column3.HeaderText = "Estatura";
+            this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
+            // 
+            // Column2
+            // 
+            this.Column2.FillWeight = 100.4266F;
+            this.Column2.HeaderText = "Peso";
+            this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
+            // 
+            // Column1
+            // 
+            this.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.Column1.FillWeight = 78F;
+            this.Column1.HeaderText = "ID_Consulta";
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            this.Column1.Width = 95;
             // 
             // FrmConsultaHistorial
             // 
@@ -285,5 +400,17 @@ namespace Presentacion
         private Guna.UI2.WinForms.Guna2DataGridView dtgConsulta;
         private System.Windows.Forms.Label lblConsulta;
         private Guna.UI2.WinForms.Guna2Button btnGenerarPDF;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column9;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column10;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column11;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column12;
     }
 }

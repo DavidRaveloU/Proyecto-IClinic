@@ -104,8 +104,6 @@ namespace Datos
             return pacientes;
         }
 
-
-
         public List<Medico> ConsultarMedico()
         {
             List<Medico> medicos = new List<Medico>();
@@ -131,6 +129,40 @@ namespace Datos
                 reader.Close();
             }
             return medicos;
+        }
+
+        public List<ConsultaMedica> ConsultarConsultaMedica()
+        {
+            List<ConsultaMedica> consultaMedicas = new List<ConsultaMedica>();
+            using (var command = _connection.CreateCommand())
+            {
+                command.CommandText = "select * from consulta";
+                var reader = command.ExecuteReader();
+                while (reader.Read())
+                {
+                    ConsultaMedica consultaMedica = new ConsultaMedica();
+                    consultaMedica.IdConsulta = reader.GetInt32(0);
+                    consultaMedica.Peso = reader.GetString(1);  
+                    consultaMedica.Estatura = reader.GetString(2);
+                    consultaMedica.PresionArterial = reader.GetString(3);
+                    consultaMedica.RitmoCardiaco = reader.GetString(4);
+                    consultaMedica.AntecedentesQuirurjicos = reader.GetString(5);
+                    consultaMedica.IdTratamiento = reader.GetInt32(6);
+                    consultaMedica.IdDiagnostico = reader.GetInt32(7);
+                    consultaMedica.IdRecetaMedica = reader.GetInt32(8);
+                    consultaMedica.CedulaMedico = reader.GetString(9);
+                    consultaMedica.CedulaPaciente = reader.GetString(10);
+                    consultaMedicas.Add(consultaMedica);
+                }
+                reader.Close();
+            }
+            return consultaMedicas;
+        }
+
+
+        public List<ConsultaMedica> FiltrarConsulta(string IdConsulta)
+        {
+            return ConsultarConsultaMedica().Where(p => p.IdConsulta.ToString().Contains(IdConsulta) || p.CedulaPaciente.Contains(IdConsulta)).ToList();
         }
 
         public List<Paciente> FiltrarPorCedulaPaciente(string cedula)

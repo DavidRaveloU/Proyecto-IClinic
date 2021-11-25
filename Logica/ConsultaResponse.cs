@@ -12,6 +12,7 @@ namespace Logica
     {
         public List<Medico> Medicos { get; set; }
         public List<Paciente> Pacientes { get; set; }
+        public List<ConsultaMedica> ConsultaMedicas { get; set; }
         public string Mensaje { get; set; }
         public bool Error { get; set; }
         public ConsultaResponse(string mensaje)
@@ -27,6 +28,12 @@ namespace Logica
         public ConsultaResponse(List<Paciente> pacientes)
         {
             Pacientes = pacientes;
+            Error = false;
+        }
+
+        public ConsultaResponse(List<ConsultaMedica> consultas)
+        {
+            ConsultaMedicas = consultas;
             Error = false;
         }
     }

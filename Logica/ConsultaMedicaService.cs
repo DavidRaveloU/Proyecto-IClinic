@@ -86,5 +86,40 @@ namespace Logica
                 _connectionManager.Close();
             }
         }
+
+        public ConsultaResponse FiltrarConsultaMedica(string Id)
+        {
+            try
+            {
+                _connectionManager.Open();
+                return new ConsultaResponse(consultaMedicaRepository.FiltrarConsulta(Id));
+            }
+            catch (Exception e)
+            {
+
+                 return new ConsultaResponse("Se presento el siguiente problema "+ e.Message);
+            }
+            finally
+            {
+                _connectionManager.Close();
+            }
+        
+        }
+        public ConsultaResponse Consultar()
+        {
+            try
+            {
+                _connectionManager.Open();
+                return new ConsultaResponse(consultaMedicaRepository.ConsultarConsultaMedica());
+            }
+            catch (Exception e)
+            {
+                return new ConsultaResponse($"Error inesperado al Consultar: {e.Message}");
+            }
+            finally
+            {
+                _connectionManager.Close();
+            }
+        }
     }
 }
