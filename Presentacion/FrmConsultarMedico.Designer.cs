@@ -35,7 +35,6 @@ namespace Presentacion
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmConsultarMedico));
             this.pnlFondoConsultarMedico = new Guna.UI2.WinForms.Guna2ShadowPanel();
             this.txtConsulta = new Guna.UI2.WinForms.Guna2TextBox();
-            this.btnEliminar = new Guna.UI2.WinForms.Guna2Button();
             this.btnModificar = new Guna.UI2.WinForms.Guna2Button();
             this.dtgConsultarMedicos = new Guna.UI2.WinForms.Guna2DataGridView();
             this.ColumnCedula = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -64,7 +63,6 @@ namespace Presentacion
             // 
             this.pnlFondoConsultarMedico.BackColor = System.Drawing.Color.Transparent;
             this.pnlFondoConsultarMedico.Controls.Add(this.txtConsulta);
-            this.pnlFondoConsultarMedico.Controls.Add(this.btnEliminar);
             this.pnlFondoConsultarMedico.Controls.Add(this.btnModificar);
             this.pnlFondoConsultarMedico.Controls.Add(this.dtgConsultarMedicos);
             this.pnlFondoConsultarMedico.Controls.Add(this.lblConsulta);
@@ -106,28 +104,6 @@ namespace Presentacion
             this.txtConsulta.TabIndex = 9;
             this.txtConsulta.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtConsulta_KeyUp);
             // 
-            // btnEliminar
-            // 
-            this.btnEliminar.BorderRadius = 13;
-            this.btnEliminar.CheckedState.Parent = this.btnEliminar;
-            this.btnEliminar.CustomImages.Parent = this.btnEliminar;
-            this.btnEliminar.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnEliminar.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnEliminar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnEliminar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnEliminar.DisabledState.Parent = this.btnEliminar;
-            this.btnEliminar.FillColor = System.Drawing.Color.Red;
-            this.btnEliminar.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEliminar.ForeColor = System.Drawing.Color.White;
-            this.btnEliminar.HoverState.Parent = this.btnEliminar;
-            this.btnEliminar.Location = new System.Drawing.Point(323, 546);
-            this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.ShadowDecoration.Parent = this.btnEliminar;
-            this.btnEliminar.Size = new System.Drawing.Size(171, 31);
-            this.btnEliminar.TabIndex = 5;
-            this.btnEliminar.Text = "Eliminar";
-            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
-            // 
             // btnModificar
             // 
             this.btnModificar.BorderRadius = 13;
@@ -155,7 +131,7 @@ namespace Presentacion
             this.dtgConsultarMedicos.AllowUserToDeleteRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
             this.dtgConsultarMedicos.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.dtgConsultarMedicos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dtgConsultarMedicos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dtgConsultarMedicos.BackgroundColor = System.Drawing.Color.White;
             this.dtgConsultarMedicos.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dtgConsultarMedicos.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
@@ -225,60 +201,70 @@ namespace Presentacion
             this.ColumnCedula.HeaderText = "Cedula";
             this.ColumnCedula.Name = "ColumnCedula";
             this.ColumnCedula.ReadOnly = true;
+            this.ColumnCedula.Width = 74;
             // 
             // ColumnPrimerNombre
             // 
             this.ColumnPrimerNombre.HeaderText = "Primer nombre";
             this.ColumnPrimerNombre.Name = "ColumnPrimerNombre";
             this.ColumnPrimerNombre.ReadOnly = true;
+            this.ColumnPrimerNombre.Width = 124;
             // 
             // ColumnSegundoNombre
             // 
             this.ColumnSegundoNombre.HeaderText = "Segundo nombre";
             this.ColumnSegundoNombre.Name = "ColumnSegundoNombre";
             this.ColumnSegundoNombre.ReadOnly = true;
+            this.ColumnSegundoNombre.Width = 138;
             // 
             // ColumnPrimerApellido
             // 
             this.ColumnPrimerApellido.HeaderText = "Primer apellido";
             this.ColumnPrimerApellido.Name = "ColumnPrimerApellido";
             this.ColumnPrimerApellido.ReadOnly = true;
+            this.ColumnPrimerApellido.Width = 123;
             // 
             // ColumnSegundoApellido
             // 
             this.ColumnSegundoApellido.HeaderText = "Segundo apellido";
             this.ColumnSegundoApellido.Name = "ColumnSegundoApellido";
             this.ColumnSegundoApellido.ReadOnly = true;
+            this.ColumnSegundoApellido.Width = 137;
             // 
             // ColumnTelefono
             // 
             this.ColumnTelefono.HeaderText = "Telefono";
             this.ColumnTelefono.Name = "ColumnTelefono";
             this.ColumnTelefono.ReadOnly = true;
+            this.ColumnTelefono.Width = 83;
             // 
             // ColumnCorreo
             // 
             this.ColumnCorreo.HeaderText = "Correo";
             this.ColumnCorreo.Name = "ColumnCorreo";
             this.ColumnCorreo.ReadOnly = true;
+            this.ColumnCorreo.Width = 74;
             // 
             // ColumnDireccion
             // 
             this.ColumnDireccion.HeaderText = "Direccion";
             this.ColumnDireccion.Name = "ColumnDireccion";
             this.ColumnDireccion.ReadOnly = true;
+            this.ColumnDireccion.Width = 88;
             // 
             // ColumnSexo
             // 
             this.ColumnSexo.HeaderText = "Sexo";
             this.ColumnSexo.Name = "ColumnSexo";
             this.ColumnSexo.ReadOnly = true;
+            this.ColumnSexo.Width = 60;
             // 
             // ColumnCiudad
             // 
             this.ColumnCiudad.HeaderText = "Ciudad";
             this.ColumnCiudad.Name = "ColumnCiudad";
             this.ColumnCiudad.ReadOnly = true;
+            this.ColumnCiudad.Width = 75;
             // 
             // lblConsulta
             // 
@@ -371,7 +357,6 @@ namespace Presentacion
         private System.Windows.Forms.PictureBox ptrCantidadDeMedicos;
         private System.Windows.Forms.Label lblConsulta;
         private Guna.UI2.WinForms.Guna2DataGridView dtgConsultarMedicos;
-        private Guna.UI2.WinForms.Guna2Button btnEliminar;
         private Guna.UI2.WinForms.Guna2Button btnModificar;
         private Guna.UI2.WinForms.Guna2TextBox txtConsulta;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnCedula;

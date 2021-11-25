@@ -29,9 +29,9 @@ namespace Presentacion
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmConsultarPaciente));
             this.pnlFondoConsultarMedico = new Guna.UI2.WinForms.Guna2ShadowPanel();
             this.dtgConsulta = new Guna.UI2.WinForms.Guna2DataGridView();
@@ -46,7 +46,6 @@ namespace Presentacion
             this.ColumnSexo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnCiudad = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.txtConsulta = new Guna.UI2.WinForms.Guna2TextBox();
-            this.btnEliminar = new Guna.UI2.WinForms.Guna2Button();
             this.btnModificar = new Guna.UI2.WinForms.Guna2Button();
             this.lblConsulta = new System.Windows.Forms.Label();
             this.pnlCantidadDeMedicos = new System.Windows.Forms.Panel();
@@ -65,7 +64,6 @@ namespace Presentacion
             this.pnlFondoConsultarMedico.BackColor = System.Drawing.Color.Transparent;
             this.pnlFondoConsultarMedico.Controls.Add(this.dtgConsulta);
             this.pnlFondoConsultarMedico.Controls.Add(this.txtConsulta);
-            this.pnlFondoConsultarMedico.Controls.Add(this.btnEliminar);
             this.pnlFondoConsultarMedico.Controls.Add(this.btnModificar);
             this.pnlFondoConsultarMedico.Controls.Add(this.lblConsulta);
             this.pnlFondoConsultarMedico.Controls.Add(this.pnlCantidadDeMedicos);
@@ -82,21 +80,21 @@ namespace Presentacion
             // 
             this.dtgConsulta.AllowUserToAddRows = false;
             this.dtgConsulta.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.dtgConsulta.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.dtgConsulta.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            this.dtgConsulta.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            this.dtgConsulta.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dtgConsulta.BackgroundColor = System.Drawing.Color.White;
             this.dtgConsulta.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dtgConsulta.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dtgConsulta.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(205)))), ((int)(((byte)(185)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgConsulta.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(205)))), ((int)(((byte)(185)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgConsulta.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.dtgConsulta.ColumnHeadersHeight = 25;
             this.dtgConsulta.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ColumnCedula,
@@ -109,14 +107,14 @@ namespace Presentacion
             this.ColumnDireccion,
             this.ColumnSexo,
             this.ColumnCiudad});
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dtgConsulta.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dtgConsulta.DefaultCellStyle = dataGridViewCellStyle6;
             this.dtgConsulta.EnableHeadersVisualStyles = false;
             this.dtgConsulta.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(221)))), ((int)(((byte)(208)))));
             this.dtgConsulta.Location = new System.Drawing.Point(48, 227);
@@ -154,60 +152,70 @@ namespace Presentacion
             this.ColumnCedula.HeaderText = "Cedula";
             this.ColumnCedula.Name = "ColumnCedula";
             this.ColumnCedula.ReadOnly = true;
+            this.ColumnCedula.Width = 74;
             // 
             // ColumnPrimerNombre
             // 
             this.ColumnPrimerNombre.HeaderText = "Primer nombre";
             this.ColumnPrimerNombre.Name = "ColumnPrimerNombre";
             this.ColumnPrimerNombre.ReadOnly = true;
+            this.ColumnPrimerNombre.Width = 124;
             // 
             // ColumnSegundoNombre
             // 
             this.ColumnSegundoNombre.HeaderText = "Segundo nombre";
             this.ColumnSegundoNombre.Name = "ColumnSegundoNombre";
             this.ColumnSegundoNombre.ReadOnly = true;
+            this.ColumnSegundoNombre.Width = 138;
             // 
             // ColumnPrimerApellido
             // 
             this.ColumnPrimerApellido.HeaderText = "Primer apellido";
             this.ColumnPrimerApellido.Name = "ColumnPrimerApellido";
             this.ColumnPrimerApellido.ReadOnly = true;
+            this.ColumnPrimerApellido.Width = 123;
             // 
             // ColumnSegundoApellido
             // 
             this.ColumnSegundoApellido.HeaderText = "Segundo apellido";
             this.ColumnSegundoApellido.Name = "ColumnSegundoApellido";
             this.ColumnSegundoApellido.ReadOnly = true;
+            this.ColumnSegundoApellido.Width = 137;
             // 
             // ColumnTelefono
             // 
             this.ColumnTelefono.HeaderText = "Telefono";
             this.ColumnTelefono.Name = "ColumnTelefono";
             this.ColumnTelefono.ReadOnly = true;
+            this.ColumnTelefono.Width = 83;
             // 
             // ColumnCorreo
             // 
             this.ColumnCorreo.HeaderText = "Correo";
             this.ColumnCorreo.Name = "ColumnCorreo";
             this.ColumnCorreo.ReadOnly = true;
+            this.ColumnCorreo.Width = 74;
             // 
             // ColumnDireccion
             // 
             this.ColumnDireccion.HeaderText = "Direccion";
             this.ColumnDireccion.Name = "ColumnDireccion";
             this.ColumnDireccion.ReadOnly = true;
+            this.ColumnDireccion.Width = 88;
             // 
             // ColumnSexo
             // 
             this.ColumnSexo.HeaderText = "Sexo";
             this.ColumnSexo.Name = "ColumnSexo";
             this.ColumnSexo.ReadOnly = true;
+            this.ColumnSexo.Width = 60;
             // 
             // ColumnCiudad
             // 
             this.ColumnCiudad.HeaderText = "Ciudad";
             this.ColumnCiudad.Name = "ColumnCiudad";
             this.ColumnCiudad.ReadOnly = true;
+            this.ColumnCiudad.Width = 75;
             // 
             // txtConsulta
             // 
@@ -237,27 +245,6 @@ namespace Presentacion
             this.txtConsulta.TabIndex = 9;
             this.txtConsulta.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtConsulta_KeyUp);
             // 
-            // btnEliminar
-            // 
-            this.btnEliminar.BorderRadius = 13;
-            this.btnEliminar.CheckedState.Parent = this.btnEliminar;
-            this.btnEliminar.CustomImages.Parent = this.btnEliminar;
-            this.btnEliminar.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnEliminar.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnEliminar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnEliminar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnEliminar.DisabledState.Parent = this.btnEliminar;
-            this.btnEliminar.FillColor = System.Drawing.Color.Red;
-            this.btnEliminar.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEliminar.ForeColor = System.Drawing.Color.White;
-            this.btnEliminar.HoverState.Parent = this.btnEliminar;
-            this.btnEliminar.Location = new System.Drawing.Point(560, 546);
-            this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.ShadowDecoration.Parent = this.btnEliminar;
-            this.btnEliminar.Size = new System.Drawing.Size(171, 31);
-            this.btnEliminar.TabIndex = 5;
-            this.btnEliminar.Text = "Eliminar";
-            // 
             // btnModificar
             // 
             this.btnModificar.BorderRadius = 13;
@@ -272,7 +259,7 @@ namespace Presentacion
             this.btnModificar.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnModificar.ForeColor = System.Drawing.Color.White;
             this.btnModificar.HoverState.Parent = this.btnModificar;
-            this.btnModificar.Location = new System.Drawing.Point(352, 546);
+            this.btnModificar.Location = new System.Drawing.Point(533, 561);
             this.btnModificar.Name = "btnModificar";
             this.btnModificar.ShadowDecoration.Parent = this.btnModificar;
             this.btnModificar.Size = new System.Drawing.Size(171, 31);
@@ -365,7 +352,6 @@ namespace Presentacion
 
         private Guna.UI2.WinForms.Guna2ShadowPanel pnlFondoConsultarMedico;
         private Guna.UI2.WinForms.Guna2TextBox txtConsulta;
-        private Guna.UI2.WinForms.Guna2Button btnEliminar;
         private Guna.UI2.WinForms.Guna2Button btnModificar;
         private System.Windows.Forms.Label lblConsulta;
         private System.Windows.Forms.Panel pnlCantidadDeMedicos;
