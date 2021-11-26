@@ -32,6 +32,7 @@ namespace Presentacion
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmPrincipal));
             this.pnlMenu = new System.Windows.Forms.Panel();
+            this.btnCerrarSesion = new Guna.UI2.WinForms.Guna2Button();
             this.pnlConsulta = new System.Windows.Forms.Panel();
             this.btnConsultarHistorial = new Guna.UI2.WinForms.Guna2Button();
             this.btnConsultaMedica = new Guna.UI2.WinForms.Guna2Button();
@@ -57,8 +58,6 @@ namespace Presentacion
             this.pnlGrapper = new System.Windows.Forms.Panel();
             this.sombra = new Guna.UI2.WinForms.Guna2ShadowForm(this.components);
             this.tmrFundir = new System.Windows.Forms.Timer(this.components);
-            this.btnHorario = new Guna.UI2.WinForms.Guna2Button();
-            this.btnCerrarSesion = new Guna.UI2.WinForms.Guna2Button();
             this.pnlMenu.SuspendLayout();
             this.pnlConsulta.SuspendLayout();
             this.pnlPaciente.SuspendLayout();
@@ -73,7 +72,6 @@ namespace Presentacion
             // 
             this.pnlMenu.BackColor = System.Drawing.Color.White;
             this.pnlMenu.Controls.Add(this.btnCerrarSesion);
-            this.pnlMenu.Controls.Add(this.btnHorario);
             this.pnlMenu.Controls.Add(this.pnlConsulta);
             this.pnlMenu.Controls.Add(this.btnConsulta);
             this.pnlMenu.Controls.Add(this.pnlPaciente);
@@ -89,13 +87,41 @@ namespace Presentacion
             this.pnlMenu.Size = new System.Drawing.Size(198, 677);
             this.pnlMenu.TabIndex = 10;
             // 
+            // btnCerrarSesion
+            // 
+            this.btnCerrarSesion.Animated = true;
+            this.btnCerrarSesion.BorderRadius = 13;
+            this.btnCerrarSesion.CheckedState.Parent = this.btnCerrarSesion;
+            this.btnCerrarSesion.CustomImages.Parent = this.btnCerrarSesion;
+            this.btnCerrarSesion.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnCerrarSesion.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnCerrarSesion.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnCerrarSesion.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnCerrarSesion.DisabledState.Parent = this.btnCerrarSesion;
+            this.btnCerrarSesion.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnCerrarSesion.FillColor = System.Drawing.Color.Transparent;
+            this.btnCerrarSesion.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.btnCerrarSesion.ForeColor = System.Drawing.Color.Black;
+            this.btnCerrarSesion.HoverState.Parent = this.btnCerrarSesion;
+            this.btnCerrarSesion.Image = ((System.Drawing.Image)(resources.GetObject("btnCerrarSesion.Image")));
+            this.btnCerrarSesion.ImageOffset = new System.Drawing.Point(-13, 0);
+            this.btnCerrarSesion.ImageSize = new System.Drawing.Size(25, 25);
+            this.btnCerrarSesion.Location = new System.Drawing.Point(0, 748);
+            this.btnCerrarSesion.Name = "btnCerrarSesion";
+            this.btnCerrarSesion.ShadowDecoration.Parent = this.btnCerrarSesion;
+            this.btnCerrarSesion.Size = new System.Drawing.Size(198, 45);
+            this.btnCerrarSesion.TabIndex = 22;
+            this.btnCerrarSesion.Text = "Cerrar sesión";
+            this.btnCerrarSesion.TextOffset = new System.Drawing.Point(-8, 0);
+            this.btnCerrarSesion.Click += new System.EventHandler(this.btnCerrarSesion_Click_1);
+            // 
             // pnlConsulta
             // 
             this.pnlConsulta.Controls.Add(this.btnConsultarHistorial);
             this.pnlConsulta.Controls.Add(this.btnConsultaMedica);
             this.pnlConsulta.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlConsulta.ForeColor = System.Drawing.Color.Black;
-            this.pnlConsulta.Location = new System.Drawing.Point(0, 675);
+            this.pnlConsulta.Location = new System.Drawing.Point(0, 657);
             this.pnlConsulta.Name = "pnlConsulta";
             this.pnlConsulta.Size = new System.Drawing.Size(198, 91);
             this.pnlConsulta.TabIndex = 19;
@@ -167,7 +193,7 @@ namespace Presentacion
             this.btnConsulta.Image = ((System.Drawing.Image)(resources.GetObject("btnConsulta.Image")));
             this.btnConsulta.ImageOffset = new System.Drawing.Point(-20, 0);
             this.btnConsulta.ImageSize = new System.Drawing.Size(32, 32);
-            this.btnConsulta.Location = new System.Drawing.Point(0, 630);
+            this.btnConsulta.Location = new System.Drawing.Point(0, 612);
             this.btnConsulta.Name = "btnConsulta";
             this.btnConsulta.ShadowDecoration.Parent = this.btnConsulta;
             this.btnConsulta.Size = new System.Drawing.Size(198, 45);
@@ -182,7 +208,7 @@ namespace Presentacion
             this.pnlPaciente.Controls.Add(this.btnRegistrarPaciente);
             this.pnlPaciente.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlPaciente.ForeColor = System.Drawing.Color.Black;
-            this.pnlPaciente.Location = new System.Drawing.Point(0, 541);
+            this.pnlPaciente.Location = new System.Drawing.Point(0, 523);
             this.pnlPaciente.Name = "pnlPaciente";
             this.pnlPaciente.Size = new System.Drawing.Size(198, 89);
             this.pnlPaciente.TabIndex = 17;
@@ -252,7 +278,7 @@ namespace Presentacion
             this.btnPaciente.Image = ((System.Drawing.Image)(resources.GetObject("btnPaciente.Image")));
             this.btnPaciente.ImageOffset = new System.Drawing.Point(-21, 1);
             this.btnPaciente.ImageSize = new System.Drawing.Size(34, 34);
-            this.btnPaciente.Location = new System.Drawing.Point(0, 491);
+            this.btnPaciente.Location = new System.Drawing.Point(0, 473);
             this.btnPaciente.Name = "btnPaciente";
             this.btnPaciente.ShadowDecoration.Parent = this.btnPaciente;
             this.btnPaciente.Size = new System.Drawing.Size(198, 50);
@@ -267,7 +293,7 @@ namespace Presentacion
             this.pnlMedico.Controls.Add(this.btnRegistrarMedico);
             this.pnlMedico.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlMedico.ForeColor = System.Drawing.Color.Black;
-            this.pnlMedico.Location = new System.Drawing.Point(0, 402);
+            this.pnlMedico.Location = new System.Drawing.Point(0, 384);
             this.pnlMedico.Name = "pnlMedico";
             this.pnlMedico.Size = new System.Drawing.Size(198, 89);
             this.pnlMedico.TabIndex = 15;
@@ -339,7 +365,7 @@ namespace Presentacion
             this.btnMedico.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnMedico.ImageOffset = new System.Drawing.Point(-12, 0);
             this.btnMedico.ImageSize = new System.Drawing.Size(50, 39);
-            this.btnMedico.Location = new System.Drawing.Point(0, 357);
+            this.btnMedico.Location = new System.Drawing.Point(0, 339);
             this.btnMedico.Name = "btnMedico";
             this.btnMedico.ShadowDecoration.Parent = this.btnMedico;
             this.btnMedico.Size = new System.Drawing.Size(198, 45);
@@ -354,7 +380,7 @@ namespace Presentacion
             this.pnlAgenda.Controls.Add(this.btnAgendarMedico);
             this.pnlAgenda.Controls.Add(this.btnAgendarCita);
             this.pnlAgenda.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlAgenda.Location = new System.Drawing.Point(0, 268);
+            this.pnlAgenda.Location = new System.Drawing.Point(0, 250);
             this.pnlAgenda.Name = "pnlAgenda";
             this.pnlAgenda.ShadowDecoration.Parent = this.pnlAgenda;
             this.pnlAgenda.Size = new System.Drawing.Size(198, 89);
@@ -430,7 +456,7 @@ namespace Presentacion
             this.btnAgenda.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnAgenda.ImageOffset = new System.Drawing.Point(0, 1);
             this.btnAgenda.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnAgenda.Location = new System.Drawing.Point(0, 223);
+            this.btnAgenda.Location = new System.Drawing.Point(0, 205);
             this.btnAgenda.Name = "btnAgenda";
             this.btnAgenda.ShadowDecoration.Parent = this.btnAgenda;
             this.btnAgenda.Size = new System.Drawing.Size(198, 45);
@@ -448,7 +474,7 @@ namespace Presentacion
             this.pnlFondoDeLogo.ForeColor = System.Drawing.Color.Black;
             this.pnlFondoDeLogo.Location = new System.Drawing.Point(0, 0);
             this.pnlFondoDeLogo.Name = "pnlFondoDeLogo";
-            this.pnlFondoDeLogo.Size = new System.Drawing.Size(198, 223);
+            this.pnlFondoDeLogo.Size = new System.Drawing.Size(198, 205);
             this.pnlFondoDeLogo.TabIndex = 2;
             // 
             // ptrLogo
@@ -551,62 +577,6 @@ namespace Presentacion
             this.sombra.BorderRadius = 27;
             this.sombra.TargetForm = this;
             // 
-            // btnHorario
-            // 
-            this.btnHorario.Animated = true;
-            this.btnHorario.BorderRadius = 13;
-            this.btnHorario.CheckedState.Parent = this.btnHorario;
-            this.btnHorario.CustomImages.Parent = this.btnHorario;
-            this.btnHorario.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnHorario.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnHorario.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnHorario.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnHorario.DisabledState.Parent = this.btnHorario;
-            this.btnHorario.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnHorario.FillColor = System.Drawing.Color.Transparent;
-            this.btnHorario.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.btnHorario.ForeColor = System.Drawing.Color.Black;
-            this.btnHorario.HoverState.Parent = this.btnHorario;
-            this.btnHorario.Image = ((System.Drawing.Image)(resources.GetObject("btnHorario.Image")));
-            this.btnHorario.ImageOffset = new System.Drawing.Point(-23, 0);
-            this.btnHorario.ImageSize = new System.Drawing.Size(32, 32);
-            this.btnHorario.Location = new System.Drawing.Point(0, 766);
-            this.btnHorario.Name = "btnHorario";
-            this.btnHorario.ShadowDecoration.Parent = this.btnHorario;
-            this.btnHorario.Size = new System.Drawing.Size(198, 45);
-            this.btnHorario.TabIndex = 21;
-            this.btnHorario.Text = "Horario";
-            this.btnHorario.TextOffset = new System.Drawing.Point(-19, 0);
-            this.btnHorario.Click += new System.EventHandler(this.btnHorario_Click);
-            // 
-            // btnCerrarSesion
-            // 
-            this.btnCerrarSesion.Animated = true;
-            this.btnCerrarSesion.BorderRadius = 13;
-            this.btnCerrarSesion.CheckedState.Parent = this.btnCerrarSesion;
-            this.btnCerrarSesion.CustomImages.Parent = this.btnCerrarSesion;
-            this.btnCerrarSesion.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnCerrarSesion.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnCerrarSesion.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnCerrarSesion.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnCerrarSesion.DisabledState.Parent = this.btnCerrarSesion;
-            this.btnCerrarSesion.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnCerrarSesion.FillColor = System.Drawing.Color.Transparent;
-            this.btnCerrarSesion.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.btnCerrarSesion.ForeColor = System.Drawing.Color.Black;
-            this.btnCerrarSesion.HoverState.Parent = this.btnCerrarSesion;
-            this.btnCerrarSesion.Image = ((System.Drawing.Image)(resources.GetObject("btnCerrarSesion.Image")));
-            this.btnCerrarSesion.ImageOffset = new System.Drawing.Point(-13, 0);
-            this.btnCerrarSesion.ImageSize = new System.Drawing.Size(25, 25);
-            this.btnCerrarSesion.Location = new System.Drawing.Point(0, 811);
-            this.btnCerrarSesion.Name = "btnCerrarSesion";
-            this.btnCerrarSesion.ShadowDecoration.Parent = this.btnCerrarSesion;
-            this.btnCerrarSesion.Size = new System.Drawing.Size(198, 45);
-            this.btnCerrarSesion.TabIndex = 22;
-            this.btnCerrarSesion.Text = "Cerrar sesión";
-            this.btnCerrarSesion.TextOffset = new System.Drawing.Point(-8, 0);
-            this.btnCerrarSesion.Click += new System.EventHandler(this.btnCerrarSesion_Click_1);
-            // 
             // FrmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -659,7 +629,6 @@ namespace Presentacion
         private Guna.UI2.WinForms.Guna2Panel pnlAgenda;
         private Guna.UI2.WinForms.Guna2Button btnAgendarMedico;
         private Guna.UI2.WinForms.Guna2Button btnAgendarCita;
-        private Guna.UI2.WinForms.Guna2Button btnHorario;
         private Guna.UI2.WinForms.Guna2Button btnCerrarSesion;
     }
 }
