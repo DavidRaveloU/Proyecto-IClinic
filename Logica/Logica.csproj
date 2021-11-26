@@ -182,6 +182,7 @@
   <ItemGroup>
     <Compile Include="CitaMedicaService.cs" />
     <Compile Include="ConsultaResponse.cs" />
+    <Compile Include="CorreoService.cs" />
     <Compile Include="Excepcion.cs" />
     <Compile Include="TratamientoService.cs" />
     <Compile Include="ConsultaMedicaService.cs" />

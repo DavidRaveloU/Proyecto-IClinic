@@ -20,13 +20,17 @@ namespace Logica
         }
         public string Guardar(Paciente paciente)
         {
+            CorreoService correoService = new CorreoService();
+            string MensageEmail = string.Empty;
             try
             {
                 connectionManager.Open();
+
                 if (pacienteRepository.BuscarPorIdentificacion(paciente.NumeroDeCedula) == null)
                 {
                     pacienteRepository.Guardar(paciente);
-                    return "Datos Guardados Satisfactoriamente";
+                    MensageEmail = correoService.EnviarEmail(paciente);
+                    return "Datos Guardados Satisfactoriamente" +" "+MensageEmail;
                 }
                 return $"El paciente con la Identificacion {paciente.NumeroDeCedula} ya se encuentra registrado";
             }
