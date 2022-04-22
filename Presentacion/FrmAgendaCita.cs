@@ -89,6 +89,6 @@ cita.FechaCitaMedica = txtSegundoNombre.Text;
 cita.Medico.NumeroDeCedula = txtPrimerApellido.Text;
 cita.CedulaPaciente = txtSegundoNombre.Text;
 return cita;
-}*/
+} */
     }
 }
